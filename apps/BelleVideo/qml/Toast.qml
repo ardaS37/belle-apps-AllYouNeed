@@ -1,0 +1,37 @@
+import QtQuick 1.1
+
+// Kisa sure gorunen bildirim balonu
+Rectangle {
+    id: root
+    property string message: ""
+    property int bottomGap: 80
+
+    function show(msg) {
+        message = msg;
+        opacity = 1;
+        hideTimer.restart();
+    }
+
+    anchors { horizontalCenter: parent.horizontalCenter; bottom: parent.bottom; bottomMargin: bottomGap }
+    width: Math.min(parent.width - 60, label.paintedWidth + 40)
+    height: label.paintedHeight + 24
+    radius: 12
+    color: "#ECEFF1"
+    opacity: 0
+    visible: opacity > 0
+    z: 100
+    Behavior on opacity { NumberAnimation { duration: 180 } }
+
+    Text {
+        id: label
+        anchors.centerIn: parent
+        width: root.parent.width - 100
+        horizontalAlignment: Text.AlignHCenter
+        wrapMode: Text.Wrap
+        text: root.message
+        color: "#101418"
+        font.pixelSize: 18
+    }
+    Timer { id: hideTimer; interval: 3000; onTriggered: root.opacity = 0 }
+    MouseArea { anchors.fill: parent; onClicked: root.opacity = 0 }
+}

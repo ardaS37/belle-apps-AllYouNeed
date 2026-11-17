@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/dil">
+        <file>en.txt</file>
+    </qresource>
+    <qresource prefix="/qml">
+        <file>DilSatiri.qml</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,133 @@
+# pc - English (araclar/dil_cikar.ps1 ile uretilir, elle duzenlemeyin)
+   |   Sunucu: 	   |   Server:
+ — GDI kullanılıyor	 — using GDI
+  PC adı: 	  PC name:
+  port 	  port
+ (bağlanıyor…)	 (connecting…)
+ (yeniden denenecek)	 (will retry)
+ hedef	 target
+)\nEkran paylaşılıyor.	)\nScreen is being shared.
+{0} • {1:0.0} kare/sn • {2:0} KB/sn • {3}x{4}	{0} • {1:0.0} fps • {2:0} KB/s • {3}x{4}
+Açılış ayarı yazılamadı: 	Could not write the startup setting:
+adaptor yok	no adapter
+Arka planda çalışmaya devam ediyor. Çıkmak için simgeye sağ tıklayın.	Still running in the background. Right-click the icon to exit.
+Ayarlar kaydedildi, yeniden başlatılıyor	Settings saved, restarting
+Ayarlar kaydedilemedi: 	Could not save settings:
+Bağlan	CONNECT
+bağlanamadı: 	could not connect:
+Bağlanılamadı: 	Could not connect:
+Bağlanıyor…	Connecting…
+Bağlantı hatası: 	Connection error:
+bağlantı kapandı	Connection closed
+Bağlantı kapandı.	Connection closed.
+Bağlantı koptu (gönderilemedi).	Connection lost (could not send).
+bağlantı koptu, yeniden bağlanıyor	connection lost, reconnecting
+Bağlantı koptu: 	Connection lost:
+Bağlantı yok	Not connected
+Bağlantı: 	Connection:
+Bağlantıyı kes	Disconnect
+Bağlı (	Connected (
+Başka bir PC'ye bağlan	Connect to another PC
+Başka bir PC'yi bu bilgisayardan kontrol edin (yerel ağ ya da sunucu üzerinden):	Control another PC from this computer (over LAN or through the server):
+Başka çevrimiçi PC yok. Yerel ağ adresini elle yazabilirsiniz.	No other PC online. You can type a LAN address manually.
+Başka PC'ye bağlan	Connect to another PC
+Bu PC yerel ağ adresi bildirmemiş; 'Otomatik' ya da 'Yalnızca sunucu' seçin.	This PC did not report a LAN address; choose 'Automatic' or 'Server only'.
+Çevrimiçi	Online
+Çıkış	Exit
+Dengeli	Balanced
+dinleniyor (	listening (
+Duvar izni var	Firewall permission granted
+DXGI yeniden kuruluyor: 	Restarting DXGI:
+BelleRemote - 	Belle Remote -
+BelleRemote PC	Belle Remote PC
+BelleRemote PC - hazır	Belle Remote PC - ready
+BelleRemote PC - paylaşılıyor: 	Belle Remote PC - sharing:
+BelleRemote PC zaten çalışıyor (bildirim alanında).	Belle Remote PC is already running (in the notification area).
+ekran bicimi BGRA degil (	screen format is not BGRA (
+ekran bu ekran kartinda degil	screen is not on this graphics card
+geçersiz yanıt	Invalid response
+Gönder	Send
+Görüntü:	Picture:
+göster	Show
+Göster	Show
+Güvenlik duvarı izni	Firewall permission
+Güvenlik duvarı izni verilmedi: 	Firewall permission not granted:
+Güvenlik duvarı kuralı eklendi	Firewall rule added
+H.264 kullanılamadı, JPEG	H.264 unavailable, JPEG
+H.264 kullanılamadı, JPEG'e geçildi: 	H.264 unavailable, switched to JPEG:
+hazır, telefon bekleniyor (	ready, waiting for the phone (
+her zaman	always
+Hızlı (düşük kalite)	Fast (low quality)
+Hızlı yakalama (DXGI) yok: 	No fast capture (DXGI):
+Hızlı yakalama: DXGI	Fast capture: DXGI
+kalite 	quality
+kapalı	Off
+Kapat	Close
+Kapatınca bildirim alanında çalışsın	Keep running in the notification area when closed
+Kaydet ve uygula	Save and apply
+Kaynak	Source
+Kaynak: 	Source:
+Kısayollar	Shortcuts
+Kimlik doğrulanıyor (	Authenticating (
+LAN adresi yok	No LAN address
+LAN dinleniyor: port 	LAN listening: port
+LAN portu açılamadı: 	Could not open LAN port:
+LAN portu:	LAN port:
+Liste alınamadı: 	Could not get list:
+Listeden bir PC seçin ya da adres yazın.	Pick a PC from the list or type an address.
+Listeyi yenile	Refresh list
+Masaüstü	Desktop
+Masaüstü (tüm ekran)	Desktop (whole screen)
+Metin gönder	Send text
+Net (yüksek kalite)	Sharp (high quality)
+Otomatik	Automatic
+Otomatik (önce yerel ağ, olmazsa sunucu)	Automatic (LAN first, otherwise server)
+Oturum açıldı: 	Session opened:
+Oturum bitti: 	Session ended:
+Oturum kesildi	Session ended
+Oturum: {0} ({1}, {2})  {3:0.0} kare/sn  {4:0} KB/sn	Session: {0} ({1}, {2})  {3:0.0} fps  {4:0} KB/s
+Oturum: yok	Session: none
+Oturumu kes	End session
+Önce ana pencerede sunucu parolasını girip 'Kaydet ve uygula'ya basın.	First enter the server password in the main window and press 'Save and apply'.
+Önceki oturum yeni bağlantı için kapatıldı	The previous session was closed for a new connection
+örnek: 192.168.1.107  ya da  192.168.1.107:5680	example: 192.168.1.107  or  192.168.1.107:5680
+Parola hatali	Wrong password
+PC adı	PC name
+PC adı:	PC name:
+Reddedildi: parola hatalı (	Refused: wrong password (
+Sunucu	Server
+sunucu parolası hatalı	Wrong server password
+sunucu parolası hatalı (403)	wrong server password (403)
+Sunucu parolası:	Server password:
+Sunucu parolasını girip 'Kaydet ve uygula'ya basın (telefona da aynı parola girilir).	Enter the server password and press 'Save and apply' (the same password goes on the phone).
+sunucu üzerinden	Through the server
+Sunucu üzerinden bağlanıyor…	Connecting through the server…
+Sunucu üzerinden her yerden erişilebilir ol	Be reachable from anywhere through the server
+Sunucu:	Server:
+Sunucu: 	Server:
+Sunucu: -	Server: -
+sunucuda bu adda bekleyen PC yok	no PC with this name is waiting on the server
+Sunucuda çevrimiçi PC'ler (o PC'de BelleRemote PC açık ve \"Sunucu üzerinden\" işaretli olmalı):	PCs online on the server (Belle Remote PC must be open on that PC with \"Through the server\" checked):
+sunucuda BelleRemote aktarıcısı yok (uzak_sunucuya_yukle.ps1)	no remote relay on the server (update the server)
+Sunucuda hazır: 	Ready on server:
+Tam ekran (F11)	Full screen (F11)
+tarayici (sunucu tarayıcısı)	tarayici (server browser)
+Telefon bağlandı: 	Phone connected:
+Telefona verilecek adres:	Address for the phone:
+Uyarı: Güvenlik duvarında BelleRemote izni yok; telefon yerel ağdan bağlanamaz. 'Güvenlik duvarı izni'ne basın (sunucu yolu etkilenmez).	Warning: no firewall permission; the phone cannot connect over LAN. Press 'Firewall permission' (the server path is not affected).
+Vazgeç	Cancel
+Windows açılışında başlat	Start with Windows
+Ya da yerel ağdaki bir PC'nin adresini yazın (listede olmasa da olur):	Or type the address of a PC on your LAN (even if not listed):
+Yakalama: 	Capture:
+Yalnızca sunucu	Server only
+Yalnızca yerel ağ	LAN only
+Yenile	Refresh
+Yerel ağ adresi	LAN address
+Yerel ağ adresi değişti, sunucuya yeniden bildiriliyor	LAN address changed, reporting to the server again
+yerel ağda yanıt yok (	no answer on LAN (
+Yerel ağdan bağlanıyor: 	Connecting over LAN:
+Yerel ağdan bağlantı kabul et	Accept connections from the LAN
+Yol:	Path:
+Yükleniyor…	Loading…
+zaman aşımı	Timeout
+zaman aşımı/kopma: 	timeout/disconnect:

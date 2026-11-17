@@ -1,0 +1,1 @@
+﻿Bu adda dosya zaten vardı, o açıldı ¦ A file with that name already existed; opened it

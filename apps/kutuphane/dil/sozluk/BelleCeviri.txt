@@ -1,0 +1,64 @@
+# BelleCeviri (Turkce ¦ English)
+ (açıklama) ¦  (explanation)
+ · açıklama ¦  · explanation
+ · anahtar var ¦  · key set
+ · anahtar yok ¦  · no key
+ açıldı ¦  enabled
+ anahtar/ayar içe aktarıldı, dosya silindi ¦  keys/settings imported, file deleted
+ API anahtarı ¦  API key
+ çeviri,  ¦  translation, 
+ dil ¦  languages
+ kayıt ¦  entries
+ modeli ¦  model
+ sözlük servisi açık ¦  dictionary services on
+\n\nSonuçlar burada, her servis ayrı kartta. Kopyala düğmesiyle ya da kartı seçip Enter ile kopyalanır. ¦ \n\nResults appear here, one card per service. Copy with the Copy button, or select a card and press Enter.
+\n\nTDK: Türkçe kelimeler. Wiktionary: tüm diller, anlamlar İngilizce. Yapay zekâ: herhangi bir dilde açıklama ve örnek (Ayarlar'dan bir LLM açın). ¦ \n\nTDK: Turkish words. Wiktionary: all languages, meanings in English. AI: explanation and examples in any language (enable an LLM in Settings).
+Açık çeviri servisi yok.\nAyarlar > Servisler'den açın. ¦ No translation service enabled.\nEnable one in Settings > Services.
+Açık çeviri servisi yok: Ayarlar > Servisler ¦ No translation service enabled: Settings > Services
+Açık servisler:  ¦ Enabled services: 
+Açık sözlük servisi yok: Ayarlar > Servisler ¦ No dictionary service enabled: Settings > Services
+Açık:  ¦ Enabled: 
+Açılışta panodaki yazıyı al ¦ Paste clipboard text on start
+algılanan:  ¦ detected: 
+Anahtar gir ¦ Enter key
+Anahtar silindi ¦ Key deleted
+Anahtarı değiştir ¦ Change key
+Anahtarı sil ¦ Delete key
+Anahtarları dosyadan içe aktar ¦ Import keys from file
+anahtarlı ¦ key required
+anahtarsız ¦ no key
+Bağlantı kurulamadı:  ¦ Connection failed: 
+Bir kelime yazıp Ara'ya basın. ¦ Type a word and press Search.
+Çevir ¦ Translate
+Çeviri servisleri (dokun: aç/kapat) ¦ Translation services (tap: on/off)
+Çevrilecek yazı yok ¦ Nothing to translate
+Çevrilecek yazı…\nEnter: çevir ¦ Text to translate…\nEnter: translate
+Çevriliyor… ¦ Translating…
+Dil ara (ör. alman, german, de) ¦ Search language (e.g. german, de)
+Dosya bulunamadı: E:/BelleCeviri_anahtarlar.txt (satır başına kod=anahtar) ¦ File not found: E:/BelleCeviri_anahtarlar.txt (one code=key per line)
+Favori yok. Sonuç kartındaki ★ ile ekleyin. ¦ No favourites. Add with ★ on a result card.
+Favoriler dışındakileri temizle ¦ Clear all except favourites
+Geçmiş boş. ¦ History is empty.
+Geçmiş tut ¦ Keep history
+Genel ¦ General
+Hedef dil ¦ Target language
+Kaynak dil ¦ Source language
+Kaynak dil algılanmadı; önce bir kez çevirin ¦ Source language not detected; translate once first
+Kaynak yazıyı kopyala ¦ Copy source text
+Kelime ya da deyim ¦ Word or phrase
+Kopyalandı ( ¦ Copied (
+LLM ¦ LLM
+Nokia E6 için çeviri ve sözlük.\n\nServisler: Google Çeviri (resmî olmayan yol, anahtarsız), MyMemory (anahtarsız), DeepL (anahtarlı), Gemini, Groq, Mistral, OpenAI, Claude (anahtarlı, LLM); sözlük: TDK ve Wiktionary (anahtarsız). Hangisini açarsanız o çalışır; her biri ayrı kartta.\n\nAnahtarlar uygulamaya gömülü değildir; burada girilir ve yalnız telefonda saklanır. Toplu giriş: E:/BelleCeviri_anahtarlar.txt dosyasına satır başına kod=anahtar yazın (ör. gemini=..., deepl=..., groq=...); uygulama okuyup dosyayı siler.\n\nKısayollar: yazı kutusunda Enter çevirir, Sağ ok kartlara geçer, kartta Enter kopyalar, F favori, Ctrl+Q çıkış. ¦ Translator and dictionary for the Nokia E6.\n\nServices: Google Translate (unofficial, no key), MyMemory (no key), DeepL (key), Gemini, Groq, Mistral, OpenAI, Claude (key, LLM); dictionary: TDK and Wiktionary (no key). Whichever you enable runs, each in its own card.\n\nKeys are not built into the app; you enter them here and they stay on the phone. Bulk entry: put one code=key per line in E:/BelleCeviri_anahtarlar.txt (e.g. gemini=..., deepl=..., groq=...); the app reads it and deletes the file.\n\nShortcuts: Enter in the text box translates, Right arrow moves to the cards, Enter on a card copies, F favourite, Ctrl+Q quit.
+normal ¦ standard
+Son kullanılanlar ¦ Recently used
+Sonucu kopyala ¦ Copy result
+Sonuçlar ¦ Results
+Sözlük ¦ Dictionary
+Sözlük servisleri ¦ Dictionary services
+Tüm diller ¦ All languages
+Varsayılan:  ¦ Default: 
+Yapay zekâ açıklaması ¦ AI explanation
+Yeniden çevir ¦ Translate again
+yok ¦ none
+resmî olmayan yol ¦ unofficial
+ücretli ¦ paid

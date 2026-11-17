@@ -1,0 +1,9 @@
+// WhatsBelle'yi telefon acilisinda baslatir (arka plan bildirimleri icin).
+// Ayarlardan kapatilirsa uygulama acilista hemen kapanir.
+#include <startupitem.rh>
+
+RESOURCE STARTUP_ITEM_INFO whatsbelle
+{
+    executable_name = "!:\\sys\\bin\\WhatsBelle.exe";
+    recovery = EStartupItemExPolicyNone;
+}

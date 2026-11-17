@@ -1,0 +1,216 @@
+# BelleBrowser - English (araclar/dil_cikar.ps1 ile uretilir, elle duzenlemeyin)
+  (Menü > İndirilenler)	  (Menu > Downloads)
+ (bağlantı yok)	 (no connection)
+ • ekran: 	 • screen:
+ • iniyor	 • downloading
+ • kimlik: 	 • identity:
+ • parola: 	 • password:
+ • QtWebKit • Sunucu katmanı: 	 • QtWebKit • Server layer:
+ • yalnızca doğrudan bağlantıda	 • direct connection only
+ • yerleşimi bozuk siteler sunucuda tek sütuna indirilir	 • sites with broken layout are reduced to one column on the server
+ KB	 KB
+ MB	 MB
+ px genişlik	 px wide
+ tasarruf (%	 saved (
+) • basılı tut: sabitle, yer imi	) • hold: pin, bookmark
+\nadres: 	\naddress: 
+\nmod: 	\nmode: 
+\nsekme: 	\ntab: 
+\nSunucu katmanı da açamadı; site kapalı olabilir.	\nThe server layer could not open it either; the site may be down.
+\nTelefonun eski güvenlik (TLS) desteği modern HTTPS sitelerine yetmeyebilir. Sunucu katmanı bunu çözer.	\nThe phone's old security (TLS) support may not be enough for modern HTTPS sites. The server layer solves this.
+68k.news Türkiye	68k.news Turkey
+Aç	Open
+Açacak uygulama yok: 	No app to open:
+Açık	On
+Adres kopyalandı	Address copied
+Adrese git	Go to address
+Adresi kopyala	Copy address
+Akıllı (HTTPS sunucudan)	Smart (HTTPS via server)
+Akıllı mod: HTTPS sunucudan	Smart mode: HTTPS via server
+Akıllı moda geç	Switch to smart mode
+Akıllı: HTTPS sunucudan, HTTP doğrudan	Smart: HTTPS via server, HTTP direct
+Ana sayfa	Home page
+Ara ya da adres yaz	Search or type an address
+Ara: 	Search:
+Arabelleğe alınıyor… %	Buffering… %
+Arama motoru	Search engine
+Ayarlar	Settings
+Bağlantı kopyalandı	Link copied
+Bağlantı modu	Connection mode
+Bağlantıyı indir	Download link
+Bağlantıyı kopyala	Copy link
+Başka uygulamada	In another app
+Başka uygulamada aç	Open in another app
+Başlangıç sayfası	Start page
+BBC Türkçe	BBC Turkish
+Belle Remote açılamadı (kurulu mu?)	Could not open Belle Remote (is it installed?)
+Belle Remote'ta aç	Open in Belle Remote
+Bing arama	Bing search
+Boş	Empty
+Boş bırakılırsa başlangıç sayfası açılır	If left empty, the start page opens
+Boş sekme sabitlenemez	An empty tab cannot be pinned
+Bu mod için sunucu parolası gerekir	This mode needs a server password
+Bu sayfa okuma modunda açılamaz	This page cannot be opened in reading mode
+Bu sayfa sade görünümde açılamaz	This page cannot be opened in simple view
+Bu sayfada oynatılabilir video bulunamadı	No playable video found on this page
+Bu YouTube videosu (sunucuda dönüştür)	This YouTube video (convert on server)
+Bulunamadı	Not found
+Çerezler silindi	Cookies deleted
+Çerezleri sil	Delete cookies
+Çıkış	Exit
+Dahili oynatıcı açılamadı; dosyayı indirip açabilirsiniz	Could not open the built-in player; you can download and open the file
+Dahili oynatıcıda aç	Open in built-in player
+Diğer sekmeleri kapat (sabitler kalır)	Close other tabs (pinned stay)
+Doğrudan	Direct
+Doğrudan (sunucu kullanılmaz)	Direct (no server)
+Doğrudan bağlantı	Direct connection
+Dosyayı sil	Delete file
+Döviz (mobil)	Exchange rates (mobile)
+DuckDuckGo (hafif)	DuckDuckGo (light)
+Durdur	Stop
+Düşük (480 px, en hızlı)	Low (480 px, fastest)
+En fazla 6 sekme açılabilir	At most 6 tabs can be open
+En fazla 6 sekme: bu sekmede açılıyor	Max 6 tabs: opening in this tab
+Evet, sil	Yes, delete
+Floodgap (gopher ağ geçidi)	Floodgap (gopher gateway)
+FrogFind (arama + sade web)	FrogFind (search + simple web)
+FrogFind (HTTP, sade)	FrogFind (HTTP, simple)
+FrogFind ile ara (HTTP, sunucusuz çalışır)	Search with FrogFind (HTTP, works without a server)
+Gece modu	Night mode
+Geçmiş	History
+Geçmiş temizlendi	History cleared
+Geçmişi temizle	Clear history
+Girildi • sunucu katmanı kullanılabilir	Entered • server layer available
+Girilmedi • yalnızca doğrudan bağlantı	Not entered • direct connection only
+Gutenberg kitaplar	Gutenberg books
+Hafıza kartı: E:/BelleBrowser/Indirilen	Memory card: E:/BelleBrowser/Indirilen
+Hafıza kartı: E:/Downloads	Memory card: E:/Downloads
+Hakkında	About
+Hata	Error
+Hata bildir	Report a bug
+Hava	Weather
+Hava: İstanbul (wttr.in)	Weather: Istanbul (wttr.in)
+HTTP (şifresiz, sunucusuz açılan) siteler	HTTP sites (unencrypted, open without a server)
+IP adresim	My IP address
+İlk web sitesi (CERN)	First website (CERN)
+İmleç	Cursor
+İndir	Download
+İndir (sonra harici oynatıcı)	Download (then external player)
+İndirildi: 	Downloaded:
+İndirilemedi: 	Download failed:
+İndirilenler	Downloads
+İndirilenler • 	Downloads •
+İndiriliyor → 	Downloading →
+İndirme	Download
+İndirme başlatılamadı	Could not start download
+İndirme klasörü	Download folder
+İniyor: 	Downloading:
+İptal edildi	Cancelled
+İpucu: Menü > Ayarlar > Sunucu parolası ile HTTPS siteler, resim küçültme ve YouTube açılır	Tip: Menu > Settings > Server password enables HTTPS sites, image shrinking and YouTube
+Kapalı	Off
+Kapalı (yeni sekmelerde)	Off (in new tabs)
+Kopyala	Copy
+Listeden kaldır	Remove from list
+Masaüstü	Desktop
+Masaüstü sitesi	Desktop site
+Masaüstü sitesi istenecek	Desktop site will be requested
+Mobil (hafif sayfalar)	Mobile (light pages)
+Mobil (hafif, eski WebKit'e uygun sayfalar)	Mobile (light pages suited to old WebKit)
+Mobil site istenecek	Mobile site will be requested
+Modern mobil	Modern mobile
+Modern mobil (bazı siteler ağır gelebilir)	Modern mobile (some sites may be heavy)
+Ne oldu? Kısaca yazın. Uygulama günlüğü ve açık sayfanın adresi sunucuya gönderilir.	What happened? Write briefly. The app log and the open page address are sent to the server.
+NNProject (uygulamalar)	NNProject (apps)
+NPR metin haber	NPR text news
+Okuma modu	Reading mode
+Okuma modunda aç	Open in reading mode
+Orta (640 px)	Medium (640 px)
+Oynat	Play
+Önbelleği temizle	Clear cache
+Önbellek temizlendi	Cache cleared
+Önce Ayarlar'dan sunucu parolasını girin	Enter the server password in Settings first
+Örnek: 203.0.113.10 (diğer Belle uygulamalarıyla ortak)	Example: 203.0.113.10 (shared with the other Belle apps)
+Parola doğrulandı • sunucu katmanı hazır	Password verified • server layer ready
+Parola hatalı	wrong password
+Rapor gönderildi, teşekkürler	Report sent, thank you
+Rapor gönderilemedi	Could not send report
+Rapor gönderiliyor…	Sending report…
+Reddit (eski)	Reddit (old)
+Reklam engelleyici	Ad blocker
+Resim kalitesi	Image quality
+Resim kalitesi (sıkıştırılmış mod)	Image quality (compressed mode)
+Resimleri yükle	Load images
+Resmi aç	Open image
+Resmi indir	Download image
+Sabitle	Pin
+Sabitleme kaldırıldı	Unpinned
+Sabitlemeyi kaldır	Unpin
+Sade görünüm	Simple view
+Sade görünüm sunucuda hazırlanır: Ayarlar'dan sunucu parolasını girin	Simple view is prepared on the server: enter the server password in Settings
+Sade görünümde aç	Open in simple view
+Sayfa açılamadı	Could not open page
+Sayfa sunucuda hazırlanıyor (birkaç saniye)…	Preparing the page on the server (a few seconds)…
+Sayfada bul	Find in page
+Sayfaları sade görünümde aç	Open pages in simple view
+Sayfayı yenile	Reload page
+Sekme sabitlendi • uygulama açılınca yeniden açılır	Tab pinned • reopens when the app starts
+Sekmeler	Tabs
+Sekmeler (	Tabs (
+Sekmeyi kapat	Close tab
+Sertifika hatalarını yok say	Ignore certificate errors
+Sıkıştırılmış	Compressed
+Sıkıştırılmış (her şey sunucudan)	Compressed (everything via server)
+Sıkıştırılmış mod açık • adres çubuğundaki şimşek ve tasarruf bilgisi çalıştığını gösterir	Compressed mode on • the lightning and savings in the address bar show it is working
+Sıkıştırılmış mod: tüm sayfalar sunucudan	Compressed mode: all pages via server
+Sıkıştırılmış: her şey sunucudan, resimler küçük	Compressed: everything via server, small images
+Sil	Delete
+Sorunu yazın; günlük sunucuya gönderilir	Describe the problem; the log is sent to the server
+Sunucu adresi	Server address
+Sunucu katmanı kapalı • Menü > Ayarlar	Server layer off • Menu > Settings
+Sunucu parolası	Server password
+Sunucu parolası gir	Enter server password
+Sunucudan	Via server
+Sunucuya ulaşılamadı	Could not reach the server
+Symbian için uygun siteler	Sites suited to Symbian
+Symbian TLS 1.2 yaması	Symbian TLS 1.2 patch
+Tamam	OK
+Tarayıcı kimliği	Browser identity
+TDK Sözlük	TDK Dictionary
+Telefon: C:/Data/Downloads	Phone: C:/Data/Downloads
+Telefondaki diğer Belle uygulamalarında kullandığınız sunucu parolası. HTTPS siteler, resim küçültme, okuma modu ve YouTube için gerekir.	The server password you use in the other Belle apps. Needed for HTTPS sites, image shrinking, reading mode and YouTube.
+TextFiles arşivi	TextFiles archive
+The Old Net (arşiv)	The Old Net (archive)
+Throwback yer imleri	Throwback bookmarks
+Tüm geçmiş silinsin mi?	Delete all history?
+Tüm sitelerden çıkış yapılır	Signs you out of all sites
+Vazgeç	Cancel
+Video (	Video (
+Video hazırlanamadı	Could not prepare video
+Video oynatılamadı: 	Could not play video:
+Video sunucuda hazırlanıyor…	Preparing the video on the server…
+Videolar	Videos
+Videoyu indir	Download video
+Videoyu oynat	Play video
+Videoyu oynat (sunucudan)	Play video (via server)
+Vikipedi	Wikipedia
+Vikipedi (mobil)	Wikipedia (mobile)
+Vikipedi'de ara	Search Wikipedia
+VK mobil	VK mobile
+Wiby (hafif siteler)	Wiby (light sites)
+Wiby (HTTP, hafif siteler)	Wiby (HTTP, light sites)
+Yapıştır	Paste
+Yazı boyutu	Text size
+Yazma modu • bitince orta tuşa basın	Typing mode • press the center key when done
+Yeni sekme	New tab
+Yeni sekmede aç	Open in new tab
+Yeniden dene	Retry
+Yer imi ekle	Add bookmark
+Yer iminden çıkar	Remove bookmark
+Yer iminden çıkarıldı	Bookmark removed
+Yer imine ekle	Bookmark
+Yer imine eklendi	Bookmarked
+Yer imleri	Bookmarks
+Yer imleri güncellendi	Bookmarks updated
+YouTube videoları sunucuda dönüştürülür: Ayarlar'dan sunucu parolasını girin	YouTube videos are converted on the server: enter the server password in Settings
+Yükleniyor…	Loading…
+Yüksek (960 px)	High (960 px)

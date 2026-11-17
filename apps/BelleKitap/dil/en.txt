@@ -1,0 +1,112 @@
+# BelleKitap - English (araclar/dil_cikar.ps1 ile uretilir, elle duzenlemeyin)
+ GB	 GB
+ KB	 KB
+ kitap	 books
+ kitap bulundu	 books found
+ MB	 MB
+4 GB üstü dosya zip'e eklenemez	Files over 4 GB cannot be added to a zip
+Aç (indirilmiş)	Open (downloaded)
+Açılamadı (bozuk veri): 	Could not open (corrupt data):
+Açılamadı: 	Could not open:
+Açılıyor…	Opening…
+ada göre	by name
+Alınamadı: 	Could not get:
+Ara	Search
+Aranıyor…	Searching…
+Arşiv açılamadı	Could not open archive
+Arşiv okunamadı	Could not read archive
+Arşivde çok fazla dosya (65535 sınırı)	Too many files in archive (65535 limit)
+Başka bir indirme sürüyor	Another download is in progress
+Başlık ya da yazar (boş: tümü)	Title or author (empty: all)
+Baştan başla	Start over
+Batı (ISO-8859-1)	Western (ISO-8859-1)
+Bölüm 	Chapter 
+Buraya yer imi ekle	Bookmark this place
+CR (eski Mac)	CR (old Mac)
+CRLF (Windows)	CRLF (Windows)
+Ctrl+Q	Ctrl+Q
+çÇğĞıIİöÖşŞüÜâÂîÎûÛ	çÇğĞıIİöÖşŞüÜâÂîÎûÛ
+Çıkış	Exit
+Daha fazla…	More…
+Desteklenmeyen AES şifresi: 	Unsupported AES encryption: 
+Desteklenmeyen sıkıştırma (	Unsupported compression (
+Dil: 	Language: 
+Enter	Enter
+Eser ya da yazar (ör. Ömer Seyfettin)	Work or author (e.g. Ömer Seyfettin)
+Eserde metin bulunamadı	No text found in the work
+Gece	Night
+Gece mavisi	Night blue
+Geçerli bir zip değil	Not a valid zip
+Geçersiz yanıt	Invalid response
+Git	Go
+Görünüm	Appearance
+Gutenberg (dünya, EPUB)	Gutenberg (world, EPUB)
+Gutenberg · EPUB · telifsiz	Gutenberg · EPUB · public domain
+Gündüz	Day
+Günlüğü göster	Show log
+Günlük	Log
+Hakkında	About
+İçindekiler	Contents
+İndir ve aç	Download and open
+İndirildi: 	Downloaded:
+İndirilemedi: 	Download failed:
+İndirme başlatılamadı	Could not start download
+İnternetten kitap bul (Gutenberg, Vikikaynak)	Find books online (Gutenberg, Wikisource)
+İptal edildi	Cancelled
+Kaydedilemedi	Could not save
+Kenar boşluğu: 	Margins: 
+Kitabın başı	Start of book
+Kitabın sonu	End of book
+Kitap bul	Find books
+Kitap dili	Book language
+Kitap ya da yazar (boş: en popüler)	Book or author (empty: most popular)
+Kitap yok.\nÜstteki dünya düğmesiyle internetten ücretsiz kitap bulun (Gutenberg, Vikikaynak) ya da EPUB dosyalarını E:/Kitaplar klasörüne kopyalayıp yenileyin.	No books.\nUse the globe button above to find free books online (Gutenberg, Wikisource), or copy EPUB files to E:/Kitaplar and refresh.
+Kitaplar aranıyor…	Searching for books…
+Kitapları yeniden tara	Rescan books
+Kitaplığım	My library
+Kitaplık	Library
+Kitaplıkta ara	Search library
+LF (Unix)	LF (Unix)
+Liste yazı boyutu	List font size
+Liste yazı boyutu: 	List font size: 
+Nokia E6 için e-kitap okuyucu.\n\nEPUB (2 ve 3) ve kitap klasörlerindeki TXT dosyaları. Kitaplar hafıza kartında ve C:/Data altında aranır; EPUB'ları örneğin E:/Kitaplar klasörüne kopyalayıp Tara'ya basın.\n\nOkurken: ekranın sağına dokun / Boşluk / Aşağı: sonraki sayfa, soluna dokun / Yukarı: önceki sayfa, ortasına dokun: menü çubukları. , ve . önceki/sonraki bölüm, T içindekiler, B yer imi, Y yer imleri, + - yazı boyutu, N tema, Geri: kitaplık.\n\nKaldığınız yer, yer imleri ve okuma yüzdesi kitap başına saklanır. DRM'li (şifreli) EPUB'lar açılamaz.	E-book reader for the Nokia E6.\n\nEPUB (2 and 3) and TXT files in book folders. Books are searched on the memory card and under C:/Data; copy EPUBs to e.g. E:/Kitaplar and press Scan.\n\nWhile reading: tap the right side / Space / Down: next page, tap the left side / Up: previous page, tap the middle: toolbars. , and . previous/next chapter, T contents, B bookmark, Y bookmarks, + - font size, N theme, Back: library.\n\nYour place, bookmarks and reading percentage are saved per book. DRM-protected EPUBs cannot be opened.
+Oku	Read
+Okunamadı: 	Could not read:
+okunmadı	Unread
+Otomatik	Automatic
+Parola gerekli: 	Password required: 
+Parola yanlış ya da veri bozuk: 	Wrong password or corrupt data: 
+Parola yanlış: 	Wrong password: 
+Sepya	Sepia
+Sırala: 	Sort: 
+Sil	Delete
+son okunan	recently read
+Sonuç yok	No results
+Şifreli veri bozuk: 	Encrypted data corrupt: 
+Tamam	OK
+taranıyor… 	scanning… 
+Tüm diller	All languages
+tümü	All
+Türkçe (ISO-8859-9)	Turkish (ISO-8859-9)
+Türkçe (Windows-1254)	Turkish (Windows-1254)
+Vazgeç	Cancel
+Vikikaynak (Türkçe)	Wikisource (Turkish)
+Vikikaynak · Türkçe · metin	Wikisource · Turkish · text
+Vikikaynak'ta aramak için yazar ya da eser adı yazın (ör. Ömer Seyfettin, Kaşağı, Nutuk).	To search Wikisource, type an author or work (e.g. Ömer Seyfettin, Kaşağı, Nutuk).
+Yalnızca indir	Download only
+yazara göre	by author
+Yazı büyüt (+)  •  şu an 	Larger text (+)  •  now 
+Yazı küçült (-)	Smaller text (-)
+Yazılamadı: 	Could not write:
+Yeniden indir	Download again
+Yer imi eklendi: 	Bookmark added: 
+Yer imi silindi	Bookmark deleted
+Yer imleri	Bookmarks
+Yerel başlık bozuk: 	Local header corrupt:
+ZIP64 arşivleri desteklenmiyor	ZIP64 archives are not supported
+ZIP64 arşivlerine eklenemez	Cannot add to ZIP64 archives
+Zip dizini bozuk	Zip directory corrupt
+Zip dizini bulunamadı (bozuk ya da zip değil)	Zip directory not found (corrupt or not a zip)
+Zip dizini yazılamadı	Could not write zip directory
+Zip yazılamadı	Could not write zip
+Zip yazılamadı (yer kalmadı mı?)	Could not write zip (out of space?)

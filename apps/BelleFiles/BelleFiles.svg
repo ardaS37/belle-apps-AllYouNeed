@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="z" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6FD3FF"/><stop offset="1" stop-color="#1E6FB8"/></linearGradient>
+    <linearGradient id="k" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFD54F"/><stop offset="1" stop-color="#FFA000"/></linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#z)"/>
+  <!-- klasor -->
+  <path d="M7 22 H22 L26 26 H45 V54 H7 Z" fill="#E08E00"/>
+  <path d="M7 29 H45 V54 H7 Z" fill="url(#k)"/>
+  <!-- not kagidi -->
+  <path d="M27 20 H44 L52 28 V58 H27 Z" fill="#fff" stroke="#1E6FB8" stroke-width="1.5"/>
+  <path d="M44 20 V28 H52" fill="#CFEFFF" stroke="#1E6FB8" stroke-width="1.5"/>
+  <rect x="31" y="34" width="16" height="2.6" rx="1.2" fill="#1E6FB8"/>
+  <rect x="31" y="40" width="16" height="2.6" rx="1.2" fill="#1E6FB8"/>
+  <rect x="31" y="46" width="11" height="2.6" rx="1.2" fill="#1E6FB8"/>
+  <!-- Drive bulutu -->
+  <circle cx="20" cy="15" r="6" fill="#fff"/>
+  <circle cx="28" cy="11" r="7.5" fill="#fff"/>
+  <circle cx="36" cy="15" r="5.5" fill="#fff"/>
+  <rect x="17" y="14" width="22" height="6.5" rx="3" fill="#fff"/>
+  <path d="M28 8.5 L32 13 H29.5 V17.5 H26.5 V13 H24 Z" fill="#1E6FB8"/>
+</svg>

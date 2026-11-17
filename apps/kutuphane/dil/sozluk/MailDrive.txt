@@ -1,0 +1,120 @@
+# Mail ve Drive
+ olarak indir ¦  download as
+ posta ¦  messages
+\n\n… (devamı için dosyayı indirin) ¦ \n\n… (download the file to read more)
+\n\nDrive'ın çöp kutusundan 30 gün içinde geri alınabilir. ¦ \n\nIt can be restored from Drive's trash within 30 days.
+\nBilgi:  ¦ \nInfo:
+\nTarih:  ¦ \nDate:
+” içine ¦ ”
+‹ Geri ¦ ‹ Back
++ Klasör ¦ + Folder
+>\nKime:  ¦ >\nTo:
+↩ Yanıtla ¦ ↩ Reply
+★ Yıldızla ¦ ★ Star
+★ yıldızlı ¦ ★ starred
+✎ Yaz ¦ ✎ Compose
+Alıcı adresi girin ¦ Enter a recipient address
+Arama:  ¦ Search:
+Arşiv ¦ Archive
+Arşivlendi ¦ Archived
+Bu adrese ulaşılamadı. Adres kaydedilmedi. ¦ This address is unreachable. Address not saved.
+Bu dosyayı açacak uygulama yok ¦ No app can open this file
+Bu klasör boş. ¦ This folder is empty.
+Bu sunucunun parolası: ¦ Password for this server:
+Burada posta yok. ¦ No mail here.
+Çık ¦ Exit
+Çıkmak için Menü → Çık ¦ To exit: Menu → Exit
+Çöp ¦ Trash
+Çöp kutusu ¦ Trash
+Çöp kutusuna taşındı ¦ Moved to trash
+Çöpe at ¦ Move to trash
+Çöpe atıldı ¦ Moved to trash
+Çöpe atılsın mı? ¦ Move to trash?
+Daha eski postalar ¦ Older messages
+Daha fazla ¦ More
+Dosya alınamadı ¦ Could not get file
+Dosya okunamadı ¦ Could not read file
+Drive'ım içine ¦ My Drive
+Ek:  ¦ Attachment:
+Ekler:  ¦ Attachments:
+Eski kopyayı aç ¦ Open old copy
+Gelen ¦ Inbox
+Gelen kutusu ¦ Inbox
+Gelen kutusuna taşındı ¦ Moved to inbox
+Giden ¦ Sent
+Google Drive sunucuda bağlı değil. Menü → Web sürümü üzerinden yeniden bağlayın. ¦ Google Drive is not connected on the server. Reconnect via Menu → Web version.
+Gönder ➤ ¦ Send ➤
+Gönderildi ¦ Sent
+Gönderilemedi:  ¦ Could not send:
+Gönderilen ¦ Sent
+Göster ¦ Show
+Hata  ¦ Error
+Hazırlanıyor… ¦ Preparing…
+İlet ¦ Forward
+İlet ↪ ¦ Forward ↪
+İndirildi ¦ Downloaded
+İndirildi:  ¦ Downloaded:
+İndirilemedi:  ¦ Download failed:
+İndirilenler:  ¦ Downloads:
+İndiriliyor:  ¦ Downloading:
+İptal edildi ¦ Cancelled
+Kalıcı olarak silindi ¦ Permanently deleted
+Kalıcı sil ¦ Delete forever
+Kimden:  ¦ From:
+Kime ¦ To
+kime:  ¦ to:
+Klasör oluşturuldu ¦ Folder created
+Klasörler ¦ Folders
+Konu ¦ Subject
+Metin olarak oku ¦ Read as text
+Okunamadı ( ¦ Could not read (
+Okunmadı ¦ Unread
+Okunmadı olarak işaretlendi ¦ Marked as unread
+Olmadı ¦ Failed
+Oluştur ¦ Create
+Önce süren aktarım bitsin ¦ Wait for the current transfer to finish
+Önce süren indirme bitsin ¦ Wait for the current download to finish
+Önizleme yükleniyor… ¦ Loading preview…
+Parola hatalı, tekrar deneyin. ¦ Wrong password, try again.
+Parolayı sıfırla ¦ Reset password
+Paylaşılan ¦ Shared
+Postanızı yazın ¦ Write your message
+Resimler gizlendi (veri tasarrufu) ¦ Images hidden (data saver)
+Sonuç yok. ¦ No results.
+Spam ¦ Spam
+Spam değil ¦ Not spam
+Sunucu adresi (ör. 203.0.113.10). Drive da bu adresi kullanır: ¦ Server address (e.g. 203.0.113.10). Drive uses this address too:
+Sunucu adresi (ör. 203.0.113.10). Mail de bu adresi kullanır: ¦ Server address (e.g. 203.0.113.10). Mail uses this address too:
+Sunucu adresi: ¦ Server address:
+Sunucu adresi:  ¦ Server address:
+Sunucu parolası hatalı ¦ Wrong server password
+Sunucu parolası hatalı. Menü → Parolayı sıfırla. ¦ Wrong server password. Menu → Reset password.
+Sunucu parolası: ¦ Server password:
+Sunucu:  ¦ Server:
+Sunucuya ulaşılamadı (%1).\nSunucu adresini değiştirmek ister misiniz? ¦ Could not reach the server (%1).\nDo you want to change the server address?
+Sunucuya ulaşılamadı. İnternet bağlantısını ya da sunucu adresini (Menü → Sunucu adresi) kontrol edin. ¦ Could not reach the server. Check your internet connection or the server address (Menu → Server address).
+Sunucuya ulaşılamadı. İnternet bağlantısını ya da sunucu adresini (Menü) kontrol edin. ¦ Could not reach the server. Check your internet connection or the server address (Menu).
+Taslak silinsin mi? ¦ Discard draft?
+Tekrar dene ¦ Try again
+Telefona yazılamadı ¦ Could not write to the phone
+Telefona yazılamadı:  ¦ Could not write to the phone:
+Telefonda:  ¦ On phone:
+Telefondaki kopya ESKİ — Drive'da daha yeni sürüm var.\n ¦ The copy on the phone is OLD — Drive has a newer version.\n
+Tümünü yanıtla ¦ Reply all
+Üst klasör ¦ Parent folder
+Web sürümünü aç ¦ Open web version
+Yanıt okunamadı ¦ Could not read the response
+Yanıtla ¦ Reply
+Yazdıklarınız kaydedilmeyecek. ¦ What you wrote will not be saved.
+Yeni klasör ¦ New folder
+Yeni posta ¦ New message
+Yeni sürümü indir ¦ Download new version
+Yeniden indir ¦ Download again
+Yıldız kaldırıldı ¦ Star removed
+Yıldızı kaldır ¦ Remove star
+Yıldızlandı ¦ Starred
+Yıldızlı ¦ Starred
+Yüklendi ¦ Uploaded
+Yüklenecek dosya ¦ File to upload
+Yüklenemedi:  ¦ Upload failed:
+Yükleniyor:  ¦ Uploading:

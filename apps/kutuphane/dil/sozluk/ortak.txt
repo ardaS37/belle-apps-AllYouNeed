@@ -1,0 +1,101 @@
+# Ortak metinler (birden cok uygulamada). Bicim: Turkce ¦ English
+Ayarlar ¦ Settings
+Çalışıyor… ¦ Working…
+Çıkış ¦ Exit
+Çıkış yap ¦ Sign out
+Evet ¦ Yes
+Evet, sil ¦ Yes, delete
+Hayır ¦ No
+Kapat ¦ Close
+Kapalı ¦ Off
+Açık ¦ On
+Sil ¦ Delete
+Tamam ¦ OK
+Vazgeç ¦ Cancel
+İptal ¦ Cancel
+Kaydet ¦ Save
+Kaydedildi ¦ Saved
+Geri ¦ Back
+Yenile ¦ Refresh
+Ara ¦ Search
+Aç ¦ Open
+Gönder ¦ Send
+Gönderiliyor... ¦ Sending...
+Gönderiliyor… ¦ Sending…
+Yükleniyor... ¦ Loading...
+Yükleniyor… ¦ Loading…
+Bağlanıyor... ¦ Connecting...
+Bağlanıyor… ¦ Connecting…
+Hata ¦ Error
+Hata:  ¦ Error:
+Seçenekler ¦ Options
+Menü ¦ Menu
+Yardım ¦ Help
+Hakkında ¦ About
+Sürüm ¦ Version
+Sunucu ¦ Server
+Sunucu adresi ¦ Server address
+Sunucu parolası ¦ Server password
+Parola ¦ Password
+Karanlık tema ¦ Dark theme
+Tema ¦ Theme
+Rapor gönder ¦ Send report
+Sorun bildir ¦ Report a problem
+Günlüğü temizle ¦ Clear log
+Günlük temizlendi ¦ Log cleared
+Rapor gönderildi ¦ Report sent
+Ne oldu? (isteğe bağlı) ¦ What happened? (optional)
+Sunucuya bağlanılamadı. İnternet bağlantısını kontrol edin. ¦ Could not connect to the server. Check your internet connection.
+Sunucu parolası hatalı. Ayarlardan parolayı kontrol edin. ¦ Wrong server password. Check it in Settings.
+Sunucudan geçersiz yanıt geldi. ¦ Invalid response from the server.
+Sunucu ayarları kaydedildi ¦ Server settings saved
+Sunucu adresini girin. ¦ Enter the server address.
+Fotoğraf ¦ Photo
+Video ¦ Video
+Ses ¦ Audio
+Belge ¦ Document
+Konum ¦ Location
+Kişiler ¦ Contacts
+Kişi kartı ¦ Contact card
+Sohbetler ¦ Chats
+Posta ¦ Mail
+Dosyalar ¦ Files
+Müzik ¦ Music
+Bugün ¦ Today
+Dün ¦ Yesterday
+ dk ¦  min
+ sn ¦  s
+Ses dosyası ¦ Audio file
+Sesli mesaj ¦ Voice message
+Çıkartma ¦ Sticker
+Medya ¦ Media
+Kopyalandı ¦ Copied
+Kopyala ¦ Copy
+Yapıştır ¦ Paste
+Tümü ¦ All
+Hiçbiri ¦ None
+Düzenle ¦ Edit
+Yeni ¦ New
+Ekle ¦ Add
+Kaldır ¦ Remove
+Değiştir ¦ Change
+Devam ¦ Continue
+Bitti ¦ Done
+İndir ¦ Download
+İndiriliyor… ¦ Downloading…
+Yükle ¦ Upload
+Paylaş ¦ Share
+Ad ¦ Name
+Boyut ¦ Size
+Tarih ¦ Date
+Tür ¦ Type
+Klasör ¦ Folder
+Dosya ¦ File
+Bağlı ¦ Connected
+Bağlı değil ¦ Not connected
+Dil değişti; uygulamayı yeniden açın. / Language changed; restart the app. ¦ Language changed; restart the app. / Dil değişti; uygulamayı yeniden açın.
+ B ¦  B
+ KB ¦  KB
+ MB ¦  MB
+ GB ¦  GB
+Başlatılıyor ¦ Starting

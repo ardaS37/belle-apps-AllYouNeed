@@ -1,0 +1,150 @@
+# BelleVideo - English (araclar/dil_cikar.ps1 ile uretilir, elle duzenlemeyin)
+   (0 tuşu: baştan)	   (0 key: from start)
+   (V: videoya dön)	   (V: back to video)
+  •  dosya bulunamadı	  •  file not found
+  •  izlendi	  •  watched
+ • karışık	 • shuffle
+ • tek tekrar	 • repeat one
+ • tümünü tekrarla	 • repeat all
+ bulundu	 found
+ dosya	 files
+ dosya listeye eklendi	 files added to the list
+ GB	 GB
+ KB	 KB
+ MB	 MB
+ sn	 s
+ video	 videos
+(günlük boş)	(log empty)
+, sonraki için N	, N for next
+. Star Player'ın (Paul Wallace / Allstar Software, MIT lisansı) yeteneklerinden yola çıkılarak E6 için baştan yazıldı. Videolar telefonda kalır, hiçbir sunucuya gönderilmez.\nİndirilenler: 	. Rewritten from scratch for the E6, inspired by the features of Star Player (Paul Wallace / Allstar Software, MIT license). Videos stay on the phone and are never sent to any server.\nDownloads:
+\nD: dış oynatıcı   N: sonraki	\nD: external player   N: next
+0: baştan   •   1-9: videonun %10-%90'ı   •   D: dış oynatıcı   •   Geri: kapat\n	0: from start   •   1-9: 10%-90% of the video   •   D: external player   •   Back: close\n
+Aç	Open
+Açılamadı	Could not open
+Adresi kutuya al	Put address in the box
+Akış	stream
+Arama sonuçları	Search results
+arka plan	background
+Arka planda ses devam ediyor	Audio continues in the background
+Aşağı taşı	Move down
+Ayarlar	Settings
+Ayarlar'da 'arka planda sesle devam' kapalı	'Continue audio in background' is off in Settings
+B: arka plana al (ses sürer)   •   N / P: sonraki / önceki   •   R: tekrar   •   K: karışık\n	B: background (audio continues)   •   N / P: next / previous   •   R: repeat   •   K: shuffle\n
+Başka bir indirme sürüyor	Another download is in progress
+Başlık yazılamadı	Could not write header
+Baştan oynat	Play from start
+Bitti	Done
+Bitti. N: sonraki	Finished. N: next
+Bitti. Tekrar oynatmak için Enter	Finished. Enter to play again
+bu biçimde ses ayrılamıyor	audio cannot be extracted from this format
+Bu dosyayı tekrarla	Repeat this file
+Bu klasörde video ya da ses dosyası yok	No video or audio files in this folder
+Buradan oynat	Play from here
+Buradan sadece ses ile çal	Play audio only from here
+'de kaldı	 — left off
+Dış oynatıcıda aç	Open in external player
+Doğrudan dosyadan oynat	Play directly from file
+Dosya açılamadı	Could not open file
+Dosya adı verilemedi	Could not name the file
+Dosyayı sil	Delete file
+Duraklatıldı	Paused
+Duraklatıldı: kilitte bu videonun sesi çalınamadı	Paused: this video's audio cannot play while locked
+Enter / Boşluk: oynat-duraklat   •   Sol / Sağ: geri / ileri sar (basılı tut: hızlı)\n	Enter / Space: play-pause   •   Left / Right: rewind / forward (hold: fast)\n
+Eşleşen video yok	No matching videos
+Evet, dosyayı sil	Yes, delete file
+Evet, temizle	Yes, clear
+Favori	Favourite
+Favori akış ya da indirilen dosya yok.\nAdresi yazıp İzle ya da İndir'e basın.	No favourite streams or downloads.\nType an address and press Watch or Download.
+Favori akışlar	Favourite streams
+Favorilerden sil	Remove from favourites
+Favorilere eklendi	Added to favourites
+Günlüğü gizle	Hide log
+Günlüğü göster	Show log
+Hafıza kartı ve telefon belleği	Memory card and phone memory
+Hakkında	About
+Her dosyanın kaldığı saniyeyi hatırlar	Remembers where you left off in each file
+İndir	Download
+İndirildi: 	Downloaded:
+İndirilemedi: 	Download failed:
+İndirilenler	Downloads
+İndirilenler (	Downloads (
+İndiriliyor	Downloading
+İndirme başladı	Download started
+İndirme iptal edildi	Download cancelled
+internet videosu izle ya da indir	watch or download an internet video
+İzle	Watch
+Kaldığı yerden devam et	Resume where you left off
+Kaldığı yerden: 	Resume from:
+Kaldığın yerden	Resume
+karışık	shuffle
+Karışık çalma açık	Shuffle on
+Karışık çalma kapalı	Shuffle off
+Kilitte ve arka planda sesle devam	Continue audio when locked or in background
+Klasörde bitince sonrakine geç	Play next in folder when finished
+Klasörler	Folders
+Kopyalama hatası	Copy error
+Kuyrukta başka dosya yok	No more files in the queue
+Liste	List
+Liste boş	List is empty
+Liste boş.\nVideolar ya da Klasörler'de bir dosyada + tuşuna basın ya da sağdaki üç nokta düğmesinden \"Listeye ekle\"yi seçin.	The list is empty.\nIn Videos or Folders press + on a file, or choose \"Add to list\" from the three-dot button.
+Liste temizlensin mi? (dosyalar silinmez)	Clear the list? (files are not deleted)
+Liste'de her zaman sonrakine geçilir	The list always plays the next item
+Listeden çıkar	Remove from list
+Listeden çıkarıldı	Removed from list
+Listelerde: Boşluk seçenekler, + listeye ekle, harf yazınca arama	In lists: Space options, + add to list, type letters to search
+Listeye ekle	Add to list
+Listeye eklendi (	Added to list (
+MP4 değil ya da parçalı MP4	Not MP4 or fragmented MP4
+Okuma hatası	Read error
+Oynat	Play
+Oynatıcı tuşları	Player keys
+Oynatma sorunlarında bakmak için	For checking playback problems
+Sadece ses	Audio only
+Sadece ses (arka planda)	Audio only (background)
+Sadece ses çalıyor	Playing audio only
+Sadece ses ile çal	Play audio only
+Sadece ses: video çözülmüyor	Audio only: video cannot be decoded
+Sarma adımı	Seek step
+Ses	Audio
+Ses biçimi desteklenmiyor (	Audio format not supported (
+Ses çalınamadı: 	Could not play audio:
+Ses dosyası yazılamadı	Could not write audio file
+Ses hazır (	Audio ready (
+Ses hazırlanıyor %	Preparing audio %
+Ses izi ayrılamadı: 	Could not extract audio track:
+Ses izi boş	Audio track empty
+Ses izi bulunamadı	Audio track not found
+Ses tablosu tutarsız	Audio table inconsistent
+Ses: %	Volume: %
+Silindi	Deleted
+Silinemedi	Could not delete
+Silinsin mi? 	Delete?
+Sol/sağ tuşu ve 10 sn düğmeleri	Left/right keys and the 10 s buttons
+Sonuncu dosya	Last file
+Sorun giderme: yerel sunucuyu atlar (E6'da genelde yalnızca ses gelir)	Troubleshooting: skips the local server (on the E6 usually only audio plays)
+Sunucu hatası (	Server error (
+Tarama başladı	Scan started
+Taranıyor... 	Scanning...
+Tekrar kapalı	Repeat off
+Telefonda video bulunamadı.\nYenile düğmesiyle yeniden taratabilir ya da Klasörler'den gezebilirsiniz.	No videos found on the phone.\nRescan with the Refresh button or browse in Folders.
+Tüm videolar	All videos
+Tümünü listeye ekle	Add all to list
+Tümünü oynat (	Play all (
+Tümünü sadece ses ile çal	Play all as audio only
+Tümünü tekrarla	Repeat all
+Vazgeç	Cancel
+Video ara	Search videos
+Video başlığı çok büyük	Video header too large
+Video durur, ses aynı yerden sürer; dönünce görüntü geri gelir	Video stops, audio continues from the same spot; the picture returns when you come back
+Video oynatılamadı (biçim desteklenmiyor olabilir).\nS: sadece ses   D: dış oynatıcı   N: sonraki	Could not play the video (format may be unsupported).\nS: audio only   D: external player   N: next
+Videolar	Videos
+Videolar aranıyor...	Searching videos...
+Videolar yeniden taranıyor	Rescanning videos
+Videoları yeniden tara	Rescan videos
+Videoya dönüldü	Back to video
+Yalnızca http/https adresleri indirilebilir	Only http/https addresses can be downloaded
+Yukarı / Aşağı ve ses tuşları: ses   •   F: tam ekran   •   S: sadece ses   •   V: videoya dön\n	Up / Down and volume keys: volume   •   F: full screen   •   S: audio only   •   V: back to video\n
+Yukarı taşı	Move up
+Yükleniyor...	Loading...
+Zaten favorilerde	Already in favourites
+Zaten listede	Already in the list

@@ -1,0 +1,214 @@
+# BelleCast - English (araclar/dil_cikar.ps1 ile uretilir, elle duzenlemeyin)
+  •  kaldı: 	  •  left: 
+  •  yenileniyor…	  •  refreshing…
+ (akış)	 (stream)
+ (indirilen)	 (downloaded)
+ (varsayılan)	 (default)
+ • kaldığı yerden 	 • resume from 
+ • popüler	 • popular
+ bölüm	 episodes
+ dakika	 minutes
+ dakika sonra duracak	 min until stop
+ dk	 min
+ dk kaldı	 min left
+ dk önce	 min ago
+ favori	 favourites
+ GB	 GB
+ haber	 stories
+ haber)	 stories)
+ istasyon	 stations
+ KB	 KB
+ MB	 MB
+ piksel	 pixels
+ podcast yenileniyor…	 podcasts refreshing…
+ ülke	 countries
+ yeni	 new
+\nİndirilenler: 	\nDownloads: 
+\u25CF Kayıtlar	\u25CF Recordings
+★ Aboneliklerim	★ Subscriptions
+★ Favoriler	★ Favourites
+30 sn geri	Back 30 s
+30 sn ileri	Forward 30 s
+Abone ol	Subscribe
+Abone olundu: 	Subscribed:
+Abonelik bırakıldı: 	Unsubscribed: 
+Abonelik yok	No subscriptions
+Abonelik yok.\nPopüler listesine bakın ya da arayın (S); podcast'i açıp ★ ile abone olun.	No subscriptions.\nBrowse the popular list or search (S); open a podcast and subscribe with ★.
+Aboneliklerdeki yeni bölümleri denetle	Check subscriptions for new episodes
+Abonelikten çık	Unsubscribe
+Aç	Open
+Aç (akışta göster)	Enable (show in feed)
+Açık	On
+Açık kaynak yok (K: kaynaklar)	No sources enabled (K: sources)
+Açıklama	Description
+Açıklama yok	No description
+Ad (boş: beslemeden)	Name (empty: from feed)
+Ad ya da konu (ör. bilim, tarih, teknoloji)	Name or topic (e.g. science, history, tech)
+Ad, şehir ya da tür (ör. kral, ankara, jazz)	Name, city or genre (e.g. bbc, london, jazz)
+Adresle istasyon ekle	Add station by address
+Akışta kaldığı yere atlanamaz; indirilirse kaldığı yerden devam eder	Streams cannot resume; download it to continue where you left off
+Aktarma açık: şarkı adı görünür, HTTPS ve eski yayınlar çalar	Relay on: song titles shown, HTTPS and old streams play
+Aktarma kapalı: yayın doğrudan oynatıcıya verilir	Relay off: stream goes straight to the player
+Alınamadı: 	Could not get:
+Ara	Search
+Ara…	Search…
+Arama: 	Search:
+Aşağı taşı	Move down
+Ayarlar	Settings
+Bağlanıyor…	Connecting…
+Başka ülke: Radyo > Ülkeler > … > Ülkem yap	Other country: Radio > Countries > … > Set as my country
+Baştan başlat	Start from beginning
+Batı (ISO-8859-1)	Western (ISO-8859-1)
+Besleme adresi (https://…/rss)	Feed address (https://…/rss)
+Besleme alınamadı: 	Feed could not be loaded: 
+Besleme deneniyor…	Trying feed…
+Besleme okunamadı: 	Feed could not be read: 
+biçim ?	format ?
+Bilgi ve adres	Info and address
+Boşluk	Space
+Bölüm yok	No episodes
+Bölümleri aç	Open episodes
+Bu bölümde ses dosyası yok	This episode has no audio file
+Bu haberin özeti yok. Tam metin (T) ya da tarayıcıda aç (O).	No summary. Get full text (T) or open in browser (O).
+Bu podcast'in RSS beslemesi yok	This podcast has no RSS feed
+Canlı yayın	Live
+CR (eski Mac)	CR (old Mac)
+CRLF (Windows)	CRLF (Windows)
+Çal	Play
+Çalar çubuğundaki saat düğmesinin süresi	Duration of the clock button on the player bar
+Çalınamadı: 	Could not play:
+Çalma listesi okunuyor…	Reading playlist…
+çÇğĞıIİöÖşŞüÜâÂîÎûÛ	çÇğĞıIİöÖşŞüÜâÂîÎûÛ
+Çıkış	Exit
+Dinle	Listen
+Dinle (kaldığı yerden)	Listen (resume)
+Dinlendi olarak işaretle	Mark as played
+Dinlenmedi olarak işaretle	Mark as unplayed
+Duraklat	Pause
+Durdur ve kapat	Stop and close
+dün 	Yesterday
+Dünyada popüler	Popular worldwide
+Ekle	Add
+Enter	Enter
+Favori istasyon yok.\nAra (S), ülkelere göz at ya da adres ekle (N); istasyonun … menüsünden Favorilere ekle.	No favourite stations.\nSearch (S), browse countries or add an address (N); use the station's … menu to add favourites.
+Favoriler	Favourites
+Favorilerden çıkar	Remove from favourites
+Favorilerden çıkarıldı: 	Removed from favourites: 
+Favorilere ekle	Add to favourites
+Favorilere eklendi: 	Added to favourites: 
+Geçersiz adres	Invalid address
+Geçersiz yanıt	Invalid response
+Günlüğü göster	Show log
+Günlük	Log
+Haber kaynağı ekle	Add news source
+Haber kaynakları	News sources
+haber yok	no stories
+Haber yok. Yenile (Y) ya da kaynakları açın (K).	No news. Refresh (Y) or enable sources (K).
+Haberde tam metni otomatik getir	Fetch full text automatically
+Haberler	News
+Haberler yükleniyor…	Loading news…
+Haberler: RSS/Atom kaynakları, birleşik akış, okunmamış işareti, tam metin.\n\n	News: RSS/Atom sources, combined feed, unread marks, full text.\n\n
+Hakkında	About
+Henüz kayıt yok. Bir radyo çalarken çubuktaki kırmızı düğmeye basın.	No recordings yet. While a station plays, press the red button on the bar.
+İlk haber	First story
+İndir (çevrimdışı dinle, kaldığı yerden devam)	Download (listen offline, resume later)
+İndirildi: 	Downloaded:
+İndirilemedi: 	Download failed:
+İndirilen bölüm yok.\nBölümün … menüsünden İndir deyin.	No downloaded episodes.\nUse an episode's … menu to download.
+İndirilen dosya silindi	Downloaded file deleted
+İndirileni sil	Delete download
+İndirilenler	Downloads
+İndiriliyor: 	Downloading:
+İndirme başlatılamadı	Could not start download
+İndirme klasörü: 	Download folder: 
+İndirme yok	No download
+İndirmeyi durdur (	Stop download (
+İstasyon adı	Station name
+İstasyon ara	Search stations
+İstasyonlarını göster	Show its stations
+Kanal listesi yok: istasyonu bir listeden açın	No channel list: start the station from a list
+Kapalı	Off
+Kapat	Close
+Kapat (akışta gösterme)	Disable (hide from feed)
+Kaydet	Save
+Kaydı başlat	Start recording
+Kaydı durdur (	Stop recording (
+Kayıt başladı: 	Recording started: 
+Kayıt boş kaldı, silindi	Recording was empty, deleted
+Kayıt için önce bir radyo çalın	Play a radio station first to record
+Kayıt kaydedildi: 	Recording saved: 
+Kayıt silindi	Recording deleted
+Kaynağa göre süz…	Filter by source…
+Kaynak eklendi: 	Source added: 
+Kaynak seç	Choose source
+Kaynaklar (dokunarak aç/kapat)	Sources (tap to enable/disable)
+Kaynaklar…	Sources…
+Kısayollar: P çal/duraklat, U çalar menüsü, +/- ses, Sol/Sağ sekme, Ctrl+Q çıkış.\n\n	Shortcuts: P play/pause, U player menu, +/- volume, Left/Right tabs, Ctrl+Q quit.\n\n
+LF (Unix)	LF (Unix)
+Listede yayın adresi bulunamadı	No stream address in the playlist
+Nokia E6 için internet radyosu, podcast ve haber okuyucu.\n\n	Internet radio, podcast and news reader for the Nokia E6.\n\n
+Oku	Read
+Okundu say	Mark as read
+Okunmadı say	Mark as unread
+Otomatik	Automatic
+Önceki kanal	Previous station
+özet	summary
+Podcast	Podcasts
+Podcast ara	Search podcasts
+Podcast indirme klasörü	Podcast download folder
+Podcast: iTunes'ta arama ve ülkeye göre popüler, RSS ile ekleme, abonelik, indirme (çevrimdışı, kaldığı yerden devam), dinlendi işareti.\n\n	Podcasts: iTunes search and popular by country, add by RSS, subscriptions, downloads (offline, resume), played marks.\n\n
+Radyo	Radio
+Radyo listesi alınamadı: 	Station list could not be loaded: 
+Radyo: radio-browser.info'daki dünya istasyonları (arama, ülkeler, popüler), favoriler, adresle ekleme. Yayınlar telefon içi aktarma katmanından çalar: eski Shoutcast (ICY), HTTPS, HLS (m3u8, TRT dahil) ve çalan şarkı adı.\n\n	Radio: worldwide stations from radio-browser.info (search, countries, popular), favourites, add by address. Streams play through an on-phone relay: old Shoutcast (ICY), HTTPS, HLS (m3u8) and now-playing titles.\n\n
+Radyo: telefon içi aktarma	Radio: on-phone relay
+RSS / Atom adresi	RSS / Atom address
+RSS adresiyle ekle	Add by RSS address
+RSS adresiyle kaynak ekle	Add source by RSS address
+RSS adresiyle podcast ekle	Add podcast by RSS address
+Ses %	Volume %
+Sıraya eklendi (	Queued (
+Sil	Delete
+Son haber	Last story
+Sonraki haber ›	Next story ›
+Sonraki kanal	Next station
+Sonuç yok	No results
+Tam metin alınamadı: 	Full text unavailable: 
+tam metin getiriliyor…	fetching full text…
+Tam metni getir	Get full text
+Tamam	OK
+Tarayıcıda aç	Open in browser
+tüm dünya	worldwide
+Tüm kaynakları göster	Show all sources
+Tümü	All
+Tümünü okundu say	Mark all as read
+Türkçe (ISO-8859-9)	Turkish (ISO-8859-9)
+Türkçe (Windows-1254)	Turkish (Windows-1254)
+Uyku zamanlayıcısı	Sleep timer
+Uyku zamanlayıcısı kapatıldı	Sleep timer off
+Uyku zamanlayıcısı süresi	Sleep timer length
+Uyku zamanlayıcısı: 	Sleep timer: 
+Uyku zamanlayıcısı: durduruldu	Sleep timer: stopped
+Uyku zamanlayıcısı…	Sleep timer…
+Ülke: 	Country: 
+Ülkeler	Countries
+Ülkelere göz at	Browse countries
+Ülkem	My country
+Ülkem (popüler radyo ve podcast)	My country (popular radio and podcasts)
+Ülkem yap (popüler listesi)	Set as my country (popular list)
+Ülkem: 	My country: 
+Ülkemi değiştir (şu an: 	Change my country (now: 
+Ülkeyi seçin, … menüsünden 'Ülkem yap' deyin	Choose a country, then 'Set as my country' in its … menu
+Varsayılan kaynaklara dön	Restore default sources
+Vazgeç	Cancel
+Veriler: 	Data: 
+Yalnız bu kaynak: 	Only this source: 
+Yalnız bunun haberleri	Only this source's stories
+Yayın adresi (http://… mp3/aac/m3u8, .pls/.m3u da olur)	Stream address (http://… mp3/aac/m3u8, .pls/.m3u also work)
+Yazı boyutu	Text size
+Yeniden adlandır	Rename
+Yeniden bağlan	Reconnect
+Yenile	Refresh
+Yukarı taşı	Move up
+Yükleniyor…	Loading…
+Zaten indirildi	Already downloaded
+Zaten sırada	Already queued

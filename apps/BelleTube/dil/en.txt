@@ -1,0 +1,136 @@
+# BelleTube - English (araclar/dil_cikar.ps1 ile uretilir, elle duzenlemeyin)
+  •  Kanalı aç	  •  Open channel
+  •  ses	  •  audio
+  •  sırada 	  •  queued
+ (sırada)	 (queued)
+ abonelik	 subscriptions
+ beğeni	 likes
+ GB	 GB
+ görüntüleme	 views
+ indirilecek	 to download
+ KB/sn	 KB/s
+ video  •  	 videos  •
+ yanıt	 replies
+(günlük boş)	(log empty)
+\nBelleTube 0.7 - videolar kendi sunucunuz üzerinden gelir. YouTube ile resmi bir bağlantısı yoktur; Google hesabı gerekmez. Abonelik listeniz sunucuda saklanır.	\nBelleTube 0.7 - videos come through your own server. Not affiliated with YouTube; no Google account needed. Your subscription list is stored on the server.
+360p (önerilen)	360p (recommended)
+Abone ol	Subscribe
+Abone olduğunuz kanallar	Your subscriptions
+Abone olundu: 	Subscribed:
+Abonelik yok.\nAra sekmesinden bir kanal bulup \"Abone ol\"a dokunun.	No subscriptions.\nFind a channel in the Search tab and tap \"Subscribe\".
+Abonelikten çıkıldı	Unsubscribed
+Abonesin	Subscribed
+Açılamadı	Could not open
+Ağustos	August
+Akış	stream
+Ara	Search
+Aralık	December
+Ayarlar	Settings
+Bağlantı koptu	Connection lost
+Bağlantı tamam.	Connection OK.
+Belge	Document
+BelleTube ayarlari	BelleTube settings
+Bu videoda yorumlar kapalı.	Comments are turned off for this video.
+BUGÜN	Today
+Çıkartma	Sticker
+Daha fazla	More
+Daha fazla yorum	More comments
+Dış oynatıcı	External player
+Dosya yazılamadı: 	Could not write file:
+Duraklatıldı	Paused
+DÜN	Yesterday
+Dün	Yesterday
+Ekim	October
+Ekran kapalıyken de çalar	Plays with the screen off too
+Eşleşen kanal yok.	No matching channels.
+Eylül	September
+Fotoğraf	Photo
+Geçersiz yanıt	Invalid response
+Gizle	Hide
+Göster	Show
+Günlük (son 20)	Log (last 20)
+Günlük panoya kopyalandı	Log copied to clipboard
+Günlük temizlendi	Log cleared
+Haziran	June
+Henüz abone olduğunuz kanal yok.\nAra sekmesinde bir kanal bulun ya da bir videodaki \"Kanal\" düğmesine basın, sonra \"Abone ol\"a dokunun. Kanalların yeni videoları burada görünür.	No subscriptions yet.\nFind a channel in the Search tab or press \"Channel\" on a video, then tap \"Subscribe\". New videos from your channels appear here.
+Henüz inen video yok. İzlediğiniz videolar burada saklanır; internetsiz izlenebilir.	No downloaded videos yet. Videos you watch are kept here and can be watched offline.
+İlgili videolar	Related videos
+İndir	Download
+İndirildi	Downloaded
+İndirildi: 	Downloaded:
+İndirilemedi (	Download failed (
+İndirilenler için ayrılan yer	Space reserved for downloads
+İniyor %	Downloading %
+İniyor: 	Downloading:
+İnternetten izle	Watch from the internet
+İptal	Cancel
+İptal edildi	Cancelled
+Kanal	Channel
+Kanal ara	Search channels
+Kanalı aç	Open channel
+Kanallar	Channels
+Karanlık tema	Dark theme
+Kasım	November
+Kaydedildi	Saved
+Kaydet	Save
+Kitaplık	Library
+Kopyala	Copy
+Mart	March
+Mayıs	May
+mp3, telefona kaydet	mp3, save to phone
+Nisan	April
+Ocak	January
+Oynatma listesi	Playlist
+p, telefona kaydet	p, save to phone
+Panoda metin yok	No text on clipboard
+Parola	Password
+Sadece ses	Audio only
+Sadece sesi oynat	Play audio only
+Ses	Audio
+Ses çalınamadı: 	Could not play audio:
+Ses çalıyor	Playing audio
+Ses: 	Volume:
+Ses: %	Volume: %
+Sesi indir	Download audio
+Sesli mesaj	Voice message
+Sınır aşılınca en eski videolar otomatik silinir. Klasör: 	When the limit is exceeded the oldest videos are deleted automatically. Folder:
+Sırada	Queued
+Silindi	Deleted
+Sunucu adresi	Server address
+Sunucu hatası (	Server error (
+Sunucu hazırlıyor...	Server is preparing...
+Sunucu kontrol ediliyor...	Checking server...
+Sunucu parolası (WhatsBelle ile aynı)	Server password (same as in WhatsBelle)
+Sunucu parolası hatalı	Wrong server password
+Sunucu parolası hatalı. Ayarlardan kontrol edin.	Wrong server password. Check it in Settings.
+Sunucuya bağlanılamadı. İnternet bağlantısını kontrol edin.	Could not connect to the server. Check your internet connection.
+Şu an inen: 	Downloading now:
+Şubat	February
+Tekrar dene	Try again
+Telefonda	On phone
+Telefonda kayıtlı	Saved on phone
+Telefondan	From phone
+Temizle	Clear
+Temmuz	July
+Vazgeç	Cancel
+Video	Video
+Video kalitesi	Video quality
+Video oynatılamadı. \"Sadece ses\" ile dinleyebilir ya da indirip izleyebilirsiniz.	Could not play the video. Listen with \"Audio only\" or download and watch.
+Video ya da kanal adı yazın.\nİzlediğiniz her video telefona iner; ileri-geri sarma internetsiz çalışır. Bir videoya basılı tutunca kanalı açılır.	Type a video or channel name.\nEvery video you watch is downloaded to the phone; seeking works offline. Long-press a video to open its channel.
+Video yok.	No videos.
+Video: 	Video:
+Videoya geç	Switch to video
+Videoyu indir	Download video
+Videoyu indir (	Download video (
+Videoyu oynat	Play video
+Yapıştır	Paste
+Yorum yok.	No comments.
+Yorumlar	Comments
+Yorumları aç	Open comments
+Yorumları aç (tam ekran)	Open comments (full screen)
+Yorumları göster	Show comments
+Yorumların sonu	End of comments
+YouTube'da ara	Search YouTube
+Yükleniyor...	Loading...
+Zaten indiriliyor	Already downloading
+Zaten telefonda	Already on the phone

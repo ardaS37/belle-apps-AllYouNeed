@@ -1,0 +1,36 @@
+{
+	# Nokia E6 (Qt 4.7 + TLS 1.2 yamasi) icin RSA sertifika: zincir ISRG Root X1'e gider
+	key_type rsa2048
+}
+
+# Uygulama sunucusu (WhatsBelle, BelleMail, BelleTube, Drive, Browser katmani, Remote...)
+e6.msahincelen.xyz {
+	encode gzip
+	reverse_proxy 127.0.0.1:3000
+}
+
+# Web sitesi + SIS dagitimi (BelleAppCenter /sis/paketler.json okur)
+msahincelen.xyz {
+	encode gzip
+	root * /var/www/msahincelen
+	file_server
+	@sis path /sis/*.sis
+	header @sis Content-Type application/vnd.symbian.install
+}
+
+# Duz HTTP (yonlendirmesiz): telefonun yerlesik oynaticisi/tarayicisi TLS 1.2 bilmez,
+# Belle Remote da sunucuya ham TCP (HTTP Upgrade) ile 80'den baglanir
+http://e6.msahincelen.xyz {
+	encode gzip
+	reverse_proxy 127.0.0.1:3000
+}
+
+www.msahincelen.xyz {
+	redir https://msahincelen.xyz{uri} permanent
+}
+
+# Eski kurulumlar icin: IP adresi uzerinden duz HTTP (gecis bitince kaldirilabilir)
+:80 {
+	encode gzip
+	reverse_proxy 127.0.0.1:3000
+}

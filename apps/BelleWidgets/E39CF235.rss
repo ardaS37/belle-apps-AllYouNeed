@@ -1,0 +1,8 @@
+// BelleWidgets'i telefon acilisinda baslatir (Startup List Management)
+#include <startupitem.rh>
+
+RESOURCE STARTUP_ITEM_INFO bellewidgets
+{
+    executable_name = "!:\\sys\\bin\\BelleWidgets.exe";
+    recovery = EStartupItemExPolicyNone;
+}

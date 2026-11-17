@@ -1,0 +1,121 @@
+# BelleWidgets - English (araclar/dil_cikar.ps1 ile uretilir, elle duzenlemeyin)
+  (Ayarlar'dan değiştirilir)	  (change in Settings)
+  •  rüzgâr 	  •  wind
+ (askıda)	 (pending)
+ (yaklaşık)	 (approx.)
+ (yaklaşık; telefon yalnızca 7 basamak veriyor)	 (approx.; the phone reports only 7 digits)
+ | RAM %	 | RAM %
+ • düşük pil 	 • low battery
+ • en düşük 	 • low
+ • gün doğumu 	 • sunrise
+ gün	 days
+ içinde dolar	 until full
+ kaldı	 left
+ km/sa	 km/h
+ MB	 MB
+ MB boş / 	 MB free /
+(günlük boş)	(log empty)
+, batımı 	, sunset
+: bekleniyor	: waiting
+1. Ana ekranda boş bir yere uzun basın (ya da Seçenekler > İçerik ekle).\n	1. Long-press an empty spot on the home screen (or Options > Add content).\n
+2. \"İçerik ekle\"yi seçin, listede \"BelleWidgets\"i bulun.\n	2. Choose \"Add content\" and find \"BelleWidgets\" in the list.\n
+3. Widget'a dokununca bu uygulama açılır ve veriler yenilenir.\n\n	3. Tapping the widget opens this app and refreshes the data.\n\n
+7 günlük	7 days
+Açık	On
+Ana ekran görünümü	Home screen style
+Ana ekran görünürken dakikada bir ölçülür	Measured every minute while the home screen is visible
+Ana ekran widget'ı	Home screen widget
+Ana ekrana ekleme	Adding to the home screen
+Ana ekrana nasıl eklenir?	How to add to the home screen?
+Ana ekranda	On home screen
+Ana ekrandaki görünüm	Home screen look
+Arka plana al	Send to background
+Ayarlar	Settings
+Ayrıntı ›	Details ›
+Az bulutlu	Mostly clear
+Başlatılıyor	Starting
+Beklenmeyen yanıt	Unexpected response
+Bellek (RAM) %	Memory (RAM) %
+Bugün	Today
+Ctrl+Q	Ctrl+Q
+Çisenti	Drizzle
+Dolu, prizde	Full, plugged in
+Dolulu fırtına	Thunderstorm with hail
+Dondurucu çisenti	Freezing drizzle
+Dondurucu yağmur	Freezing rain
+Durum: 	Status:
+Düşük pil uyarısı	Low battery alert
+Eklemek için: ana ekranda boş yere uzun basın > İçerik ekle > \"BelleWidgets\" ya da \"BelleWidgets genis\". Widget'a dokununca bu uygulama açılır.	To add: long-press an empty spot on the home screen > Add content > \"BelleWidgets\" or \"BelleWidgets genis\". Tapping the widget opens this app.
+Eksik veri	Missing data
+En yüksek 	High
+Enter: ara ve kaydet   •   Esc: vazgeç   (internet gerekir)	Enter: search and save   •   Esc: cancel   (internet required)
+Eskiden eklediğiniz BelleWidgets widget'ları yerinde kalır.\n\n	BelleWidgets widgets you added earlier stay in place.\n\n
+Geniş (çizim)	Wide (drawing)
+Geniş çizime geç	Switch to wide drawing
+Gök gürültülü	Thunderstorm
+Güncel	Up to date
+Güncelleniyor…	Updating…
+Günlük	Log
+Hafif kar	Light snow
+Hafif yağmur	Light rain
+Hata: 	Error:
+Hava bekleniyor	Waiting for weather
+Hava durumu	Weather
+Hava: şehir seçin	Weather: choose a city
+Hazır • ana ekrana ekleyin	Ready • add to the home screen
+Hazır • ana ekrana ekleyin: \"BelleWidgets\" ya da \"BelleWidgets genis\"	Ready • add to the home screen: \"BelleWidgets\" or \"BelleWidgets genis\"
+Hesaplanıyor…	Calculating…
+İki widget var: \"BelleWidgets\" (solda büyük yüzde; 1. satır pil süresi ve RAM/CPU, 2. satır hava) ve \"BelleWidgets genis\" (hepsi tek çizimde). 	There are two widgets: \"BelleWidgets\" (big percentage on the left; line 1 battery time and RAM/CPU, line 2 weather) and \"BelleWidgets genis\" (everything in one drawing).
+İşlemci (CPU) %	Processor (CPU) %
+Kapalı	Off
+kapalı	Off
+Kapat (widget durur)	Close (widget stops)
+Kar sağanağı	Snow showers
+Kar taneleri	Snow grains
+Karlı	Snow
+Kaynak: Open-Meteo. Ana ekrandaki widget hava durumunu saatte bir, yalnızca açık bir internet bağlantısı varken günceller.	Source: Open-Meteo. The home screen widget updates the weather hourly, only while an internet connection is open.
+Masaüstü/Simulator: widget yok, önizleme gösteriliyor	Desktop/Simulator: no widget, showing preview
+Önce şehir seçin	Choose a city first
+Parçalı bulutlu	Partly cloudy
+Pil	Battery
+Pil 5 dakikada bir okunur. RAM/CPU yalnızca ana ekran görünürken dakikada bir ölçülür. Hava durumu saatte bir ve yalnızca 	Battery is read every 5 minutes. RAM/CPU are measured every minute only while the home screen is visible. Weather updates hourly and only
+Pil ve RAM/CPU yenilendi	Battery and RAM/CPU refreshed
+Rüzgâr 	Wind
+Saatlik (24 saat)	Hourly (24 hours)
+Sağanak	Showers
+Seçin	Choose
+Sistem	System
+Son 24 saat (mavi: şarjda)	Last 24 hours (blue: charging)
+Son okuma 	Last read
+Şarj oluyor	Charging
+Şarjda	Charging
+Şehir (hava durumu)	City (weather)
+Şehir aranamadı: 	City search failed:
+Şehir aranıyor…	Searching city…
+Şehir bulunamadı	City not found
+Şehir seçilmedi	No city selected
+Şehir seçin	Choose a city
+Şehir seçin (Ayarlar)	Choose a city (Settings)
+Şehir ya da ilçe adı	City or district name
+Şehir yeniden aranıyor, hava güncelleniyor	Searching the city again, updating weather
+Şehri değiştir	Change city
+Şiddetli sağanak	Heavy showers
+Şiddetli yağmur	Heavy rain
+Şimdi	Now
+Tam dolu	Full
+Tam dolunca titreşim	Vibrate when full
+telefonda açık bir internet bağlantısı varsa güncellenir (bağlantı kurdurmaz). Kaynak: Open-Meteo.\n\n	when an internet connection is already open on the phone (it does not start one). Source: Open-Meteo.\n\n
+titreşim	vibrate
+Uyarılar: tam dolunca 	Alerts: when full
+Widget kütüphanesi yüklenemedi (HSWidgetPlugin)	Could not load the widget library (HSWidgetPlugin)
+Widget'ı yeniden dene	Retry widget
+Yağış %	Precipitation %
+Yağmurlu	Rain
+Yarın	Tomorrow
+Yeniden dene	Retry
+Yenile	Refresh
+Yenile (şehri yeniden ara)	Refresh (search city again)
+Yenileniyor • şehir yeniden aranıyor	Refreshing • searching city again
+Yoğun kar	Heavy snow
+Yüzde + 2 satır	Percentage + 2 lines
+Yüzde + 2 satıra geç	Switch to percentage + 2 lines

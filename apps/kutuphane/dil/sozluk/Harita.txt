@@ -1,0 +1,131 @@
+# Belle Maps (BelleHarita) + ortak harita kutuphanesi (kutuphane/harita)
+ (araçla) ¦  (by car)
+ (kaba: ağ / baz istasyonu), GPS hassaslaşıyor… ¦  (rough: network / cell tower), GPS refining…
+ (önce istediğiniz katmana geçin). ¦  (switch to the layer you want first).
+ (yaklaşık) ¦  (approx.)
+ • %1/%2 uydu ¦  • %1/%2 satellites
+ • ardından:  ¦  • then:
+ • çok büyük: en fazla 25000 karo (yakınlığı azaltın ya da daha küçük alan seçin) ¦  • too large: max 25000 tiles (lower the zoom or pick a smaller area)
+ • takip açık ¦  • following
+ çıkın ¦  exit
+ devam edin ¦  continue
+ dönün ¦  turn
+ içinde dolar ¦  until full
+ kalın ¦  keep
+ karo • yaklaşık  ¦  tiles • approx.
+ km ¦  km
+ km/sa ¦  km/h
+ MB boş /  ¦  MB free /
+ sa  ¦  h
+ sonra:  ¦  then:
+ uzakta ¦  away
+%1 karo indirildi%2 ¦ %1 tiles downloaded%2
+%1 uydu kilitlendi, konum hesaplanıyor ¦ %1 satellites locked, calculating position
+(adsız) ¦ (unnamed)
+) kaydedilir; aynı yerler internetsiz de açılır. En fazla 120 MB; aşılırsa açılışta temizlenir. ¦ ); the same places then open offline. Up to 120 MB; cleaned at startup if exceeded.
+, %1 indirilemedi ¦ , %1 failed
+. çıkıştan ¦  exit
+© OpenStreetMap katkıcıları ¦ © OpenStreetMap contributors
+Açık (OSM) ¦ Light (OSM)
+Ad (örn. Ev, İş, Okul) ¦ Name (e.g. Home, Work, School)
+Adlandır ¦ Rename
+Adres, yer ya da işletme ara ¦ Search address, place or business
+Alan:  ¦ Area:
+Anlık konum ¦ Live location
+Anlık konumum ¦ My live location
+Ara: yer, adres, koordinat ¦ Search: place, address, coordinates
+Arama yapılamadı ( ¦ Search failed (
+Aramada sunucuyu kullan (öneri) ¦ Use the server for search (recommended)
+Aranıyor… ¦ Searching…
+Arazi ¦ Terrain
+Ayarlar ve önbellek ¦ Settings and cache
+Ayrımda  ¦ At the fork
+Bağlantı yoluna girin ¦ Take the ramp
+Baktığınız harita parçaları karta ( ¦ Map tiles you view are saved to the card (
+Basılı tutun: adlandır / sil ¦ Hold: rename / delete
+Başka bir indirme sürüyor ¦ Another download is in progress
+Başlat ¦ Start
+Başlatılamadı (alan çok büyük olabilir) ¦ Could not start (the area may be too large)
+Belle Maps 1.3.1 • Harita verisi © OpenStreetMap katkıcıları • Karolar OpenStreetMap, Esri, OpenTopoMap • Arama Photon (komoot) • Rota OSRM. Klavye: oklar kaydır, + - yakınlaş, S ara, G konumum, K katman, Y kayıtlı yerler, M menü, Enter ortadaki noktayı işaretle. ¦ Belle Maps 1.3.1 • Map data © OpenStreetMap contributors • Tiles OpenStreetMap, Esri, OpenTopoMap • Search Photon (komoot) • Routing OSRM. Keys: arrows pan, + - zoom, S search, G my location, K layer, Y saved places, M menu, Enter mark the center point.
+Belle Maps son açılışta kapandı. Hata raporunun gitmesi için Ayarlar'da sunucu parolasını girin. ¦ Belle Maps closed unexpectedly last time. Enter the server password in Settings to send the crash report.
+Benim konumum ¦ My location
+Bitir ¦ Finish
+Bu konumu gönder ¦ Send this location
+Bu telefonda konum servisi bulunamadı ¦ No location service found on this phone
+Çevrimdışı harita ¦ Offline map
+Çevrimdışı harita indir ¦ Download offline map
+Çıkışa girin ¦ Take the exit
+Doğrudan arama yapılamadı: telefon bu siteyle güvenli bağlantı kuramıyor olabilir. Menü > Ayarlar > \"Aramada sunucuyu kullan\" ¦ Direct search failed: the phone may not be able to make a secure connection to this site. Menu > Settings > \"Use the server for search\"
+Dosya yazılamıyor:  ¦ Cannot write file:
+Döner kavşaktan  ¦ At the roundabout
+Dönün ¦ Turn
+Durdur ¦ Stop
+Durduruldu: %1 / %2 karo ¦ Stopped: %1 / %2 tiles
+düz ¦ straight
+Düz devam edin ¦ Continue straight
+En uzak:  ¦ Farthest:
+En yakın:  ¦ Nearest:
+Enter: ara ve kaydet   •   Esc: vazgeç   (internet gerekir) ¦ Enter: search and save   •   Esc: cancel   (internet required)
+geri (U dönüşü) ¦ back (U-turn)
+Google Maps bağlantısı kopyalandı ¦ Google Maps link copied
+GPS kapalı ¦ GPS off
+GPS kapalı • son konum ±%1 m ¦ GPS off • last fix ±%1 m
+GPS'e bağlanılıyor… uydu aranıyor ¦ Connecting to GPS… searching for satellites
+hafif sağa ¦ slight right
+hafif sola ¦ slight left
+Harita, rota ve GPS sunucusuz çalışır. Adres arama servisi (Photon) yalnızca güvenli bağlantı (TLS 1.2) kabul ediyor; telefon bunu kuramazsa arama sonuç vermez. Bu seçenek açılırsa arama, WhatsBelle'in de kullandığı kendi sunucunuz üzerinden yapılır (yalnızca aranan metin gider). ¦ Map, routing and GPS work without a server. The address search service (Photon) only accepts secure connections (TLS 1.2); if the phone cannot make one, search returns nothing. With this option on, search goes through your own server (the one WhatsBelle uses); only the search text is sent.
+Haritada şu an görünen alan (ve çevresi) seçilen yakınlık aralığında karta indirilir. İnternet yokken bu alan açılır; dokunmadan kalır, önbellek gibi silinmez. Katman:  ¦ The area visible on the map (and around it) is downloaded to the card for the selected zoom range. It opens without internet and is kept; it is not cleared like the cache. Layer:
+Haritayı kaydırın: iğnenin olduğu yer gönderilir ¦ Pan the map: the pin position is sent
+Hata raporu gönderildi ¦ Crash report sent
+Hedefe vardınız ¦ You have arrived
+Henüz kayıtlı yer yok. Haritada bir noktaya uzun basın ya da arayın, sonra \"Kaydet\". ¦ No saved places yet. Long-press a point on the map or search, then \"Save\".
+Hesaplanıyor… ¦ Calculating…
+İşaretli nokta ¦ Marked point
+Kartta çevrimdışı harita:  ¦ Offline map on card:
+Karo önbelleği:  ¦ Tile cache:
+Katman değiştir ¦ Change layer
+Katman:  ¦ Layer:
+Kaydedildi:  ¦ Saved:
+Kayıtlı yeri adlandır ¦ Rename saved place
+Kayıtlı yerler ¦ Saved places
+Kayıtlı yerler ( ¦ Saved places (
+keskin sağa ¦ sharp right
+keskin sola ¦ sharp left
+Konum aranıyor… (açık havada daha hızlı) ¦ Searching for location… (faster outdoors)
+Konum aranıyor… (uydu araması açık havada daha hızlıdır) ¦ Searching for location… (satellite search is faster outdoors)
+Konum bekleniyor… ¦ Waiting for location…
+Konum bulunamadı. Açık havada tekrar deneyin (GPS ilk uydu araması birkaç dakika sürebilir). ¦ Location not found. Try again outdoors (the first GPS satellite search can take a few minutes).
+Konum bulundu ±%1 m ¦ Location found ±%1 m
+Konum güncelleniyor ¦ Updating location
+Konum servisi bu derlemede yok ¦ Location service not available in this build
+Konumum ¦ My location
+Konumunuz aranıyor; bulununca rota çizilecek ¦ Searching for your location; the route will be drawn when found
+Koyu ¦ Dark
+Not: doğrudan adres araması bu telefonda çalışmıyor. Ayarlar > \"Aramada sunucuyu kullan\" ile açılabilir. ¦ Note: direct address search does not work on this phone. Enable Settings > \"Use the server for search\".
+Ortadaki noktayı işaretle ¦ Mark the center point
+Ortala ¦ Center
+Önbelleği temizle ¦ Clear cache
+Önbellek temizlendi ¦ Cache cleared
+Rota ¦ Route
+Rota bulunamadı ¦ No route found
+Rota hesaplanıyor… ¦ Calculating route…
+Rota sunucusuna ulaşılamadı ¦ Could not reach the routing server
+Rotadan çıkıldı, yeniden hesaplanıyor ¦ Off route, recalculating
+sağa ¦ right
+Silindi ¦ Deleted
+Silindi:  ¦ Deleted:
+sola ¦ left
+Sokak ¦ Street
+Sonuç bulunamadı ¦ No results found
+Sunucu araması yapılamadı ( ¦ Server search failed (
+Tüm çevrimdışı haritayı sil ¦ Delete all offline maps
+Uydu ¦ Satellite
+Uydu aranıyor: %1 görünüyor, %2 kilitlendi (en az 3 gerekir) ¦ Searching satellites: %1 visible, %2 locked (at least 3 needed)
+Yakınlık 15 ≈ mahalle, 17 ≈ sokak, 18 ≈ bina. Her bir artış karo sayısını yaklaşık 4 katına çıkarır. 18'den sonrası bu karolar büyütülerek gösterilir. ¦ Zoom 15 ≈ neighbourhood, 17 ≈ street, 18 ≈ building. Each step multiplies the tile count by about 4. Beyond 18 these tiles are shown enlarged.
+Yeri kaydet ¦ Save place
+Yola çıkın ¦ Head out
+Yola katılın ¦ Merge
+Yolculuk sürüyor: bitirmek için alttaki Bitir'e basın ¦ Navigation in progress: press Finish below to end it
+Yolun sonunda  ¦ At the end of the road
+Tümü ¦ All
+Geri ¦ Back

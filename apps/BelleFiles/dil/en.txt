@@ -1,0 +1,891 @@
+# BelleFiles - English (araclar/dil_cikar.ps1 ile uretilir, elle duzenlemeyin)
+  •  Menü: orta tuş	  •  Menu: center key
+  •  metin değil	  •  not text
+  •  N sonraki  P önceki	  •  N next  P previous
+  •  slayt	  •  slide
+  •  şifreli	  •  encrypted
+ — sıradaki: 	 — next:
+ %1 kişi kaydedilemedi.	 %1 contacts could not be saved.
+ %1 mesaj eklenemedi.	 %1 messages could not be added.
+ (içe aktarılan)	 (imported)
+ (klasör içeriğiyle)	 (with folder contents)
+ (Notlar > bulut-senkron)	 (Notes > cloud sync)
+ (seçime)	 (selection)
+ (tüm metne)	 (whole text)
+ (varsayılan)	 (default)
+ + Nokia yedeği (	 + Nokia backup (
+ → tek sıkıştırmasız zip → Drive: 	 → one uncompressed zip → Drive:
+ • dokunun: aç / yerlerine koy / sil	 • tap: open / restore / delete
+ • hedef klasörde V	 • V in the target folder
+ • seçime uygulanır	 • applies to selection
+ • tüm metne uygulanır	 • applies to the whole text
+ • varsayılan program	 • default app
+ • zip'e dahil	 • included in zip
+ açılmış	 extracted
+ altına eşitler (yalnızca değişenler)	 (only changed files)
+ altyazı	 subtitles
+ anahtar	 keys
+ bayt)	 bytes)
+ boşluksuz)	 without spaces)
+ bulunamadı	 not found
+ değişmemiş atlandı	 unchanged skipped
+ dosya	 files
+ dosya • 	 files •
+ dosya arşive eklendi (sıkıştırmasız)	 file(s) added to archive (stored)
+ dosya çıkarıldı	 files extracted
+ dosya dışa aktarıldı	 files exported
+ dosya Drive'a yüklendi	 files uploaded to Drive
+ dosya içe aktarıldı	 files imported
+ dosya indirildi → 	 files downloaded →
+ dosya indirilmişti	 files were already downloaded
+ dosya silindi	 files deleted
+ dosya yüklendi	 files uploaded
+ dosya yüklenmişti	 files were already uploaded
+ dosya, 	 files,
+ dosya\n# İçe aktarmak için: Belle Files > dosya menüsü > Paketi içe aktar\n	 files\n# To import: Belle Files > file menu > Import package\n
+ dosyanın yazısı panoda	 files' text on clipboard
+ eski yerlerine döner (G)	 return to their old places (G)
+ eşleşme • \"	 matches • \"
+ etkinlik	 events
+ favori seçili	 favourites selected
+ fotoğraf	 photos
+ GB	 GB
+ hata (	 errors (
+ istatistiği	 statistics
+ işaretli  	 marked
+ karakter	 characters
+ karakter 	 characters
+ karakter (	 characters (
+ karakter)	 characters)
+ KB	 KB
+ kelime	 words
+ kelime, 	 words,
+ kesildi	 cut
+ kişi	 contacts
+ kişi vCard'a çevriliyor…	 contacts being converted to vCard…
+ klasör	 folders
+ klasörüne	 folder
+ kodlamasında yok (? oldu)	 encoding lacks it (became ?)
+ kopyalandı	 copied
+ MB	 MB
+ mesaj	 messages
+ metin	 text
+ olacak	 will be used
+ olarak indir	 download as
+ öğe	 items
+ öğe  •  	 items  •
+ öğe favorilerden çıkarıldı	 item(s) removed from favourites
+ öğe favorilere eklendi	 item(s) added to favourites
+ öğe işaretlendi	 items marked
+ öğe işaretli	 items marked
+ parça	 parts
+ piksel	 pixels
+ piksel  •  	 pixels  •  
+ satır	 lines
+ satır tarihsiz atlandı	 lines without a date skipped
+ satır, 	 lines,
+ satırlık dizi	-line array
+ seçili	 selected
+ sonuç • \"	 results • \"
+ tane daha	 more
+ uygulama	 apps
+ yer değiştirildi	 replaced
+ yok.	 missing.
+ zaten var	 already exists
+ zaten vardı, atlandı	 already existed, skipped
+(günlük boş)	(log empty)
+): salt okunur, parça parça • N/P	): read-only, in parts • N/P
+, Sütun 	, column
+, sütun 	, column
+/Disa aktarilan	/Exported
+\n  Dışa aktarılanlar: 	\n  Exports:
+\n  Günlük / taslak: 	\n  Log / draft:
+\n  Yedekler: 	\n  Backups:
+\n\n… (devamı için dosyayı indirin)	\n\n… (download the file to read more)
+\n\n… (devamı kesildi)	\n\n… (rest truncated)
+\n\nDrive'ın çöp kutusundan 30 gün içinde geri alınabilir.	\n\nIt can be restored from Drive's trash within 30 days.
+\n\nUygulamalar (WhatsBelle, ApiLauncher, Belle Browser, BelleTube…) açılırken, arka plana geçerken ve kapanırken kendi ayarlarını buraya kopyalar. 	\n\nApps (WhatsBelle, ApiLauncher, Belle Browser, BelleTube…) copy their own settings here when they open, go to the background and close.
+\n\nUzantısız küçük dosyalar da metin sayılır. Diğerleri için: Dosyalar > T (tüm dosyalar) > dosya > G (metin olarak aç).	\n\nSmall files without an extension also count as text. For others: Files > T (all files) > file > G (open as text).
+\n… ve 	\n… and
+\nDiğerleri: 	\nOthers:
+\nKonum: 	\nLocation:
+” içine	”
+‹ Geri	‹ Back
++ Klasör	+ Folder
+<b>.csv / .json / .xml / .srt</b>: satırlar tabloya / nesneye / öğelere dönüşür.<br>	<b>.csv / .json / .xml / .srt</b>: lines become a table / object / elements.<br>
+<b>.html</b>: # başlık, - madde, boş satır paragraf, adresler bağlantı olur.<br>	<b>.html</b>: # heading, - bullet, blank line paragraph, addresses become links.<br>
+<b>.m3u</b>: her satıra bir dosya yolu ya da adres.<br>	<b>.m3u</b>: one file path or address per line.<br>
+<b>.txt</b>: HTML etiketleri temizlenir, JSON / CSV / vCard okunur hale gelir.	<b>.txt</b>: HTML tags are removed, JSON / CSV / vCard become readable.
+<b>.vcf</b>: her satıra bir kişi (\"Ali Veli 0555 111 22 33\") ya da Ad:/Tel:/E-posta: blokları.<br>	<b>.vcf</b>: one contact per line (\"John Smith 0555 111 22 33\") or Name:/Tel:/Email: blocks.<br>
+<b>.vcs</b>: \"12.11.2026 14:30 Toplantı\" ya da \"2026-11-12 09:00-10:30 Doktor\".<br>	<b>.vcs</b>: \"12.11.2026 14:30 Meeting\" or \"2026-11-12 09:00-10:30 Doctor\".<br>
+<b>B</b> dosyalarda ara (ad + içerik) &nbsp; <b>/</b> adla süz &nbsp; <b>S</b> sıralama &nbsp; <b>T</b> tüm dosyalar<br>	<b>B</b> search files (name + content) &nbsp; <b>/</b> filter by name &nbsp; <b>S</b> sort &nbsp; <b>T</b> all files<br>
+<b>Boşluk/J</b> sayfa aşağı &nbsp; <b>Z/K</b> sayfa yukarı &nbsp; <b>N/P</b> sonraki / önceki parça &nbsp; <b>E</b> düzenlemeye aç	<b>Space/J</b> page down &nbsp; <b>Z/K</b> page up &nbsp; <b>N/P</b> next / previous part &nbsp; <b>E</b> open for editing
+<b>C</b> kopyala &nbsp; <b>X</b> kes &nbsp; <b>V</b> yapıştır (hedef klasörde)<br>	<b>C</b> copy &nbsp; <b>X</b> cut &nbsp; <b>V</b> paste (in the target folder)<br>
+<b>Ctrl+C / X / V</b> kopyala / kes / yapıştır &nbsp; <b>Ctrl+B</b> tüm yazıyı panoya<br>	<b>Ctrl+C / X / V</b> copy / cut / paste &nbsp; <b>Ctrl+B</b> whole text to clipboard<br>
+<b>Ctrl+D</b> satırı çoğalt &nbsp; <b>Ctrl+K</b> satırı sil &nbsp; <b>Ctrl+T</b> tarih-saat<br>	<b>Ctrl+D</b> duplicate line &nbsp; <b>Ctrl+K</b> delete line &nbsp; <b>Ctrl+T</b> date-time<br>
+<b>Ctrl+E</b> uzantı / dönüştür &nbsp; <b>Ctrl+P</b> sistemde aç / önizle<br>	<b>Ctrl+E</b> extension / convert &nbsp; <b>Ctrl+P</b> open in system / preview<br>
+<b>Ctrl+F</b> bul &nbsp; <b>Ctrl+N</b> sonrakini bul &nbsp; <b>Ctrl+H</b> bul-değiştir &nbsp; <b>Ctrl+G</b> satıra git<br>	<b>Ctrl+F</b> find &nbsp; <b>Ctrl+N</b> find next &nbsp; <b>Ctrl+H</b> find-replace &nbsp; <b>Ctrl+G</b> go to line<br>
+<b>Ctrl+J</b> yapılacak işareti [ ] / [x] &nbsp; <b>Ctrl+U</b> BÜYÜK harf (<b>Ctrl+Shift+U</b> küçük)<br>	<b>Ctrl+J</b> to-do mark [ ] / [x] &nbsp; <b>Ctrl+U</b> UPPER case (<b>Ctrl+Shift+U</b> lower)<br>
+<b>Ctrl+R</b> salt okunur &nbsp; <b>Ctrl+W</b> satır kaydırma &nbsp; <b>Ctrl+ +/-</b> yazı boyutu &nbsp; <b>Ctrl+L</b> istatistik	<b>Ctrl+R</b> read-only &nbsp; <b>Ctrl+W</b> word wrap &nbsp; <b>Ctrl+ +/-</b> text size &nbsp; <b>Ctrl+L</b> statistics
+<b>Ctrl+S</b> kaydet &nbsp; <b>Ctrl+Shift+S</b> farklı kaydet<br>	<b>Ctrl+S</b> save &nbsp; <b>Ctrl+Shift+S</b> save as<br>
+<b>Ctrl+Z</b> geri al &nbsp; <b>Ctrl+Y</b> yinele &nbsp; <b>Ctrl+A</b> tümünü seç<br>	<b>Ctrl+Z</b> undo &nbsp; <b>Ctrl+Y</b> redo &nbsp; <b>Ctrl+A</b> select all<br>
+<b>E</b> dışa aktar &nbsp; <b>I</b> içe aktar &nbsp; <b>F</b> favori &nbsp; <b>L</b> bilgi<br>	<b>E</b> export &nbsp; <b>I</b> import &nbsp; <b>F</b> favourite &nbsp; <b>L</b> info<br>
+<b>Enter</b> aç &nbsp; <b>Geri/Esc</b> üst klasör &nbsp; <b>Boşluk</b> veya <b>sol yazılım tuşu</b> seçenekler<br>	<b>Enter</b> open &nbsp; <b>Back/Esc</b> parent folder &nbsp; <b>Space</b> or <b>left soft key</b> options<br>
+<b>H</b> bu yardım &nbsp; <b>Ctrl+Q</b> çıkış	<b>H</b> this help &nbsp; <b>Ctrl+Q</b> exit
+<b>M</b> işaretle (çoklu seçim) &nbsp; <b>A</b> tümünü işaretle / kaldır &nbsp; uzun bas: işaretle<br>	<b>M</b> mark (multi-select) &nbsp; <b>A</b> mark / unmark all &nbsp; long press: mark<br>
+<b>N</b> yeni dosya (şablonlar) &nbsp; <b>K</b> yeni klasör &nbsp; <b>P</b> panodaki yazıdan yeni not<br>	<b>N</b> new file (templates) &nbsp; <b>K</b> new folder &nbsp; <b>P</b> new note from clipboard<br>
+<b>O</b> sistemde aç (html → tarayıcı, vcf → rehber, vcs → takvim, m3u → müzik)<br>	<b>O</b> open in system (html → browser, vcf → contacts, vcs → calendar, m3u → music)<br>
+<b>Orta tuş</b> / <b>sol yazılım tuşu</b> menü &nbsp; <b>Esc</b> / <b>sağ yazılım tuşu</b> kapat<br>	<b>Center key</b> / <b>left soft key</b> menu &nbsp; <b>Esc</b> / <b>right soft key</b> close<br>
+<b>R</b> yeniden adlandır &nbsp; <b>D</b> sil &nbsp; <b>U</b> uzantı değiştir / dönüştür<br>	<b>R</b> rename &nbsp; <b>D</b> delete &nbsp; <b>U</b> change extension / convert<br>
+<b>Shift + yön tuşları</b> seçim &nbsp; <b>Ctrl+Yukarı/Aşağı</b> başa / sona<br>	<b>Shift + arrows</b> select &nbsp; <b>Ctrl+Up/Down</b> to start / end<br>
+<b>Sol/Sağ</b> sekme değiştir &nbsp; <b>J / Z</b> 8 satır aşağı / yukarı<br>	<b>Left/Right</b> switch tab &nbsp; <b>J / Z</b> 8 lines down / up<br>
+<b>Y</b> dosyanın yazısını panoya &nbsp; <b>W</b> salt okunur görüntüle &nbsp; <b>G</b> metin olarak aç<br>	<b>Y</b> file text to clipboard &nbsp; <b>W</b> view read-only &nbsp; <b>G</b> open as text<br>
+<h1>Başlık</h1>\n<p>Metin buraya.</p>\n<ul>\n<li>Madde</li>\n</ul>	<h1>Title</h1>\n<p>Text here.</p>\n<ul>\n<li>Item</li>\n</ul>
+<h3>Dışa / içe aktarma</h3>	<h3>Export / import</h3>
+<h3>Düzenleyici</h3>	<h3>Editor</h3>
+<h3>Listeler (Notlar, Dosyalar)</h3>	<h3>Lists (Notes, Files)</h3>
+<h3>Salt okunur / büyük dosya</h3>	<h3>Read-only / large file</h3>
+<h3>Uzantı değiştirme</h3>	<h3>Changing extension</h3>
+1) Aşağıdaki adres panoya kopyalandı. Bir bilgisayarda (ya da telefonun tarayıcısında) açın ve Google hesabınızla izin verin.\n	1) The address below was copied to the clipboard. Open it on a computer (or the phone's browser) and grant access with your Google account.\n
+127.0.0.1 ile başlayan adresin tamamı (ya da yalnızca code değeri)	The full address starting with 127.0.0.1 (or just the code value)
+2) Google sizi açılmayan bir 127.0.0.1 adresine yönlendirecek. Tarayıcının adres çubuğundaki o adresin TAMAMINI kopyalayın.\n	2) Google will redirect you to a 127.0.0.1 address that does not open. Copy that WHOLE address from the browser's address bar.\n
+2. Dosya yöneticisi > Seçenekler > Geri yükle.\n\n	2. File manager > Options > Restore.\n\n
+3) 'Dönen adresi yapıştır' deyip yapıştırın.	3) Choose 'Paste returned address' and paste it.
+4 GB üstü dosya zip'e eklenemez	Files over 4 GB cannot be added to a zip
+Aç	Open
+Aç (uygun uygulamayla)	Open (with a suitable app)
+Açarken kodlama	Encoding when opening
+Açarken kodlama (Otomatik önerilir)	Encoding when opening (Automatic recommended)
+Açık	On
+Açılamadı (bozuk veri): 	Could not open (corrupt data):
+Açılamadı: 	Could not open:
+Açılıyor: 	Opening:
+Ad boş	Name is empty
+Ad değiştirilemedi	Could not rename
+Ad değiştirilemedi (dosya açık ya da salt okunur)	Could not rename (file open or read-only)
+Ad içinde geçen yazı (boş: hepsi)	Text in the name (empty: all)
+Ad verilemedi	Could not name
+ada göre	by name
+Adı değişti	Renamed
+Adla süz	Filter by name
+Adsız	Untitled
+Alınamadı: 	Could not get:
+Altyazı (SRT)	Subtitles (SRT)
+anahtar: değer → nesne	key: value → object
+Ara	Search
+Ara • 	Search •
+Arama: 	Search:
+Aranacak yazı (ad ve içerik, alt klasörlerle)	Text to search (name and content, with subfolders)
+Aranan	Search term
+Aranıyor…	Searching…
+Arka planda	In background
+arsiv	archive
+Arşiv	Archive
+Arşiv açılamadı	Could not open archive
+Arşiv açılamadı: 	Could not open archive: 
+Arşiv adı (	Archive name (
+Arşiv boş	Archive is empty
+Arşiv okunamadı	Could not read archive
+Arşivde çok fazla dosya (65535 sınırı)	Too many files in archive (65535 limit)
+Arşive ekle (sıkıştırmasız) • 	Add to archive (stored) • 
+Arşive ekle (sıkıştırmasız)…	Add to archive (stored)…
+Arşive eklenemedi: 	Could not add to archive: 
+Arşive ekleniyor: 	Adding to archive: 
+Arşivin parolasını yazın	Enter the archive password
+Arşivleniyor: 	Archiving: 
+Ayar dosyası (INI)	Settings file (INI)
+Ayarlar	Settings
+Aynı OAuth istemcisinin gizli anahtarı. Telefonda saklanır, koda gömülmez.	The secret of the same OAuth client. Stored on the phone, not embedded in the code.
+Bağla	Connect
+Bağlantı ayarları (	Connection settings (
+Bağlantı türü	Connection type
+Başa dönüldü	Wrapped to start
+Başka bir aktarım sürüyor	Another transfer is in progress
+Başka bir dosya işi sürüyor	Another file job is in progress
+Başka klasör: Dosyalar > klasöre basılı tut > Otomatik Drive eşitlemesine ekle	Other folder: Files > hold a folder > Add to automatic Drive sync
+Başka klasör: Dosyalar'da klasör menüsü > Notlar klasörü yap	Other folder: folder menu in Files > Make notes folder
+Başka klasöre çıkar…	Extract to another folder…
+Başka uzantı yaz…	Type another extension…
+Batı (ISO-8859-1)	Western (ISO-8859-1)
+Belgeler (kart)	Documents (card)
+Belgeler (telefon)	Documents (phone)
+Belle çalar	Belle player
+Belle Files düzenleyici	Belle Files editor
+Belle Files Notlar	Belle Files Notes
+Belle Files Yedek	Belle Files Backup
+Belle galeri	Belle gallery
+Bilgi	Info
+Bilinmeyen iş	Unknown job
+Bir dosya seçip menüden 'Notlarıma içe aktar'ı seçin	Choose a file and pick 'Import to my notes' from the menu
+Birleştirildi	Joined
+Birlikte aç • 	Open with • 
+Bitir	Finish
+BOM (bayt sırası işareti) ekle	Add BOM (byte order mark)
+BOM eklenecek	BOM will be added
+BOM eklenmeyecek	No BOM will be added
+boş	Empty
+Boş not	Empty note
+Boş satırlar silindi	Empty lines removed
+Boş satırları sil	Remove empty lines
+Boşluk	Space
+Boşluklar silindi	Spaces removed
+Boyut: 	Size:
+boyuta göre	by size
+Bu adda bir öğe zaten var	An item with this name already exists
+Bu adda dosya zaten vardı, o açıldı	A file with that name already existed; opened it
+Bu adrese ulaşılamadı. Adres kaydedilmedi.	This address is unreachable. Address not saved.
+Bu bir Belle Files paketi: 	This is a Belle Files package:
+Bu boyuttan büyük dosyalar parça parça, salt okunur açılır	Files larger than this open read-only, in parts
+Bu dosyayı açacak uygulama bulunamadı	No app found to open this file
+Bu fotoğraf açılamadı	Could not open this photo
+Bu işlem doğrudan Google modunda yok: 	Not available in direct Google mode:
+Bu klasör boş	This folder is empty
+Bu klasör boş.	This folder is empty.
+Bu klasör silinemez	This folder cannot be deleted
+Bu klasörde ara	Search in this folder
+Bu klasörü Drive'a yedekle	Back up this folder to Drive
+Bu kodlamayla yeniden aç (yazı bozuksa)	Reopen with this encoding (if text is garbled)
+Bu parçada yok • N: sonraki parça	Not in this part • N: next part
+Bul	Find
+Bul ve değiştir	Find and replace
+bulunamadı  •  	not found  •
+Bulunamadı (taşınmış ya da silinmiş): 	Not found (moved or deleted): 
+Bulunamadı: 	Not found:
+Bulunamayanları temizle	Remove missing ones
+Bulunan yedek: 	Backup found:
+Bunu çıkar: 	Extract this:
+Buraya çıkar (klasöre)	Extract here (to folder)
+Buraya yapıştır (	Paste here (
+Büyük dosya (	Large file (
+Büyük dosya parça parça açıldığı için düzenlenemez	A large file opened in parts cannot be edited
+Büyük dosya sınırı	Large file limit
+Büyük harf	UPPER CASE
+BÜYÜK HARF	UPPER CASE
+Büyük/küçük harf duyarlı	Case sensitive
+Büyük/küçük harf ve Türkçe harf fark etmez	Ignore case and Turkish letters
+C: kök dizini (sistem)	C: root (system)
+C:\\Data → kart (	C:\\Data → card (
+C:\\Data karta kopyalanıyor	Copying C:\\Data to the card
+Client ID kaydedildi	Client ID saved
+Client secret kaydedildi	Client secret saved
+CR (eski Mac)	CR (old Mac)
+CRLF (Windows)	CRLF (Windows)
+Ctrl+Q	Ctrl+Q
+Çalınamadı: 	Could not play:
+Çalma listesi	Playlist
+Çalma listesi (M3U)	Playlist (M3U)
+çÇğĞıIİöÖşŞüÜâÂîÎûÛ	çÇğĞıIİöÖşŞüÜâÂîÎûÛ
+Çıkar	Remove
+Çıkar: 	Extract:
+Çıkarılıyor → 	Extracting →
+Çıkarılıyor: 	Extracting:
+Çıkış	Exit
+Çoğalt (aynı klasöre kopya)	Duplicate (copy in the same folder)
+Çöpe at	Move to trash
+Çöpe atıldı	Moved to trash
+Çöpe atılsın mı?	Move to trash?
+Daha fazla	More
+Dahili çalar açılamadı, harici oynatıcıya gönderiliyor	Could not open the built-in player, sending to the external player
+Değişiklik: 	Change:
+Değişiklikler kaydedilsin mi? 	Save changes?
+Değiştir	Change
+Desteklenmeyen AES şifresi: 	Unsupported AES encryption: 
+Desteklenmeyen sıkıştırma (	Unsupported compression (
+Devam	Continue
+Dışa aktar • 	Export •
+Dışa aktar…	Export…
+Dışa aktarılacak dosya yok	No files to export
+Dışa aktarılacak metin dosyası yok	No text files to export
+Dışa aktarılanlar	Exports
+Dışa aktarılanlar klasörüne kopyala	Copy to the exports folder
+Dışa aktarılanlar klasörünü aç (paketler)	Open the exports folder (packages)
+Dışa aktarılanlar ve yedekler hafıza kartında BelleFiles klasöründedir.	Exports and backups are in the BelleFiles folder on the memory card.
+Dışa aktarma: paket .txt (geri yüklenebilir), tek HTML, ayrı HTML'ler, kopya, pano.\n	Export: package .txt (restorable), single HTML, separate HTMLs, copy, clipboard.\n
+Diğer	Other
+Dosya açılamadı: 	Could not open file:
+Dosya adı	File name
+Dosya adı (	File name (
+Dosya alınamadı	Could not get file
+Dosya bulunamadı	File not found
+Dosya okunamadı	Could not read file
+Dosya panosu boş (önce C ya da X)	File clipboard empty (press C or X first)
+Dosyalar	Files
+Dosyalar sekmesinden seç (dosya menüsü > İçe aktar)	Pick from the Files tab (file menu > Import)
+Dosyalarda ara	Search files
+Döndür	Rotate
+Dönen adres	Returned address
+Dönen adresi yapıştır	Paste returned address
+Dönüştürme: html, txt, vcf (rehber), vcs (takvim), m3u, csv, json, xml, srt.\n	Conversion: html, txt, vcf (contacts), vcs (calendar), m3u, csv, json, xml, srt.\n
+Drive bağlantısı	Drive connection
+Drive hatası: 	Drive error:
+Drive işi başlatılamadı	Could not start the Drive job
+Drive klasörü boş: 	Drive folder empty:
+Drive klasörü hazırlanamadı	Could not prepare the Drive folder
+Drive klasörü taranıyor…	Scanning the Drive folder…
+Drive: Sunucu üzerinden ya da kendi Google hesabınızla doğrudan.	Drive: through the server or directly with your own Google account.
+Drive'a ulaşılamadı	Could not reach Drive
+Drive'a yedekle (alt klasörlerle)	Back up to Drive (with subfolders)
+Drive'a yedekleniyor	Backing up to Drive
+Drive'a yedekleniyor → 	Backing up to Drive →
+Drive'a yükle	Upload to Drive
+Drive'a yükle (klasörler dahil)	Upload to Drive (including folders)
+Drive'a yükle (yeniden paketlemeden)	Upload to Drive (without repacking)
+Drive'a yükle → 	Upload to Drive →
+Drive'a yüklendi: 	Uploaded to Drive:
+Drive'a yükleniyor	Uploading to Drive
+Drive'a yükleniyor: 	Uploading to Drive:
+Drive'da başka bir aktarım sürüyor	Another Drive transfer is in progress
+Drive'da bulunamadı: 	Not found on Drive:
+Drive'da notlar klasörü	Notes folder on Drive
+Drive'da yedek klasörü	Backup folder on Drive
+Drive'daki yedek zip'i indirilip yerlerine açılsın mı?	Download the backup zip from Drive and restore it to the original places?
+Drive'dan indir, aç ve yerlerine koy	Download from Drive, extract and restore
+Drive'dan indirilenler	Drive downloads
+Drive'dan indirilenler: 	Drive downloads:
+Drive'ım	My Drive
+Drive'ım altında klasör adı (alt klasör için / kullanın)	Folder name under My Drive (use / for subfolders)
+Drive'ım içine	My Drive
+Düz metin	Plain text
+Düzenle	Edit
+Düzenleme açık	Editing on
+Düzenlemeye aç	Open for editing
+düzenleyici, notlar klasörü, eşitleme	editor, notes folder, sync
+Düzenleyicide aç	Open in editor
+E: ve F: kökünde dosya içeren bir Backup klasörü bulunamadı. Yedeği Dosyalar sekmesinde bulursanız yerini bildirin.	No Backup folder with files was found at the root of E: or F:. If you find the backup in the Files tab, report its location.
+E:, F: köklerinde Backup klasörü yok: dokunun, nasıl alınır	No Backup folder at E:, F: roots: tap to see how to make one
+Ekle: 	Add:
+Ekleniyor: %1 / %2	Adding: %1 / %2
+Enter	Enter
+Eski dosya değiştirilemedi (salt okunur ya da açık)	Could not replace the old file (read-only or open)
+Eski kopyayı aç	Open old copy
+Etiketler temizlendi	Tags removed
+Etkinlik	Event
+Ev klasörü	Home folder
+Evet, durdur	Yes, stop
+Evet, kalıcı olarak sil	Yes, delete permanently
+Evet, sil	Yes, delete
+Evet: indir, aç, yerlerine koy (aynı adlı dosyaların üzerine yazılır)	Yes: download, extract, restore (files with the same name are overwritten)
+Evet: rehberde olmayan kişileri ekle	Yes: add contacts not in the phonebook
+Evet: telefonda olmayan mesajları ekle	Yes: add messages not on the phone
+Farklı kaydet	Save as
+Farklı kaydet…	Save as…
+Favori yok.\nSolda bir klasör ya da dosyanın … menüsünden \"Favorilere ekle\" deyin, ya da bir klasördeyken yukarıdaki ★'a basın.	No favourites.\nOn the left, choose \"Add to favourites\" from a folder's or file's … menu, or press ★ at the top while inside a folder.
+Favoriden çıkar	Remove from favourites
+Favoriler	Favourites
+Favorilerden çıkar	Remove from favourites
+Favorilerden çıkarıldı	Removed from favourites
+Favorilere ekle	Add to favourites
+Favorilere eklendi	Added to favourites
+Fotoğraflar	Photos
+Fotoğraflar için varsayılan program…	Default app for photos…
+Geçerli bir zip değil	Not a valid zip
+Geçerli JSON, düzenlendi	Valid JSON, formatted
+Geçersiz ad	Invalid name
+Geçersiz ad (\\ / : * ? \" < > | kullanılamaz)	Invalid name (\\ / : * ? \" < > | not allowed)
+Geçici dosyanın adı değiştirilemedi: 	Could not rename the temporary file:
+Geri al	Undo
+Geri yükle	Restore
+Geri yükleme yalnızca telefonda	Restore only on the phone
+Geri yüklemek (ROM sonrası, yeni kart…):\n1. \"Drive'dan indir, aç ve yerlerine koy\" ile Backup klasörü eski yerine döner.\n	To restore (after a ROM flash, new card…):\n1. \"Download from Drive, extract and restore\" puts the Backup folder back.\n
+girilmedi (gerekli)	not entered (required)
+Git	Go
+Google anahtarı yenilenemedi: 	Could not refresh the Google token:
+Google bağlantısı kesildi	Google disconnected
+Google bağlantısını kes	Disconnect Google
+Google Client secret	Google Client secret
+Google Cloud Console > API ve Hizmetler > Kimlik bilgileri > OAuth istemcisi (Masaüstü uygulaması)	Google Cloud Console > APIs & Services > Credentials > OAuth client (Desktop app)
+Google doğrudan (sunucusuz)	Google direct (no server)
+Google doğrudan: telefon Google Drive'a kendisi bağlanır (HTTPS). Herkes kendi Google hesabını ve kendi OAuth istemcisini (Client ID + secret, 'Masaüstü uygulaması' türü) girebilir.	Google direct: the phone connects to Google Drive itself (HTTPS). Everyone enters their own Google account and their own OAuth client (Client ID + secret, 'Desktop app' type).
+Google Drive sunucuda bağlı değil. Menü → Web sürümü üzerinden yeniden bağlayın.	Google Drive is not connected on the server. Reconnect via Menu → Web version.
+Google hesabı bağlandı: 	Google account connected:
+Google hesabı bağlı değil	Google account not connected
+Google hesabı bağlı değil.	Google account not connected.
+Google hesabı bağlı değil. Drive menüsü → Bağlantı ayarları → Google hesabını bağla	Google account not connected. Drive menu → Connection settings → Connect Google account
+Google hesabını bağla	Connect Google account
+Google izni reddedildi	Google permission denied
+Google reddetti: 	Google refused:
+Gönderilen	Sent
+Görüntüle (salt okunur)	View (read-only)
+Göster: 	Show:
+Günlüğü göster	Show log
+Günlük	Log
+Günlük (LOG)	Log (LOG)
+Günlük (tarihli)	Journal (dated)
+Hafıza kartı (E:)	Memory card (E:)
+Hafıza kartı: E:/BelleFiles/Notlar	Memory card: E:/BelleFiles/Notlar
+Hafıza kartı: E:/Downloads	Memory card: E:/Downloads
+Hafıza kartı: E:/Drive	Memory card: E:/Drive
+Hakkında	About
+Harici oynatıcıda aç	Open in external player
+Hata 	Error
+Hayır, sürsün	No, continue
+Hazır: 	Ready:
+Hazırlanıyor…	Preparing…
+Hedef klasör	Target folder
+Henüz açılan dosya yok	No files opened yet
+Henüz hiçbir uygulama ayarlarını karta kopyalamadı.\n	No app has copied its settings to the card yet.\n
+Henüz not yok	No notes yet
+Henüz yedek yok	No backup yet
+Hepsi yerinde	All present
+Her biri ayrı HTML	Each as separate HTML
+Her satır 3 sn	3 s per line
+Her seferinde sor	Ask every time
+Hesap: 	Account:
+Hızlı	Fast
+HTML / JSON / CSV düz metne	HTML / JSON / CSV to plain text
+HTML etiketlerini temizle	Strip HTML tags
+İçe aktar → 	Import →
+İçe aktar…	Import…
+İçe aktarıldı: 	Imported:
+İçeriği dönüştür, bu dosyanın yerine	Convert content, replacing this file
+İçeriği dönüştür, yeni dosya olarak kaydet	Convert content, save as a new file
+İçindekileri dışa aktar…	Export contents…
+İçine bak	Look inside
+İmleç: satır 	Cursor: line
+İndir	Download
+İndirildi	Downloaded
+İndirilemedi	Download failed
+İndirilemedi: 	Download failed:
+İndirilenler (kart)	Downloads (card)
+İndirilenler (telefon)	Downloads (phone)
+İndirilenler: 	Downloads:
+İndiriliyor: 	Downloading:
+İptal	Cancel
+İptal edildi	Cancelled
+İstatistik	Statistics
+İş arka planda sürüyor	The job continues in the background
+İş başlatılamadı	Could not start the job
+İş durdurulsun mu?	Stop the job?
+İşaretle (çoklu seçim)	Mark (multi-select)
+İşaretler kaldırıldı	Marks cleared
+İşaretleri kaldır	Clear marks
+izin adresi açılır	the permission address opens
+JSON düz metne çevrildi	JSON converted to plain text
+Kabuk betiği	Shell script
+Kapalı	Off
+Kapat	Close
+Kart için E:/..., telefon için C:/Data/...	E:/... for the card, C:/Data/... for the phone
+Karta kopyala	Copy to card
+Karttaki son zip • 	Last zip on card •
+Karttaki zip silinsin mi? (Drive'daki kopya kalır)	Delete the zip on the card? (the Drive copy stays)
+Kaydederken .bak yedeği	.bak backup when saving
+Kaydederken bu kodlamayı kullan	Use this encoding when saving
+Kaydedildi	Saved
+Kaydedildi: 	Saved:
+Kaydedilemedi: 	Could not save:
+Kaydedilmemiş taslak bulundu	Unsaved draft found
+Kaydedince 	When saved
+Kaydet	Save
+Kaydetmeden çık	Exit without saving
+kayıtlı	saved
+Kaynak bulunamadı	Source not found
+Kelime başları	Capitalize words
+Kelime Başları Büyük	Capitalize Each Word
+Kes	Cut
+Kes (taşımak için)	Cut (to move)
+Kısayollar	Shortcuts
+Kısayollar / yardım	Shortcuts / help
+Kişi	Contact
+Kişi kartı	Contact card
+Kişi kartı (vCard)	Contact card (vCard)
+Kişiler geri yüklensin mi?	Restore contacts?
+Kişiler listelendi	Contacts listed
+klasör	Folder
+Klasör	Folder
+Klasör bulunamadı	Folder not found
+Klasör eşitleniyor	Syncing folder
+Klasör kendi içine kopyalanamaz	A folder cannot be copied into itself
+Klasör kendi içine kopyalanamaz: 	A folder cannot be copied into itself:
+Klasör kendi içine taşınamaz	A folder cannot be moved into itself
+Klasör oluşturulamadı	Could not create folder
+Klasör oluşturulamadı: 	Could not create folder:
+Klasör oluşturuldu	Folder created
+Klasör silinemedi: 	Could not delete folder:
+Klasör yüklenmez; içindeki dosyaları işaretleyip tek tek yükleyin	Folders are not uploaded; mark the files inside and upload them
+Klasör: 	Folder:
+Klasöre gir	Enter folder
+Klasörler	Folders
+Klasörler:\n  Notlar: 	Folders:\n  Notes:
+Klasörlerim	My folders
+Klasörü aç	Open folder
+Klasöründe göster	Show in folder
+Klasörüne git	Go to its folder
+Klavye kısayolları	Keyboard shortcuts
+Kod bulunamadı	Code not found
+Kodlama • şu an 	Encoding • now
+Kodlama tanıma: BOM, UTF-8, Windows-1254 (Türkçe), UTF-16.\n	Encoding detection: BOM, UTF-8, Windows-1254 (Turkish), UTF-16.\n
+Kodlama ve satır sonu…	Encoding and line endings…
+Kodlama: 	Encoding:
+Kopya oluşturulamadı	Could not create a copy
+Kopya: 	Copy:
+Kopyala	Copy
+Kopyala (dosya)	Copy (file)
+Kopyalanamadı (yer dolu ya da erişim yok)	Could not copy (disk full or no access)
+Kopyalandı	Copied
+Kopyalandı ama kaynak silinemedi	Copied but the source could not be deleted
+Kopyalanıyor → 	Copying →
+Kopyalanıyor → Dışa aktarılanlar	Copying → Exports
+Kök	Root
+Kurulum açılıyor…	Opening installer…
+küçük harf	lower case
+Küçük harf	lower case
+LF (Unix)	LF (Unix)
+LF (Unix, Android)	LF (Unix, Android)
+LF (Unix, Linux, Android)	LF (Unix, Linux, Android)
+Liste bitti	End of list
+Listeden kaldır	Remove from list
+Menü	Menu
+Merhaba <deneme> & \"çğışöü\"\nikinci satır	Hello <test> & \"çğışöü\"\nsecond line
+Mesaj sunucusu hatası %1	Message server error %1
+Mesajlar karşılaştırılıyor ve ekleniyor…	Comparing and adding messages…
+Mesajlar okunamadı (hata %1)	Could not read messages (error %1)
+Mesajlar okunuyor…	Reading messages…
+Metin araçları	Text tools
+Metin araçları…	Text tools…
+Metin dosyaları	Text files
+Metin olarak aç	Open as text
+Metin olarak oku	Read as text
+Metin olarak tanınan uzantılar	Extensions treated as text
+Metin olmayan dosya düzenlenemez	A non-text file cannot be edited
+Metin olmayan dosya: salt okunur açıldı	Non-text file: opened read-only
+metin, foto, video, ses	text, photo, video, audio
+Müzik çalarda açılır	Opens in the music player
+Müzik ve ses	Music and audio
+N: yeni dosya  •  P: panodan  •  T: tüm dosyalar  •  H: yardım	N: new file  •  P: from clipboard  •  T: all files  •  H: help
+Neler yedekleniyor	What is backed up
+Nokia E6 (Belle) için not defteri, dosya yöneticisi ve Google Drive istemcisi.\n\nNotlar: not ekranındaki bulut düğmesi notu, Notlar listesindeki senkron düğmesi tüm notları (ve seçtiğiniz otomatik klasörleri) Drive'a eşitler; yalnızca değişenler gider.\nZip: arşivin içini gezme, çıkarma ve sıkıştırma. Ses dosyaları dahili çalarla çalar.\nUzun dosya işleri (kopyala, taşı, sil, zip, Drive yedeği) arka planda ilerleme göstergesiyle çalışır.\nDosyalar: bir dosyaya basılı tutun > Drive'a yükle. SIS/JAR yükleyiciye, video ve müzik harici oynatıcıya gider; büyük dosyalar metin olarak parça parça açılır.\nDrive: Sunucu üzerinden ya da kendi Google hesabınızla doğrudan.\n\n	Notepad, file manager and Google Drive client for the Nokia E6 (Belle).\n\nNotes: the cloud button on a note syncs that note, the sync button in the Notes list syncs all notes (and the auto folders you choose) to Drive; only changes are sent.\nZip: browse, extract and compress archives. Audio files play in the built-in player.\nLong file jobs (copy, move, delete, zip, Drive backup) run in the background with a progress indicator.\nFiles: hold a file > Upload to Drive. SIS/JAR go to the installer, video and music to the external player; large files open as text in parts.\nDrive: through the server or directly with your own Google account.\n\n
+Nokia E6 Yedek	Nokia E6 Backup
+Nokia yedeği	Nokia backup
+Nokia yedeği (telefon ayarları, rehber, mesajlar…)	Nokia backup (phone settings, contacts, messages…)
+Nokia yedeğini telefona geri yüklemek için:\nMenü > Dosya yöneticisi > Seçenekler > Geri yükle.\n\n	To restore the Nokia backup to the phone:\nMenu > File manager > Options > Restore.\n\n
+Nokia'nın kendi yedeği telefon ayarlarını, rehberi, mesajları, takvimi ve uygulama verilerini birlikte alır; bunları başka hiçbir uygulama okuyamaz.\n\n	Nokia's own backup takes phone settings, contacts, messages, calendar and app data together; no other app can read them.\n\n
+Not 	Note
+Not ayarları	Note settings
+Not kaydedince Drive'a eşitle	Sync to Drive when a note is saved
+Notlar	Notes
+Notlar ekranındaki senkron düğmesi bu klasörleri de Drive > 	The sync button on the Notes screen also syncs these folders to Drive >
+Notlar eşitleniyor	Syncing notes
+Notlar klasörü	Notes folder
+Notlar klasörü yap	Make notes folder
+Notlar klasörü: 	Notes folder:
+Notlar sekmesinde ⚙	⚙ in the Notes tab
+Notlara ayrı dosya olarak kaydet	Save to notes as a separate file
+Notlarım	My notes
+Notlarıma içe aktar	Import to my notes
+Numaralandı	Numbered
+Okuma hatası: 	Read error:
+Okunamadı (	Could not read (
+Okunamadı: 	Could not read:
+Olmadı	Failed
+Oluştur	Create
+Oluşturulamadı: 	Could not create:
+Ortak ayarlar (C:\\Data\\.config: Mail, Drive, Belle Browser…)	Shared settings (C:\\Data\\.config: Mail, Drive, Belle Browser…)
+Otomatik	Automatic
+Otomatik Drive eşitlemesinden çıkar	Remove from automatic Drive sync
+Otomatik Drive eşitlemesine ekle	Add to automatic Drive sync
+Otomatik Drive eşitlemesine eklendi: 	Added to automatic Drive sync:
+Otomatik eşitlemeden çıkarıldı: 	Removed from automatic sync:
+Otomatik eşitlenen klasörler	Automatically synced folders
+Otomatik kaydet (30 sn)	Autosave (30 s)
+Önce bir klasöre girin	Enter a folder first
+Önce Client secret girin	Enter the Client secret first
+Önce dosyayı kaydedin	Save the file first
+Önce Drive sekmesinden bağlantıyı kurun (Sunucu ya da Google hesabı)	Set up the connection in the Drive tab first (Server or Google account)
+Önce kaydedin	Save first
+Önce kaydedin ya da değişiklikleri atın	Save or discard changes first
+Önce solda bir klasöre girin	First open a folder on the left
+Önce süren aktarım bitsin	Wait for the current transfer to finish
+Önizleme yükleniyor…	Loading preview…
+Örnek: html, vcf, m3u (boş: uzantısız)	Example: html, vcf, m3u (empty: no extension)
+Paket .txt birçok dosyayı tek dosyada taşır; aynı paketi <b>I</b> ya da dosya menüsünden geri açabilirsiniz.<br>	A package .txt carries many files in one; reopen it with <b>I</b> or from the file menu.<br>
+Paket dosyası (.txt, geri yüklenebilir) • 	Package file (.txt, restorable) •
+Paketi aç (dosyalara ayır)	Unpack (split into files)
+Paketleme başlatılamadı	Could not start packaging
+Pakette dosya bulunamadı	No files found in the package
+Pano	Clipboard
+Pano boş	Clipboard empty
+Panodaki yazıdan	From clipboard text
+Panodaki yazıdan yeni not	New note from clipboard text
+Panodan oluşturuldu: 	Created from clipboard:
+Panoya kopyalandı	Copied to clipboard
+Parola gerekli: 	Password required: 
+Parola hatalı	wrong password
+Parola kaydedildi	Password saved
+Parola yanlış ya da veri bozuk: 	Wrong password or corrupt data: 
+Parola yanlış, yeniden deneyin	Wrong password, try again
+Parola yanlış: 	Wrong password: 
+parolası	password
+Paylaşılan	Shared
+Rehber	Contacts
+Rehber + SMS şimdi yedeklenir; uygulama ayarları zaten kartta güncel (T)	Contacts + SMS are backed up now; app settings are already up to date on the card (T)
+Rehber okunamadı (hata %1)	Could not read contacts (error %1)
+Rehber okunuyor…	Reading phonebook…
+Rehber yedeği okunuyor…	Reading contacts backup…
+Rehber yedekleri	Contacts backups
+Rehber, SMS, uygulama ayarları ve Nokia yedeği (Backup) eski yerlerine açıldı.\n\n	Contacts, SMS, app settings and the Nokia backup (Backup) were restored to their places.\n\n
+Rehber: vCard'a çevrilemedi	Contacts: could not convert to vCard
+Rehber: yazma hatası %1	Contacts: write error %1
+Rehber: yedek dosyası açılamadı	Contacts: could not open backup file
+Rehber: yedekte kişi yok	Contacts: no contacts in backup
+Rehberdeki kişilerle karşılaştırılıyor…	Comparing with phonebook contacts…
+Rehbere eklenir	Added to contacts
+Resim, ses, belge ve uygulama dosyaları karta kopyalanır (	Images, audio, documents and app files are copied to the card (
+Salt okunur	Read-only
+salt okunur  	read-only
+SALT OKUNUR  •  	READ-ONLY  •
+Salt okunur (Ctrl+R ile düzenlemeye aç)	Read-only (Ctrl+R to edit)
+Salt okunur yap	Make read-only
+Satır 	Line
+Satır kaydırma	Word wrap
+Satır kaydırma açık	Word wrap on
+Satır kaydırma kapalı	Word wrap off
+Satır kaydırmayı aç	Turn word wrap on
+Satır kaydırmayı kapat	Turn word wrap off
+Satır sonu	Line ending
+Satır sonu boşluklarını sil	Trim trailing spaces
+Satır sonu: 	Line ending:
+Satıra git	Go to line
+Satırı çoğalt	Duplicate line
+Satırı sil (panoya)	Delete line (to clipboard)
+Satırları birleştir	Join lines
+Satırları numarala	Number lines
+Satırları sırala (A→Z)	Sort lines (A→Z)
+Satırları sırala (Z→A)	Sort lines (Z→A)
+Satırları ters çevir	Reverse lines
+Seçim	Selection
+Seçim: dokunarak ekleyin, alttaki çubuktan işlem yapın	Selection: tap to add, use the bar below for actions
+Seçimi kes	Cut selection
+Seçimi kopyala	Copy selection
+Ses olarak çal (dahili, deneysel)	Play as audio (built-in, experimental)
+Sıkıştır	Compress
+Sıkıştırılıyor: 	Compressing:
+Sıradakini değiştir	Replace next
+Sıralama: 	Sort:
+Sıralandı	Sorted
+Sil	Delete
+Sil (içindekilerle)	Delete (with contents)
+Sil (yer açar; Drive'daki kalır)	Delete (frees space; the Drive copy stays)
+Silindi	Deleted
+Silindi: 	Deleted:
+Silinemedi (açık ya da salt okunur olabilir)	Could not delete (may be open or read-only)
+Silinemedi: 	Could not delete:
+Siliniyor: 	Deleting:
+Silinsin mi? 	Delete?
+Silme durduruldu	Deletion stopped
+Sistemde aç	Open in system
+Sistemde aç (	Open in system (
+Sistemde aç / önizle	Open in system / preview
+Slayt gösterisi (3 sn)	Slideshow (3 s)
+Slayt gösterisini durdur	Stop slideshow
+SMS yalnızca telefonda	SMS only on the phone
+SMS yedeği okunuyor…	Reading SMS backup…
+SMS yedekleri	SMS backups
+SMS'ler geri yüklensin mi?	Restore SMS messages?
+Sol/sağ tuş: diğer sekmeler	Left/right key: other tabs
+Solda aç	Open on the left
+Soldaki klasörü favorilere ekle	Add the left folder to favourites
+Son	Recent
+Son açılanlar	Recently opened
+Son açılanları temizle	Clear recently opened
+Son ve favoriler	Recent and favourites
+Son yedek 	Last backup
+Sonra burada \"Tümünü zip'le ve Drive'a yükle\" deyin: Nokia yedeği de zip'e girer.\n\n	Then choose \"Zip everything and upload to Drive\" here: the Nokia backup goes into the zip too.\n\n
+Sonrakini bul: 	Find next:
+Sonuç yok.	No results.
+Sorun var	Problem
+Stil (CSS)	Style (CSS)
+Sunucu	Server
+Sunucu adresi	Server address
+Sunucu adresi (ör. 203.0.113.10):	Server address (e.g. 203.0.113.10):
+Sunucu parolası	Server password
+Sunucu parolası girilmedi.	No server password entered.
+Sunucu parolası hatalı	Wrong server password
+Sunucu parolası hatalı. Menü → Parolayı sıfırla.	Wrong server password. Menu → Reset password.
+Sunucu üzerinden	Through the server
+Sunucu üzerinden: istekler kendi sunucunuzdan geçer (adres ve parola ayarlanabilir). Sunucuda Drive bağlı olmalıdır (/drive/setup).	Through the server: requests go through your own server (address and password can be set). Drive must be connected on the server (/drive/setup).
+Sunucu: 	Server:
+Sunucunun parolası (WhatsBelle ile aynı)	The server's password (same as in WhatsBelle)
+Sunucuya ulaşılamadı	Could not reach the server
+Sunucuya ulaşılamadı. İnternet bağlantısını ya da sunucu adresini (Menü → Sunucu adresi) kontrol edin.	Could not reach the server. Check your internet connection or the server address (Menu → Server address).
+Sütunlar virgülle	Columns comma-separated
+Süz	Filter
+Süzgece uyan dosya yok	No files match the filter
+süzgeç: 	filter:
+SVG resim	SVG image
+Şifreli veri bozuk: 	Encrypted data corrupt: 
+Şifreli zip: 	Encrypted zip: 
+Şimdi eşitle (notlar + bu klasörler)	Sync now (notes + these folders)
+Şimdi yedekle	Back up now
+Şuna ekle: 	Add to: 
+Tablo (CSV)	Table (CSV)
+Tablo hizalandı	Table aligned
+Takvim etkinliği	Calendar event
+Takvim etkinliği (vcs)	Calendar event (vcs)
+Takvime eklenir	Added to calendar
+Tam yedek al	Full backup
+Tam yedek başlıyor…	Starting full backup…
+Tamam	OK
+Tamamlandı	Completed
+Tarayıcıda aç	Open in browser
+Tarayıcıda açılır	Opens in the browser
+Tarih / saat ekle	Insert date / time
+Tarih: 	Date: 
+tarihe göre (yeni önce)	by date (newest first)
+Taslağı aç	Open draft
+Taslağı sil	Delete draft
+Taslak 	Draft
+Taslak koruması (çökmeye karşı)	Draft protection (against crashes)
+Taşınamadı	Could not move
+Taşınıyor → 	Moving →
+Tek dosya olarak içe aktar	Import as a single file
+Tek HTML sayfası (içindekilerle)	Single HTML page (with contents)
+Tekrar değiştirmek için Ctrl+H > Sıradakini değiştir	To replace again: Ctrl+H > Replace next
+Tekrar dene	Try again
+Tekrarlanan satırları kaldır	Remove duplicate lines
+Tekrarlar kaldırıldı	Duplicates removed
+Telefon belleği (C:)	Phone memory (C:)
+Telefon hafızası (C:\\Data) • 	Phone memory (C:\\Data) •
+Telefon sıfırlanır ya da ROM yüklenirse uygulamayı yeniden kurup açmanız yeterli: ayarlar karttan kendiliğinden geri gelir.	If the phone is reset or a ROM is flashed, just reinstall and open the app: its settings return from the card automatically.
+Telefon: C:/Data/BelleFiles/Notlar	Phone: C:/Data/BelleFiles/Notlar
+Telefon: C:/Data/Drive	Phone: C:/Data/Drive
+Telefona yazılamadı: 	Could not write to the phone:
+Telefonda: 	On phone:
+Telefondaki kopya ESKİ — Drive'da daha yeni sürüm var.\n	The copy on the phone is OLD — Drive has a newer version.\n
+Telefonun galerisi	Phone's gallery
+Telefonun galerisinde aç	Open in phone's gallery
+Telefonun müzik çalarları	Phone's music player
+Telefonun not uygulaması	Phone's notes app
+Telefonun video oynatıcısı	Phone's video player
+Ters çevrildi	Reversed
+Toplu iş (BAT)	Batch file (BAT)
+Tüm dosyalar gösteriliyor	Showing all files
+Tüm dosyaları göster	Show all files
+Tüm notları Drive'a eşitle	Sync all notes to Drive
+Tüm yazı panoda (	All text on clipboard (
+Tüm yazıyı panoya kopyala	Copy all text to clipboard
+Tümü	All
+Tümünü çıkar → 	Extract all →
+Tümünü değiştir	Replace all
+Tümünü dışa aktar…	Export all…
+Tümünü işaretle	Mark all
+Tümünü seç	Select all
+Tümünü zip'e sıkıştır	Compress all to zip
+Tümünü zip'le ve Drive'a yükle	Zip everything and upload to Drive
+Tümünün yazısını panoya kopyala	Copy the text of all to clipboard
+Türkçe (ISO-8859-9)	Turkish (ISO-8859-9)
+Türkçe (Windows-1254)	Turkish (Windows-1254)
+Uygulama ayarları (	App settings (
+Uygulama ayarları • 	App settings •
+Uygulama ayarları: uygulamaları (yeniden kurulduysa) açtığınızda kendiliğinden geri gelir.\nRehber / SMS: aşağıdaki yedek dosyalarından \"Geri yükle\".	App settings: they return automatically when you open the apps (after reinstalling).\nContacts / SMS: \"Restore\" from the backup files below.
+Uygulamalar ayarlarını kendileri karta kopyalar; ROM sonrası otomatik geri gelir	Apps copy their settings to the card themselves; they return automatically after a ROM flash
+Uzantı / dönüştür • 	Extension / convert •
+Uzantı / dönüştür…	Extension / convert…
+Uzantısı değişmiş kopya oluştur	Create a copy with the new extension
+Uzantısız	No extension
+Uzantıyı değiştir / dönüştür…	Change extension / convert…
+Üst klasör	Parent folder
+Üzerine yaz	Overwrite
+Varsayılan (kart varsa kart)	Default (card if present)
+Varsayılan programlar	Default apps
+Varsayılan programlar (Belle Files içinden açılan dosyalar)	Default apps (files opened from Belle Files)
+Varsayılana dön (	Reset to default (
+Varsayılanı değiştir…	Change default…
+Vazgeç	Cancel
+Videolar	Videos
+Web sayfası	Web page
+Web sayfası (HTML)	Web page (HTML)
+Web'de aç	Open on the web
+Yalnızca metin dosyaları	Text files only
+Yalnızca uzantıyı değiştir	Change extension only
+Yanıt okunamadı	Could not read the response
+Yapılacak işareti [ ] / [x]	To-do mark [ ] / [x]
+Yapılacaklar - 	To-do -
+Yapılacaklar listesi	To-do list
+Yapıştır	Paste
+Yapıştır (	Paste (
+Yazı boyutu	Text size
+Yazı boyutu (tüm uygulama)	Text size (whole app)
+Yazı boyutu: 	Text size:
+Yazı panoya kopyalandı (	Text copied to clipboard (
+Yazılamadı (yer dolu olabilir)	Could not write (disk may be full)
+Yazılamadı: 	Could not write:
+Yazısını panoya kopyala	Copy its text to clipboard
+Yazıyı büyüt	Larger text
+Yazıyı küçült	Smaller text
+Yedek	Backup
+Yedek almak:\n1. Menü > Dosya yöneticisi\n2. Seçenekler > Telefon hafızasını yedekle\n3. Yedek seçtiğiniz sürücünün kökündeki Backup klasörüne yazılır (E: telefon hafızası ya da F: hafıza kartı).\n\n	To make a backup:\n1. Menu > File manager\n2. Options > Back up phone memory\n3. The backup is written to the Backup folder at the root of the drive you choose (E: phone memory or F: memory card).\n\n
+Yedek dosyası açılamadı	Could not open backup file
+Yedek klasörünü aç	Open backup folder
+Yedek okunamadı: 	Could not read backup:
+Yedek silinsin mi? (geri alınamaz)	Delete backup? (cannot be undone)
+Yedek tamamlanamadı (yer dolu olabilir)	Backup could not complete (disk may be full)
+Yedek zip'i Drive'a yükleniyor	Uploading backup zip to Drive
+Yedek zip'i Drive'dan indiriliyor → 	Downloading backup zip from Drive →
+Yedekleniyor	Backing up
+Yedekler	Backups
+Yedekler açılıp yerlerine konuyor	Extracting and restoring backups
+Yedekler klasörünü aç	Open backups folder
+Yedekler paketleniyor (sıkıştırmasız) → 	Packing backups (uncompressed) →
+Yedekler yerlerine kondu	Backups restored
+Yedekte mesaj yok	No messages in backup
+Yeni arşiv (sıkıştırmasız)	New archive (stored)
+Yeni arşiv oluştur…	Create new archive…
+Yeni dosya	New file
+Yeni dosya • 	New file •
+Yeni dosya burada	New file here
+Yeni dosya: 	New file:
+Yeni dosyada satır sonu	Line ending for new files
+Yeni klasör	New folder
+Yeni sayfa	New page
+Yeni sürümü indir	Download new version
+Yeni uzantı	New extension
+Yeniden açıldı: 	Reopened:
+Yeniden adlandır	Rename
+yeniden bağlamak için seçin	select to reconnect
+Yeniden indir	Download again
+Yenile	Refresh
+Yer kalmadı ya da yazılamadı: 	Out of space or could not write:
+Yerel başlık bozuk: 	Local header corrupt:
+Yerine	Replace with
+Yerlerine aç (Drive'dan indirmeden)	Restore (without downloading from Drive)
+Yığın bellek (F:)	Mass memory (F:)
+Yıldız kaldırıldı	Star removed
+Yıldızı kaldır	Remove star
+Yıldızla	Star
+Yıldızlandı	Starred
+Yıldızlı	Starred
+yıldızlı	Starred
+Yinele	Redo
+yok	none
+Yol panoya kopyalandı	Path copied to clipboard
+Yolu panoya kopyala	Copy path to clipboard
+Yükle	Upload
+Yüklendi	Uploaded
+Yüklenecek dosya	File to upload
+Yüklenemedi: 	Upload failed:
+Yükleniyor: 	Uploading:
+Yükleniyor…	Loading…
+Z: ROM (salt okunur)	Z: ROM (read-only)
+Zaten HTML, içerik korundu	Already HTML, content kept
+Zaten SRT	Already SRT
+Zaten takvim dosyası	Already a calendar file
+Zaten vCard	Already vCard
+Zaten XML, içerik korundu	Already XML, content kept
+ZIP64 arşivleri desteklenmiyor	ZIP64 archives are not supported
+ZIP64 arşivlerine eklenemez	Cannot add to ZIP64 archives
+Zip açılamadı	Could not open zip
+Zip açma başlatılamadı	Could not start extracting zip
+Zip arşivi (sıkıştırılmış)	Zip archive (compressed)
+Zip arşivi hazırlanıyor	Preparing zip archive
+Zip bulunamadı	Zip not found
+Zip dizini bozuk	Zip directory corrupt
+Zip dizini bulunamadı (bozuk ya da zip değil)	Zip directory not found (corrupt or not a zip)
+Zip dizini yazılamadı	Could not write zip directory
+Zip içeriğini göster	Show zip contents
+Zip iner, açılır: 	Zip downloads and extracts:
+Zip oluşturulamadı: 	Could not create zip:
+Zip yapılamadı	Could not zip
+Zip yapılamadı: 	Could not zip:
+Zip yazılamadı	Could not write zip
+Zip yazılamadı (yer kalmadı mı?)	Could not write zip (out of space?)
+Zip'e sıkıştır	Compress to zip

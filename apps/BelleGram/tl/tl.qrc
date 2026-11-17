@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/tl">
+        <file>sema.txt</file>
+    </qresource>
+</RCC>

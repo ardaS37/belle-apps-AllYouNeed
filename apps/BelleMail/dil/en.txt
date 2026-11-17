@@ -1,0 +1,131 @@
+# BelleMail - English (araclar/dil_cikar.ps1 ile uretilir, elle duzenlemeyin)
+---------- İletilen posta ----------	---------- Forwarded message ----------
+ KB	 KB
+ MB	 MB
+ posta	 messages
+%1 dk	%1 min
+%1 tarihinde %2 yazdı:	On %1, %2 wrote:
+(değiştirmeyecekseniz boş bırakın)	(leave empty to keep it)
+(konu yok)	(no subject)
+(metin yok)	(no text)
+\nBilgi: 	\nInfo:
+\nTarih: 	\nDate:
+‹ Geri	‹ Back
+>\nKime: 	>\nTo:
+↩ Yanıtla	↩ Reply
+✉ %1 yeni posta	✉ %1 new emails
+✎ Yaz	✎ Compose
+Alıcı adresi girin	Enter a recipient address
+Ara	Search
+Arama: 	Search:
+Arka plana al	Send to background
+Arka planda çalışıyor; yeni postalar bildirilecek	Running in the background; you will be notified of new email
+Arşiv	Archive
+Arşivlendi	Archived
+Bağlanıyor…	Connecting…
+BelleMail posta kutunuza telefondan doğrudan, şifreli (TLS) bağlanır; arada sunucu yoktur. Bilgiler yalnızca bu telefonda saklanır.	BelleMail connects to your mailbox directly from the phone over an encrypted (TLS) connection; there is no server in between. Your details are stored only on this phone.
+Bu hesapta arşiv klasörü yok.	This account has no archive folder.
+Bu hesapta bu klasör yok.	This account has no such folder.
+Bu telefondaki posta hesabı bilgileri silinir; postalarınız sağlayıcıda kalır.	The account details on this phone will be deleted; your emails stay with your provider.
+Burada posta yok.	No mail here.
+Cmt	Sat
+Cum	Fri
+Çar	Wed
+Çık	Exit
+Çöp kutusu	Trash
+Çöp kutusuna taşındı	Moved to trash
+Daha eski postalar	Older messages
+Diğer	Other
+Dün	Yesterday
+Ek	Att
+Ek: 	Attachment:
+Ekler: 	Attachments:
+E-posta adresi	Email address
+E-posta adresi, şifre ve sunucu gerekli.	Email address, password and server are required.
+Geçersiz işlem	Invalid action
+Gelen	Inbox
+Gelen kutusu	Inbox
+Gelen kutusuna taşındı	Moved to inbox
+Giden	Sent
+Giriş reddedildi. Gmail, Yahoo, iCloud ve Yandex için normal şifreniz değil, hesap ayarlarından oluşturduğunuz \"uygulama şifresi\" gerekir.	Sign-in rejected. Gmail, Yahoo, iCloud and Yandex need an \"app password\" created in your account settings, not your normal password.
+Gmail: Google hesabınızda 2 adımlı doğrulama açık olmalı. Bilgisayardan myaccount.google.com → Güvenlik → \"Uygulama şifreleri\" bölümünden 16 harfli bir şifre oluşturup aşağıya yazın (normal şifreniz çalışmaz).	Gmail: 2-Step Verification must be on for your Google account. On a computer go to myaccount.google.com → Security → \"App passwords\", create a 16-letter password and type it below (your normal password will not work).
+Gönder ➤	Send ➤
+Gönderildi	Sent
+Gönderilemedi: 	Could not send:
+Gönderilen	Sent
+Gönderiliyor…	Sending…
+Görünen ad (giden postalarda)	Display name (on sent emails)
+Göster	Show
+Hata	Error
+Hazırlanıyor…	Preparing…
+Hesabı sil	Delete account
+Hesap ayarları	Account settings
+Hesap kaydedildi	Account saved
+Hesap silinsin mi?	Delete the account?
+Hesap: 	Account:
+IMAP sunucusu	IMAP server
+iCloud: appleid.apple.com → Oturum açma ve güvenlik → Uygulamaya özel parolalar.	iCloud: appleid.apple.com → Sign-In and Security → App-Specific Passwords.
+İlet	Forward
+İlet ↪	Forward ↪
+İndirildi	Downloaded
+İndirildi: 	Downloaded:
+İndirilemedi: 	Download failed:
+İptal	Cancel
+İptal edildi	Cancelled
+Kalıcı olarak silindi	Permanently deleted
+Kalıcı sil	Delete forever
+kapalı	Off
+Kapat	Close
+Kaydet	Save
+Kaydet ve bağlan	Save and connect
+Kendi alan adınızın ya da başka bir sağlayıcının IMAP/SMTP bilgilerini girin (IMAP 993 TLS; SMTP 465 TLS ya da 587 STARTTLS). Outlook/Hotmail yalnızca OAuth kabul ettiği için şu an desteklenmiyor.	Enter the IMAP/SMTP details of your own domain or another provider (IMAP 993 TLS; SMTP 465 TLS or 587 STARTTLS). Outlook/Hotmail accepts only OAuth, so it is not supported yet.
+Kimden: 	From:
+Kime	To
+kime: 	to:
+Klasörler	Folders
+Konu	Subject
+Konu: 	Subject:
+Menü	Menu
+Okunmadı	Unread
+Okunmadı olarak işaretlendi	Marked as unread
+Önce süren indirme bitsin	Wait for the current download to finish
+Önceki gönderim sürüyor.	The previous email is still being sent.
+Paz	Sun
+Per	Thu
+Port	Port
+Posta bulunamadı (silinmiş ya da taşınmış olabilir).	Email not found (it may have been deleted or moved).
+Posta hesabı	Email account
+Posta hesabı girilmemiş.	No email account set up.
+Posta hesabı girilmemiş. Menü → Hesap.	No email account set up. Menu → Account.
+Postanızı yazın	Write your message
+Pzt	Mon
+Resimler gizlendi (veri tasarrufu)	Images hidden (data saver)
+Sağlayıcı önce tarayıcıdan giriş yapmanızı istiyor (güvenlik uyarısı).	Your provider wants you to sign in from a browser first (security alert).
+Sal	Tue
+Sil	Delete
+SMTP sunucusu	SMTP server
+Sonuç yok.	No results.
+Spam	Spam
+Spam değil	Not spam
+Sunucu hatası	Server error
+Tamam	OK
+Tarih: 	Date: 
+Taslak silinsin mi?	Discard draft?
+Taslaklar	Drafts
+Tekrar dene	Try again
+Telefona yazılamadı	Could not write to the phone
+Tüm postalar	All mail
+Tümü	All
+Tümünü yanıtla	Reply all
+Uygulama şifresi	App password
+Vazgeç	Cancel
+Yahoo: Hesap güvenliği → \"Uygulama şifresi oluştur\" ile alınan şifreyi yazın.	Yahoo: type the password from Account security → \"Generate app password\".
+Yandex: id.yandex.com → Güvenlik → Uygulama şifreleri (Posta) bölümünden şifre oluşturun; Yandex Posta ayarlarında IMAP erişimini açın.	Yandex: create a password at id.yandex.com → Security → App passwords (Mail), and turn on IMAP access in Yandex Mail settings.
+Yanıtla	Reply
+Yazdıklarınız kaydedilmeyecek.	What you wrote will not be saved.
+Yeni posta	New message
+Yeni posta denetimi: 	New mail check:
+Yenile	Refresh
+Yıldızlı	Starred
+yok	none
+Yükleniyor…	Loading…

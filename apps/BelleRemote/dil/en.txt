@@ -1,0 +1,300 @@
+# BelleRemote - English (araclar/dil_cikar.ps1 ile uretilir, elle duzenlemeyin)
+ / bu sayfayı ekle	 / add this page
+ dk'dır bekliyor	 min waiting
+ girdi • bırakınca 1 sn sonra gider	 inputs • sent 1 s after release
+ girdiyi şimdi gönder	 inputs — send now
+ karakter	 characters
+ karakter yapıştırıldı	 characters pasted
+ karakter)	 characters)
+ kare/sn	 fps
+ KB	 KB
+ MB	 MB
+ piksel	 pixels
+' tuşu tanımsız • yazmak için Enter	' key not mapped • Enter to type
+%1 aranıyor…	Looking for %1…
+%1 sunucuda çevrimiçi değil (PC uygulaması açık ve 'Sunucu' etkin mi?)	%1 is not online on the server (is the PC app open with 'Server' enabled?)
+%1 şu an çevrimiçi değil (PC açık ve 'Sunucu' etkin mi?)	%1 is not online right now (is the PC on with 'Server' enabled?)
+(ağ bağlantısı yok)	(no network connection)
+\n\nPC'nin adresi PC uygulamasında 'Telefona verilecek adres' kutusunda yazar (ör. 192.168.1.20:5680).	\n\nThe PC's address is shown in the PC app's 'Address for the phone' box (e.g. 192.168.1.20:5680).
+• Ana ekranda 'Sunucu Tarayıcı': sunucudaki Chrome tek sayfada açılır, tüm siteler çalışır\n	• 'Server Browser' on the home screen: Chrome on the server opens as a single page; every site works\n
+• Bir dosya inince sorulur: Telefona indir (E:/Downloads) ya da Drive'a yükle (Belle Remote klasörü)\n	• When a file downloads you are asked: save to phone (E:/Downloads) or upload to Drive (Belle Remote folder)\n
+• Boşluk ya da Seçenekler > Adres / ara: adres ya da arama yaz\n	• Space or Options > Address / search: type an address or search\n
+• Boşluk: pencere seçimi (paylaşılacak pencere / tüm masaüstü)\n	• Space: window choice (window to share / whole desktop)\n
+• Ctrl+V / Yapıştır: telefon panosundan\n	• Ctrl+V / Paste: from the phone clipboard\n
+• Çerezler sunucuda kalır; girdiğin sitelerde oturumun açık kalır\n\n	• Cookies stay on the server; you stay signed in to sites you log in to\n\n
+• Dokun: sol tık  •  basılı tut: sağ tık  •  sürükle: imleci taşı\n• Yakınlaştırmada parmağı kenara sürükleyip tutunca görüntü o yöne kayar\n\n	• Tap: left click  •  hold: right click  •  drag: move the cursor\n• When zoomed, drag a finger to the edge and hold to pan that way\n\n
+• Enter bir kez: yazı penceresi  •  Enter iki kez hızlıca: PC'de Enter\n	• Enter once: text window  •  Enter twice quickly: Enter on the PC\n
+• Enter: gönder  •  Ctrl+Enter: gönder ve Enter'a bas  •  Shift+Enter: yeni satır\n	• Enter: send  •  Ctrl+Enter: send and press Enter  •  Shift+Enter: new line\n
+• F: sayfayı sola kaydır  •  H: sağa kaydır\n	• F: scroll page left  •  H: scroll right\n
+• I J K L: yön okları (yukarı, sol, aşağı, sağ) — tarayıcıda sayfayı kaydırır\n	• I J K L: arrow keys (up, left, down, right) — scrolls the page in a browser\n
+• İmleç kenara dayanıp itilince: yakınlaştırmada görüntü o yöne kayar; tam görünümde sayfa kaydırılır\n	• Pushing the cursor against an edge: pans the view when zoomed; scrolls the page in full view\n
+• Kayıtlı PC'yi seçince önce sunucudan PC'nin o anki adresi sorulur; telefon PC ile aynı ağdaysa yerel ağdan (hızlı), değilse sunucudan bağlanır. Ev ve dükkan gibi farklı Wi-Fi'lerde kendiliğinden doğru yolu seçer.\n	• When you pick a saved PC, its current address is asked from the server; if the phone is on the same network it connects over LAN (fast), otherwise through the server. It picks the right path on different Wi-Fi networks automatically.\n
+• Kısayollar: Ctrl+C/V/X/Z, Alt+Tab, Alt+F4, Win, Win+D, Win+E, Win+L, görev yöneticisi, ses ve medya tuşları…\n\n	• Shortcuts: Ctrl+C/V/X/Z, Alt+Tab, Alt+F4, Win, Win+D, Win+E, Win+L, task manager, volume and media keys…\n\n
+• Menüde sol yön tuşu: bir önceki menüye dön (ilk menüde kapatır)\n	• Left key in a menu: back to the previous menu (closes the first menu)\n
+• Mobil veri kapalıysa uygulama internet bağlantısını kendisi açtırır.\n	• If mobile data is off, the app opens an internet connection itself.\n
+• Not: PC'de yönetici olarak açılmış pencerelere (ör. yönetici PowerShell) Windows tuş gönderilmesine izin vermez.	• Note: Windows does not allow sending keys to windows running as administrator (e.g. an admin PowerShell).
+• Orta tuş kısa: sol tık  •  basılı tut: sağ tık\n	• Center key short: left click  •  hold: right click\n
+• PC'de yazı kutusu etkinleşince kendiliğinden açılması varsayılan kapalı (Ayarlar'dan açılabilir)\n\n	• Opening automatically when a text box is focused on the PC is off by default (enable in Settings)\n\n
+• Peş peşe basılan tuşlar paketlenir; bırakınca 1 sn sonra hepsi sırayla gider (paket kipi)\n\n	• Keys pressed in a row are batched; all are sent in order 1 s after you stop (batch mode)\n\n
+• S: yakınlaştır 2x / geri 1x\n	• S: zoom 2x / back to 1x\n
+• Seçenekler ilk satır: Gönderim LAN (anlık) ↔ Sunucu (paket)\n	• First Options row: sending LAN (instant) ↔ Server (batch)\n
+• Seçenekler: Geri, İleri, Yenile/Durdur, Ana sayfa • fare, tekerlek, yazı ve kısayollar masaüstündeki gibi\n	• Options: Back, Forward, Reload/Stop, Home • mouse, wheel, text and shortcuts work as on the desktop\n
+• Silme tuşu: PC'de Backspace  •  Ctrl+harf: PC'de Ctrl+harf (Ctrl+C, Ctrl+V…)\n• G (ya da K): kısayollar menüsü  (Ctrl tuşunu telefon uygulamalara iletmiyor)\n	• Delete key: Backspace on the PC  •  Ctrl+letter: Ctrl+letter on the PC (Ctrl+C, Ctrl+V…)\n• G (or K): shortcuts menu  (the phone does not pass the Ctrl key to apps)\n
+• Sol yazılım tuşu: Seçenekler  •  sağ yazılım tuşu: Geri\n	• Left soft key: Options  •  right soft key: Back\n
+• T: tekerlek yukarı  •  B: tekerlek aşağı\n	• T: wheel up  •  B: wheel down\n
+• Yakınlaştırmadayken: A sol, D sağ, W yukarı, X aşağı\n	• When zoomed: A left, D right, W up, X down\n
+• Yerel ağ için PC uygulamasında 'Güvenlik duvarı izni' bir kez verilmelidir.\n	• For LAN use, grant 'Firewall permission' once in the PC app.\n
+• Yön tuşları: imleci taşı (basılı tutunca hızlanır)\n	• Arrow keys: move the cursor (speeds up when held)\n
+1 kare/sn	1 fps
+1 kare/sn (önerilen)	1 fps (recommended)
+2 kare/sn	2 fps
+3 kare/sn	3 fps
+480 px (en hızlı)	480 px (fastest)
+5 kare/sn	5 fps
+5 kare/sn (Wi-Fi)	5 fps (Wi-Fi)
+640 px (ekran, önerilen)	640 px (screen, recommended)
+800 px (yakınlaştırmada net)	800 px (sharp when zoomed)
+Açık	On
+Adres / ara…	Address / search…
+Adres boş	Address is empty
+Adres bulunamadı	Address not found
+Adres ya da arama	Address or search
+akış	stream
+Akış — her tuş anında (Wi-Fi)	Stream — every key instantly (Wi-Fi)
+Akış (anında, hızlı ağ)	Stream (instant, fast network)
+Akış kipi (anında)	Stream mode (instant)
+Ana sayfa (DuckDuckGo)	Home page (DuckDuckGo)
+Arka plana al (bağlı kalır)	Send to background (stays connected)
+Aşağı ok	Down arrow
+Ayarlar	Settings
+Ayarlar'dan sunucu parolasını girin	Enter the server password in Settings
+BAĞLAN	CONNECT
+Bağlan (önce yerel ağ, sonra sunucu)	Connect (LAN first, then server)
+Bağlantı hatası: 	Connection error:
+Bağlantı kapandı	Connection closed
+Bağlantı kesildi	Disconnected
+Bağlantı reddedildi (PC uygulaması açık mı, LAN etkin mi?)	Connection refused (is the PC app open and LAN enabled?)
+BAĞLANTI\n	CONNECTION\n
+Bağlantıyı kes	Disconnect
+Bağlı değil	Not connected
+Bağlı: 	Connected:
+bas key=	press key=
+Başka bir indirme sürüyor	Another download is in progress
+Başlat menüsü  (Win)	Start menu  (Win)
+Bekleyen 	Pending
+Belle Browser'dan: 	From Belle Browser:
+Belle Remote raporu • 	Belle Remote report •
+Bilgisayara yaz	Type on the computer
+Bilgisayarı kilitle  (Win+L)	Lock the computer  (Win+L)
+Bu sayfayı sık kullanılanlara ekle	Add this page to favourites
+Bu telefonun yerel ağ IP adresi:\n\n	This phone's LAN IP address:\n\n
+Bul  (Ctrl+F)	Find  (Ctrl+F)
+Çalıştır  (Win+R)	Run  (Win+R)
+Çevrimiçi PC yok — yenilemek için seç	No PC online — select to refresh
+Çevrimiçi PC'leri yenile	Refresh online PCs
+Çıkış	Exit
+Çift tık	Double click
+Değiştir	Change
+Delete	Delete
+DOKUNMATİK\n	TOUCH\n
+Dokunun ya da sürükleyin: görünüm oraya gider • C: kapat	Tap or drag: the view moves there • C: close
+Dosya gezgini  (Win+E)	File Explorer  (Win+E)
+Dosya yazılamıyor: 	Cannot write file:
+Drive'a yükle (Belle Remote klasörü)	Upload to Drive (Belle Remote folder)
+Durdur	Stop
+Durum çubuğunu gizle	Hide status bar
+Durum çubuğunu göster	Show status bar
+Düşük (%25, en hızlı)	Low (25%, fastest)
+Eklendi: 	Added:
+EKRAN AÇIKKEN (tuşlar doğrudan kısayoldur)\n	WHILE THE SCREEN IS SHOWN (keys are direct shortcuts)\n
+Ekran bekleniyor…	Waiting for screen…
+Ekranı yenile	Refresh screen
+Enter	Enter
+Enter gönder • Ctrl+Enter gönder+Enter • Shift+Enter yeni satır • Ctrl+V yapıştır	Enter send • Ctrl+Enter send+Enter • Shift+Enter new line • Ctrl+V paste
+Enter tamam • Ctrl+V yapıştır • Ctrl+G göster • Esc	Enter OK • Ctrl+V paste • Ctrl+G show • Esc
+Fare	Mouse
+Fare ›	Mouse ›
+Genel bakış: tüm ekrandan bölge seç (C)	Overview: pick a region of the whole screen (C)
+Geniş	Wide
+Geniş — 1280 px, yazı küçük (S ile yakınlaştır)	Wide — 1280 px, small text (zoom with S)
+Genişlik 480	Width 480
+Genişlik 640	Width 640
+Genişlik 800	Width 800
+Geri	Back
+Geri al  (Ctrl+Z)	Undo  (Ctrl+Z)
+giris onay: '	input confirm: '
+Gönder	Send
+Gönder + Enter	Send + Enter
+Gönder ve Enter'a bas	Send and press Enter
+Gönderildi, ekran bekleniyor…	Sent, waiting for screen…
+Gönderim kipi	Send mode
+Gönderim: LAN (anlık)  →  Sunucu (paket) yap	Sending: LAN (instant)  →  switch to Server (batch)
+Gönderim: Sunucu (paket)  →  LAN (anlık) yap	Sending: Server (batch)  →  switch to LAN (instant)
+Görev yöneticisi	Task manager
+Görüntü  •  	Picture  •
+Görüntü / pencere / yakınlaştır ›	Picture / window / zoom ›
+Görüntü genişliği	Picture width
+Görüntü kalitesi	Picture quality
+Göster/Gizle	Show/Hide
+Günlük	Log
+Hazır	Ready
+Hız	Speed
+Hız ve kalite ›	Speed and quality ›
+İleri	Forward
+İndirildi: 	Downloaded:
+İndirilemedi: 	Download failed:
+İndiriliyor %	Downloading %
+İndirme hazır: 	Download ready:
+İnternet bağlantısı açılamadı: 	Could not open internet connection:
+İnternet bağlantısı açılıyor…	Opening internet connection…
+İptal	Cancel
+İyi (%50)	Good (50%)
+Kalite düşük	Quality low
+Kalite iyi	Quality good
+Kalite orta	Quality medium
+Kapalı	Off
+Kare hızı	Frame rate
+Kaydet  (Ctrl+S)	Save  (Ctrl+S)
+kayıtlı ••••••	saved ••••••
+KAYITLI BİLGİSAYARLAR	SAVED COMPUTERS
+Kayıtlı listeden sil	Remove from saved list
+Kes  (Ctrl+X)	Cut  (Ctrl+X)
+Kısayollar	Shortcuts
+Kısayollar ›	Shortcuts ›
+Kimlik doğrulanıyor…	Authenticating…
+Kopyala  (Ctrl+C)	Copy  (Ctrl+C)
+Kullanım kılavuzu	User guide
+LAN (anlık): her tuş hemen gider	LAN (instant): every key is sent at once
+Masaüstü	Desktop
+Masaüstünü göster  (Win+D)	Show desktop  (Win+D)
+MENÜLER\n	MENUS\n
+Mobil	Mobile
+Mobil — siteler telefon düzeninde, yazı büyük	Mobile — sites in phone layout, large text
+Normal — 1100 px masaüstü düzeni	Normal — 1100 px desktop layout
+Normal (1100 px)	Normal (1100 px)
+Orta (%35, önerilen)	Medium (35%, recommended)
+Orta tık	Middle click
+Oynat / duraklat	Play / pause
+Önce Ayarlar'dan sunucu parolasını girin	Enter the server password in Settings first
+Önce sunucu parolasını girin	Enter the server password first
+Önceki parça	Previous track
+Paket — tuşlar 1 sn sonra toplu (yavaş ağ)	Batch — keys sent together after 1 s (slow network)
+Paket (1 sn bekleyip toplu)	Batch (wait 1 s, send together)
+Paket kipi (1 sn sonra toplu)	Batch mode (sent together after 1 s)
+Pano boş	Clipboard empty
+Pano boş (önce başka uygulamada metni kopyalayın)	Clipboard empty (copy text in another app first)
+Parola boş, kaydedilmedi	Password empty, not saved
+parola hatalı	wrong password
+Parola kaydedildi (	Password saved (
+Parola kayıtlı olmalı	A password must be saved
+Parola yok	No password
+Paylaşılacak pencere	Window to share
+PC adı (PC uygulamasındaki ad)	PC name (as in the PC app)
+PC bağlantıyı kapattı	The PC closed the connection
+PC reddetti: 	PC refused:
+PC şu an başka bir oturumda	The PC is in another session right now
+PC uygulamasındaki 'Telefona verilecek adres'	'Address for the phone' in the PC app
+PC'de yazı alanı açılınca yazı penceresi	Text window when a text field opens on the PC
+PC'de yazı alanı etkin	Text field active on the PC
+PC'ye Esc gönder	Send Esc to the PC
+Pencere değiştir  (Alt+Tab)	Switch window  (Alt+Tab)
+Pencere seç…	Choose window…
+Pencereler alınıyor…	Getting windows…
+Pencereyi kapat  (Alt+F4)	Close window  (Alt+F4)
+Rapor gönderildi	Report sent
+Rapor gönderilemedi: 	Could not send report:
+Rapor gönderiliyor…	Sending report…
+Rapor için önce sunucu parolası kaydedilmeli	Save a server password first to send reports
+Sağ ok	Right arrow
+Sağ tık	Right click
+Sayfa aşağı	Page down
+Sayfa görünümü	Page view
+Sayfa görünümü: 	Page view:
+Sayfa sonuna in (End)  •  başına çık: Home	Go to page end (End)  •  to top: Home
+Sayfa yukarı	Page up
+Seçenekler	Options
+Sekmeyi kapat  (Ctrl+W)	Close tab  (Ctrl+W)
+Ses −	Volume −
+Ses +	Volume +
+Sessiz	Mute
+Sık kullanılan yok	No favourites
+Sık kullanılanı sil…	Delete favourite…
+Sık kullanılanlar	Favourites
+Sil: 	Delete:
+Silindi	Deleted
+Silinecek sık kullanılan	Favourite to delete
+Sol ok	Left arrow
+Sol tık	Left click
+son: 	last:
+Sonra (24 saat sunucuda kalır)	Later (kept on the server for 24 hours)
+Sonraki parça	Next track
+Sonraki sekme  (Ctrl+Tab)	Next tab  (Ctrl+Tab)
+Sorun bildir (günlüğü sunucuya gönder)	Report a problem (send the log to the server)
+Sunucu (paket): tuşlar 1 sn sonra toplu gider	Server (batch): keys are sent together after 1 s
+Sunucu adresi	Server address
+Sunucu adresi geçersiz	Invalid server address
+Sunucu parolası	Server password
+Sunucu parolası (PC ile aynı)	Server password (same as on the PC)
+Sunucu parolası hatalı	Wrong server password
+Sunucu soruluyor…	Asking the server…
+Sunucu Tarayıcı	Server Browser
+SUNUCU TARAYICISI	SERVER BROWSER
+SUNUCU TARAYICISI\n	SERVER BROWSER\n
+Sunucu üzerinden bağlan	Connect through the server
+Sunucu üzerinden PC adıyla bağlan…	Connect by PC name through the server…
+Sunucu yanıtı: 	Server response:
+Sunucu, parola, hız, telefon IP'si	Server, password, speed, phone IP
+Sunucuda %1 aranıyor…	Looking for %1 on the server…
+SUNUCUDA ÇEVRİMİÇİ	ONLINE ON SERVER
+Sunucuda uzak masaüstü aktarıcısı yok (güncellenmemiş)	No remote desktop relay on the server (not updated)
+Sunucudaki Chrome: tüm siteler • indirme telefona ya da Drive'a	Chrome on the server: every site • downloads to phone or Drive
+Sunucudan sil	Delete from server
+Sunucuya bağlanıyor… (%1)	Connecting to server… (%1)
+Sunucuya ulaşılamadı: 	Could not reach the server:
+Sürüklemeyi başlat (sol tuşa bas)	Start drag (press left button)
+Sürüklemeyi bitir (bırak)	End drag (release)
+Tam ekran  (F11)	Full screen  (F11)
+Tamam	OK
+Tamamını göster	Show all
+tanimsiz tus: key=	unknown key: key=
+Tarayıcı	Browser
+Tekerlek aşağı	Wheel down
+Tekerlek aşağı ×5	Wheel down ×5
+Tekerlek yukarı	Wheel up
+Tekerlek yukarı ×5	Wheel up ×5
+Telefon adı	Phone name
+Telefon adı (PC'de görünür)	Phone name (shown on the PC)
+Telefon panosundan yapıştır	Paste from phone clipboard
+Telefon: 	Phone:
+Telefona indir (E:/Downloads)	Save to phone (E:/Downloads)
+Telefonun adresi	Phone address
+Telefonun IP adresi	Phone IP address
+Telefonun IP adresini göster	Show the phone's IP address
+Temizle	Clear
+Tüm ekran alınıyor…	Capturing the whole screen…
+Tüm masaüstü	Whole desktop
+Tümünü seç  (Ctrl+A)	Select all  (Ctrl+A)
+Uzaklaştır	Zoom out
+Vazgeç	Cancel
+Yakınlaştır (şimdi ×	Zoom (now ×
+Yalnızca sunucu üzerinden	Server only
+Yalnızca yerel ağ (	LAN only (
+Yapıştır	Paste
+Yapıştır  (Ctrl+V)	Paste  (Ctrl+V)
+yapistir: 	paste: 
+Yazı	Text
+YAZI PENCERESİ\n	TEXT WINDOW\n
+Yazı yaz…	Type text…
+Yeni sekme  (Ctrl+T)	New tab  (Ctrl+T)
+Yenile	Refresh
+Yenile  (F5)	Reload  (F5)
+Yerel ağ adresi (IP:port)	LAN address (IP:port)
+Yerel ağda adresle bağlan…	Connect by address on LAN…
+Yerel ağda bağlanıyor… %1:%2	Connecting on LAN… %1:%2
+Yerel ağda bulunamadı, sunucu üzerinden deneniyor	Not found on LAN, trying through the server
+Yerel ağdan bağlan (	Connect over LAN (
+Yerel: 	Local:
+Yinele  (Ctrl+Y)	Redo  (Ctrl+Y)
+Yukarı ok	Up arrow
+Yüksek (%70)	High (70%)
+Zaman aşımı	Timeout

@@ -1,0 +1,248 @@
+# BelleGram - English (araclar/dil_cikar.ps1 ile uretilir, elle duzenlemeyin)
+ (kaba: ağ / baz istasyonu), GPS hassaslaşıyor…	 (rough: network / cell tower), GPS refining…
+ • %1/%2 uydu	 • %1/%2 satellites
+ dk	 min
+ km	 km
+ sa 	 h
+ uzakta	 away
+%1 bir mesajı sabitledi	%1 pinned a message
+%1 gruba ekledi	%1 added to the group
+%1 gruba katıldı	%1 joined the group
+%1 grubu oluşturdu	%1 created the group
+%1 gruptan ayrıldı	%1 left the group
+%1 karo indirildi%2	%1 tiles downloaded%2
+%1 Telegram'a katıldı	%1 joined Telegram
+%1 uydu kilitlendi, konum hesaplanıyor	%1 satellites locked, calculating position
+(adsız)	(unnamed)
+(indirmek için dokunun)	(tap to download)
+, %1 indirilemedi	, %1 failed
+[Kanal] 	[Channel]
+© OpenStreetMap katkıcıları	© OpenStreetMap contributors
+Açık (OSM)	Light (OSM)
+Açık tema	Light theme
+Ad, @kullanıcı adı ya da numara	Name, @username or number
+Adres, yer ya da işletme ara	Search address, place or business
+Ağustos	August
+Alınamadı	Failed
+Alınamadı, dokunun	Failed, tap to retry
+Anket	Poll
+Anlık konum	Live location
+Anlık konumum	My live location
+API bilgilerini değiştir	Change API details
+API bilgilerini değiştir (çıkış yapar)	Change API details (signs out)
+api_hash (32 karakter)	api_hash (32 characters)
+api_hash 32 karakter olmalı (0-9, a-f). Şu an: %1	api_hash must be 32 characters (0-9, a-f). Currently: %1
+api_id (rakam)	api_id (digits)
+api_id / api_hash geçersiz. my.telegram.org'daki değerleri yeniden girin.	api_id / api_hash is invalid. Re-enter the values from my.telegram.org.
+api_id yalnızca rakamlardan oluşmalı.	api_id must contain only digits.
+Ara	Search
+Aralık	December
+Arama yapılamadı (	Search failed (
+Aranıyor…	Searching…
+Arazi	Terrain
+Bağlanılamadı	Could not connect
+Bağlanıyor…	Connecting…
+Bağlantı kuruluyor…	Connecting…
+Başa sabitle	Pin to top
+Benden sil	Delete for me
+Benim konumum	My location
+Bir dosya seçin	Choose a file
+bot	bot
+Bu api_id herkese açık yayınlandığı için Telegram tarafından kısıtlanmış. Kendi api_id'nizi girin.	This api_id has been restricted by Telegram because it was published. Enter your own api_id.
+bu ay görüldü	seen this month
+bu hafta görüldü	seen this week
+Bu konumu gönder	Send this location
+Bu mesajı düzenleme süresi doldu.	The time to edit this message has expired.
+Bu mesajı silme izniniz yok.	You are not allowed to delete this message.
+Bu numara Telegram tarafından engellenmiş.	This number has been banned by Telegram.
+Bu numarayla bir Telegram hesabı yok. Önce resmi uygulamadan kaydolun.	There is no Telegram account with this number. Sign up in the official app first.
+Bu sohbete medya gönderilemiyor.	Media cannot be sent to this chat.
+Bu sohbete yazma izniniz yok.	You are not allowed to write in this chat.
+Bu sohbette bu ifade kullanılamıyor.	This reaction is not available in this chat.
+Bu sürümde ses kaydı yok.	Voice recording is not available in this version.
+Bu şifre türü desteklenmiyor.	This password type is not supported.
+Bu telefonda konum servisi bulunamadı	No location service found on this phone
+Bugün	Today
+bugün %1	today %1
+çevrimiçi	Online
+Çıkartma	Sticker
+çıkartma seçiyor…	choosing a sticker…
+Çıkış yap	Sign out
+Çok fazla deneme. %1 dakika sonra tekrar deneyin.	Too many attempts. Try again in %1 minutes.
+Daralt	Collapse
+Desteklenmeyen mesaj	Unsupported message
+Devamını oku	Read more
+Dosya	File
+Dosya açılamadı.	Could not open the file.
+Dosya bilgisi yok	No file information
+Dosya boş	File is empty
+Dosya çok büyük (en fazla 40 MB).	File is too large (40 MB max).
+dosya gönderiyor…	sending a file…
+Dosya seç	Choose file
+Dosya yazılamadı	Could not write file
+Dosyanın süresi doldu; sohbeti yeniden açın.	The file has expired; reopen the chat.
+Dosyayı aç	Open file
+Durdur	Stop
+Durduruldu: %1 / %2 karo	Stopped: %1 / %2 tiles
+Dün	Yesterday
+dün %1	yesterday %1
+Düzenle	Edit
+düzenlendi 	edited
+Düzenleniyor	Editing
+Ekim	October
+Emin misiniz? 	Are you sure?
+Evet, sil / ayrıl	Yes, delete / leave
+Eylül	September
+Fotoğraf	Photo
+fotoğraf gönderiyor…	sending a photo…
+Fotoğraf okunamadı.	Could not read the photo.
+Fotoğraf seç	Choose photo
+Fotoğrafı aç	Open photo
+Galeriye kaydet	Save to gallery
+Geçmiş temizlendi	History cleared
+Geçmişi temizle	Clear history
+Genel arama	Global search
+GIF	GIF
+Giriş kodu	Login code
+Giriş yap	Sign in
+Google Maps	Google Maps
+Gönder	Send
+Gönderilecek kişi: 	Send to:
+Görüntülü mesaj	Video message
+GPS kapalı	GPS off
+GPS kapalı • son konum ±%1 m	GPS off • last fix ±%1 m
+GPS'e bağlanılıyor… uydu aranıyor	Connecting to GPS… searching for satellites
+Grup	Group
+grup	Group
+Grup adı: %1	Group name: %1
+Grup fotoğrafı değişti	Group photo changed
+grup, %1 üye	group, %1 members
+Gruptan ayrıl	Leave group
+Günlüğü gizle	Hide log
+Günlüğü göster	Show log
+Haritada açmak için dokunun	Tap to open on the map
+Haritayı kaydırın: iğnenin olduğu yer gönderilir	Pan the map: the pin position is sent
+Haziran	June
+Henüz mesaj yok	No messages yet
+Herkesten sil	Delete for everyone
+Hesabınızda bulut şifresi açık. Şifrenizi girin.	Your account has a cloud password. Enter your password.
+İfade bırak	React
+İfadeyi kaldır	Remove reaction
+İki adımlı doğrulama	Two-step verification
+İlet	Forward
+İlet…	Forward…
+İletildi: 	Forwarded:
+İletildi: %1	Forwarded: %1
+İndir	Download
+İpucu: 	Hint:
+kanal	Channel
+kanal, %1 abone	channel, %1 subscribers
+Kanaldan ayrıl	Leave channel
+Kasım	November
+Kaydedildi: 	Saved:
+Kaydedilemedi	Could not save
+Kaydediliyor… göndermek için dokunun	Recording… tap to send
+Kaydet ve devam et	Save and continue
+Kayıt açılamadı.	Could not start recording.
+Kayıt çok kısa.	Recording is too short.
+Kayıt yazılamadı.	Could not save the recording.
+Kayıtlı Mesajlar	Saved Messages
+Kendi Telegram uygulama kimliğiniz gerekir: bilgisayardan my.telegram.org → \"API development tools\" bölümünde bir uygulama oluşturun, api_id ve api_hash değerlerini yazın (Ctrl+V ile yapıştırabilirsiniz). Yalnızca bu telefonda saklanır.	You need your own Telegram app ID: on a computer, create an app at my.telegram.org → \"API development tools\" and enter its api_id and api_hash (Ctrl+V pastes). They are stored only on this phone.
+kendinize not	note to self
+Kişi	Contact
+Kişiler	Contacts
+Kişiler yükleniyor…	Loading contacts…
+Kod gönder	Send code
+Kod gönderildi.	Code sent.
+Kod isteniyor…	Requesting code…
+Kod sesli arama ile söylenecek.	The code will be read out in a phone call.
+Kod SMS ile gönderildi.	The code was sent by SMS.
+Kod yanlış.	Wrong code.
+Kod, Telegram uygulamanıza (başka bir cihazdaki) mesaj olarak gönderildi.	The code was sent as a message to your Telegram app (on another device).
+Kodu girin	Enter the code
+Kodun süresi doldu. Yeni kod isteyin.	The code has expired. Request a new one.
+Konum	Location
+Konum aranıyor… (uydu araması açık havada daha hızlıdır)	Searching for location… (satellite search is faster outdoors)
+Konum bulunamadı. Açık havada tekrar deneyin (GPS ilk uydu araması birkaç dakika sürebilir).	Location not found. Try again outdoors (the first GPS satellite search can take a few minutes).
+Konum bulundu ±%1 m	Location found ±%1 m
+konum seçiyor…	choosing a location…
+Konum servisi bu derlemede yok	Location service not available in this build
+Kopyala	Copy
+Kopyalanacak metin yok	No text to copy
+Koyu	Dark
+Koyu tema	Dark theme
+Mart	March
+Mayıs	May
+Mesaj	Message
+Mesaj değişmedi.	Message not modified.
+Mesaj kopyalandı	Message copied
+Mikrofon açılamadı (kod %1).	Could not open the microphone (code %1).
+Mikrofon bu ses biçimini desteklemiyor.	The microphone does not support this audio format.
+Müzik	Music
+Nisan	April
+Numarayı değiştir	Change number
+Ocak	January
+Okundu olarak işaretle	Mark as read
+Ortala	Center
+Oturum kapandı. Yeniden giriş yapın.	Session ended. Sign in again.
+Örn. 905321234567	e.g. 905321234567
+Sabitlemeyi kaldır	Unpin
+Ses	Audio
+Ses çözülemedi	Could not decode audio
+Ses dosyası seç	Choose audio file
+ses kaydediyor…	recording audio…
+Ses kodlanamadı: 	Could not encode audio:
+Sesi aç	Unmute
+Sesli arama	Voice call
+Sesli mesaj	Voice message
+Sesli mesaj alınamadı: 	Could not get voice message:
+Sesli mesaj çalınamadı	Could not play voice message
+Sesli mesaj çalınamadı: 	Could not play voice message:
+sesli mesaj gönderiyor…	sending a voice message…
+Sessize al	Mute
+Silinmiş hesap	Deleted account
+Siz	You
+Siz: 	You:
+Sohbet ara	Search chats
+Sohbet bulunamadı.	Chat not found.
+Sohbet olayı	Chat event
+Sohbet sessize alındı	Chat muted
+Sohbet yok	No chats
+Sohbeti sil	Delete chat
+Sohbetin sesi açıldı	Chat unmuted
+Sohbetler	Chats
+Sokak	Street
+son görülme %1	last seen %1
+Sonuç bulunamadı	No results found
+Sonuç yok	No results
+Şifre	Password
+Şifre doğrulanıyor (birkaç saniye sürebilir)…	Checking password (may take a few seconds)…
+Şifre yanlış.	Wrong password.
+Şubat	February
+Telefon numaranızı ülke koduyla yazın. Telegram size bir giriş kodu gönderecek.	Enter your phone number with the country code. Telegram will send you a login code.
+Telefon numarası geçersiz.	Invalid phone number.
+Telefon numarasını ülke koduyla yazın (örn. 905321234567).	Enter the phone number with the country code (e.g. 905321234567).
+Telefon taranıyor...	Scanning phone...
+Telefonda dosya bulunamadı.	File not found on the phone.
+Telegram API bilgileri	Telegram API details
+Telegram hatası: %1	Telegram error: %1
+Telegram sunucusuna bağlı	Connected to Telegram
+Telegram'a bağlanılıyor…	Connecting to Telegram…
+Temmuz	July
+Uydu	Satellite
+Uydu aranıyor: %1 görünüyor, %2 kilitlendi (en az 3 gerekir)	Searching satellites: %1 visible, %2 locked (at least 3 needed)
+Uygulamayı kapat	Close app
+Vazgeç	Cancel
+Video	Video
+video gönderiyor…	sending a video…
+Video seç	Choose video
+yakınlarda görüldü	seen recently
+Yanıt	Reply
+Yanıt: 	Reply:
+Yanıtla	Reply
+yazıyor…	typing…
+Yeni mesaj	New message
+Yükleniyor %1	Uploading %1
+Yükleniyor…	Loading…
+Zaman aşımı	Timeout
+Zar	Dice

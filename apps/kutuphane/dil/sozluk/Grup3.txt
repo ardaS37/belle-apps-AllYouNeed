@@ -1,0 +1,566 @@
+# Belle Remote, E6Tube, E6Video (Belle Video), ApiLauncher (E6AI)
+   (0 tuşu: baştan) ¦    (0 key: from start)
+   (V: videoya dön) ¦    (V: back to video)
+  •  dosya bulunamadı ¦   •  file not found
+  •  izlendi ¦   •  watched
+  •  Kanalı aç ¦   •  Open channel
+  •  ses ¦   •  audio
+  •  sırada  ¦   •  queued
+  •  sunucu ¦   •  server
+ (doğrudan bağlantı da kurulamadı) ¦  (direct connection also failed)
+ (sırada) ¦  (queued)
+ (sorun bildirmek için) ¦  (to report problems)
+ (yalnızca bağlantı döndü) ¦  (only a link was returned)
+ / bu sayfayı ekle ¦  / add this page
+ • karışık ¦  • shuffle
+ • tek tekrar ¦  • repeat one
+ • tümünü tekrarla ¦  • repeat all
+ abonelik ¦  subscriptions
+ API anahtarını girin. ¦  API key.
+ beğeni ¦  likes
+ bulundu ¦  found
+ dk'dır bekliyor ¦  min waiting
+ dosya ¦  files
+ dosya listeye eklendi ¦  files added to the list
+ geçmişi ¦  history
+ girdi • bırakınca 1 sn sonra gider ¦  inputs • sent 1 s after release
+ girdiyi şimdi gönder ¦  inputs — send now
+ görüntüleme ¦  views
+ ile yeni sohbet.\nYazmak için bir harfe basın; Enter gönderir.\n+ : fotoğraf ekle ¦ : new chat.\nPress a letter to type; Enter sends.\n+ : add photo
+ indirilecek ¦  to download
+ karakter ¦  characters
+ karakter yapıştırıldı ¦  characters pasted
+ kare/sn ¦  fps
+ KB/sn ¦  KB/s
+ mesaj  •   ¦  messages  •
+ model, seçmek için dokunun ¦  models, tap to choose
+ piksel ¦  pixels
+ resim ¦  image
+ resim çizmiyor; GPT, Gemini ya da Grok sekmesini kullanın. ¦  does not draw images; use the GPT, Gemini or Grok tab.
+ sn  •   ¦  s  •
+ sohbet ¦  chats
+' tuşu tanımsız • yazmak için Enter ¦ ' key not mapped • Enter to type
+ video ¦  videos
+ video  •   ¦  videos  •
+ yanıt ¦  replies
+ yazıyor... ¦  is typing...
+%1 aranıyor… ¦ Looking for %1…
+%1 sunucuda çevrimiçi değil (PC uygulaması açık ve 'Sunucu' etkin mi?) ¦ %1 is not online on the server (is the PC app open with 'Server' enabled?)
+%1 şu an çevrimiçi değil (PC açık ve 'Sunucu' etkin mi?) ¦ %1 is not online right now (is the PC on with 'Server' enabled?)
+(ağ bağlantısı yok) ¦ (no network connection)
+(boş yanıt) ¦ (empty response)
+(fotoğraf) ¦ (photo)
+(resim oluşturuldu) ¦ (image created)
+, resim çiz ¦ , draw image
+, sonraki için N ¦ , N for next
+, yapıştır.\nMesaja basılı tutunca kopyalanır.\nSol/sağ tuş sekme değiştirir, yukarı/aşağı kaydırır. ¦ , paste.\nLong-press a message to copy it.\nLeft/right switches tabs, up/down scrolls.
+. Star Player'ın (Paul Wallace / Allstar Software, MIT lisansı) yeteneklerinden yola çıkılarak E6 için baştan yazıldı. Videolar telefonda kalır, hiçbir sunucuya gönderilmez.\nİndirilenler:  ¦ . Rewritten from scratch for the E6, inspired by the features of Star Player (Paul Wallace / Allstar Software, MIT license). Videos stay on the phone and are never sent to any server.\nDownloads:
+\n\nPC'nin adresi PC uygulamasında 'Telefona verilecek adres' kutusunda yazar (ör. 192.168.1.20:5680). ¦ \n\nThe PC's address is shown in the PC app's 'Address for the phone' box (e.g. 192.168.1.20:5680).
+\nD: dış oynatıcı   N: sonraki ¦ \nD: external player   N: next
+\nE6Tube 0.7 - videolar kendi sunucunuz üzerinden gelir. YouTube ile resmi bir bağlantısı yoktur; Google hesabı gerekmez. Abonelik listeniz sunucuda saklanır. ¦ \nBelleTube 0.7 - videos come through your own server. Not affiliated with YouTube; no Google account needed. Your subscription list is stored on the server.
+\nBelleTube 0.7 - videolar kendi sunucunuz üzerinden gelir. YouTube ile resmi bir bağlantısı yoktur; Google hesabı gerekmez. Abonelik listeniz sunucuda saklanır. ¦ \nBelleTube 0.7 - videos come through your own server. Not affiliated with YouTube; no Google account needed. Your subscription list is stored on the server.
+\nYanıt:  ¦ \nResponse:
+• Ana ekranda 'Sunucu Tarayıcı': sunucudaki Chrome tek sayfada açılır, tüm siteler çalışır\n ¦ • 'Server Browser' on the home screen: Chrome on the server opens as a single page; every site works\n
+• Bir dosya inince sorulur: Telefona indir (E:/Downloads) ya da Drive'a yükle (Belle Remote klasörü)\n ¦ • When a file downloads you are asked: save to phone (E:/Downloads) or upload to Drive (Belle Remote folder)\n
+• Boşluk ya da Seçenekler > Adres / ara: adres ya da arama yaz\n ¦ • Space or Options > Address / search: type an address or search\n
+• Boşluk: pencere seçimi (paylaşılacak pencere / tüm masaüstü)\n ¦ • Space: window choice (window to share / whole desktop)\n
+• Ctrl+V / Yapıştır: telefon panosundan\n ¦ • Ctrl+V / Paste: from the phone clipboard\n
+• Çerezler sunucuda kalır; girdiğin sitelerde oturumun açık kalır\n\n ¦ • Cookies stay on the server; you stay signed in to sites you log in to\n\n
+• Dokun: sol tık  •  basılı tut: sağ tık  •  sürükle: imleci taşı\n• Yakınlaştırmada parmağı kenara sürükleyip tutunca görüntü o yöne kayar\n\n ¦ • Tap: left click  •  hold: right click  •  drag: move the cursor\n• When zoomed, drag a finger to the edge and hold to pan that way\n\n
+• Enter bir kez: yazı penceresi  •  Enter iki kez hızlıca: PC'de Enter\n ¦ • Enter once: text window  •  Enter twice quickly: Enter on the PC\n
+• Enter: gönder  •  Ctrl+Enter: gönder ve Enter'a bas  •  Shift+Enter: yeni satır\n ¦ • Enter: send  •  Ctrl+Enter: send and press Enter  •  Shift+Enter: new line\n
+• F: sayfayı sola kaydır  •  H: sağa kaydır\n ¦ • F: scroll page left  •  H: scroll right\n
+• I J K L: yön okları (yukarı, sol, aşağı, sağ) — tarayıcıda sayfayı kaydırır\n ¦ • I J K L: arrow keys (up, left, down, right) — scrolls the page in a browser\n
+• İmleç kenara dayanıp itilince: yakınlaştırmada görüntü o yöne kayar; tam görünümde sayfa kaydırılır\n ¦ • Pushing the cursor against an edge: pans the view when zoomed; scrolls the page in full view\n
+• Kayıtlı PC'yi seçince önce sunucudan PC'nin o anki adresi sorulur; telefon PC ile aynı ağdaysa yerel ağdan (hızlı), değilse sunucudan bağlanır. Ev ve dükkan gibi farklı Wi-Fi'lerde kendiliğinden doğru yolu seçer.\n ¦ • When you pick a saved PC, its current address is asked from the server; if the phone is on the same network it connects over LAN (fast), otherwise through the server. It picks the right path on different Wi-Fi networks automatically.\n
+• Kısayollar: Ctrl+C/V/X/Z, Alt+Tab, Alt+F4, Win, Win+D, Win+E, Win+L, görev yöneticisi, ses ve medya tuşları…\n\n ¦ • Shortcuts: Ctrl+C/V/X/Z, Alt+Tab, Alt+F4, Win, Win+D, Win+E, Win+L, task manager, volume and media keys…\n\n
+• Menüde sol yön tuşu: bir önceki menüye dön (ilk menüde kapatır)\n ¦ • Left key in a menu: back to the previous menu (closes the first menu)\n
+• Mobil veri kapalıysa uygulama internet bağlantısını kendisi açtırır.\n ¦ • If mobile data is off, the app opens an internet connection itself.\n
+• Not: PC'de yönetici olarak açılmış pencerelere (ör. yönetici PowerShell) Windows tuş gönderilmesine izin vermez. ¦ • Note: Windows does not allow sending keys to windows running as administrator (e.g. an admin PowerShell).
+• Orta tuş kısa: sol tık  •  basılı tut: sağ tık\n ¦ • Center key short: left click  •  hold: right click\n
+• PC'de yazı kutusu etkinleşince kendiliğinden açılması varsayılan kapalı (Ayarlar'dan açılabilir)\n\n ¦ • Opening automatically when a text box is focused on the PC is off by default (enable in Settings)\n\n
+• Peş peşe basılan tuşlar paketlenir; bırakınca 1 sn sonra hepsi sırayla gider (paket kipi)\n\n ¦ • Keys pressed in a row are batched; all are sent in order 1 s after you stop (batch mode)\n\n
+• S: yakınlaştır 2x / geri 1x\n ¦ • S: zoom 2x / back to 1x\n
+• Seçenekler ilk satır: Gönderim LAN (anlık) ↔ Sunucu (paket)\n ¦ • First Options row: sending LAN (instant) ↔ Server (batch)\n
+• Seçenekler: Geri, İleri, Yenile/Durdur, Ana sayfa • fare, tekerlek, yazı ve kısayollar masaüstündeki gibi\n ¦ • Options: Back, Forward, Reload/Stop, Home • mouse, wheel, text and shortcuts work as on the desktop\n
+• Silme tuşu: PC'de Backspace  •  Ctrl+harf: PC'de Ctrl+harf (Ctrl+C, Ctrl+V…)\n• G (ya da K): kısayollar menüsü  (Ctrl tuşunu telefon uygulamalara iletmiyor)\n ¦ • Delete key: Backspace on the PC  •  Ctrl+letter: Ctrl+letter on the PC (Ctrl+C, Ctrl+V…)\n• G (or K): shortcuts menu  (the phone does not pass the Ctrl key to apps)\n
+• Sol yazılım tuşu: Seçenekler  •  sağ yazılım tuşu: Geri\n ¦ • Left soft key: Options  •  right soft key: Back\n
+• T: tekerlek yukarı  •  B: tekerlek aşağı\n ¦ • T: wheel up  •  B: wheel down\n
+• Yakınlaştırmadayken: A sol, D sağ, W yukarı, X aşağı\n ¦ • When zoomed: A left, D right, W up, X down\n
+• Yerel ağ için PC uygulamasında 'Güvenlik duvarı izni' bir kez verilmelidir.\n ¦ • For LAN use, grant 'Firewall permission' once in the PC app.\n
+• Yön tuşları: imleci taşı (basılı tutunca hızlanır)\n ¦ • Arrow keys: move the cursor (speeds up when held)\n
+0: baştan   •   1-9: videonun %10-%90'ı   •   D: dış oynatıcı   •   Geri: kapat\n ¦ 0: from start   •   1-9: 10%-90% of the video   •   D: external player   •   Back: close\n
+1 kare/sn ¦ 1 fps
+1 kare/sn (önerilen) ¦ 1 fps (recommended)
+2 kare/sn ¦ 2 fps
+3 kare/sn ¦ 3 fps
+360p (önerilen) ¦ 360p (recommended)
+480 px (en hızlı) ¦ 480 px (fastest)
+5 kare/sn ¦ 5 fps
+5 kare/sn (Wi-Fi) ¦ 5 fps (Wi-Fi)
+640 px (ekran, önerilen) ¦ 640 px (screen, recommended)
+800 px (yakınlaştırmada net) ¦ 800 px (sharp when zoomed)
+'a yazın ¦ : type a message
+Abone ol ¦ Subscribe
+Abone olduğunuz kanallar ¦ Your subscriptions
+Abone olundu:  ¦ Subscribed:
+Abonelik yok.\nAra sekmesinden bir kanal bulup \"Abone ol\"a dokunun. ¦ No subscriptions.\nFind a channel in the Search tab and tap \"Subscribe\".
+Abonelikten çıkıldı ¦ Unsubscribed
+Abonesin ¦ Subscribed
+Açılamadı ¦ Could not open
+Adres / ara… ¦ Address / search…
+Adres boş ¦ Address is empty
+Adres bulunamadı ¦ Address not found
+Adres ya da arama ¦ Address or search
+Adresi kutuya al ¦ Put address in the box
+Ağustos ¦ August
+akış ¦ stream
+Akış — her tuş anında (Wi-Fi) ¦ Stream — every key instantly (Wi-Fi)
+Akış (anında, hızlı ağ) ¦ Stream (instant, fast network)
+Akış kipi (anında) ¦ Stream mode (instant)
+Ana sayfa (DuckDuckGo) ¦ Home page (DuckDuckGo)
+Anahtar:  ¦ Key:
+Anahtarları sunucuya kaydet ¦ Save keys to the server
+API anahtarı ¦ API key
+API anahtarları, modeller, bağlantı ¦ API keys, models, connection
+ApiLauncher 1.3 (eski adı E6AI) - sohbet geçmişi ve resimler yalnızca telefonda saklanır (oluşturulan resimler: E:/Images/ApiLauncher). Doğrudan bağlantı kurulamazsa (TLS hatası) istekler sunucu parolası girilmişse kendiliğinden sunucu üzerinden gider; fotoğraf, resim çizme ve Grok iki modda da çalışır. Claude'da güvenlik reddi olursa istek uygun bir Claude modelinde otomatik yeniden denenir. ¦ ApiLauncher 1.3 (formerly ApiLauncher) - chat history and images are stored only on the phone (generated images: E:/Images/ApiLauncher). If a direct connection fails (TLS error) and a server password is set, requests go through the server automatically; photos, image drawing and Grok work in both modes. If Claude refuses for safety reasons, the request is retried automatically on a suitable Claude model.
+ApiLauncher 1.3 (eski adı ApiLauncher) - sohbet geçmişi ve resimler yalnızca telefonda saklanır (oluşturulan resimler: E:/Images/ApiLauncher). Doğrudan bağlantı kurulamazsa (TLS hatası) istekler sunucu parolası girilmişse kendiliğinden sunucu üzerinden gider; fotoğraf, resim çizme ve Grok iki modda da çalışır. Claude'da güvenlik reddi olursa istek uygun bir Claude modelinde otomatik yeniden denenir. ¦ ApiLauncher 1.3 (formerly ApiLauncher) - chat history and images are stored only on the phone (generated images: E:/Images/ApiLauncher). If a direct connection fails (TLS error) and a server password is set, requests go through the server automatically; photos, image drawing and Grok work in both modes. If Claude refuses for safety reasons, the request is retried automatically on a suitable Claude model.
+ApiLauncher raporu •  ¦ ApiLauncher report •
+Aralık ¦ December
+Arama sonuçları ¦ Search results
+arka plan ¦ background
+Arka plana al (bağlı kalır) ¦ Send to background (stays connected)
+Arka planda ses devam ediyor ¦ Audio continues in the background
+Aşağı ok ¦ Down arrow
+Aşağı taşı ¦ Move down
+Ayarlar'da 'arka planda sesle devam' kapalı ¦ 'Continue audio in background' is off in Settings
+Ayarlar'dan  ¦ From Settings
+B: arka plana al (ses sürer)   •   N / P: sonraki / önceki   •   R: tekrar   •   K: karışık\n ¦ B: background (audio continues)   •   N / P: next / previous   •   R: repeat   •   K: shuffle\n
+BAĞLAN ¦ CONNECT
+Bağlan (önce yerel ağ, sonra sunucu) ¦ Connect (LAN first, then server)
+Bağlantı hatası:  ¦ Connection error:
+Bağlantı kapandı ¦ Connection closed
+Bağlantı kesildi ¦ Disconnected
+Bağlantı koptu ¦ Connection lost
+Bağlantı kurulamadı (HTTPS/TLS veya internet sorunu). Ayarlar'dan bağlantıyı test edin. ¦ Could not connect (HTTPS/TLS or internet problem). Test the connection in Settings.
+Bağlantı reddedildi (PC uygulaması açık mı, LAN etkin mi?) ¦ Connection refused (is the PC app open and LAN enabled?)
+Bağlantı tamam. ¦ Connection OK.
+BAĞLANTI\n ¦ CONNECTION\n
+Bağlantıyı kes ¦ Disconnect
+Bağlantıyı test et ¦ Test connection
+Bağlı:  ¦ Connected:
+Başlat menüsü  (Win) ¦ Start menu  (Win)
+Başlık yazılamadı ¦ Could not write header
+Baştan oynat ¦ Play from start
+Bekleyen  ¦ Pending
+Belle Browser'dan:  ¦ From Belle Browser:
+Belle Remote raporu •  ¦ Belle Remote report •
+Bilgisayara yaz ¦ Type on the computer
+Bilgisayarı kilitle  (Win+L) ¦ Lock the computer  (Win+L)
+Bilinmeyen sağlayıcı ¦ Unknown provider
+Bitti. N: sonraki ¦ Finished. N: next
+Bitti. Tekrar oynatmak için Enter ¦ Finished. Enter to play again
+Boş: sistem istemi gönderilmez ¦ Empty: no system prompt is sent
+bu biçimde ses ayrılamıyor ¦ audio cannot be extracted from this format
+Bu dosyayı tekrarla ¦ Repeat this file
+Bu klasörde video ya da ses dosyası yok ¦ No video or audio files in this folder
+Bu resimde ne var? ¦ What is in this image?
+Bu sayfayı sık kullanılanlara ekle ¦ Add this page to favourites
+Bu telefonun yerel ağ IP adresi:\n\n ¦ This phone's LAN IP address:\n\n
+Bu videoda yorumlar kapalı. ¦ Comments are turned off for this video.
+Bugün  ¦ Today
+Bul  (Ctrl+F) ¦ Find  (Ctrl+F)
+Buradan oynat ¦ Play from here
+Buradan sadece ses ile çal ¦ Play audio only from here
+Claude bu isteği yanıtlamadı ¦ Claude did not answer this request
+Çalışıyor  •   ¦ Running  •
+Çalıştır  (Win+R) ¦ Run  (Win+R)
+Çevrimiçi PC yok — yenilemek için seç ¦ No PC online — select to refresh
+Çevrimiçi PC'leri yenile ¦ Refresh online PCs
+Çift tık ¦ Double click
+Çiz:  ¦ Draw:
+Daha fazla yorum ¦ More comments
+'de kaldı ¦  — left off
+Deneniyor... ¦ Trying...
+Dış oynatıcı ¦ External player
+Dış oynatıcıda aç ¦ Open in external player
+Doğrudan (HTTPS) ¦ Direct (HTTPS)
+Doğrudan dosyadan oynat ¦ Play directly from file
+DOKUNMATİK\n ¦ TOUCH\n
+Dokunun ya da sürükleyin: görünüm oraya gider • C: kapat ¦ Tap or drag: the view moves there • C: close
+Dosya açılamadı ¦ Could not open file
+Dosya adı verilemedi ¦ Could not name the file
+Dosya gezgini  (Win+E) ¦ File Explorer  (Win+E)
+Dosya yazılamadı:  ¦ Could not write file:
+Dosyayı sil ¦ Delete file
+Drive'a yükle (Belle Remote klasörü) ¦ Upload to Drive (Belle Remote folder)
+Duraklatıldı ¦ Paused
+Duraklatıldı: kilitte bu videonun sesi çalınamadı ¦ Paused: this video's audio cannot play while locked
+Durum çubuğunu gizle ¦ Hide status bar
+Durum çubuğunu göster ¦ Show status bar
+Düşük (%25, en hızlı) ¦ Low (25%, fastest)
+E6AI sohbetleri ve ayarlari ¦ ApiLauncher chats and settings
+ApiLauncher sohbetleri ve ayarlari ¦ ApiLauncher chats and settings
+E6Tube ayarlari ¦ BelleTube settings
+BelleTube ayarlari ¦ BelleTube settings
+Ekim ¦ October
+Eklendi:  ¦ Added:
+Eklenen fotoğrafı kaldır ¦ Remove attached photo
+EKRAN AÇIKKEN (tuşlar doğrudan kısayoldur)\n ¦ WHILE THE SCREEN IS SHOWN (keys are direct shortcuts)\n
+Ekran bekleniyor… ¦ Waiting for screen…
+Ekran kapalıyken de çalar ¦ Plays with the screen off too
+Ekranı yenile ¦ Refresh screen
+Enter / Boşluk: oynat-duraklat   •   Sol / Sağ: geri / ileri sar (basılı tut: hızlı)\n ¦ Enter / Space: play-pause   •   Left / Right: rewind / forward (hold: fast)\n
+Enter gönder • Ctrl+Enter gönder+Enter • Shift+Enter yeni satır • Ctrl+V yapıştır ¦ Enter send • Ctrl+Enter send+Enter • Shift+Enter new line • Ctrl+V paste
+Enter tamam • Ctrl+V yapıştır • Ctrl+G göster • Esc ¦ Enter OK • Ctrl+V paste • Ctrl+G show • Esc
+Eşleşen kanal yok. ¦ No matching channels.
+Eşleşen video yok ¦ No matching videos
+Evet, dosyayı sil ¦ Yes, delete file
+Evet, temizle ¦ Yes, clear
+Eylül ¦ September
+Fare ¦ Mouse
+Fare › ¦ Mouse ›
+Favori ¦ Favourite
+Favori akış ya da indirilen dosya yok.\nAdresi yazıp İzle ya da İndir'e basın. ¦ No favourite streams or downloads.\nType an address and press Watch or Download.
+Favori akışlar ¦ Favourite streams
+Favorilerden sil ¦ Remove from favourites
+Favorilere eklendi ¦ Added to favourites
+Fotoğraf ekle ¦ Add photo
+Fotoğraf eklendi ¦ Photo added
+Fotoğraf eklendi; mesajla birlikte gider.\nKaldırmak için dokunun. ¦ Photo attached; it is sent with the message.\nTap to remove.
+Fotoğraf kaldırıldı ¦ Photo removed
+Fotoğraf seç  •   ¦ Choose photo  •
+Geçersiz yanıt ¦ Invalid response
+Gemini yanıtlamadı ( ¦ Gemini did not answer (
+Genel bakış: tüm ekrandan bölge seç (C) ¦ Overview: pick a region of the whole screen (C)
+Geniş ¦ Wide
+Geniş — 1280 px, yazı küçük (S ile yakınlaştır) ¦ Wide — 1280 px, small text (zoom with S)
+Genişlik 480 ¦ Width 480
+Genişlik 640 ¦ Width 640
+Genişlik 800 ¦ Width 800
+Geri al  (Ctrl+Z) ¦ Undo  (Ctrl+Z)
+Gizle ¦ Hide
+Gönder + Enter ¦ Send + Enter
+Gönder ve Enter'a bas ¦ Send and press Enter
+Gönderildi, ekran bekleniyor… ¦ Sent, waiting for screen…
+Gönderim kipi ¦ Send mode
+Gönderim: LAN (anlık)  →  Sunucu (paket) yap ¦ Sending: LAN (instant)  →  switch to Server (batch)
+Gönderim: Sunucu (paket)  →  LAN (anlık) yap ¦ Sending: Server (batch)  →  switch to LAN (instant)
+Görev yöneticisi ¦ Task manager
+Görüntü  •   ¦ Picture  •
+Görüntü / pencere / yakınlaştır › ¦ Picture / window / zoom ›
+Görüntü genişliği ¦ Picture width
+Görüntü kalitesi ¦ Picture quality
+Günlüğü gizle ¦ Hide log
+Günlüğü göster ¦ Show log
+Günlük (son 20) ¦ Log (last 20)
+Günlük panoya kopyalandı ¦ Log copied to clipboard
+Hafıza kartı ve telefon belleği ¦ Memory card and phone memory
+Hazır ¦ Ready
+Haziran ¦ June
+Henüz abone olduğunuz kanal yok.\nAra sekmesinde bir kanal bulun ya da bir videodaki \"Kanal\" düğmesine basın, sonra \"Abone ol\"a dokunun. Kanalların yeni videoları burada görünür. ¦ No subscriptions yet.\nFind a channel in the Search tab or press \"Channel\" on a video, then tap \"Subscribe\". New videos from your channels appear here.
+Henüz inen video yok. İzlediğiniz videolar burada saklanır; internetsiz izlenebilir. ¦ No downloaded videos yet. Videos you watch are kept here and can be watched offline.
+Henüz sohbet yok. ¦ No chats yet.
+Her dosyanın kaldığı saniyeyi hatırlar ¦ Remembers where you left off in each file
+Hız ¦ Speed
+Hız ve kalite › ¦ Speed and quality ›
+İleri ¦ Forward
+İlgili videolar ¦ Related videos
+İndirilemedi ( ¦ Download failed (
+İndirilenler ¦ Downloads
+İndirilenler ( ¦ Downloads (
+İndirilenler için ayrılan yer ¦ Space reserved for downloads
+İndiriliyor ¦ Downloading
+İndiriliyor % ¦ Downloading %
+İndirme başladı ¦ Download started
+İndirme hazır:  ¦ Download ready:
+İndirme iptal edildi ¦ Download cancelled
+İniyor % ¦ Downloading %
+İniyor:  ¦ Downloading:
+İnternet bağlantısı açılamadı:  ¦ Could not open internet connection:
+İnternet bağlantısı açılıyor… ¦ Opening internet connection…
+internet videosu izle ya da indir ¦ watch or download an internet video
+İnternetten izle ¦ Watch from the internet
+İstekler kendi sunucunuz üzerinden gider. Anahtarlar bir kez sunucuya gönderilir ve orada saklanır. Sunucu bağlantısı şifresiz (HTTP) olduğu için bu gönderimi güvendiğiniz bir ağda yapın. ¦ Requests go through your own server. Keys are sent to the server once and stored there. The server connection is unencrypted (HTTP), so do this on a network you trust.
+İyi (%50) ¦ Good (50%)
+İzle ¦ Watch
+Kaldığı yerden devam et ¦ Resume where you left off
+Kaldığı yerden:  ¦ Resume from:
+Kaldığın yerden ¦ Resume
+Kalite düşük ¦ Quality low
+Kalite iyi ¦ Quality good
+Kalite orta ¦ Quality medium
+Kanal ¦ Channel
+Kanal ara ¦ Search channels
+Kanalı aç ¦ Open channel
+Kanallar ¦ Channels
+Kare hızı ¦ Frame rate
+karışık ¦ shuffle
+Karışık çalma açık ¦ Shuffle on
+Karışık çalma kapalı ¦ Shuffle off
+Kasım ¦ November
+Kaydet  (Ctrl+S) ¦ Save  (Ctrl+S)
+kayıtlı •••••• ¦ saved ••••••
+KAYITLI BİLGİSAYARLAR ¦ SAVED COMPUTERS
+Kayıtlı listeden sil ¦ Remove from saved list
+Kayıtlı:  ¦ Saved:
+Kes  (Ctrl+X) ¦ Cut  (Ctrl+X)
+Kısa ve net yanıt ver. Giriş cümlesi, tekrar ve gereksiz açıklama yapma; gerekiyorsa maddeler halinde yaz. Soruyu hangi dilde sorarsam o dilde yanıtla. ¦ Answer briefly and clearly. No introductions, repetition or unnecessary explanation; use bullet points if needed. Reply in the language I ask in.
+Kısayollar ¦ Shortcuts
+Kısayollar › ¦ Shortcuts ›
+Kilitte ve arka planda sesle devam ¦ Continue audio when locked or in background
+Kimlik doğrulanıyor… ¦ Authenticating…
+Kitaplık ¦ Library
+Klasörde bitince sonrakine geç ¦ Play next in folder when finished
+Kopyala  (Ctrl+C) ¦ Copy  (Ctrl+C)
+Kopyalama hatası ¦ Copy error
+Kullanım kılavuzu ¦ User guide
+Kuyrukta başka dosya yok ¦ No more files in the queue
+LAN (anlık): her tuş hemen gider ¦ LAN (instant): every key is sent at once
+Liste ¦ List
+Liste boş ¦ List is empty
+Liste boş.\nVideolar ya da Klasörler'de bir dosyada + tuşuna basın ya da sağdaki üç nokta düğmesinden \"Listeye ekle\"yi seçin. ¦ The list is empty.\nIn Videos or Folders press + on a file, or choose \"Add to list\" from the three-dot button.
+Liste temizlensin mi? (dosyalar silinmez) ¦ Clear the list? (files are not deleted)
+Liste'de her zaman sonrakine geçilir ¦ The list always plays the next item
+Listeden çıkar ¦ Remove from list
+Listeden çıkarıldı ¦ Removed from list
+Listelerde: Boşluk seçenekler, + listeye ekle, harf yazınca arama ¦ In lists: Space options, + add to list, type letters to search
+Listeye ekle ¦ Add to list
+Listeye eklendi ( ¦ Added to list (
+Mart ¦ March
+Masaüstü ¦ Desktop
+Masaüstünü göster  (Win+D) ¦ Show desktop  (Win+D)
+Mayıs ¦ May
+MENÜLER\n ¦ MENUS\n
+Mobil ¦ Mobile
+Mobil — siteler telefon düzeninde, yazı büyük ¦ Mobile — sites in phone layout, large text
+Model:  ¦ Model:
+Modeller ¦ Models
+Modeller getiriliyor... ¦ Fetching models...
+mp3, telefona kaydet ¦ mp3, save to phone
+MP4 değil ya da parçalı MP4 ¦ Not MP4 or fragmented MP4
+Nisan ¦ April
+Normal — 1100 px masaüstü düzeni ¦ Normal — 1100 px desktop layout
+Normal (1100 px) ¦ Normal (1100 px)
+Ocak ¦ January
+Okuma hatası ¦ Read error
+Orta (%35, önerilen) ¦ Medium (35%, recommended)
+Orta tık ¦ Middle click
+Oynat ¦ Play
+Oynat / duraklat ¦ Play / pause
+Oynatıcı tuşları ¦ Player keys
+Oynatma listesi ¦ Playlist
+Oynatma sorunlarında bakmak için ¦ For checking playback problems
+Önce API anahtarını girin. ¦ Enter the API key first.
+Önce Ayarlar > Bağlantı'ya sunucu parolasını girin ¦ Enter the server password in Settings > Connection first
+Önce ne çizileceğini yazın, sonra + > Resim çiz ¦ Type what to draw first, then + > Draw image
+Önceki parça ¦ Previous track
+p, telefona kaydet ¦ p, save to phone
+Paket — tuşlar 1 sn sonra toplu (yavaş ağ) ¦ Batch — keys sent together after 1 s (slow network)
+Paket (1 sn bekleyip toplu) ¦ Batch (wait 1 s, send together)
+Paket kipi (1 sn sonra toplu) ¦ Batch mode (sent together after 1 s)
+Pano boş (önce başka uygulamada metni kopyalayın) ¦ Clipboard empty (copy text in another app first)
+Panoda metin yok ¦ No text on clipboard
+Parola boş, kaydedilmedi ¦ Password empty, not saved
+parola hatalı ¦ wrong password
+Parola kaydedildi ( ¦ Password saved (
+Parola kayıtlı olmalı ¦ A password must be saved
+Parola yok ¦ No password
+Paylaşılacak pencere ¦ Window to share
+PC adı (PC uygulamasındaki ad) ¦ PC name (as in the PC app)
+PC bağlantıyı kapattı ¦ The PC closed the connection
+PC reddetti:  ¦ PC refused:
+PC şu an başka bir oturumda ¦ The PC is in another session right now
+PC uygulamasındaki 'Telefona verilecek adres' ¦ 'Address for the phone' in the PC app
+PC'de yazı alanı açılınca yazı penceresi ¦ Text window when a text field opens on the PC
+PC'de yazı alanı etkin ¦ Text field active on the PC
+PC'ye Esc gönder ¦ Send Esc to the PC
+Pencere değiştir  (Alt+Tab) ¦ Switch window  (Alt+Tab)
+Pencere seç… ¦ Choose window…
+Pencereler alınıyor… ¦ Getting windows…
+Pencereyi kapat  (Alt+F4) ¦ Close window  (Alt+F4)
+Rapor gönderiliyor... ¦ Sending report...
+Rapor için önce sunucu parolası kaydedilmeli ¦ Save a server password first to send reports
+Resim çiz (yazdığın metinle) ¦ Draw image (from your text)
+Resim çizme modeli ¦ Image drawing model
+Resim gelmedi ¦ No image received
+Resim kaydedilemedi ¦ Could not save image
+Resim modeli ¦ Image model
+Resim modeli:  ¦ Image model:
+Resim yerine metin döndü:  ¦ Text returned instead of an image:
+Resim:  ¦ Image:
+Sadece ses ¦ Audio only
+Sadece ses (arka planda) ¦ Audio only (background)
+Sadece ses çalıyor ¦ Playing audio only
+Sadece ses ile çal ¦ Play audio only
+Sadece ses: video çözülmüyor ¦ Audio only: video cannot be decoded
+Sadece sesi oynat ¦ Play audio only
+Sağ ok ¦ Right arrow
+Sağ tık ¦ Right click
+Sarma adımı ¦ Seek step
+Sayfa aşağı ¦ Page down
+Sayfa görünümü ¦ Page view
+Sayfa görünümü:  ¦ Page view:
+Sayfa sonuna in (End)  •  başına çık: Home ¦ Go to page end (End)  •  to top: Home
+Sayfa yukarı ¦ Page up
+Seç ¦ Select
+Sekmeyi kapat  (Ctrl+W) ¦ Close tab  (Ctrl+W)
+Ses − ¦ Volume −
+Ses + ¦ Volume +
+Ses biçimi desteklenmiyor ( ¦ Audio format not supported (
+Ses çalınamadı:  ¦ Could not play audio:
+Ses çalıyor ¦ Playing audio
+Ses dosyası yazılamadı ¦ Could not write audio file
+Ses hazır ( ¦ Audio ready (
+Ses hazırlanıyor % ¦ Preparing audio %
+Ses izi ayrılamadı:  ¦ Could not extract audio track:
+Ses izi boş ¦ Audio track empty
+Ses izi bulunamadı ¦ Audio track not found
+Ses tablosu tutarsız ¦ Audio table inconsistent
+Ses:  ¦ Volume:
+Ses: % ¦ Volume: %
+Sesi indir ¦ Download audio
+Sessiz ¦ Mute
+Sık kullanılan yok ¦ No favourites
+Sık kullanılanı sil… ¦ Delete favourite…
+Sık kullanılanlar ¦ Favourites
+Sınır aşılınca en eski videolar otomatik silinir. Klasör:  ¦ When the limit is exceeded the oldest videos are deleted automatically. Folder:
+Sırada ¦ Queued
+Sil:  ¦ Delete:
+Silinecek sık kullanılan ¦ Favourite to delete
+Silinemedi ¦ Could not delete
+Silinsin mi?  ¦ Delete?
+Sistem istemi (üç modele de gider) ¦ System prompt (sent to all three models)
+Sohbet modeli ¦ Chat model
+Sol ok ¦ Left arrow
+Sol tık ¦ Left click
+Sol/sağ tuşu ve 10 sn düğmeleri ¦ Left/right keys and the 10 s buttons
+son:  ¦ last:
+Sonra (24 saat sunucuda kalır) ¦ Later (kept on the server for 24 hours)
+Sonraki parça ¦ Next track
+Sonraki sekme  (Ctrl+Tab) ¦ Next tab  (Ctrl+Tab)
+Sonuncu dosya ¦ Last file
+Sorun bildir (günlüğü sunucuya gönder) ¦ Report a problem (send the log to the server)
+Sorun giderme: yerel sunucuyu atlar (E6'da genelde yalnızca ses gelir) ¦ Troubleshooting: skips the local server (on the E6 usually only audio plays)
+Sunucu (paket): tuşlar 1 sn sonra toplu gider ¦ Server (batch): keys are sent together after 1 s
+Sunucu adresi geçersiz ¦ Invalid server address
+Sunucu hatası ( ¦ Server error (
+Sunucu hazırlıyor... ¦ Server is preparing...
+Sunucu kontrol ediliyor... ¦ Checking server...
+Sunucu parolası (PC ile aynı) ¦ Server password (same as on the PC)
+Sunucu parolası (WhatsE6 ile aynı) ¦ Server password (same as in WhatsBelle)
+Sunucu parolası (WhatsBelle ile aynı) ¦ Server password (same as in WhatsBelle)
+Sunucu parolası hatalı. Ayarlardan kontrol edin. ¦ Wrong server password. Check it in Settings.
+Sunucu parolası yok (Ayarlar > Bağlantı). ¦ No server password (Settings > Connection).
+Sunucu soruluyor… ¦ Asking the server…
+Sunucu Tarayıcı ¦ Server Browser
+SUNUCU TARAYICISI ¦ SERVER BROWSER
+SUNUCU TARAYICISI\n ¦ SERVER BROWSER\n
+Sunucu üzerinden ¦ Through the server
+Sunucu üzerinden bağlan ¦ Connect through the server
+Sunucu üzerinden PC adıyla bağlan… ¦ Connect by PC name through the server…
+Sunucu yanıtı:  ¦ Server response:
+Sunucu, parola, hız, telefon IP'si ¦ Server, password, speed, phone IP
+Sunucuda %1 aranıyor… ¦ Looking for %1 on the server…
+SUNUCUDA ÇEVRİMİÇİ ¦ ONLINE ON SERVER
+Sunucuda uzak masaüstü aktarıcısı yok (güncellenmemiş) ¦ No remote desktop relay on the server (not updated)
+Sunucudaki anahtarlar: GPT  ¦ Keys on the server: GPT
+Sunucudaki Chrome: tüm siteler • indirme telefona ya da Drive'a ¦ Chrome on the server: every site • downloads to phone or Drive
+Sunucudan sil ¦ Delete from server
+Sunucuya bağlanıyor… (%1) ¦ Connecting to server… (%1)
+Sürüklemeyi başlat (sol tuşa bas) ¦ Start drag (press left button)
+Sürüklemeyi bitir (bırak) ¦ End drag (release)
+Şu an inen:  ¦ Downloading now:
+Şubat ¦ February
+Tam ekran  (F11) ¦ Full screen  (F11)
+Tamamını göster ¦ Show all
+Tarama başladı ¦ Scan started
+Taranıyor...  ¦ Scanning...
+Tarayıcı ¦ Browser
+Tekerlek aşağı ¦ Wheel down
+Tekerlek aşağı ×5 ¦ Wheel down ×5
+Tekerlek yukarı ¦ Wheel up
+Tekerlek yukarı ×5 ¦ Wheel up ×5
+Tekrar kapalı ¦ Repeat off
+Telefon adı ¦ Phone name
+Telefon adı (PC'de görünür) ¦ Phone name (shown on the PC)
+Telefon panosundan yapıştır ¦ Paste from phone clipboard
+Telefon sağlayıcıya şifreli (HTTPS) bağlanır; anahtarlar yalnızca telefonda durur. Telefonda Qt TLS 1.2 yaması gerekir. TLS hatası olursa istek sunucu üzerinden tekrarlanır (sunucu parolası gerekir). ¦ The phone connects to the provider encrypted (HTTPS); keys stay only on the phone. Requires the Qt TLS 1.2 patch on the phone. On a TLS error the request is retried through the server (server password required).
+Telefon:  ¦ Phone:
+Telefona indir (E:/Downloads) ¦ Save to phone (E:/Downloads)
+Telefonda ¦ On phone
+Telefonda fotoğraf bulunamadı (E:/Images, C:/Data/Images) ¦ No photos found on the phone (E:/Images, C:/Data/Images)
+Telefonda kayıtlı ¦ Saved on phone
+Telefonda video bulunamadı.\nYenile düğmesiyle yeniden taratabilir ya da Klasörler'den gezebilirsiniz. ¦ No videos found on the phone.\nRescan with the Refresh button or browse in Folders.
+Telefondan ¦ From phone
+Telefonun adresi ¦ Phone address
+Telefonun IP adresi ¦ Phone IP address
+Telefonun IP adresini göster ¦ Show the phone's IP address
+Temizle ¦ Clear
+Temmuz ¦ July
+Tüm ekran alınıyor… ¦ Capturing the whole screen…
+Tüm masaüstü ¦ Whole desktop
+Tüm videolar ¦ All videos
+Tümünü listeye ekle ¦ Add all to list
+Tümünü oynat ( ¦ Play all (
+Tümünü sadece ses ile çal ¦ Play all as audio only
+Tümünü seç  (Ctrl+A) ¦ Select all  (Ctrl+A)
+Tümünü tekrarla ¦ Repeat all
+Uygulamanın günlüğü (C:/Data/ApiLauncher/gunluk.txt) sunucuya gönderilir; anahtarlar ve sohbetler gönderilmez. Yukarıdaki sunucu adresi ve parolası kullanılır. ¦ The app log (C:/Data/ApiLauncher/gunluk.txt) is sent to the server; keys and chats are not sent. The server address and password above are used.
+Uzaklaştır ¦ Zoom out
+Varsayılan ¦ Default
+Varsayılan istem yüklendi ¦ Default prompt loaded
+Video ara ¦ Search videos
+Video başlığı çok büyük ¦ Video header too large
+Video durur, ses aynı yerden sürer; dönünce görüntü geri gelir ¦ Video stops, audio continues from the same spot; the picture returns when you come back
+Video kalitesi ¦ Video quality
+Video oynatılamadı (biçim desteklenmiyor olabilir).\nS: sadece ses   D: dış oynatıcı   N: sonraki ¦ Could not play the video (format may be unsupported).\nS: audio only   D: external player   N: next
+Video oynatılamadı. \"Sadece ses\" ile dinleyebilir ya da indirip izleyebilirsiniz. ¦ Could not play the video. Listen with \"Audio only\" or download and watch.
+Video ya da kanal adı yazın.\nİzlediğiniz her video telefona iner; ileri-geri sarma internetsiz çalışır. Bir videoya basılı tutunca kanalı açılır. ¦ Type a video or channel name.\nEvery video you watch is downloaded to the phone; seeking works offline. Long-press a video to open its channel.
+Video yok. ¦ No videos.
+Video:  ¦ Video:
+Videolar ¦ Videos
+Videolar aranıyor... ¦ Searching videos...
+Videolar yeniden taranıyor ¦ Rescanning videos
+Videoları yeniden tara ¦ Rescan videos
+Videoya dönüldü ¦ Back to video
+Videoya geç ¦ Switch to video
+Videoyu indir ¦ Download video
+Videoyu indir ( ¦ Download video (
+Videoyu oynat ¦ Play video
+Yakınlaştır (şimdi × ¦ Zoom (now ×
+Yalnızca http/https adresleri indirilebilir ¦ Only http/https addresses can be downloaded
+Yalnızca sunucu üzerinden ¦ Server only
+Yalnızca yerel ağ ( ¦ LAN only (
+Yanıt reddedildi:  ¦ Response refused:
+Yapıştır  (Ctrl+V) ¦ Paste  (Ctrl+V)
+Yazı ¦ Text
+YAZI PENCERESİ\n ¦ TEXT WINDOW\n
+Yazı yaz… ¦ Type text…
+Yeni sekme  (Ctrl+T) ¦ New tab  (Ctrl+T)
+Yeniden denemek için dokunun ¦ Tap to retry
+Yenile  (F5) ¦ Reload  (F5)
+Yerel ağ adresi (IP:port) ¦ LAN address (IP:port)
+Yerel ağda adresle bağlan… ¦ Connect by address on LAN…
+Yerel ağda bağlanıyor… %1:%2 ¦ Connecting on LAN… %1:%2
+Yerel ağda bulunamadı, sunucu üzerinden deneniyor ¦ Not found on LAN, trying through the server
+Yerel ağdan bağlan ( ¦ Connect over LAN (
+Yerel:  ¦ Local:
+Yinele  (Ctrl+Y) ¦ Redo  (Ctrl+Y)
+Yorum yok. ¦ No comments.
+Yorumlar ¦ Comments
+Yorumları aç ¦ Open comments
+Yorumları aç (tam ekran) ¦ Open comments (full screen)
+Yorumları göster ¦ Show comments
+Yorumların sonu ¦ End of comments
+YouTube'da ara ¦ Search YouTube
+Yukarı / Aşağı ve ses tuşları: ses   •   F: tam ekran   •   S: sadece ses   •   V: videoya dön\n ¦ Up / Down and volume keys: volume   •   F: full screen   •   S: audio only   •   V: back to video\n
+Yukarı ok ¦ Up arrow
+Yukarı taşı ¦ Move up
+Yüksek (%70) ¦ High (70%)
+Zaman aşımı ¦ Timeout
+Zaten favorilerde ¦ Already in favourites
+Zaten indiriliyor ¦ Already downloading
+Zaten listede ¦ Already in the list
+Zaten telefonda ¦ Already on the phone
+Bağlantı testi: yalnızca 'tamam' yaz. ¦ Connection test: reply only with 'ok'.

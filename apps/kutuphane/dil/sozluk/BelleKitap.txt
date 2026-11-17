@@ -1,0 +1,59 @@
+# BelleKitap (Turkce ¦ English)
+ kitap ¦  books
+ kitap bulundu ¦  books found
+Açılıyor… ¦ Opening…
+Arşivde çok fazla dosya (65535 sınırı) ¦ Too many files in archive (65535 limit)
+Başlık ya da yazar (boş: tümü) ¦ Title or author (empty: all)
+Baştan başla ¦ Start over
+Bölüm  ¦ Chapter 
+Buraya yer imi ekle ¦ Bookmark this place
+Ctrl+Q ¦ Ctrl+Q
+Desteklenmeyen AES şifresi:  ¦ Unsupported AES encryption: 
+Gece ¦ Night
+Gece mavisi ¦ Night blue
+Görünüm ¦ Appearance
+Gündüz ¦ Day
+İçindekiler ¦ Contents
+Kenar boşluğu:  ¦ Margins: 
+Kitabın başı ¦ Start of book
+Kitabın sonu ¦ End of book
+Kitap bulunamadı.\nEPUB dosyalarını hafıza kartına (ör. E:/Kitaplar) kopyalayıp yenile düğmesine basın. ¦ No books found.\nCopy EPUB files to the memory card (e.g. E:/Kitaplar) and press refresh.
+Kitaplar aranıyor… ¦ Searching for books…
+Kitapları yeniden tara ¦ Rescan books
+Kitaplığım ¦ My library
+Kitaplıkta ara ¦ Search library
+Liste yazı boyutu ¦ List font size
+Liste yazı boyutu:  ¦ List font size: 
+Nokia E6 için e-kitap okuyucu.\n\nEPUB (2 ve 3) ve kitap klasörlerindeki TXT dosyaları. Kitaplar hafıza kartında ve C:/Data altında aranır; EPUB'ları örneğin E:/Kitaplar klasörüne kopyalayıp Tara'ya basın.\n\nOkurken: ekranın sağına dokun / Boşluk / Aşağı: sonraki sayfa, soluna dokun / Yukarı: önceki sayfa, ortasına dokun: menü çubukları. , ve . önceki/sonraki bölüm, T içindekiler, B yer imi, Y yer imleri, + - yazı boyutu, N tema, Geri: kitaplık.\n\nKaldığınız yer, yer imleri ve okuma yüzdesi kitap başına saklanır. DRM'li (şifreli) EPUB'lar açılamaz. ¦ E-book reader for the Nokia E6.\n\nEPUB (2 and 3) and TXT files in book folders. Books are searched on the memory card and under C:/Data; copy EPUBs to e.g. E:/Kitaplar and press Scan.\n\nWhile reading: tap the right side / Space / Down: next page, tap the left side / Up: previous page, tap the middle: toolbars. , and . previous/next chapter, T contents, B bookmark, Y bookmarks, + - font size, N theme, Back: library.\n\nYour place, bookmarks and reading percentage are saved per book. DRM-protected EPUBs cannot be opened.
+Parola gerekli:  ¦ Password required: 
+Parola yanlış ya da veri bozuk:  ¦ Wrong password or corrupt data: 
+Parola yanlış:  ¦ Wrong password: 
+Sepya ¦ Sepia
+Sırala:  ¦ Sort: 
+son okunan ¦ recently read
+Şifreli veri bozuk:  ¦ Encrypted data corrupt: 
+taranıyor…  ¦ scanning… 
+yazara göre ¦ by author
+Yazı büyüt (+)  •  şu an  ¦ Larger text (+)  •  now 
+Yazı küçült (-) ¦ Smaller text (-)
+Yer imi eklendi:  ¦ Bookmark added: 
+Yer imi silindi ¦ Bookmark deleted
+ZIP64 arşivlerine eklenemez ¦ Cannot add to ZIP64 archives
+Aç (indirilmiş) ¦ Open (downloaded)
+Daha fazla… ¦ More…
+Dil:  ¦ Language: 
+Eser ya da yazar (ör. Ömer Seyfettin) ¦ Work or author (e.g. Ömer Seyfettin)
+Eserde metin bulunamadı ¦ No text found in the work
+Gutenberg (dünya, EPUB) ¦ Gutenberg (world, EPUB)
+Gutenberg · EPUB · telifsiz ¦ Gutenberg · EPUB · public domain
+İndir ve aç ¦ Download and open
+İnternetten kitap bul (Gutenberg, Vikikaynak) ¦ Find books online (Gutenberg, Wikisource)
+Kaydedilemedi ¦ Could not save
+Kitap bul ¦ Find books
+Kitap dili ¦ Book language
+Kitap ya da yazar (boş: en popüler) ¦ Book or author (empty: most popular)
+Kitap yok.\nÜstteki dünya düğmesiyle internetten ücretsiz kitap bulun (Gutenberg, Vikikaynak) ya da EPUB dosyalarını E:/Kitaplar klasörüne kopyalayıp yenileyin. ¦ No books.\nUse the globe button above to find free books online (Gutenberg, Wikisource), or copy EPUB files to E:/Kitaplar and refresh.
+Vikikaynak (Türkçe) ¦ Wikisource (Turkish)
+Vikikaynak · Türkçe · metin ¦ Wikisource · Turkish · text
+Vikikaynak'ta aramak için yazar ya da eser adı yazın (ör. Ömer Seyfettin, Kaşağı, Nutuk). ¦ To search Wikisource, type an author or work (e.g. Ömer Seyfettin, Kaşağı, Nutuk).
+Yalnızca indir ¦ Download only

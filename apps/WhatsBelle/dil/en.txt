@@ -1,0 +1,236 @@
+# WhatsBelle - English (araclar/dil_cikar.ps1 ile uretilir, elle duzenlemeyin)
+ - kendi WhatsBelle sunucusuyla çalışır. WhatsApp ile resmi bir bağlantısı yoktur. Emojiler: Twemoji (Twitter, CC-BY 4.0).	 - works with your own WhatsBelle server. Not affiliated with WhatsApp. Emoji: Twemoji (Twitter, CC-BY 4.0).
+ (arka plan)	 (background)
+ (etkin 	 (active
+ (kaba: ağ / baz istasyonu), GPS hassaslaşıyor…	 (rough: network / cell tower), GPS refining…
+ | klasör: 	 | folder:
+ | süre: 	 | duration:
+ • %1/%2 uydu	 • %1/%2 satellites
+ bin karakter)	k characters)
+ dk	 min
+ dk, cekmece: 	 min, drawer: 
+ gönderiliyor...	 sending...
+ için oturum açılıyor…	 — opening session…
+ KB	 KB
+ kişi	 contacts
+ km	 km
+ MB	 MB
+ mesaj)	 messages)
+ okunmamış	 unread
+ sa 	 h
+ sn	 s
+ uzakta	 away
+ yeni	 new
+%1 karo indirildi%2	%1 tiles downloaded%2
+%1 uydu kilitlendi, konum hesaplanıyor	%1 satellites locked, calculating position
+(adsız)	(unnamed)
+(konu yok)	(no subject)
+, %1 indirilemedi	, %1 failed
+, acilista baslat: 	, start at boot: 
+, WhatsApp oturumu yok	, no WhatsApp session
+. hesap	. account
+. hesap; 1: 	. account; 1: 
+/login adresinden QR kodu okutun.	/login and scan the QR code.
+\n\n--- Gunluk ---\n	\n\n--- Log ---\n
+\nAçmak için dokunun	\nTap to open
+\nBildirim araligi: 	\nNotification interval: 
+\nGaleri: 	\nGallery: 
+\nNumara: 	\nNumber: 
+\nPosta sekmesi: 	\nMail tab: 
+\nSes kaydi: 	\nVoice recording: 
+\nSon bildirim kontrolu: 	\nLast notification check: 
+\nSon kontrol: 	\nLast check:
+\nSunucu: 	\nServer: 
+© OpenStreetMap katkıcıları	© OpenStreetMap contributors
+1. hesap 	Account 1
+2. hesabı ekle	Add 2nd account
+2. hesabı kaldır	Remove 2nd account
+2. hesap 	Account 2
+2. hesap eklendi (W²): 	2nd account added (W²):
+2. hesap kaldırıldı	2nd account removed
+Açık (OSM)	Light (OSM)
+Açık: e-postalar ve bildirimleri gösterilir	On: emails and their notifications are shown
+Adres, yer ya da işletme ara	Search address, place or business
+Ağustos	August
+Anlık konum	Live location
+Anlık konumum	My live location
+Ara	Search
+Ara...	Search...
+Aralık	December
+Arama yapılamadı (	Search failed (
+Aranıyor…	Searching…
+Arazi	Terrain
+Arka plan bildirimleri	Background notifications
+Ayarlar	Settings
+Bağlandı, giriş yapılıyor…	Connected, signing in…
+Bağlandı, sohbetler hazırlanıyor…	Connected, preparing chats…
+Bağlanılamadı	Could not connect
+Bağlanıyor...	Connecting...
+Belge	Document
+Benim konumum	My location
+Bildirimi dene	Test notification
+Bildirimler çalışıyor	Notifications are working
+Bir dosya seçin	Choose a file
+Bu konumu gönder	Send this location
+Bu mesaja ifade bırakılamıyor	Cannot react to this message
+Bu numara zaten 1. hesap olarak ekli.	This number is already added as account 1.
+Bu numaranın oturumu zaten açık, giriş yapılıyor…	This number already has a session, signing in…
+Bu telefonda konum servisi bulunamadı	No location service found on this phone
+BUGÜN	Today
+Çıkartma	Sticker
+Çıkış yap	Sign out
+Çıkış yapıldı, etkin hesap: 	Signed out, active account:
+Daha eski mesajlar	Older messages
+Daha eski sohbetler	Older chats
+Daha fazla göster	Show more
+Daralt	Collapse
+Deneme bildirimi	Test notification
+Devam	Continue
+Devamını oku (	Read more (
+Dosya açılamadı	Could not open file
+Dosya çok büyük (en fazla 15 MB)	File too large (max 15 MB)
+Dosya yüklendi: 	File uploaded:
+Durdur	Stop
+Durduruldu: %1 / %2 karo	Stopped: %1 / %2 tiles
+Durum çubuğu çekmecesine bildirim	Notifications in the status bar drawer
+Dün	Yesterday
+DÜN	Yesterday
+Ekim	October
+Eklenecek numarayı ülke koduyla, başında + veya 00 olmadan girin. Sunucu ve parola 1. hesapla aynıdır.	Enter the number to add with country code, without a leading + or 00. Server and password are the same as account 1.
+Etkin	Active
+Etkin hesap: 	Active account:
+Etkin hesaptan çıkış yap	Sign out of the active account
+Eylül	September
+Fotoğraf	Photo
+Fotoğraf seç	Choose photo
+Fotoğraf yüklenemedi	Could not load photo
+Geç	Switch
+Geçersiz dosya	Invalid file
+geçersiz ses	invalid audio
+Gelen kutusu boş	Inbox is empty
+Gönder	Send
+Gönderildi	Sent
+Gönderilecek kişi: 	Send to:
+Gönderilemedi	Could not send
+Gönderilemedi (	Could not send (
+Gönderiliyor...	Sending...
+Gönderiliyor... %	Sending... %
+GPS kapalı	GPS off
+GPS kapalı • son konum ±%1 m	GPS off • last fix ±%1 m
+GPS'e bağlanılıyor… uydu aranıyor	Connecting to GPS… searching for satellites
+Grup	Group
+Günlüğü temizle	Clear log
+Günlük temizlendi	Log cleared
+Haritada açmak için dokunun	Tap to open on the map
+Haritayı kaydırın: iğnenin olduğu yer gönderilir	Pan the map: the pin position is sent
+HATA 	Error
+Hazırlanıyor...	Preparing...
+Haziran	June
+Henüz mesaj yok. İlk mesajı siz gönderin.	No messages yet. Send the first one.
+Henüz sohbet yok	No chats yet
+henüz yok	none yet
+Hesabım	My account
+Hesap değiştir	Switch account
+Hesaplar	Accounts
+Hesaplar (W²)	Accounts (W²)
+Hoş geldiniz	Welcome
+İfade bırak	React
+İfadeyi kaldır	Remove reaction
+İki hesabın da bildirimleri gelir; başlıkta hangi hesaba geldiği yazar. Sohbetler listesindeki W² düğmesi de hesabı değiştirir.	You get notifications for both accounts; the title shows which account. The W² button in the chat list also switches accounts.
+İkinci bir WhatsApp numarası ekleyebilirsiniz (aynı sunucu). Numara sunucuda bağlı değilse QR kodu gösterilir.	You can add a second WhatsApp number (same server). If the number is not connected on the server, a QR code is shown.
+İkinci WhatsApp hesabı	Second WhatsApp account
+İsim ara...	Search name...
+Kapalı	Off
+Kapalı: sekme ve posta bildirimleri gizli	Off: tab and mail notifications hidden
+Kapat	Close
+Karanlık tema	Dark theme
+Kasım	November
+Kaydediliyor... göndermek için düğmeye dokunun	Recording... tap the button to send
+Kaydet	Save
+Kayıt başlatılamadı: 	Could not start recording:
+Kişi bulunamadı.	No contacts found.
+Kişiler	Contacts
+Konum	Location
+Konum aranıyor… (uydu araması açık havada daha hızlıdır)	Searching for location… (satellite search is faster outdoors)
+Konum bulunamadı. Açık havada tekrar deneyin (GPS ilk uydu araması birkaç dakika sürebilir).	Location not found. Try again outdoors (the first GPS satellite search can take a few minutes).
+Konum bulundu ±%1 m	Location found ±%1 m
+Konum servisi bu derlemede yok	Location service not available in this build
+Konum: 	Location:
+Kopyala	Copy
+Kopyalanacak metin yok	No text to copy
+Koyu	Dark
+Mart	March
+Mayıs	May
+Mesaj	Message
+Mesaj kopyalandı	Message copied
+Mikrofon kullanılamıyor (izin verilmemiş olabilir)	Microphone unavailable (permission may be missing)
+Ne oldu? (isteğe bağlı)	What happened? (optional)
+Nisan	April
+Nokia E6 için sohbet	Chat for the Nokia E6
+Nokia mesaj notu (yalnızca ekran kapalıyken)	Nokia message note (only when the screen is off)
+Numara geçersiz	Invalid number
+Numara sunucuda bağlı değilse QR kodu burada gösterilir; WhatsApp yüklü telefonunuzdan okutun.	If the number is not connected on the server, a QR code is shown here; scan it from the phone that has WhatsApp.
+Numaranızı ülke koduyla girin (örn. 905321234567).	Enter your number with country code (e.g. 905321234567).
+Ocak	January
+Ortala	Center
+Oturum bulunamadı. 	Session not found.
+Önceki gönderim sürüyor	The previous send is still in progress
+Parola	Password
+Pigler eklentisi kurulu değil: sistemin genel \"yeni sohbet mesajı\" notu kullanılır.	Pigler plugin not installed: the system's generic \"new chat message\" note is used.
+Pigler eklentisi kurulu: çekmecede gönderen ve mesaj görünür, dokununca sohbet açılır.	Pigler plugin installed: the sender and message appear in the drawer; tapping opens the chat.
+Posta	Mail
+Posta alınamadı	Could not get mail
+Posta sekmesi	Mail tab
+QR bekleniyor…	Waiting for QR…
+QR ile bağla	Connect with QR
+QR ile bağla (yeni hesap)	Connect with QR (new account)
+QR kodu hazırlanıyor (10-30 sn)…	Preparing QR code (10-30 s)…
+Rapor gönder	Send report
+Ses	Audio
+Ses dosyası	Audio file
+Ses dosyası seç	Choose audio file
+Ses dosyası sunucuda yok	Audio file not on the server
+Ses indirilemedi (	Could not download audio (
+Ses kaydedilemedi	Could not record audio
+Sesli mesaj	Voice message
+Sesli mesaj çalınamadı	Could not play voice message
+Sohbetler	Chats
+Sohbetler yüklenemedi	Could not load chats
+Sokak	Street
+Son 5 e-posta ve Drive yüklemesi. Tamamı için Mail ve Drive uygulamalarını kullanın.	Last 5 emails and Drive uploads. Use the Mail and Drive apps for everything.
+Sonuç bulunamadı	No results found
+Sorun bildir	Report a problem
+Sunucu	Server
+Sunucu adresi	Server address
+Sunucu adresini girin.	Enter the server address.
+Sunucu ayarları kaydedildi	Server settings saved
+Sunucu hatası (	Server error (
+Sunucu parolası	Server password
+Sunucu parolası hatalı	Wrong server password
+Sunucu parolası hatalı. Ayarlardan parolayı kontrol edin.	Wrong server password. Check it in Settings.
+Sunucuda 	On server
+Sunucuda posta hesabı ayarlı değil ya da bağlanılamadı.	No mail account set up on the server, or it could not connect.
+Sunucudan geçersiz yanıt geldi.	Invalid response from the server.
+Sunucuya bağlanılamadı	Could not connect to the server
+Sunucuya bağlanılamadı. İnternet bağlantısını kontrol edin.	Could not connect to the server. Check your internet connection.
+Surum: WhatsBelle 	Version: WhatsBelle 
+Şubat	February
+Taranan: 	Scanned:
+Telefon açılınca arka planda başlat	Start in background when the phone starts
+Telefon numaranızı ülke koduyla, başında + veya 00 olmadan girin.	Enter your phone number with country code, without a leading + or 00.
+Telefon taranıyor...	Scanning phone...
+Telefonda dosya bulunamadı.\n\n	No files found on the phone.\n\n
+Temmuz	July
+Uydu	Satellite
+Uydu aranıyor: %1 görünüyor, %2 kilitlendi (en az 3 gerekir)	Searching satellites: %1 visible, %2 locked (at least 3 needed)
+Uygulama arka plandayken bu aralıkla yeni mesajlara bakar ve ekranın köşesinde bildirim gösterir. Kısa aralık pili biraz daha çok kullanır.	While in the background the app checks for new messages at this interval and shows a corner notification. A short interval uses a bit more battery.
+Uygulamanın günlüğünü ve ayarlarını (parola hariç) sunucuya gönderir; sorunun ne olduğunu oradan görebilirim. Yalnızca düğmeye bastığınızda gider.	Sends the app log and settings (except the password) to the server so the problem can be investigated. Only sent when you press the button.
+Vazgeç	Cancel
+Video	Video
+Video seç	Choose video
+WhatsApp yüklü telefonunuzda: Ayarlar › Bağlı cihazlar › Cihaz bağla, sonra bu kodu okutun.	On the phone with WhatsApp: Settings › Linked devices › Link a device, then scan this code.
+WhatsBelle ayarlari	WhatsBelle settings
+Yeni mesajları kontrol et	Check for new messages
+Yeni sohbet başlatmak için sağ alttaki düğmeye dokunun.	Tap the button at the bottom right to start a new chat.
+Yenile	Refresh
+Yükleniyor...	Loading...

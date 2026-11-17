@@ -1,0 +1,289 @@
+# Sunucu metinleri (dil.js). Bicim: Turkce ¦ English. E6_LANG=en ya da istemcinin X-Lang: en basligi ile kullanilir.
+Sunucu tarayıcısı 60 fps / 1080p\'ye kadar istenebilir; gerçek hız sunucunun gücüne bağlıdır. ¦ The server browser can be asked for up to 60 fps / 1080p; the real speed depends on the server.
+PC uygulaması 60 fps / 1080p\'ye kadar verir; gerçek hız PC\'nin ve internetin hızına bağlıdır. Çözünürlük ve kare hızı birbirinden bağımsızdır. ¦ The PC app delivers up to 60 fps / 1080p; the real speed depends on the PC and the internet connection. Resolution and frame rate are independent.
+— JPEG kullanılıyor ¦ — using JPEG
+(adsız) ¦ (unnamed)
+(dört modele de gider; bu tarayıcıda saklanır) ¦ (sent to all four models; stored in this browser)
+(kayıtlı – değiştirmek için yeniden girin) ¦ (saved – enter again to change)
+(kayıtlı) ¦ (saved)
+(yayınlanmazsa izin 7 günde bir düşer). ¦ (if not published, the permission expires every 7 days).
+). Artık E6\'dan giriş yapabilirsiniz. ¦ ). You can now sign in from the E6.
+, tür: ¦ , type:
+, uygulama türü: ¦ , application type:
+. (İzin ekranı daha önce YouTube için ayarlandıysa yenisi gerekmez; kendi Gmail adresiniz test kullanıcısı olmalı.) ¦ . (If the consent screen was already set up for YouTube you do not need a new one; your own Gmail address must be a test user.)
+. Telefonda çıkan kodu ¦ . Enter the code shown on the phone at
+: Harici, uygulama adı BelleTube; kapsam ¦ : External, app name BelleTube; scope
+; kendi Gmail adresinizi test kullanıcısı olarak ekleyin, sonra ¦ ; add your own Gmail address as a test user, then
+\n\n… (devamı kesildi) ¦ \n\n… (rest truncated)
+\nDrive\'a yüklensin mi? ¦ \nUpload to Drive?
+” çöp kutusuna taşınsın mı? (Drive'ın çöpünden 30 gün içinde geri alınabilir) ¦ ” — move to trash? (can be restored from Drive's trash within 30 days)
+” klasörüne yükle ¦ ” — upload to this folder
+‹ Klasöre dön ¦ ‹ Back to folder
+‹ Listeye dön ¦ ‹ Back to list
+Sunucuda kayıtlı (değiştirmek için yazın) ¦ Saved on server (type to change)
+Kayıtlı değil ¦ Not saved
+Hazırlanamadı ¦ Could not prepare
+⬆ Üst klasör ¦ ⬆ Parent folder
+⬇ İndir ¦ ⬇ Download
+☆ Yıldızı kaldır ¦ ☆ Remove star
+★ Yıldız ¦ ★ Star
+★ Yıldızla ¦ ★ Star
+✔ Bağlı hesap: ¦ ✔ Connected account:
+• yükleniyor… ¦ • uploading…
+'a basın ve QR kodun çıkmasını bekleyin (20–40 sn). ¦ ' and wait for the QR code (20–40 s).
+a yüklensin mi? ¦  — upload?
+açık ¦ on
+Açık kalma ¦ Stay signed in
+açın, Google hesabınızla giriş yapıp izin verin (uygulama doğrulanmadı uyarısında "Gelişmiş → Devam"): ¦ open it, sign in with your Google account and allow access (on the "app not verified" warning choose "Advanced → Continue"):
+Ad boş ¦ Name is empty
+Adres bulunamadı: ¦ Address not found:
+Adres çubuğundaki tam adresi ¦ The full address from the address bar
+Akış ¦ Feed
+Alıcı adresi gerekli ¦ Recipient address required
+Alıntılanan belge ¦ Quoted document
+Alıntılanan çıkartma ¦ Quoted sticker
+Alıntılanan fotoğraf ¦ Quoted photo
+Alıntılanan kişi kartı ¦ Quoted contact card
+Alıntılanan konum ¦ Quoted location
+Alıntılanan mesaj ¦ Quoted message
+Alıntılanan ses ¦ Quoted audio
+Alıntılanan sesli mesaj ¦ Quoted voice message
+Alıntılanan video ¦ Quoted video
+API'ler ve Hizmetler → OAuth izin ekranı ¦ APIs & Services → OAuth consent screen
+Ara, akış, abonelikler, listeler ¦ Search, feed, subscriptions, playlists
+Arama metni boş ¦ Search text is empty
+Arama yapılamadı: ¦ Search failed:
+Arşivle ¦ Archive
+Asıl sayfa ¦ Original page
+ay önce ¦ months ago
+Ayarlar → Bağlı cihazlar → Cihaz bağla ¦ Settings → Linked devices → Link a device
+B görüntüleme ¦ B views
+Bağlan ¦ Connect
+Bağlanamadı: ¦ Could not connect:
+Bağlandı: ¦ Connected:
+Bağlantı hatası ¦ Connection error
+Bağlantı kapandı — 3 sn sonra yeniden ¦ Connection closed — retrying in 3 s
+Bağlantı kapandı — yeniden bağlanmak için sayfayı yenileyin ¦ Connection closed — reload the page to reconnect
+Bağlantıyı kes ¦ Disconnect
+Bağlı hesap: ¦ Connected account:
+Bağlı oturumlar ¦ Connected sessions
+Bağlı: ¦ Connected:
+Başka dosya yükle ¦ Upload another file
+Beğenilenler ¦ Liked
+Benimle paylaşılanlar ¦ Shared with me
+Bilinmeyen sağlayıcı ¦ Unknown provider
+Birleşik Krallık (+44) ¦ United Kingdom (+44)
+Boş dosya ¦ Empty file
+Boş mesaj ¦ Empty message
+Boş. ¦ Empty.
+bölümünden 16 haneli bir şifre oluşturup aşağıya girin (normal Gmail şifreniz değil). ¦ create a 16-character password there and enter it below (not your normal Gmail password).
+Bu adres eski ya da süresi dolmuş bir denemeye ait. Kurulum sayfasını yenileyip bağlantıyı yeniden açın. ¦ This address belongs to an old or expired attempt. Reload the setup page and open the link again.
+Bu bağlantıyı ¦ Open this link
+Bu tarayıcı H.264 çözemiyor ¦ This browser cannot decode H.264
+Büyük resim ¦ Large image
+Canlı sunucu tarayıcısı ¦ Live server browser
+Claude bu isteği yanıtlamadı ¦ Claude did not answer this request
+Çar ¦ Wed
+çekirdek • 5 dk: ¦ cores • 5 min:
+Çıkan istemci kimliğini ve gizli anahtarı aşağıya yapıştırıp kaydedin. ¦ Paste the client ID and secret below and save.
+Çıkartma ¦ Sticker
+Çıkış ¦ Sign out
+Çizilecek şeyi yazın ¦ Describe what to draw
+Çizim ¦ Drawing
+Çok fazla hatalı deneme. 10 dakika sonra tekrar deneyin. ¦ Too many failed attempts. Try again in 10 minutes.
+Çöpe at ¦ Move to trash
+Disk kullanımı ¦ Disk usage
+dk çevrimiçi ¦ min online
+dk önce ¦ min ago
+Dokunmatik: dokunduğunuz yere tıklanır, basılı tutun = sağ tık ¦ Touch: tap to click, hold = right click
+Doküman ¦ Document
+Dosya 300 MB'tan büyük ¦ File is larger than 300 MB
+Dosya başına en fazla 16 MB. ¦ Max 16 MB per file.
+Dosya bulunamadı ¦ File not found
+Dosya gönderilmedi ¦ No file sent
+Dosya oluşmadı ¦ File was not created
+Dosya yükle ¦ Upload file
+Drive anahtarı yenilenemedi: ¦ Could not refresh the Drive token:
+Drive bağlı değil ¦ Drive not connected
+Drive izni geçersiz; yeniden bağlayın ¦ Drive permission invalid; reconnect
+Drive izni verilmedi. Google izin ekranında \"Google Drive dosyalarınızın tümünü görme, düzenleme, oluşturma ve silme\" satırının yanındaki kutucuğu işaretleyip Devam deyin. Kurulum sayfasını yenileyip bağlantıyı yeniden açın. ¦ Drive permission not granted. On the Google consent screen tick the box next to \"See, edit, create and delete all of your Google Drive files\" and press Continue. Reload the setup page and open the link again.
+Drive modülü yok ¦ Drive module missing
+Drive: dosya yüklendi ¦ Drive: file uploaded
+Drive'a dön ¦ Back to Drive
+Drive'da 'Nokia E6 SIS' klasörü yok ¦ No 'Nokia E6 SIS' folder on Drive
+Drive'ım ¦ My Drive
+Dün ¦ Yesterday
+BelleTube – Google hesabı kurulumu ¦ BelleTube – Google account setup
+eski WhatsApp sayfası ¦ old WhatsApp page
+Evet, çöpe at ¦ Yes, move to trash
+Fare: tıkla, sağ tık, tekerlek. Klavye: kutuya tıkladıktan sonra yazdıklarınız doğrudan gider. ¦ Mouse: click, right click, wheel. Keyboard: after clicking the box, what you type is sent directly.
+Foto, video, ses ya da dosya gönder ¦ Send a photo, video, audio or file
+Fotoğraf ¦ Photo
+Fotoğraf ekle ¦ Add photo
+geçersiz ¦ invalid
+Geçersiz bilgi: istemci kimliği …apps.googleusercontent.com ile bitmeli. ¦ Invalid input: the client ID must end with …apps.googleusercontent.com.
+Geçersiz işlem ¦ Invalid action
+Geçersiz kanal ¦ Invalid channel
+Geçersiz koordinat ¦ Invalid coordinates
+Geçersiz liste ¦ Invalid playlist
+Geçersiz numara ¦ Invalid number
+Geçersiz video ¦ Invalid video
+Gemini yanıtlamadı ( ¦ Gemini did not answer (
+Giriş ¦ Sign in
+Giriş • Belle Sunucu ¦ Sign in • Belle Server
+Gmail için hesabınızda 2 adımlı doğrulama açık olmalı. Sonra myaccount.google.com → Güvenlik → ¦ For Gmail, 2-Step Verification must be on. Then go to myaccount.google.com → Security →
+Google anahtarı yenilenemedi: ¦ Could not refresh the Google token:
+Google Drive dosyaları ¦ Google Drive files
+Google hesabı ¦ Google account
+Google hesabı bağlı değil ¦ Google account not connected
+Google hesabını bağla ¦ Connect Google account
+Google izni alınamadı: ¦ Could not get Google permission:
+Google izni geçersiz; hesabı yeniden bağlayın ¦ Google permission invalid; reconnect the account
+Gönder ¦ Send
+Gönderildi ¦ Sent
+Gönderilemedi ¦ Could not send
+Gönderilemedi: ¦ Could not send:
+görüntüleme ¦ views
+GPT, Claude, Gemini, Grok • foto, çizim ¦ GPT, Claude, Gemini, Grok • photos, drawing
+gün ¦ days
+gün önce ¦ days ago
+Günlük (son 150 satır) ¦ Log (last 150 lines)
+Günlük, yeniden başlat, disk ¦ Log, restart, disk
+hafta önce ¦ weeks ago
+Hesap ayarları ¦ Account settings
+Hesap bağlı ¦ Account connected
+Hesap bağlı değil ¦ Account not connected
+İfade gönderilemedi: ¦ Could not send reaction:
+İlet ¦ Forward
+İmleç kipi: parmakla imleci kaydırın, dokunun = tık, iki kez dokunup basılı tutun = sürükle ¦ Cursor mode: move the cursor with your finger, tap = click, double-tap and hold = drag
+İndirme hazır: ¦ Download ready:
+İstemci gizli anahtarı ¦ Client secret
+İstemci kimliği veya gizli anahtar geçersiz ¦ Client ID or secret invalid
+İşlemci yükü ¦ CPU load
+kapalı ¦ off
+Katman istatistiği ¦ Layer statistics
+Kaydedildi. Şimdi telefondan hesabı bağlayabilirsiniz. ¦ Saved. You can now connect the account from the phone.
+Kaydet ve bağlan ¦ Save and connect
+Kayıtlı hesap: ¦ Saved account:
+Kısa ve net yanıt ver. Giriş cümlesi, tekrar ve gereksiz açıklama yapma; gerekiyorsa maddeler halinde yaz. Soruyu hangi dilde sorarsam o dilde yanıtla. ¦ Answer briefly and clearly. No introductions, repetition or unnecessary explanation; use bullet points if needed. Reply in the language I ask in.
+Kimlik bilgileri → Kimlik bilgisi oluştur → OAuth istemci kimliği ¦ Credentials → Create credentials → OAuth client ID
+Kimlik bilgisi oluştur → OAuth istemci kimliği ¦ Create credentials → OAuth client ID
+Kimlik doğrulanıyor… ¦ Authenticating…
+Kişi ¦ Contact
+Kişi ara / yeni sohbet ¦ Search contact / new chat
+Kişi kartı ¦ Contact card
+Kişi listesi hazırlanıyor, biraz sonra tekrar deneyin. ¦ The contact list is being prepared, try again shortly.
+Kişiler alınamadı: ¦ Could not get contacts:
+Kod bulunamadı. Adres çubuğundaki adresin tamamını yapıştırın. ¦ Code not found. Paste the whole address from the address bar.
+Kodun süresi doldu; yeniden deneyin ¦ The code expired; try again
+Konum gönderilemedi: ¦ Could not send location:
+kopyalayıp buraya yapıştırın: ¦ copy and paste it here:
+Masaüstü uygulaması ¦ Desktop app
+Mesaj bulunamadı ¦ Message not found
+Mesaj gönderilemedi: ¦ Could not send message:
+Mesaj kimliği yok ¦ No message ID
+Mesaj yazın (Enter: gönder, Shift+Enter: satır) ¦ Type a message (Enter: send, Shift+Enter: new line)
+Mesajlar alınamadı: ¦ Could not get messages:
+Mn görüntüleme ¦ M views
+Mr görüntüleme ¦ B views
+Not: Bağlantı her açılışta yenilenir; adımı bu sayfayı yeniledikten sonra yapın. ¦ Note: the link is renewed on every load; do this step after reloading this page.
+Numaranızı girip ¦ Enter your number and press '
+Okuma modu, vekil, sunucu tarayıcısı ¦ Reading mode, proxy, server browser
+Okunamadı: ¦ Could not read:
+Okunmadı ¦ Unread
+Oluştur ¦ Create
+Oturum başlatılıyor... ¦ Starting session...
+Önce sunucuda OAuth istemcisi girilmeli (bilgisayardan /yt/setup sayfası) ¦ An OAuth client must be set on the server first (the /yt/setup page, from a computer)
+Paylaşılan ¦ Shared
+PC çevrimiçi ¦ PC online
+PC'lerim ve sunucu tarayıcısı (canlı) ¦ My PCs and the server browser (live)
+Posta bulunamadı ¦ Message not found
+Posta bulunamadı. ¦ Message not found.
+Posta hesabı girilmemiş ¦ No mail account entered
+QR kodu hazırlanıyor, lütfen bekleyin... ¦ Preparing the QR code, please wait...
+QR kodu oluştur ¦ Create QR code
+Rapor boş ¦ Report is empty
+Resim alınamadı: ¦ Could not get image:
+resim çizmiyor ¦ does not draw images
+resim küçültüldü ¦ images shrunk
+Resim yerine metin döndü: ¦ Text returned instead of an image:
+saat önce ¦ hours ago
+Sade görünüm ¦ Simple view
+Sağ tık ¦ Right click
+Sağ tık (iki parmak) ¦ Right click (two fingers)
+Sohbet bulunamadı ¦ Chat not found
+Sohbetler alınamadı: ¦ Could not get chats:
+Soldan bir sohbet seçin. ¦ Choose a chat on the left.
+Sonunda tarayıcı "bu siteye ulaşılamıyor" diyen ¦ At the end the browser shows "this site can't be reached" —
+Sunucu çalışıyor. ¦ The server is running.
+Sunucu meşgul, biraz sonra tekrar deneyin ¦ Server busy, try again shortly
+Sunucu parolası ¦ Server password
+Sunucu parolası hatalı. WhatsBelle ayarlarından parolayı kontrol edin. ¦ Wrong server password. Check the password in the app settings.
+Sunucu süreci: ¦ Server process:
+Sunucu tarayıcısı ¦ Server browser
+Sunucu uygulaması: ¦ Server app:
+Sunucuda posta hesabı kurulu değil (web: /mail/setup) ¦ No mail account set up on the server (web: /mail/setup)
+Sunucudaki Chrome (her zaman hazır) ¦ Chrome on the server (always ready)
+Sunucuya ulaşılamadı. ¦ Could not reach the server.
+Süz ¦ Filter
+Tarayıcı katmanı ¦ Browser layer
+tarayıcıyla açıldı ¦ opened with the browser
+Telefona kurmak için SIS dosyasını indirip telefona aktarın ya da telefonda BelleAppCenter'i kullanın. ¦ To install on the phone, download the SIS file and copy it to the phone, or use BelleAppCenter on the phone.
+Telefonda WhatsBelle ile aynı hesap ve aynı sohbetler. ¦ Same account and same chats as WhatsBelle on the phone.
+Telefondaki ApiLauncher "Sunucu üzerinden" çalışırken de bu anahtarları kullanır. Boş bırakılan alan değişmez; "-" yazarsanız silinir. ¦ ApiLauncher on the phone also uses these keys in "Through the server" mode. Empty fields are left unchanged; type "-" to delete a key.
+Telefondaki Belle Browser'da "Bağlantı modu" Akıllı ya da Sıkıştırılmış seçilince HTTPS sayfaları ve resimler bu sunucudan geçer: eski TLS/sertifika sorunu kalmaz, resimler küçültülür, reklamlar engellenir. ¦ When Belle Browser on the phone uses the Smart or Compressed connection mode, HTTPS pages and images go through this server: no more old TLS/certificate problems, images are shrunk, ads are blocked.
+Telefonu aşağıdaki QR koda tutun. ¦ Point the phone at the QR code below.
+Telefonunuzda WhatsApp'ı açın: ¦ Open WhatsApp on your phone:
+Tüm dosya ve klasörler (son değişen üstte) ¦ All files and folders (most recently changed first)
+Tümü ¦ All
+Türkiye (+90) ¦ Turkey (+90)
+TV'ler ve Sınırlı Giriş cihazları ¦ TVs and Limited Input devices
+Uygulama hata raporları ¦ App crash reports
+Uygulama şifreleri ¦ App passwords
+Uygulamalarınıza ve sunucu yönetimine her yerden erişin. Parola, telefondaki uygulamalarda kullandığınız sunucu parolasıdır. ¦ Access your apps and server management from anywhere. The password is the server password you use in the phone apps.
+Uygulamayı yayınla ¦ Publish app
+Ülke seçin ¦ Choose a country
+Vazgeç ¦ Cancel
+Video bilgisi alınamadı: ¦ Could not get video info:
+Video çözülemedi ( ¦ Could not decode video (
+Video hazırlanamadı: ¦ Could not prepare video:
+WhatsApp hesabını bağla ¦ Connect WhatsApp account
+WhatsApp hesabınızı bu sunucuya bağlayın. Bağlandıktan sonra Nokia E6'daki WhatsBelle uygulamasına aynı numarayı girin. ¦ Connect your WhatsApp account to this server. Then enter the same number in WhatsBelle on the Nokia E6.
+WhatsBelle - Giriş ¦ WhatsBelle - Sign in
+Yazdığınızı resim olarak çizdir ¦ Draw what you type as an image
+Yazı gönder (Enter) ¦ Send text (Enter)
+Yazmak için ⌨ düğmesi telefonun klavyesini açar ¦ The ⌨ button opens the phone keyboard for typing
+Yeni ayarlarla yeniden bağlanılıyor… ¦ Reconnecting with the new settings…
+Yeni klasör ¦ New folder
+Yeniden başlat ¦ Restart
+Yeniden başlatma 10 saniye kadar sürer; telefon uygulamaları kendiliğinden yeniden bağlanır. ¦ A restart takes about 10 seconds; the phone apps reconnect automatically.
+yenileme anahtarı yok ¦ no refresh token
+yıl önce ¦ years ago
+Yıldızlı ¦ Starred
+Yorumlar alınamadı: ¦ Could not get comments:
+Yönetim ¦ Management
+Yükle ¦ Upload
+Yükleme ¦ Upload
+Yükleniyor… ¦ Loading…
+🎨 Çiz ¦ 🎨 Draw
+🗑 Çöpe at ¦ 🗑 Move to trash
+Konum ¦ Location
+Bu mesaj silindi ¦ This message was deleted
+Giden arama ¦ Outgoing call
+Gelen arama ¦ Incoming call
+Mesaj bekleniyor... ¦ Waiting for this message...
+Anket ¦ Poll
+Etkinlik ¦ Event
+Bildirim ¦ Notification
+Video ¦ Video
+Ses ¦ Audio
+Sesli mesaj ¦ Voice message
+Belge ¦ Document
+Medya ¦ Media
+Mesaj ¦ Message
+Konum: ¦ Location:
+Fotoğraf: ¦ Photo:
+Video: ¦ Video:
+Ses: ¦ Audio:
+Sesli mesaj: ¦ Voice message:
+Belge: ¦ Document:

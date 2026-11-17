@@ -1,0 +1,209 @@
+# BelleWidgets (E6Pil), E6Merkez, OrtaTus
+  (Ayarlar'dan değiştirilir) ¦   (change in Settings)
+  •  rüzgâr  ¦   •  wind
+ (askıda) ¦  (pending)
+ (eşit sürüm) ¦  (same version)
+ (yaklaşık; telefon yalnızca 7 basamak veriyor) ¦  (approx.; the phone reports only 7 digits)
+ | RAM % ¦  | RAM %
+ • düşük pil  ¦  • low battery
+ • en düşük  ¦  • low
+ • gün doğumu  ¦  • sunrise
+ • sıradaki paketler durduruldu ¦  • remaining packages stopped
+ gün ¦  days
+ güncelleme var; ilki açılıyor, sonra H ile sıradakini kurun ¦  updates available; opening the first, then press H for the next
+ hata ¦  error
+ kaldı ¦  left
+ karakter) ¦  characters)
+ KB\nTarih:  ¦  KB\nDate:
+ paket ¦  packages
+%1 uygulama kapatıldı ¦ %1 apps closed
+(günlük boş) ¦ (log empty)
+); kurulum ekranı açılıyor ¦ ); opening the installer
+, batımı  ¦ , sunset
+: bekleniyor ¦ : waiting
+\n\nNot:  ¦ \n\nNote:
+\nBoyut:  ¦ \nSize:
+\nSHA-1:  ¦ \nSHA-1:
+\nSunucudaki sürüm:  ¦ \nVersion on server:
+\nTelefondaki:  ¦ \nOn phone:
+\nUID: 0x ¦ \nUID: 0x
+<b>OrtaTus</b> - ses tuşlarının ortasındaki tuş ¦ <b>BelleMiddleKey</b> - the key between the volume keys
+<b>BelleMiddleKey</b> - ses tuşlarının ortasındaki tuş ¦ <b>BelleMiddleKey</b> - the key between the volume keys
+• H (6): güncellemesi olan ilk paketi kurar; kalanlar sırayla tek tek.\n ¦ • H (6): installs the first package with an update; the rest one by one.\n
+• Kurulu sürümler: telefonun kurulum kaydından okunur.\n ¦ • Installed versions: read from the phone's install registry.\n
+• Liste: sunucudan alınır (Ayarlar'daki parola WhatsE6'daki ile aynı).\n ¦ • List: fetched from the server (the password in Settings is the same as in WhatsBelle).\n
+• Liste: sunucudan alınır (Ayarlar'daki parola WhatsBelle'daki ile aynı).\n ¦ • List: fetched from the server (the password in Settings is the same as in WhatsBelle).\n
+• R (1): listeyi yeniler.\n ¦ • R (1): refreshes the list.\n
+• Rapor (Ayarlar'da): uygulama günlükleri sunucuya gider.\n\n ¦ • Report (in Settings): app logs are sent to the server.\n\n
+• Yükle / güncelle: paket indirilir, parmak izi doğrulanır, telefonun kurulum ekranı açılır.\n ¦ • Install / update: the package is downloaded, its fingerprint verified, and the phone's installer opens.\n
+1. Ana ekranda boş bir yere uzun basın (ya da Seçenekler > İçerik ekle).\n ¦ 1. Long-press an empty spot on the home screen (or Options > Add content).\n
+2. \"İçerik ekle\"yi seçin, listede \"BelleWidgets\"i bulun.\n ¦ 2. Choose \"Add content\" and find \"BelleWidgets\" in the list.\n
+3. Widget'a dokununca bu uygulama açılır ve veriler yenilenir.\n\n ¦ 3. Tapping the widget opens this app and refreshes the data.\n\n
+7 günlük ¦ 7 days
+Ana ekran görünümü ¦ Home screen style
+Ana ekran görünürken dakikada bir ölçülür ¦ Measured every minute while the home screen is visible
+Ana ekran widget'ı ¦ Home screen widget
+Ana ekrana ekleme ¦ Adding to the home screen
+Ana ekrana nasıl eklenir? ¦ How to add to the home screen?
+Ana ekranda ¦ On home screen
+Ana ekrandaki görünüm ¦ Home screen look
+Arka plana al ¦ Send to background
+Ayarlar'dan sunucu parolasını girin ¦ Enter the server password in Settings
+Ayrıntı › ¦ Details ›
+Az bulutlu ¦ Mostly clear
+Bağlanılamadı ¦ Could not connect
+Bağlantı ¦ Connection
+Beklenmeyen yanıt ¦ Unexpected response
+Bellek (RAM) % ¦ Memory (RAM) %
+Bilgi ve değişiklik notu ¦ Info and changelog
+Cihaz ¦ Device
+Çalışıyor - orta tuş dinleniyor. ¦ Running - listening for the middle key.
+Çisenti ¦ Drizzle
+Dolu, prizde ¦ Full, plugged in
+Dolulu fırtına ¦ Thunderstorm with hail
+Dondurucu çisenti ¦ Freezing drizzle
+Dondurucu yağmur ¦ Freezing rain
+Dosya:  ¦ File:
+Durdur ve çık ¦ Stop and exit
+Durum:  ¦ Status:
+Düşük pil uyarısı ¦ Low battery alert
+E6Merkez günlüğü ¦ BelleAppCenter log
+BelleAppCenter günlüğü ¦ BelleAppCenter log
+E6Merkez raporu •  ¦ BelleAppCenter report •
+BelleAppCenter raporu •  ¦ BelleAppCenter report •
+E6Merkez telefonun kendi sistemini kullanır; harici bir ajana (CODA) ya da bilgisayara gerek yoktur.\n\n ¦ BelleAppCenter uses the phone's own system; no external agent (CODA) or computer is needed.\n\n
+BelleAppCenter telefonun kendi sistemini kullanır; harici bir ajana (CODA) ya da bilgisayara gerek yoktur.\n\n ¦ BelleAppCenter uses the phone's own system; no external agent (CODA) or computer is needed.\n\n
+Eklemek için: ana ekranda boş yere uzun basın > İçerik ekle > \"BelleWidgets\" ya da \"BelleWidgets genis\". Widget'a dokununca bu uygulama açılır. ¦ To add: long-press an empty spot on the home screen > Add content > \"BelleWidgets\" or \"BelleWidgets genis\". Tapping the widget opens this app.
+Eksik veri ¦ Missing data
+En yüksek  ¦ High
+Enter kaydet • Ctrl+V yapıştır • Ctrl+G göster • Esc ¦ Enter save • Ctrl+V paste • Ctrl+G show • Esc
+Enter seç • H(6) güncelle • R(1) yenile ¦ Enter select • H(6) update • R(1) refresh
+Eskiden eklediğiniz E6Pil widget'ları yerinde kalır.\n\n ¦ BelleWidgets widgets you added earlier stay in place.\n\n
+Eskiden eklediğiniz BelleWidgets widget'ları yerinde kalır.\n\n ¦ BelleWidgets widgets you added earlier stay in place.\n\n
+Geniş (çizim) ¦ Wide (drawing)
+Geniş çizime geç ¦ Switch to wide drawing
+Gök gürültülü ¦ Thunderstorm
+Gönderilecek metin ¦ Text to send
+Gönderilecek raporu göster ¦ Show the report to be sent
+Göster/Gizle ¦ Show/Hide
+Güncel ¦ Up to date
+Güncelleme açılıyor ¦ Opening update
+Güncelleme var ( ¦ Update available (
+Güncelleme var (yeni derleme) ¦ Update available (new build)
+Güncellenecek paket yok ¦ No packages to update
+Güncelleniyor… ¦ Updating…
+Günlük ¦ Log
+günlükler + cihaz bilgisi ¦ logs + device info
+Hafif kar ¦ Light snow
+Hafif yağmur ¦ Light rain
+Hata kodu  ¦ Error code
+Hava bekleniyor ¦ Waiting for weather
+Hava durumu ¦ Weather
+Hava: şehir seçin ¦ Weather: choose a city
+Hazır • ana ekrana ekleyin ¦ Ready • add to the home screen
+Hazır • ana ekrana ekleyin: \"BelleWidgets\" ya da \"BelleWidgets genis\" ¦ Ready • add to the home screen: \"BelleWidgets\" or \"BelleWidgets genis\"
+İki widget var: \"BelleWidgets\" (solda büyük yüzde; 1. satır pil süresi ve RAM/CPU, 2. satır hava) ve \"BelleWidgets genis\" (hepsi tek çizimde).  ¦ There are two widgets: \"BelleWidgets\" (big percentage on the left; line 1 battery time and RAM/CPU, line 2 weather) and \"BelleWidgets genis\" (everything in one drawing).
+İndirilen dosya bozuk (parmak izi uyuşmadı) ¦ Downloaded file is corrupt (fingerprint mismatch)
+İşlemci (CPU) % ¦ Processor (CPU) %
+izin yok (TrustedUI) ¦ no permission (TrustedUI)
+Kalan  ¦ Remaining
+Kaldır (uygulama yöneticisi) ¦ Uninstall (application manager)
+Kaldırma: telefonun Ayarlar > Uygulama yöneticisi'nden yapılır ¦ Uninstall from the phone's Settings > Application manager
+Kamera açılamadı (%1) ¦ Could not open camera (%1)
+Kapat (widget durur) ¦ Close (widget stops)
+Kar sağanağı ¦ Snow showers
+Kar taneleri ¦ Snow grains
+Karlı ¦ Snow
+Kaynak: Open-Meteo. Ana ekrandaki widget hava durumunu saatte bir, yalnızca açık bir internet bağlantısı varken günceller. ¦ Source: Open-Meteo. The home screen widget updates the weather hourly, only while an internet connection is open.
+kayıtlı ¦ saved
+kopyaladıktan sonra ¦ after copying
+Kuruldu (sessiz) ¦ Installed (silent)
+Kurulu  ¦ Installed
+Kurulu değil ¦ Not installed
+Kurulum başlatılamadı ¦ Could not start installation
+Kurulum ekranı açıldı ¦ Installer opened
+Kurulum ekranı kullanılacak ¦ The installer will be used
+kurulum sistemi meşgul ¦ installer busy
+Kuruluyor (sessiz)… ¦ Installing (silent)…
+Liste  ¦ List
+Liste okunamadı ¦ Could not read list
+Liste okunamadı:  ¦ Could not read list:
+Liste yok. R (1): yenile ¦ No list. R (1): refresh
+Masaüstü/Simulator: widget yok, önizleme gösteriliyor ¦ Desktop/Simulator: no widget, showing preview
+Nasıl çalışır? ¦ How does it work?
+Notlu rapor gönder… ¦ Send report with note…
+Otomatik çökme raporu (çöken açılış:  ¦ Automatic crash report (crashed start:
+Önce Ayarlar'dan sunucu parolasını girin ¦ Enter the server password in Settings first
+Önce sunucu parolasını girin ¦ Enter the server password first
+Önce şehir seçin ¦ Choose a city first
+Paket listesi alınıyor… ¦ Fetching package list…
+Paketler ¦ Packages
+Pano boş ¦ Clipboard empty
+Pano boş: parolayı önce bir yerden kopyalayın ¦ Clipboard empty: copy the password somewhere first
+Parçalı bulutlu ¦ Partly cloudy
+Parola panodan alındı ( ¦ Password taken from clipboard (
+Parolayı panodan al ¦ Paste password from clipboard
+Pil ¦ Battery
+Pil 5 dakikada bir okunur. RAM/CPU yalnızca ana ekran görünürken dakikada bir ölçülür. Hava durumu saatte bir ve yalnızca  ¦ Battery is read every 5 minutes. RAM/CPU are measured every minute only while the home screen is visible. Weather updates hourly and only
+Pil ve RAM/CPU yenilendi ¦ Battery and RAM/CPU refreshed
+Profil değiştirilemedi (%1) ¦ Could not change profile (%1)
+Profil geri alındı ¦ Profile restored
+Profil motoru açılamadı (%1) ¦ Could not open profile engine (%1)
+Rapor gönderilemedi:  ¦ Could not send report:
+Rapor gönderilemedi: sunucu parolası hatalı ¦ Could not send report: wrong server password
+Rapor gönderiliyor… ¦ Sending report…
+Rapor için Ayarlar'da sunucu parolasını girin ¦ Enter the server password in Settings to send reports
+Rapor notu ¦ Report note
+Rapora eklenen günlükler (varsa): E6Pil, E6Metin, E6Video, WhatsE6, E6Tube, E6Muzik, ApiLauncher, Belle Remote, E6Merkez. ¦ Logs added to the report (if present): BelleWidgets, E6Metin, BelleVideo, WhatsBelle, BelleTube, E6Muzik, ApiLauncher, Belle Remote, BelleAppCenter.
+Rapora eklenen günlükler (varsa): BelleWidgets, E6Metin, BelleVideo, WhatsBelle, BelleTube, E6Muzik, ApiLauncher, Belle Remote, BelleAppCenter. ¦ Logs added to the report (if present): BelleWidgets, E6Metin, BelleVideo, WhatsBelle, BelleTube, E6Muzik, ApiLauncher, Belle Remote, BelleAppCenter.
+Rüzgâr  ¦ Wind
+Saatlik (24 saat) ¦ Hourly (24 hours)
+Sağanak ¦ Showers
+Seçin ¦ Choose
+Sessiz kurulamadı ( ¦ Silent install failed (
+Sessiz profil ¦ Silent profile
+Sistem ¦ System
+Sol/Sağ sayfa ¦ Left/Right page
+Son 24 saat (mavi: şarjda) ¦ Last 24 hours (blue: charging)
+Son okuma  ¦ Last read
+Sorgulanıyor… ¦ Checking…
+Sunucu parolası (WhatsE6'daki ile aynı) ¦ Server password (same as in WhatsBelle)
+Sunucu parolası (WhatsBelle'daki ile aynı) ¦ Server password (same as in WhatsBelle)
+Sunucuda paket listesi yok (e6_paketler.json) ¦ No package list on the server (e6_paketler.json)
+Sunucuya ulaşılamadı:  ¦ Could not reach the server:
+Şarj oluyor ¦ Charging
+Şarjda ¦ Charging
+Şehir (hava durumu) ¦ City (weather)
+Şehir aranamadı:  ¦ City search failed:
+Şehir aranıyor… ¦ Searching city…
+Şehir bulunamadı ¦ City not found
+Şehir seçilmedi ¦ No city selected
+Şehir seçin ¦ Choose a city
+Şehir seçin (Ayarlar) ¦ Choose a city (Settings)
+Şehir ya da ilçe adı ¦ City or district name
+Şehir yeniden aranıyor, hava güncelleniyor ¦ Searching the city again, updating weather
+Şehri değiştir ¦ Change city
+Şiddetli sağanak ¦ Heavy showers
+Şiddetli yağmur ¦ Heavy rain
+Şimdi ¦ Now
+Tam dolu ¦ Full
+Tam dolunca titreşim ¦ Vibrate when full
+telefonda açık bir internet bağlantısı varsa güncellenir (bağlantı kurdurmaz). Kaynak: Open-Meteo.\n\n ¦ when an internet connection is already open on the phone (it does not start one). Source: Open-Meteo.\n\n
+titreşim ¦ vibrate
+Tuş yakalanamadı (%1/%2/%3). SwEvent izni gerekli. ¦ Could not capture the key (%1/%2/%3). SwEvent capability required.
+Uyarılar: tam dolunca  ¦ Alerts: when full
+Uzun bas: Sessiz ↔ Genel<br>1 kez: Kamera<br>2 kez: Açık uygulamaları kapat ¦ Long press: Silent ↔ General<br>Once: Camera<br>Twice: Close open apps
+Widget kütüphanesi yüklenemedi (HSWidgetPlugin) ¦ Could not load the widget library (HSWidgetPlugin)
+Widget'ı yeniden dene ¦ Retry widget
+Yağış % ¦ Precipitation %
+Yağmurlu ¦ Rain
+Yarın ¦ Tomorrow
+Yeniden dene ¦ Retry
+Yenile (şehri yeniden ara) ¦ Refresh (search city again)
+Yenileniyor • şehir yeniden aranıyor ¦ Refreshing • searching city again
+Yoğun kar ¦ Heavy snow
+Yükle / güncelle ¦ Install / update
+Yüzde + 2 satır ¦ Percentage + 2 lines
+Yüzde + 2 satıra geç ¦ Switch to percentage + 2 lines
+Durdur ve çık ¦ Stop and exit
+<b>BelleMiddleKey</b> - ses tuşlarının ortasındaki tuş ¦ <b>BelleMiddleKey</b> - the key between the volume keys

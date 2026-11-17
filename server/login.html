@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WhatsBelle - Giriş</title>
+<style>
+  body { font-family: system-ui, Segoe UI, Arial, sans-serif; background: #f0f2f5; margin: 0; color: #111b21; }
+  .card { max-width: 720px; margin: 40px auto; background: #fff; border-radius: 16px; padding: 32px; box-shadow: 0 2px 12px rgba(0,0,0,.08); }
+  h1 { margin: 0 0 6px; font-size: 26px; color: #1daa61; }
+  p { color: #54656f; line-height: 1.5; }
+  form { display: flex; gap: 10px; flex-wrap: wrap; margin: 20px 0; }
+  select, input, button { font-size: 17px; padding: 12px 14px; border-radius: 24px; border: 1px solid #d1d7db; }
+  input { flex: 1; min-width: 200px; }
+  button { background: #1daa61; color: #fff; border: 0; padding: 12px 24px; cursor: pointer; }
+  ol { color: #3b4a54; line-height: 1.8; padding-left: 20px; }
+  #qr { text-align: center; min-height: 40px; margin: 16px 0; }
+  #qr img { width: 280px; height: 280px; image-rendering: pixelated; }
+  #msg { font-weight: 600; text-align: center; }
+  .ok { color: #1daa61; }
+  .err { color: #d93025; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>WhatsBelle</h1>
+  <p>WhatsApp hesabınızı bu sunucuya bağlayın. Bağlandıktan sonra Nokia E6'daki WhatsBelle uygulamasına aynı numarayı girin.</p>
+  <form id="f">
+    <select id="country">
+      <option value="TR" selected>Türkiye (+90)</option>
+      <option value="DE">Almanya (+49)</option>
+      <option value="NL">Hollanda (+31)</option>
+      <option value="GB">Birleşik Krallık (+44)</option>
+      <option value="US">ABD (+1)</option>
+      <option value="AZ">Azerbaycan (+994)</option>
+    </select>
+    <input id="phone" placeholder="5xx xxx xx xx (0 ya da 90 ile de olur)" required>
+    <button type="submit">QR kodu oluştur</button>
+  </form>
+  <ol>
+    <li>Numaranızı girip <b>QR kodu oluştur</b>'a basın ve QR kodun çıkmasını bekleyin (20–40 sn).</li>
+    <li>Telefonunuzda WhatsApp'ı açın: <b>Ayarlar → Bağlı cihazlar → Cihaz bağla</b>.</li>
+    <li>Telefonu aşağıdaki QR koda tutun.</li>
+  </ol>
+  <div id="qr"></div>
+  <div id="msg"></div>
+</div>
+<script>
+  var phone = null, timer = null, lastQr = false;
+  function setMsg(t, cls) { var m = document.getElementById('msg'); m.textContent = t; m.className = cls || ''; }
+  function poll() {
+    fetch('/login-status/' + phone, { cache: 'no-store' }).then(function (r) { return r.json(); }).then(function (s) {
+      if (s.isAuthenticated) {
+        clearInterval(timer);
+        document.getElementById('qr').innerHTML = '';
+        setMsg('Bağlandı: ' + (s.pushname || '') + ' (+' + (s.user || phone) + '). Artık E6\'dan giriş yapabilirsiniz.', 'ok');
+        return;
+      }
+      if (s.hasQr) {
+        document.getElementById('qr').innerHTML = '<img alt="QR" src="/qr/' + phone + '.png?t=' + Date.now() + '">';
+        setMsg('QR kodu WhatsApp ile okutun. Kod her 20 saniyede yenilenir.');
+      }
+    }).catch(function () { setMsg('Sunucuya ulaşılamadı.', 'err'); });
+  }
+  document.getElementById('f').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var country = document.getElementById('country').value;
+    var input = document.getElementById('phone').value.replace(/[^0-9+]/g, '');
+    setMsg('Oturum başlatılıyor...');
+    fetch('/' + country + '/' + encodeURIComponent(input) + '/start').then(function (r) { return r.json(); }).then(function (res) {
+      if (!res.valid) { setMsg(res.reason || 'Geçersiz numara', 'err'); return; }
+      phone = res.formatted;
+      setMsg('QR kodu hazırlanıyor, lütfen bekleyin...');
+      clearInterval(timer);
+      timer = setInterval(poll, 4000);
+      poll();
+    }).catch(function () { setMsg('Sunucuya ulaşılamadı.', 'err'); });
+  });
+</script>
+</body>
+</html>

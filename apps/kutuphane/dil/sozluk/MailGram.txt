@@ -1,0 +1,215 @@
+# BelleMail 2.0 (sunucusuz) ve BelleGram 0.3 (API girisi)
+---------- İletilen posta ---------- ¦ ---------- Forwarded message ----------
+%1 dk ¦ %1 min
+%1 tarihinde %2 yazdı: ¦ On %1, %2 wrote:
+(değiştirmeyecekseniz boş bırakın) ¦ (leave empty to keep it)
+(metin yok) ¦ (no text)
+✉ %1 yeni posta ¦ ✉ %1 new emails
+Arka planda çalışıyor; yeni postalar bildirilecek ¦ Running in the background; you will be notified of new email
+BelleMail posta kutunuza telefondan doğrudan, şifreli (TLS) bağlanır; arada sunucu yoktur. Bilgiler yalnızca bu telefonda saklanır. ¦ BelleMail connects to your mailbox directly from the phone over an encrypted (TLS) connection; there is no server in between. Your details are stored only on this phone.
+Bu hesapta arşiv klasörü yok. ¦ This account has no archive folder.
+Bu hesapta bu klasör yok. ¦ This account has no such folder.
+Bu telefondaki posta hesabı bilgileri silinir; postalarınız sağlayıcıda kalır. ¦ The account details on this phone will be deleted; your emails stay with your provider.
+Paz ¦ Sun
+Pzt ¦ Mon
+Sal ¦ Tue
+Çar ¦ Wed
+Per ¦ Thu
+Cum ¦ Fri
+Cmt ¦ Sat
+Ek ¦ Att
+E-posta adresi ¦ Email address
+E-posta adresi, şifre ve sunucu gerekli. ¦ Email address, password and server are required.
+Geçersiz işlem ¦ Invalid action
+Giriş reddedildi. Gmail, Yahoo, iCloud ve Yandex için normal şifreniz değil, hesap ayarlarından oluşturduğunuz \"uygulama şifresi\" gerekir. ¦ Sign-in rejected. Gmail, Yahoo, iCloud and Yandex need an \"app password\" created in your account settings, not your normal password.
+Gmail: Google hesabınızda 2 adımlı doğrulama açık olmalı. Bilgisayardan myaccount.google.com → Güvenlik → \"Uygulama şifreleri\" bölümünden 16 harfli bir şifre oluşturup aşağıya yazın (normal şifreniz çalışmaz). ¦ Gmail: 2-Step Verification must be on for your Google account. On a computer go to myaccount.google.com → Security → \"App passwords\", create a 16-letter password and type it below (your normal password will not work).
+Görünen ad (giden postalarda) ¦ Display name (on sent emails)
+Hesabı sil ¦ Delete account
+Hesap ayarları ¦ Account settings
+Hesap kaydedildi ¦ Account saved
+Hesap silinsin mi? ¦ Delete the account?
+IMAP sunucusu ¦ IMAP server
+iCloud: appleid.apple.com → Oturum açma ve güvenlik → Uygulamaya özel parolalar. ¦ iCloud: appleid.apple.com → Sign-In and Security → App-Specific Passwords.
+Kaydet ve bağlan ¦ Save and connect
+Kendi alan adınızın ya da başka bir sağlayıcının IMAP/SMTP bilgilerini girin (IMAP 993 TLS; SMTP 465 TLS ya da 587 STARTTLS). Outlook/Hotmail yalnızca OAuth kabul ettiği için şu an desteklenmiyor. ¦ Enter the IMAP/SMTP details of your own domain or another provider (IMAP 993 TLS; SMTP 465 TLS or 587 STARTTLS). Outlook/Hotmail accepts only OAuth, so it is not supported yet.
+Konu:  ¦ Subject:
+Önceki gönderim sürüyor. ¦ The previous email is still being sent.
+Port ¦ Port
+Posta bulunamadı (silinmiş ya da taşınmış olabilir). ¦ Email not found (it may have been deleted or moved).
+Posta hesabı ¦ Email account
+Posta hesabı girilmemiş. ¦ No email account set up.
+Posta hesabı girilmemiş. Menü → Hesap. ¦ No email account set up. Menu → Account.
+Sağlayıcı önce tarayıcıdan giriş yapmanızı istiyor (güvenlik uyarısı). ¦ Your provider wants you to sign in from a browser first (security alert).
+SMTP sunucusu ¦ SMTP server
+Sunucu hatası ¦ Server error
+Taslaklar ¦ Drafts
+Tüm postalar ¦ All mail
+Uygulama şifresi ¦ App password
+Yahoo: Hesap güvenliği → \"Uygulama şifresi oluştur\" ile alınan şifreyi yazın. ¦ Yahoo: type the password from Account security → \"Generate app password\".
+Yandex: id.yandex.com → Güvenlik → Uygulama şifreleri (Posta) bölümünden şifre oluşturun; Yandex Posta ayarlarında IMAP erişimini açın. ¦ Yandex: create a password at id.yandex.com → Security → App passwords (Mail), and turn on IMAP access in Yandex Mail settings.
+Yeni posta denetimi:  ¦ New mail check:
+Klasörler ¦ Folders
+Tümü ¦ All
+Arka plana al ¦ Send to background
+Hesap:  ¦ Account:
+yok ¦ none
+kapalı ¦ off
+Kaydet ¦ Save
+Bağlanıyor… ¦ Connecting…
+Diğer ¦ Other
+Güvenli bağlantı kurulamadı (sertifika): %1 ¦ Could not establish a secure connection (certificate): %1
+Sunucu yanıt vermedi (zaman aşımı). ¦ The server did not respond (timeout).
+Sunucu bağlantıyı reddetti. ¦ The server refused the connection.
+Giriş reddedildi. ¦ Sign-in rejected.
+Giriş reddedildi: %1 ¦ Sign-in rejected: %1
+Alıcı adresi gerekli. ¦ A recipient address is required.
+Alıcı kabul edilmedi (%1): %2 ¦ Recipient not accepted (%1): %2
+Sunucu şifreli bağlantıyı (STARTTLS) desteklemiyor. ¦ The server does not support an encrypted connection (STARTTLS).
+Posta sunucusu yanıt vermedi (zaman aşımı). ¦ The mail server did not respond (timeout).
+(konu yok) ¦ (no subject)
+# BelleGram
+Telegram API bilgileri ¦ Telegram API details
+Kendi Telegram uygulama kimliğiniz gerekir: bilgisayardan my.telegram.org → \"API development tools\" bölümünde bir uygulama oluşturun, api_id ve api_hash değerlerini yazın (Ctrl+V ile yapıştırabilirsiniz). Yalnızca bu telefonda saklanır. ¦ You need your own Telegram app ID: on a computer, create an app at my.telegram.org → \"API development tools\" and enter its api_id and api_hash (Ctrl+V pastes). They are stored only on this phone.
+api_id (rakam) ¦ api_id (digits)
+api_hash (32 karakter) ¦ api_hash (32 characters)
+Kaydet ve devam et ¦ Save and continue
+API bilgilerini değiştir ¦ Change API details
+API bilgilerini değiştir (çıkış yapar) ¦ Change API details (signs out)
+api_id yalnızca rakamlardan oluşmalı. ¦ api_id must contain only digits.
+api_hash 32 karakter olmalı (0-9, a-f). Şu an: %1 ¦ api_hash must be 32 characters (0-9, a-f). Currently: %1
+api_id / api_hash geçersiz. my.telegram.org'daki değerleri yeniden girin. ¦ api_id / api_hash is invalid. Re-enter the values from my.telegram.org.
+Bu api_id herkese açık yayınlandığı için Telegram tarafından kısıtlanmış. Kendi api_id'nizi girin. ¦ This api_id has been restricted by Telegram because it was published. Enter your own api_id.
+%1 bir mesajı sabitledi ¦ %1 pinned a message
+%1 gruba ekledi ¦ %1 added to the group
+%1 gruba katıldı ¦ %1 joined the group
+%1 grubu oluşturdu ¦ %1 created the group
+%1 gruptan ayrıldı ¦ %1 left the group
+%1 Telegram'a katıldı ¦ %1 joined Telegram
+(indirmek için dokunun) ¦ (tap to download)
+[Kanal]  ¦ [Channel]
+Açık tema ¦ Light theme
+Koyu tema ¦ Dark theme
+Ad, @kullanıcı adı ya da numara ¦ Name, @username or number
+Alınamadı ¦ Failed
+Alınamadı, dokunun ¦ Failed, tap to retry
+Anket ¦ Poll
+Bağlantı kuruluyor… ¦ Connecting…
+Başa sabitle ¦ Pin to top
+Benden sil ¦ Delete for me
+Herkesten sil ¦ Delete for everyone
+bot ¦ bot
+bu ay görüldü ¦ seen this month
+bu hafta görüldü ¦ seen this week
+yakınlarda görüldü ¦ seen recently
+son görülme %1 ¦ last seen %1
+bugün %1 ¦ today %1
+dün %1 ¦ yesterday %1
+Bu mesajı düzenleme süresi doldu. ¦ The time to edit this message has expired.
+Bu mesajı silme izniniz yok. ¦ You are not allowed to delete this message.
+Bu numara Telegram tarafından engellenmiş. ¦ This number has been banned by Telegram.
+Bu numarayla bir Telegram hesabı yok. Önce resmi uygulamadan kaydolun. ¦ There is no Telegram account with this number. Sign up in the official app first.
+Bu sohbete medya gönderilemiyor. ¦ Media cannot be sent to this chat.
+Bu sohbete yazma izniniz yok. ¦ You are not allowed to write in this chat.
+Bu sohbette bu ifade kullanılamıyor. ¦ This reaction is not available in this chat.
+Bu sürümde ses kaydı yok. ¦ Voice recording is not available in this version.
+Bu şifre türü desteklenmiyor. ¦ This password type is not supported.
+çıkartma seçiyor… ¦ choosing a sticker…
+Çok fazla deneme. %1 dakika sonra tekrar deneyin. ¦ Too many attempts. Try again in %1 minutes.
+Desteklenmeyen mesaj ¦ Unsupported message
+Devamını oku ¦ Read more
+Dosya açılamadı. ¦ Could not open the file.
+Dosya bilgisi yok ¦ No file information
+Dosya boş ¦ File is empty
+Dosya çok büyük (en fazla 40 MB). ¦ File is too large (40 MB max).
+dosya gönderiyor… ¦ sending a file…
+Dosya seç ¦ Choose file
+Dosyanın süresi doldu; sohbeti yeniden açın. ¦ The file has expired; reopen the chat.
+Dosyayı aç ¦ Open file
+düzenlendi  ¦ edited
+Düzenleniyor ¦ Editing
+Emin misiniz?  ¦ Are you sure?
+Evet, sil / ayrıl ¦ Yes, delete / leave
+fotoğraf gönderiyor… ¦ sending a photo…
+Fotoğraf okunamadı. ¦ Could not read the photo.
+Fotoğrafı aç ¦ Open photo
+Galeriye kaydet ¦ Save to gallery
+Genel arama ¦ Global search
+GIF ¦ GIF
+Giriş kodu ¦ Login code
+Giriş yap ¦ Sign in
+Google Maps ¦ Google Maps
+Görüntülü mesaj ¦ Video message
+Grup adı: %1 ¦ Group name: %1
+Grup fotoğrafı değişti ¦ Group photo changed
+grup, %1 üye ¦ group, %1 members
+Gruptan ayrıl ¦ Leave group
+Kanaldan ayrıl ¦ Leave channel
+kanal, %1 abone ¦ channel, %1 subscribers
+Henüz mesaj yok ¦ No messages yet
+Hesabınızda bulut şifresi açık. Şifrenizi girin. ¦ Your account has a cloud password. Enter your password.
+İki adımlı doğrulama ¦ Two-step verification
+İlet… ¦ Forward…
+İletildi:  ¦ Forwarded:
+İletildi: %1 ¦ Forwarded: %1
+İpucu:  ¦ Hint:
+Kaydediliyor… göndermek için dokunun ¦ Recording… tap to send
+Kayıt açılamadı. ¦ Could not start recording.
+Kayıt çok kısa. ¦ Recording is too short.
+Kayıt yazılamadı. ¦ Could not save the recording.
+Kayıtlı Mesajlar ¦ Saved Messages
+kendinize not ¦ note to self
+Kişiler yükleniyor… ¦ Loading contacts…
+Kod gönder ¦ Send code
+Kod gönderildi. ¦ Code sent.
+Kod isteniyor… ¦ Requesting code…
+Kod sesli arama ile söylenecek. ¦ The code will be read out in a phone call.
+Kod SMS ile gönderildi. ¦ The code was sent by SMS.
+Kod yanlış. ¦ Wrong code.
+Kod, Telegram uygulamanıza (başka bir cihazdaki) mesaj olarak gönderildi. ¦ The code was sent as a message to your Telegram app (on another device).
+Kodu girin ¦ Enter the code
+Kodun süresi doldu. Yeni kod isteyin. ¦ The code has expired. Request a new one.
+konum seçiyor… ¦ choosing a location…
+Mesaj değişmedi. ¦ Message not modified.
+Mikrofon açılamadı (kod %1). ¦ Could not open the microphone (code %1).
+Mikrofon bu ses biçimini desteklemiyor. ¦ The microphone does not support this audio format.
+Numarayı değiştir ¦ Change number
+Okundu olarak işaretle ¦ Mark as read
+Oturum kapandı. Yeniden giriş yapın. ¦ Session ended. Sign in again.
+Örn. 905321234567 ¦ e.g. 905321234567
+Ses çözülemedi ¦ Could not decode audio
+ses kaydediyor… ¦ recording audio…
+Ses kodlanamadı:  ¦ Could not encode audio:
+Sesi aç ¦ Unmute
+Sessize al ¦ Mute
+Sesli arama ¦ Voice call
+Sesli mesaj alınamadı:  ¦ Could not get voice message:
+Sesli mesaj çalınamadı:  ¦ Could not play voice message:
+sesli mesaj gönderiyor… ¦ sending a voice message…
+Silinmiş hesap ¦ Deleted account
+Siz ¦ You
+Siz:  ¦ You:
+Sohbet ara ¦ Search chats
+Sohbet bulunamadı. ¦ Chat not found.
+Sohbet olayı ¦ Chat event
+Sohbet sessize alındı ¦ Chat muted
+Sohbetin sesi açıldı ¦ Chat unmuted
+Sohbet yok ¦ No chats
+Sohbeti sil ¦ Delete chat
+Şifre ¦ Password
+Şifre doğrulanıyor (birkaç saniye sürebilir)… ¦ Checking password (may take a few seconds)…
+Şifre yanlış. ¦ Wrong password.
+Telefon numaranızı ülke koduyla yazın. Telegram size bir giriş kodu gönderecek. ¦ Enter your phone number with the country code. Telegram will send you a login code.
+Telefon numarası geçersiz. ¦ Invalid phone number.
+Telefon numarasını ülke koduyla yazın (örn. 905321234567). ¦ Enter the phone number with the country code (e.g. 905321234567).
+Telefonda dosya bulunamadı. ¦ File not found on the phone.
+Telegram hatası: %1 ¦ Telegram error: %1
+Telegram sunucusuna bağlı ¦ Connected to Telegram
+Telegram'a bağlanılıyor… ¦ Connecting to Telegram…
+Uygulamayı kapat ¦ Close app
+video gönderiyor… ¦ sending a video…
+Yanıt ¦ Reply
+Yanıt:  ¦ Reply:
+yazıyor… ¦ typing…
+Yeni mesaj ¦ New message
+Yükleniyor %1 ¦ Uploading %1
+Zar ¦ Dice

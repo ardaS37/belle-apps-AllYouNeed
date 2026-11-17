@@ -1,0 +1,91 @@
+# 17.11.2026 yayin oncesi tamamlanan eksikler
+API anahtarı geçersiz ya da iptal edilmiş ¦ API key is invalid or revoked
+HTTP hatası ¦ HTTP error
+Kota/sınır aşıldı, biraz sonra yeniden deneyin. ¦ Quota/rate limit exceeded, try again shortly.
+Ödeme gerekli: bu API anahtarının projesinde kredi/bakiye bitmiş. Ücretsiz kullanım için faturalandırması kapalı bir projeden anahtar alın. ¦ Payment required: this API key's project has run out of credit. For free use, get a key from a project with billing turned off.
+68k.news Türkiye ¦ 68k.news Turkey
+BBC Türkçe ¦ BBC Turkish
+\nadres:  ¦ \naddress: 
+\nmod:  ¦ \nmode: 
+\nsekme:  ¦ \ntab: 
+  •  slayt ¦   •  slide
+ • varsayılan program ¦  • default app
+ dosya arşive eklendi (sıkıştırmasız) ¦  file(s) added to archive (stored)
+ favori seçili ¦  favourites selected
+ fotoğraf ¦  photos
+ öğe favorilerden çıkarıldı ¦  item(s) removed from favourites
+ öğe favorilere eklendi ¦  item(s) added to favourites
+ piksel  •   ¦  pixels  •  
+ zaten vardı, atlandı ¦  already existed, skipped
+# Belle Files paketi •  ¦ # Belle Files bundle • 
+/Disa aktarilan ¦ /Exported
+arsiv ¦ archive
+Arşiv açılamadı:  ¦ Could not open archive: 
+Arşive ekle (sıkıştırmasız) •  ¦ Add to archive (stored) • 
+Arşive ekle (sıkıştırmasız)… ¦ Add to archive (stored)…
+Arşive eklenemedi:  ¦ Could not add to archive: 
+Arşive ekleniyor:  ¦ Adding to archive: 
+Arşivin parolasını yazın ¦ Enter the archive password
+Arşivleniyor:  ¦ Archiving: 
+Belle çalar ¦ Belle player
+Belle Files düzenleyici ¦ Belle Files editor
+Belle galeri ¦ Belle gallery
+Birlikte aç •  ¦ Open with • 
+Bu fotoğraf açılamadı ¦ Could not open this photo
+Bu klasör boş ¦ This folder is empty
+Bulunamadı (taşınmış ya da silinmiş):  ¦ Not found (moved or deleted): 
+Bulunamayanları temizle ¦ Remove missing ones
+Buraya yapıştır ( ¦ Paste here (
+Diğer ¦ Other
+Döndür ¦ Rotate
+düzenleyici, notlar klasörü, eşitleme ¦ editor, notes folder, sync
+Favori yok.\nSolda bir klasör ya da dosyanın … menüsünden \"Favorilere ekle\" deyin, ya da bir klasördeyken yukarıdaki ★'a basın. ¦ No favourites.\nOn the left, choose \"Add to favourites\" from a folder's or file's … menu, or press ★ at the top while inside a folder.
+Fotoğraflar ¦ Photos
+Fotoğraflar için varsayılan program… ¦ Default app for photos…
+Hepsi yerinde ¦ All present
+Her seferinde sor ¦ Ask every time
+Kes ¦ Cut
+Metin dosyaları ¦ Text files
+metin, foto, video, ses ¦ text, photo, video, audio
+Müzik ve ses ¦ Music and audio
+Not ayarları ¦ Note settings
+Notlar sekmesinde ⚙ ¦ ⚙ in the Notes tab
+Önce solda bir klasöre girin ¦ First open a folder on the left
+Parola yanlış, yeniden deneyin ¦ Wrong password, try again
+Seçim: dokunarak ekleyin, alttaki çubuktan işlem yapın ¦ Selection: tap to add, use the bar below for actions
+Slayt gösterisi (3 sn) ¦ Slideshow (3 s)
+Slayt gösterisini durdur ¦ Stop slideshow
+Solda aç ¦ Open on the left
+Soldaki klasörü favorilere ekle ¦ Add the left folder to favourites
+Şifreli zip:  ¦ Encrypted zip: 
+Şuna ekle:  ¦ Add to: 
+Tarih:  ¦ Date: 
+Telefonun galerisi ¦ Phone's gallery
+Telefonun galerisinde aç ¦ Open in phone's gallery
+Telefonun müzik çalarları ¦ Phone's music player
+Telefonun not uygulaması ¦ Phone's notes app
+Telefonun video oynatıcısı ¦ Phone's video player
+Varsayılan programlar ¦ Default apps
+Varsayılan programlar (Belle Files içinden açılan dosyalar) ¦ Default apps (files opened from Belle Files)
+Varsayılanı değiştir… ¦ Change default…
+Yazı boyutu (tüm uygulama) ¦ Text size (whole app)
+Yeni arşiv (sıkıştırmasız) ¦ New archive (stored)
+Yeni arşiv oluştur… ¦ Create new archive…
+Google Client secret ¦ Google Client secret
+Delete ¦ Delete
+bas key= ¦ press key=
+giris onay: ' ¦ input confirm: '
+tanimsiz tus: key= ¦ unknown key: key=
+yapistir:  ¦ paste: 
+ dk, cekmece:  ¦  min, drawer: 
+, acilista baslat:  ¦ , start at boot: 
+. hesap; 1:  ¦ . account; 1: 
+\n\n--- Gunluk ---\n ¦ \n\n--- Log ---\n
+\nBildirim araligi:  ¦ \nNotification interval: 
+\nGaleri:  ¦ \nGallery: 
+\nNumara:  ¦ \nNumber: 
+\nPosta sekmesi:  ¦ \nMail tab: 
+\nSes kaydi:  ¦ \nVoice recording: 
+\nSon bildirim kontrolu:  ¦ \nLast notification check: 
+\nSunucu:  ¦ \nServer: 
+Surum: WhatsBelle  ¦ Version: WhatsBelle 

@@ -1,0 +1,38 @@
+# Belle Rehber (Belle Contacts backup)
+ kişi ¦  contacts
+ kişi daha ¦  more contacts
+ kişi eklendi,  ¦  contacts added,
+ kişi kaydedilemedi. ¦  contacts could not be saved.
+ kişi rehberde ¦  contacts in phonebook
+ kişi vCard'a çevriliyor… ¦  contacts being converted to vCard…
+ kişi yedeklendi:\n ¦  contacts backed up:\n
+ kişi zaten rehberde olduğu için atlandı. ¦  contacts skipped (already in phonebook).
+)  •  dokunun: geri yükle / sil ¦ )  •  tap: restore / delete
+\n… ve  ¦ \n… and
+1 kişi yedeklendi (masaüstü denemesi) ¦ 1 contact backed up (desktop test)
+Belle Rehber ¦ Belle Contacts
+Bu yedek dosyası kalıcı olarak silinecek. Onaylıyor musunuz? ¦ This backup file will be permanently deleted. Continue?
+Dosya açılamadı:  ¦ Could not open file:
+Dosyaya yazılıyor… ¦ Writing to file…
+Ekleniyor:  ¦ Adding:
+Evet, geri yükle ¦ Yes, restore
+Geri yükle ¦ Restore
+Geri yükleme tamam ¦ Restore complete
+Geri yükleme yalnızca telefonda çalışır ¦ Restore works only on the phone
+Henüz yedek yok ¦ No backup yet
+Klasör:  ¦ Folder:
+Rehber okunamadı (hata  ¦ Could not read phonebook (error
+Rehber okunuyor… ¦ Reading phonebook…
+Rehberdeki kişilerle karşılaştırılıyor… ¦ Comparing with phonebook contacts…
+Son yedek tamam ¦ Last backup complete
+Son yedek:  ¦ Last backup:
+Şimdi yedekle ¦ Back up now
+vCard'a çevrilemedi ¦ Could not convert to vCard
+Yazma hatası  ¦ Write error
+Yedek dosyası açılamadı ¦ Could not open backup file
+Yedek okunuyor… ¦ Reading backup…
+Yedek silindi ¦ Backup deleted
+Yedek yok. \"Şimdi yedekle\"ye basın.\nYedekler vCard (.vcf) dosyasıdır; başka telefonlara ve Gmail'e de aktarılabilir. ¦ No backups. Press \"Back up now\".\nBackups are vCard (.vcf) files; they can be imported on other phones and into Gmail.
+Yedekler ( ¦ Backups (
+Yedekte kişi bulunamadı ¦ No contacts found in backup
+Yedekteki kişiler rehbere eklenecek. Rehberde zaten olan (aynı numaralı) kişiler atlanır, hiçbir kişi silinmez. Onaylıyor musunuz? ¦ Contacts in the backup will be added to the phonebook. Contacts already present (same number) are skipped; nothing is deleted. Continue?

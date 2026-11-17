@@ -1,0 +1,128 @@
+# ApiLauncher - English (araclar/dil_cikar.ps1 ile uretilir, elle duzenlemeyin)
+  •  sunucu	  •  server
+ (doğrudan bağlantı da kurulamadı)	 (direct connection also failed)
+ (sorun bildirmek için)	 (to report problems)
+ (yalnızca bağlantı döndü)	 (only a link was returned)
+ API anahtarını girin.	 API key.
+ geçmişi	 history
+ ile yeni sohbet.\nYazmak için bir harfe basın; Enter gönderir.\n+ : fotoğraf ekle	: new chat.\nPress a letter to type; Enter sends.\n+ : add photo
+ mesaj  •  	 messages  •
+ model, seçmek için dokunun	 models, tap to choose
+ resim	 image
+ resim çizmiyor; GPT, Gemini ya da Grok sekmesini kullanın.	 does not draw images; use the GPT, Gemini or Grok tab.
+ sn	 s
+ sn  •  	 s  •
+ sohbet	 chats
+ yazıyor...	 is typing...
+(boş yanıt)	(empty response)
+(fotoğraf)	(photo)
+(resim oluşturuldu)	(image created)
+, resim çiz	, draw image
+, yapıştır.\nMesaja basılı tutunca kopyalanır.\nSol/sağ tuş sekme değiştirir, yukarı/aşağı kaydırır.	, paste.\nLong-press a message to copy it.\nLeft/right switches tabs, up/down scrolls.
+\nYanıt: 	\nResponse:
+'a yazın	: type a message
+Ağustos	August
+Anahtar: 	Key:
+Anahtarları sunucuya kaydet	Save keys to the server
+API anahtarı	API key
+API anahtarı geçersiz ya da iptal edilmiş	API key is invalid or revoked
+API anahtarları, modeller, bağlantı	API keys, models, connection
+ApiLauncher 1.3 (eski adı E6AI) - sohbet geçmişi ve resimler yalnızca telefonda saklanır (oluşturulan resimler: E:/Images/ApiLauncher). Doğrudan bağlantı kurulamazsa (TLS hatası) istekler sunucu parolası girilmişse kendiliğinden sunucu üzerinden gider; fotoğraf, resim çizme ve Grok iki modda da çalışır. Claude'da güvenlik reddi olursa istek uygun bir Claude modelinde otomatik yeniden denenir.	ApiLauncher 1.3 (formerly ApiLauncher) - chat history and images are stored only on the phone (generated images: E:/Images/ApiLauncher). If a direct connection fails (TLS error) and a server password is set, requests go through the server automatically; photos, image drawing and Grok work in both modes. If Claude refuses for safety reasons, the request is retried automatically on a suitable Claude model.
+ApiLauncher raporu • 	ApiLauncher report •
+ApiLauncher sohbetleri ve ayarlari	ApiLauncher chats and settings
+Aralık	December
+Ayarlar	Settings
+Ayarlar'dan 	From Settings
+Bağlantı	Connection
+Bağlantı kurulamadı (HTTPS/TLS veya internet sorunu). Ayarlar'dan bağlantıyı test edin.	Could not connect (HTTPS/TLS or internet problem). Test the connection in Settings.
+Bağlantı testi: yalnızca 'tamam' yaz.	Connection test: reply only with 'ok'.
+Bağlantıyı test et	Test connection
+Belge	Document
+Bilinmeyen sağlayıcı	Unknown provider
+Boş: sistem istemi gönderilmez	Empty: no system prompt is sent
+Bu resimde ne var?	What is in this image?
+BUGÜN	Today
+Bugün 	Today
+Claude bu isteği yanıtlamadı	Claude did not answer this request
+Çalışıyor  •  	Running  •
+Çıkartma	Sticker
+Çiz: 	Draw:
+Deneniyor...	Trying...
+Doğrudan (HTTPS)	Direct (HTTPS)
+Dün	Yesterday
+DÜN	Yesterday
+Ekim	October
+Eklenen fotoğrafı kaldır	Remove attached photo
+Eylül	September
+Fotoğraf	Photo
+fotoğraf	Photo
+Fotoğraf ekle	Add photo
+Fotoğraf eklendi	Photo added
+Fotoğraf eklendi; mesajla birlikte gider.\nKaldırmak için dokunun.	Photo attached; it is sent with the message.\nTap to remove.
+Fotoğraf kaldırıldı	Photo removed
+Fotoğraf seç  •  	Choose photo  •
+Geçersiz yanıt	Invalid response
+Gemini yanıtlamadı (	Gemini did not answer (
+Gönderilemedi: 	Could not send:
+Gönderiliyor...	Sending...
+Günlüğü gizle	Hide log
+Günlüğü göster	Show log
+Hata: 	Error:
+Haziran	June
+Henüz sohbet yok.	No chats yet.
+HTTP hatası	HTTP error
+İstekler kendi sunucunuz üzerinden gider. Anahtarlar bir kez sunucuya gönderilir ve orada saklanır. Sunucu bağlantısı şifresiz (HTTP) olduğu için bu gönderimi güvendiğiniz bir ağda yapın.	Requests go through your own server. Keys are sent to the server once and stored there. The server connection is unencrypted (HTTP), so do this on a network you trust.
+Kapat	Close
+Karanlık tema	Dark theme
+Kasım	November
+Kaydedildi	Saved
+Kaydet	Save
+Kayıtlı: 	Saved:
+Kısa ve net yanıt ver. Giriş cümlesi, tekrar ve gereksiz açıklama yapma; gerekiyorsa maddeler halinde yaz. Soruyu hangi dilde sorarsam o dilde yanıtla.	Answer briefly and clearly. No introductions, repetition or unnecessary explanation; use bullet points if needed. Reply in the language I ask in.
+Kopyalandı	Copied
+Kota/sınır aşıldı, biraz sonra yeniden deneyin.	Quota/rate limit exceeded, try again shortly.
+Mart	March
+Mayıs	May
+Model: 	Model:
+Modeller	Models
+Modeller getiriliyor...	Fetching models...
+Nisan	April
+Ocak	January
+Ödeme gerekli: bu API anahtarının projesinde kredi/bakiye bitmiş. Ücretsiz kullanım için faturalandırması kapalı bir projeden anahtar alın.	Payment required: this API key's project has run out of credit. For free use, get a key from a project with billing turned off.
+Önce API anahtarını girin.	Enter the API key first.
+Önce Ayarlar > Bağlantı'ya sunucu parolasını girin	Enter the server password in Settings > Connection first
+Önce ne çizileceğini yazın, sonra + > Resim çiz	Type what to draw first, then + > Draw image
+Rapor gönder	Send report
+Rapor gönderildi	Report sent
+Rapor gönderiliyor...	Sending report...
+Resim çiz (yazdığın metinle)	Draw image (from your text)
+Resim çizme modeli	Image drawing model
+Resim gelmedi	No image received
+Resim kaydedilemedi	Could not save image
+Resim modeli	Image model
+Resim modeli: 	Image model:
+Resim yerine metin döndü: 	Text returned instead of an image:
+Resim: 	Image:
+Seç	Select
+Sesli mesaj	Voice message
+Sil	Delete
+Sistem istemi (üç modele de gider)	System prompt (sent to all three models)
+Sohbet modeli	Chat model
+Sorun bildir	Report a problem
+Sunucu adresi	Server address
+Sunucu parolası (WhatsBelle ile aynı)	Server password (same as in WhatsBelle)
+Sunucu parolası hatalı	Wrong server password
+Sunucu parolası yok (Ayarlar > Bağlantı).	No server password (Settings > Connection).
+Sunucu üzerinden	Through the server
+Sunucudaki anahtarlar: GPT 	Keys on the server: GPT
+Şubat	February
+Telefon sağlayıcıya şifreli (HTTPS) bağlanır; anahtarlar yalnızca telefonda durur. Telefonda Qt TLS 1.2 yaması gerekir. TLS hatası olursa istek sunucu üzerinden tekrarlanır (sunucu parolası gerekir).	The phone connects to the provider encrypted (HTTPS); keys stay only on the phone. Requires the Qt TLS 1.2 patch on the phone. On a TLS error the request is retried through the server (server password required).
+Telefonda fotoğraf bulunamadı (E:/Images, C:/Data/Images)	No photos found on the phone (E:/Images, C:/Data/Images)
+Temmuz	July
+Uygulamanın günlüğü (C:/Data/ApiLauncher/gunluk.txt) sunucuya gönderilir; anahtarlar ve sohbetler gönderilmez. Yukarıdaki sunucu adresi ve parolası kullanılır.	The app log (C:/Data/ApiLauncher/gunluk.txt) is sent to the server; keys and chats are not sent. The server address and password above are used.
+Varsayılan	Default
+Varsayılan istem yüklendi	Default prompt loaded
+Video	Video
+Yanıt reddedildi: 	Response refused:
+Yapıştır	Paste
+Yeniden denemek için dokunun	Tap to retry

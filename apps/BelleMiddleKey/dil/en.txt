@@ -1,0 +1,63 @@
+# BelleMiddleKey - English (araclar/dil_cikar.ps1 ile uretilir, elle duzenlemeyin)
+– %1 • %2: atanmış kısayol yok	– %1 • %2: no shortcut assigned
+ (%1 uygulama)	 (%1 apps)
+ (hata %1)	 (error %1)
+ Uyarı: %1 tuş yakalanamadı.	 Warning: %1 keys could not be captured.
+%1 kez bas	press %1 times
+'%1' tuşu	'%1' key
+<b>1/3</b> Tuşa ne yaptırmak istiyorsunuz?	<b>1/3</b> What should the key do?
+<b>2/3</b> Tuşu tanıtın	<b>2/3</b> Teach the key
+<b>3/3</b> Nasıl çalışsın?	<b>3/3</b> How should it trigger?
+<br>Bu tuş başka işlerde de kullanılıyor: yalnızca \"Basılı tut\" önerilir (kısa basış normal çalışmaya devam eder).	<br>This key is also used for other things: only \"Press and hold\" is recommended (short presses keep working normally).
+<br>Bu tuşun tuş kodu yok: \"Basılı tut\" seçilse de kısa basışlar yakalanır.	<br>This key has no key code: short presses are captured even with \"Press and hold\".
+Aç: %1	Open: %1
+Açık uygulamaları kapat	Close open apps
+Ana menü (Menü tuşu)	Main menu (Menu key)
+Aşağı	Down
+Atadığınız tuşları deneyin. Servis bu sırada duraklatılır.	Try the keys you assigned. The service is paused meanwhile.
+Atamak istediğiniz tuşa <b>bir kez basıp bırakın</b>.	<b>Press and release</b> the key you want to assign, once.
+bas-çek	press
+Bas-çek (tek basış)	Press (single press)
+basılı tut	press and hold
+Basılı tut	press and hold
+Biraz daha uzun: tuşu <b>1 saniye basılı tutun</b>.	A bit longer: <b>hold the key for 1 second</b>.
+Bitir	Finish
+Boşluk	Space
+Eylemi de çalıştır	Also run the action
+Farklı bir tuş algılandı. Aynı tuşa <b>bir kez basıp bırakın</b>.	A different key was detected. <b>Press and release</b> the same key once.
+Geri	Back
+Görev değiştirici	Task switcher
+Ham tuş kodları	Raw key codes
+Hangi uygulama açılsın?	Which app should open?
+Hazır. Atadığınız tuşlara basın.	Ready. Press the keys you assigned.
+Kamera	Camera
+Kırmızı (kapatma) tuşu	Red (end) key
+Kısayol yok. \"Yeni kısayol\" ile ekleyin.	No shortcuts. Add one with \"New shortcut\".
+Menü tuşu	Menu key
+Orta tuş (ses tuşları arası)	Middle key (between the volume keys)
+Önce kısa basın: tuşa <b>bir kez basıp bırakın</b>.	Short press first: <b>press and release</b> the key once.
+Peş peşe 2 kez bas	Press twice
+Peş peşe 3 kez bas	Press three times
+Sağ	Right
+Servis çalışıyor: atanan tuşlar her uygulamada dinleniyor.	Service running: the assigned keys work in every app.
+Servis durdu: kısayollar çalışmaz.	Service stopped: shortcuts do not work.
+Servisi başlat	Start service
+Servisi durdur	Stop service
+Ses -	Volume -
+Ses +	Volume +
+Sessiz ↔ önceki profil	Silent ↔ previous profile
+Sil	Delete
+Silme tuşu	Backspace key
+Sol	Left
+Şimdi aynı tuşu <b>1 saniye basılı tutun</b>.	Now <b>hold the same key for 1 second</b>.
+Test et	Test
+Titreşimle onayla	Confirm with vibration
+Tuş %1	Key %1
+Tuş: <b>%1</b> → %2	Key: <b>%1</b> → %2
+Uyarı: %1 tuş yakalanamadı.	Warning: %1 keys could not be captured.
+Uygulama aç…	Open an app…
+Vazgeç	Cancel
+Yeni kısayol	New shortcut
+Yeşil (arama) tuşu	Green (call) key
+Yön tuşu ortası	D-pad centre
+Yukarı	Up

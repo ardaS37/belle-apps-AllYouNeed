@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/main.qml</file>
+        <file>images/geri.png</file>
+        <file>images/ileri.png</file>
+        <file>images/yenile.png</file>
+        <file>images/dur.png</file>
+        <file>images/yildiz_bos.png</file>
+        <file>images/yildiz_dolu.png</file>
+        <file>qml/geri.js</file>
+    </qresource>
+</RCC>

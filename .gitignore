@@ -1,0 +1,35 @@
+# build output
+*.sis
+*.sisx
+*.exe
+*.o
+Makefile*
+moc_*
+qrc_*
+debug/
+release/
+*.mmp
+bld.inf
+*_template.pkg
+*_installer.pkg
+*.loc
+*_reg.rss
+ABLD.BAT
+*.user
+
+# server runtime data (never commit)
+server/node_modules/
+server/data/
+server/media/
+server/.wwebjs_auth/
+server/.wwebjs_cache/
+server/.e6key*
+server/ecosystem.config.js
+*.log
+
+# translation reports
+eksik*.txt
+missing*.txt
+
+# third-party binary not redistributed
+apps/E6Pil/bin/HSWidgetPlugin.dll!apps/kutuphane/pigler/sis_hazir/*.sis

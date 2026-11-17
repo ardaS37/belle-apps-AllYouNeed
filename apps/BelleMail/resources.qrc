@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/main.qml</file>
+        <file>qml/MessagePage.qml</file>
+        <file>qml/ComposePage.qml</file>
+        <file>qml/HesapPage.qml</file>
+        <file>qml/KlasorPage.qml</file>
+        <file>qml/Alan.qml</file>
+        <file>qml/Posta.js</file>
+        <file>qml/Avatar.qml</file>
+        <file>qml/Btn.qml</file>
+        <file>qml/Toast.qml</file>
+        <file>qml/Dialog.qml</file>
+        <file>images/bildirim.png</file>
+    </qresource>
+</RCC>
