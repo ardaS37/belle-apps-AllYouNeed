@@ -1,0 +1,215 @@
+# BelleMusic - English (araclar/dil_cikar.ps1 ile uretilir, elle duzenlemeyin)
+  •  karışık	  •  shuffle
+  •  telefonda	  •  on phone
+ dakika sonra duracak	 min until stop
+ dk	 min
+ dosya silindi	 files deleted
+ iniyor	 downloading
+ liste	 lists
+ liste  •  ••• ile yönet	 lists  •  manage with •••
+ sa 	 h
+ şarkı	 songs
+ şarkı  •  Listem	 songs  •  My list
+ şarkı (%	 songs (
+ şarkı \"	 songs \"
+ şarkı eklendi	 songs added
+ şarkı favorilerden çıkarıldı	 songs removed from favourites
+ şarkı favorilere eklendi	 songs added to favourites
+ şarkı indirme sırasına eklendi	 songs added to the download queue
+ şarkı iniyor (%	 songs downloading (
+ şarkı kuyruğa eklendi	 songs added to the queue
+ şarkı listeden çıkarıldı	 songs removed from the list
+ şarkı seçildi	 songs selected
+(günlük boş)	(log empty)
+\" favori listelere kaydedildi	\" saved to favourite lists
+\" listesine eklendi	\" — added to list
+\" oluşturuldu	\" created
+\" oluşturuldu, 	\" created,
+\" silinsin mi?	\" — delete?
+15 dakika	15 minutes
+30 dakika	30 minutes
+45 dakika	45 minutes
+60 dakika	60 minutes
+90 dakika	90 minutes
+Aç	Open
+Adres yenileniyor...	Refreshing address...
+Albüm	Album
+Ara	Search
+Arama geçmişini temizle	Clear search history
+Aramak istediğinizi yazıp Enter'a basın.\nSonuçlarda uzun basarak birden çok şarkı seçebilirsiniz.	Type what you want and press Enter.\nLong-press results to select several songs.
+Aranıyor...	Searching...
+Aşağı taşı	Move down
+Ayarlar	Settings
+Ayarlar'dan sunucu parolasını girin.	Enter the server password in Settings.
+Bağlantı koptu	Connection lost
+Bağlantı kurulamadı. İnternet bağlantısını kontrol edin.	Could not connect. Check your internet connection.
+Bağlantıda liste bulunamadı (…playlist?list=PL… biçiminde olmalı)	No playlist in the link (should look like …playlist?list=PL…)
+BelleMusic – kendi sunucunuza (Belle) bağlı müzik istemcisi: arama, listeler, indirme ve çalma sunucunuz üzerinden yapılır. Ses MP3.	BelleMusic – music client connected to your own (Belle) server: search, playlists, downloads and playback all go through your server. Audio is MP3.
+BelleMusic – MIDPlay'in kullandığı s60tube müzik sunucusu (music.s60tube.io.vn) için yerel Qt istemcisi. Her şey doğrudan s60tube ve servislerin kendi resim sunucularından gelir; başka sunucu kullanılmaz. Ses 128 kbps MP3.	BelleMusic – native Qt client for the s60tube music server (music.s60tube.io.vn) used by MIDPlay. Everything comes directly from s60tube and the services' own image servers; no other server is used. Audio is 128 kbps MP3.
+BelleMusic şarkıları yalnızca kendi sunucunuzdan getirir (BelleTube ile aynı sunucu ve parola). Bir şarkının ilk çalınışı sunucuda hazırlandığı için 30-60 saniye sürebilir, sonrakiler hemen başlar.	BelleMusic gets songs only from your own server (same server and password as BelleTube). The first play of a song can take 30-60 seconds while the server prepares it; after that it starts right away.
+Boş	Empty
+Bu listede şarkı yok	No songs in this list
+Bu listede şarkı yok.	No songs in this list.
+Bu sanatçıyı ara	Search this artist
+Bu şarkı bitince	When this song ends
+Bu şarkı bitince duracak	Will stop when this song ends
+Bu şarkı telefonda kayıtlı	This song is saved on the phone
+Bu şarkıyı tekrarla	Repeat this song
+Bugün 	Today
+Çal	Play
+Çalınamadı	Could not play
+Çalınamadı: 	Could not play:
+Çalıyor	Playing
+Çalma kuyruğu	Play queue
+Çıkar	Remove
+Doğrudan	Direct
+Dosya yazılamadı	Could not write file
+Dün 	Yesterday
+E6Muzik kitapligi	E6Muzik library
+E6Müzik 1.1	E6Music 1.1
+En son dinlediğiniz 150 şarkı	Your last 150 songs
+Evet, sil	Yes, delete
+Evet, temizle	Yes, clear
+Favori	Favourite
+Favori listeler	Favourite lists
+Favori şarkılar	Favourite songs
+Favoriler, listeler ve indirilenler	Favourites, lists and downloads
+Favorilerden çıkar	Remove from favourites
+Favorilerden çıkarıldı	Removed from favourites
+Favorilere ekle	Add to favourites
+Favorilere eklendi	Added to favourites
+geçersiz ortam	invalid environment
+Geçmiş	History
+Geçmişten sil	Remove from history
+Gizle	Hide
+Göster	Show
+Günlük (son 30 kayıt)	Log (last 30 entries)
+Günlük kopyalandı	Log copied
+Henüz favori şarkı yok.\nŞarkıdaki ••• menüsünden ya da çoklu seçimle ekleyebilirsiniz.	No favourite songs yet.\nAdd them from a song's ••• menu or with multi-select.
+Henüz listeniz yok.	You have no lists yet.
+Henüz şarkı çalınmadı.	No songs played yet.
+Hepsi zaten favorilerde	All are already in favourites
+Herkese açık listenizin bağlantısını yapıştırın	Paste the link of your public playlist
+İndir	Download
+İndirildi	Downloaded
+İndirilemedi (	Download failed (
+İndirilen şarkı yok.	No downloaded songs.
+İndirilen şarkılar internetsiz de çalar ve telefonun Müzik uygulamasında da görünür.	Downloaded songs play offline and also appear in the phone's Music app.
+İndirilenler	Downloads
+İndiriliyor: 	Downloading:
+İndirme sırada	Download queued
+İndirme sırada  •  	Download queued  •
+İndirmeler	Downloads
+İndirmeler tamamlandı	Downloads finished
+İniyor %	Downloading %
+İptal	Cancel
+İptal edildi	Cancelled
+Kapak resimlerini göster	Show cover images
+Kapat	Close
+Kapatırsanız listeler daha hızlı açılır ve daha az veri harcanır.	Turning this off makes lists open faster and use less data.
+Karışık	shuffle
+Karışık çal	Shuffle play
+Karışık çalma açık	Shuffle on
+Karışık çalma kapalı	Shuffle off
+Kaydedilmiş liste yok.\nBir listeyi açıp kalp simgesine dokunun ya da + ile YouTube Music liste bağlantısı ekleyin.	No saved lists.\nOpen a list and tap the heart, or add a YouTube Music playlist link with +.
+Kaydet	Save
+Kaynak	Source
+Kaynak: kendi sunucum	Source: my server
+Kaynak: s60tube	Source: s60tube
+Kendi sunucum	My server
+Keşfet	Discover
+Keşfet ve Ara bu servisle açılır (ekranda değiştirebilirsiniz). YouTube Music'te herkese açık listelerinizi adıyla arayabilir ya da Kitaplık'tan bağlantısıyla ekleyebilirsiniz; bir şarkının ilk çalınışı birkaç saniye sürebilir. NhacCuaTui kapakları telefonda gösterilemiyor (WebP).	Discover and Search open with this service (you can change it on screen). On YouTube Music you can search your public lists by name or add them by link from Library; a song's first play may take a few seconds. NhacCuaTui covers cannot be shown on the phone (WebP).
+Kitaplık	Library
+Klasör: 	Folder:
+Klavye	Keyboard
+Kopyala	Copy
+Kuyruğa	To queue
+Kuyruğa ekle	Add to queue
+Kuyruğa eklendi	Added to queue
+Kuyruk	Queue
+Kuyruk boş	Queue is empty
+Kuyruktan çıkar	Remove from queue
+Liste	List
+Liste adı	List name
+Liste boş	List is empty
+Liste boş.	The list is empty.
+Liste bulunamadı.	List not found.
+Liste favorilerden çıkarıldı	List removed from favourites
+Liste favorilere eklendi	List added to favourites
+Liste favorilere kaydedildi	List saved to favourites
+Liste silindi	List deleted
+Liste yükleniyor...	Loading list...
+Listeden çıkar	Remove from list
+Listelerim	My lists
+Listeye	To list
+Listeye ekle	Add to list
+Listeyi favorilerden çıkar	Remove list from favourites
+Listeyi favorilere kaydet	Save list to favourites
+Listeyi sil	Delete list
+Listeyi tekrarla	Repeat list
+Müzik 	Music
+Oluştur	Create
+Oynatma	Playback
+Önce şarkı seçin	Select songs first
+Parola kayıtlı (değiştirmek için yazın)	Password saved (type to change)
+Popüler	Popular
+Popüler listeler	Popular lists
+Sayfa açılamadı	Could not open page
+Seç	Select
+Seçilen şarkılar zaten indirilmiş	Selected songs are already downloaded
+Sıradaki olarak çal	Play next
+Sıradaki şarkı: 	Next song:
+Sıradaki şarkılar temizlensin mi?	Clear upcoming songs?
+Sıradaki yap	Play next
+Sol/sağ: sekmeler (ayrıntı sayfasında sol: geri)\nYukarı/aşağı: listede gezinme, Enter/orta tuş: aç/çal\nBoşluk: şarkı seç (çoklu seçim)\nÇalar ekranında: Boşluk/Enter çal-duraklat, sol/sağ 10 sn sar, yukarı/aşağı önceki/sonraki\nSes tuşları ve kulaklık tuşları desteklenir.	Left/right: tabs (on detail pages left: back)\nUp/down: move in lists, Enter/center key: open/play\nSpace: select song (multi-select)\nOn the player: Space/Enter play-pause, left/right seek 10 s, up/down previous/next\nVolume and headset keys are supported.
+Son aramalar	Recent searches
+Son çalınanlar	Recently played
+Son çalınanları temizle	Clear recently played
+Sonuç bulunamadı.	No results found.
+Sunucu	Server
+Sunucu adresi	Server address
+Sunucu hatası (	Server error (
+Sunucu kaydedildi	Server saved
+Sunucu parolası	Server password
+Sunucu parolası hatalı (Ayarlar).	Wrong server password (Settings).
+Sunucu yanıtı okunamadı	Could not read the server response
+Sunucuda hazırlanıyor...	Preparing on the server...
+Sunucuya ulaşılamadı.	Could not reach the server.
+Şarkı	Song
+Şarkı adresi geçersiz	Invalid song address
+Şarkı sunucuda hazırlanamadı (	The server could not prepare the song (
+Şarkı, sanatçı, albüm ara	Search song, artist, album
+Şarkılar zaten listede	Songs are already in the list
+Şarkının güncel adresi bulunamadı	Could not find the song's current address
+Şimdi çal	Play now
+Şu an 	Now
+Tamam	OK
+Tekrar kapalı	Repeat off
+Telefondan sil	Delete from phone
+Temizle	Clear
+Temizlendi	Cleared
+Tüm indirmeleri iptal et	Cancel all downloads
+Tüm şarkıları favorilere ekle	Add all songs to favourites
+Tüm şarkıları indir	Download all songs
+Tüm şarkıları listeme ekle	Add all songs to my list
+Tümü	All
+Tümünü çal	Play all
+Uyku zamanlayıcısı	Sleep timer
+Uyku zamanlayıcısı kapatıldı	Sleep timer off
+Uyku zamanlayıcısı: müzik durduruldu	Sleep timer: music stopped
+Uzun basın ya da Boşluk ile işaretleyin	Long-press or mark with Space
+Varsayılan müzik servisi	Default music service
+Vazgeç	Cancel
+Yapıştır	Paste
+Yeni	New
+Yeni liste	New list
+Yeni liste adı	New list name
+Yeni listeler	New lists
+Yeniden adlandır	Rename
+Yeniden dene	Retry
+Yerel aktarıcı (önerilen)	Local relay (recommended)
+Yerel aktarıcı, sesi telefondaki küçük bir sunucu üzerinden oynatıcıya verir; yönlendirmeleri ve ileri-geri sarmayı daha sağlam yapar. Bir şarkı çalmazsa uygulama kendiliğinden diğer yolu da dener.	The local relay feeds audio to the player through a small server on the phone; it handles redirects and seeking more reliably. If a song does not play, the app tries the other way automatically.
+YouTube Music liste bağlantısı	YouTube Music playlist link
+YouTube Music listesi ekle	Add YouTube Music playlist
+Yukarı taşı	Move up
+Yükleniyor...	Loading...

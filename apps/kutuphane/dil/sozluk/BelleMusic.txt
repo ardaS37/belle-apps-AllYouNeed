@@ -1,0 +1,19 @@
+# BelleMusic (eski E6Muzik 2): yalnizca kendi sunucumuz
+BelleMusic – kendi sunucunuza (Belle) bağlı müzik istemcisi: arama, listeler, indirme ve çalma sunucunuz üzerinden yapılır. Ses MP3. ¦ BelleMusic – music client connected to your own (Belle) server: search, playlists, downloads and playback all go through your server. Audio is MP3.
+BelleMusic şarkıları yalnızca kendi sunucunuzdan getirir (BelleTube ile aynı sunucu ve parola). Bir şarkının ilk çalınışı sunucuda hazırlandığı için 30-60 saniye sürebilir, sonrakiler hemen başlar. ¦ BelleMusic gets songs only from your own server (same server and password as BelleTube). The first play of a song can take 30-60 seconds while the server prepares it; after that it starts right away.
+Sunucu ¦ Server
+Sunucu adresi ¦ Server address
+Sunucu parolası ¦ Server password
+Parola kayıtlı (değiştirmek için yazın) ¦ Password saved (type to change)
+Sunucu kaydedildi ¦ Server saved
+Sunucu parolası hatalı (Ayarlar). ¦ Wrong server password (Settings).
+Sunucuya ulaşılamadı. ¦ Could not reach the server.
+Ayarlar'dan sunucu parolasını girin. ¦ Enter the server password in Settings.
+Sunucuda hazırlanıyor... ¦ Preparing on the server...
+Şarkı sunucuda hazırlanamadı ( ¦ The server could not prepare the song (
+Şarkı adresi geçersiz ¦ Invalid song address
+BelleMusic – MIDPlay'in kullandığı s60tube müzik sunucusu (music.s60tube.io.vn) için yerel Qt istemcisi. Her şey doğrudan s60tube ve servislerin kendi resim sunucularından gelir; başka sunucu kullanılmaz. Ses 128 kbps MP3. ¦ BelleMusic – native Qt client for the s60tube music server (music.s60tube.io.vn) used by MIDPlay. Everything comes directly from s60tube and the services' own image servers; no other server is used. Audio is 128 kbps MP3.
+Kaynak ¦ Source
+Kendi sunucum ¦ My server
+Kaynak: kendi sunucum ¦ Source: my server
+Kaynak: s60tube ¦ Source: s60tube

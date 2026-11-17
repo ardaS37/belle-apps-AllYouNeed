@@ -410,4 +410,117 @@ function cleanCache() {
 }
 setInterval(cleanCache, 30 * 60 * 1000);
 
+// =====================================================================================
+// BelleMusic: s60tube muzik servisiyle ayni bicimde ({Items:[...]}) YouTube muzik uclari.
+//   Sarki: {Name, Url, Singer, Duration, Image}  (Url: /yt/audio/<id>.mp3, uygulama sunucu adresi + parolayi ekler)
+//   Liste: {ListKey, Name, Singer, Image}         (ListKey: yt:<playlistId>)
+// =====================================================================================
+const SRC_VIDEO = "EgIQAQ%3D%3D", SRC_PLAYLIST = "EgIQAw%3D%3D";
+
+function saniye(s) {
+    const p = ("" + (s || "")).split(":").map((x) => parseInt(x, 10) || 0);
+    return p.reduce((a, b) => a * 60 + b, 0);
+}
+function sanatci(s) { return ("" + (s || "")).replace(/\s+-\s+Topic$/i, "").trim(); }
+function sarki(id, ad, kanal, sure) {
+    return { Name: ad || "", Url: `/yt/audio/${id}.mp3`, Singer: sanatci(kanal), Duration: sure || 0, Image: `https://i.ytimg.com/vi/${id}/mqdefault.jpg` };
+}
+
+function listeleriTopla(root, limit) {
+    const out = [], seen = {};
+    (function walk(o) {
+        if (!o || typeof o !== "object" || out.length >= limit) return;
+        const pr = o.playlistRenderer;
+        if (pr && pr.playlistId && !seen[pr.playlistId]) {
+            seen[pr.playlistId] = true;
+            const th = (pr.thumbnails && pr.thumbnails[0] && pr.thumbnails[0].thumbnails) || [];
+            out.push({ ListKey: "yt:" + pr.playlistId, Name: txt(pr.title), Singer: sanatci(txt(pr.shortBylineText || pr.longBylineText)), Image: th.length ? th[th.length - 1].url : "" });
+            return;
+        }
+        const lv = o.lockupViewModel;
+        if (lv && lv.contentId && lv.contentType === "LOCKUP_CONTENT_TYPE_PLAYLIST" && !seen[lv.contentId]) {
+            seen[lv.contentId] = true;
+            const meta = lv.metadata && lv.metadata.lockupMetadataViewModel;
+            let kanal = "", resim = "";
+            try { kanal = meta.metadata.contentMetadataViewModel.metadataRows[0].metadataParts[0].text.content; } catch (e) { }
+            try { const m = JSON.stringify(lv.contentImage).match(/"url":"(https:[^"]+)"/); if (m) resim = m[1]; } catch (e) { }
+            out.push({ ListKey: "yt:" + lv.contentId, Name: meta ? txt(meta.title) : "", Singer: sanatci(kanal), Image: resim });
+            return;
+        }
+        for (const k in o) walk(o[k]);
+    })(root);
+    return out;
+}
+
+function listeSarkilari(root, limit) {
+    const out = [], seen = {};
+    (function walk(o) {
+        if (!o || typeof o !== "object" || out.length >= limit) return;
+        const v = o.playlistVideoRenderer || o.playlistPanelVideoRenderer;
+        if (v && v.videoId && !seen[v.videoId]) {
+            seen[v.videoId] = true;
+            if (v.isPlayable === false) return;
+            out.push(sarki(v.videoId, txt(v.title), txt(v.shortBylineText || v.longBylineText), parseInt(v.lengthSeconds || "0", 10) || saniye(txt(v.lengthText))));
+            return;
+        }
+        for (const k in o) walk(o[k]);
+    })(root);
+    if (out.length) return out;
+    // yeni liste sayfasi yapisi (lockupViewModel): arama ayristiricisi tanir
+    return collectVideos(root, limit).items.filter((v) => !v.live).map((v) => sarki(v.id, v.title, v.channel, saniye(v.length)));
+}
+
+async function listeAra(q, limit) {
+    return listeleriTopla(await innertube("search", { query: q, params: SRC_PLAYLIST }), limit || 20);
+}
+
+function muzikHata(res, e, ne) {
+    console.log(`[muzik] ${ne}: ${e.message}`);
+    res.status(502).json({ error: ne + ": " + e.message, Items: [] });
+}
+
+router.get("/muzik/tracks/search", async (req, res) => {
+    const q = ("" + (req.query.q || "")).trim();
+    if (!q) return res.json({ Items: [] });
+    try {
+        const r = collectVideos(await innertube("search", { query: q, params: SRC_VIDEO }), 30);
+        res.json({ Items: r.items.filter((v) => !v.live).map((v) => sarki(v.id, v.title, v.channel, saniye(v.length))) });
+    } catch (e) { muzikHata(res, e, "Şarkı aranamadı"); }
+});
+
+router.get("/muzik/search", async (req, res) => {
+    const q = ("" + (req.query.q || "")).trim();
+    if (!q) return res.json({ Items: [] });
+    try { res.json({ Items: await listeAra(req.query.type === "album" ? q + " album" : q, 20) }); }
+    catch (e) { muzikHata(res, e, "Liste aranamadı"); }
+});
+
+router.get("/muzik/tracks", async (req, res) => {
+    const m = /^yt:([A-Za-z0-9_-]{10,})$/.exec("" + (req.query.listkey || ""));
+    if (!m) return res.status(400).json({ error: "Geçersiz liste", Items: [] });
+    try {
+        const id = m[1];
+        // RD (karisik) listeleri sayfa olarak acilmaz: "next" ile ilk sarkidan okunur
+        const veri = id.indexOf("RD") === 0 ? await innertube("next", { playlistId: id }) : await innertube("browse", { browseId: "VL" + id });
+        res.json({ Items: listeSarkilari(veri, 100) });
+    } catch (e) { muzikHata(res, e, "Liste açılamadı"); }
+});
+
+// Kesfet: hazir aramalarla populer / yeni listeler (12 saat onbellek)
+const kesfetOnbellek = {};
+router.get("/muzik/playlist", async (req, res) => {
+    const yeni = req.query.type === "new";
+    const sayfa = Math.max(1, parseInt(req.query.page || "1", 10));
+    const yil = new Date().getFullYear();
+    const sorgular = yeni ? [`yeni çıkan şarkılar ${yil}`, `new music ${yil}`, `yeni türkçe pop ${yil}`]
+                          : [`türkçe pop hit ${yil}`, `top 50 türkiye`, `en çok dinlenen şarkılar`];
+    const q = sorgular[(sayfa - 1) % sorgular.length];
+    if (sayfa > sorgular.length) return res.json({ Items: [] });
+    try {
+        const k = q;
+        if (!kesfetOnbellek[k] || Date.now() - kesfetOnbellek[k].t > 12 * 3600 * 1000) kesfetOnbellek[k] = { t: Date.now(), items: await listeAra(q, 20) };
+        res.json({ Items: kesfetOnbellek[k].items });
+    } catch (e) { muzikHata(res, e, "Listeler alınamadı"); }
+});
+
 module.exports = router;
