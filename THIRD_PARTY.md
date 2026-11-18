@@ -2,7 +2,7 @@
 
 | Component | Used by | License | Notes |
 |---|---|---|---|
-| [Pigler](https://github.com/piglerorg/pigler) | WhatsBelle (status-bar notifications) | GPL-3.0 | full copy in `apps/kutuphane/pigler/`, prebuilt `Pigler.sis` 1.4.1 embedded in WhatsBelle |
+| [Pigler](https://github.com/piglerorg/pigler) | WhatsBelle, BelleMail, BelleGram (status-bar notifications) | GPL-3.0 | full copy in `apps/kutuphane/pigler/`, prebuilt `Pigler.sis` 1.4.1 embedded in these apps |
 | [Telegram API schema](https://core.telegram.org/schema) (TL) | BelleGram | — | `tl/sema.txt`, generated from the public api.tl / mtproto.tl |
 | [s60-maps](https://github.com/artem78/s60-maps) by artem78 | Belle Maps | GPL-3.0 | ideas and map logic (tile layers, search, routing) adapted and rewritten in QML |
 | Star Player (Paul Wallace / Allstar Software) | BelleVideo | MIT | feature set used as inspiration; code written from scratch |
@@ -18,7 +18,7 @@
 | [Caddy](https://caddyserver.com/) | server reverse proxy | Apache-2.0 | system package |
 | OpenStreetMap data and tiles, Esri, OpenTopoMap, Photon (komoot), OSRM | Belle Maps | ODbL / provider terms | follow each provider's usage policy; tiles are requested with an identifying User-Agent |
 | Open-Meteo | BelleWidgets weather | CC-BY 4.0 | |
-| HSWidgetPlugin.dll (Nokia) | BelleWidgets | proprietary | **not included**; obtain it from the *Symbian-HomeScreen-Widget-QML* template |
+| HSWidgetPlugin.dll (Nokia) | BelleWidgets | proprietary | prebuilt binary included in `apps/BelleWidgets/bin`; from the *Symbian-HomeScreen-Widget-QML* template |
 | Qt 4.7 / 4.8, QtMobility | all apps | LGPL-2.1 | runtime on the phone |
 
 Community TLS patches for Symbian (nnproject, shinovon's symbian-tls) are **not** included; see

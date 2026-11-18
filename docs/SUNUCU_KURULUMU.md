@@ -1,6 +1,6 @@
 # Sunucu kurulumu
 
-Sunucu (`server/`) tek bir Node.js sürecidir. Tüm telefon uygulamalarına düz HTTP üzerinden hizmet verir;
+Sunucu (`server/`) tek bir Node.js sürecidir. Sunucu gerektiren telefon uygulamalarına hizmet verir (HTTP, ya da alan adıyla Caddy arkasında HTTPS);
 ağır oturumları (başsız Chrome'da WhatsApp Web, IMAP, Google API'leri, video dönüştürme) kendi tarafında tutar.
 
 > English: [SERVER_SETUP.md](SERVER_SETUP.md)

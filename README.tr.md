@@ -1,21 +1,13 @@
 # Belle Apps — Nokia E6 (Symbian Belle) için modern uygulamalar
 
-**Nokia E6**'ya (Symbian Anna/Belle, 640×480 klavyeli telefon) WhatsApp, e-posta, Google Drive, YouTube,
-yapay zekâ sohbeti, modern tarayıcı, harita, uzak masaüstü ve daha fazlasını getiren Qt Quick uygulamaları
-ile çoğunun bağlandığı küçük **Node.js sunucusu**.
+**Nokia E6**'ya (Symbian Anna/Belle, 640×480 klavyeli telefon) WhatsApp, Telegram, e-posta, Google Drive,
+YouTube, müzik, radyo, e-kitap, harita, modern tarayıcı, uzak masaüstü ve daha fazlasını getiren Qt Quick
+uygulamaları ile bunlardan gerekenlerin kullandığı küçük bir **Node.js sunucusu**.
 
 > 🇬🇧 English: [README.md](README.md)
 
 Tüm uygulamalar **Türkçe ve İngilizce** konuşur: telefonun dilini izler, her uygulamanın ayarlarındaki
-*Dil / Language* satırından değiştirilebilir. Bu depoda hiçbir sunucu adresi yoktur; herkes kendi sunucusunu kurar.
-
-## Neden sunucu?
-
-Symbian Belle eski bir TLS altyapısı ve Qt 4.8 ile gelir; WhatsApp Web, Gmail, Google Drive, YouTube ve
-yapay zekâ servislerine doğrudan bağlanamaz. Sunucu ağır işi yapar: WhatsApp Web için başsız Chrome oturumu
-tutar, IMAP/SMTP konuşur, videoyu dönüştürür, web sayfalarını küçültür. Telefona da parolayla korunan hafif
-bir HTTP arayüzü sunar. Sunucu gerektirmeyen uygulamalar tabloda belirtilmiştir: BelleMail, BelleGram,
-BelleCast, BelleCeviri ve BelleKitap internete doğrudan bağlanır (Qt'nin TLS 1.2'si ve güncel kök sertifikalar).
+*Dil / Language* satırından değiştirilebilir. Hangi uygulamanın sunucu gerektirdiği tablonun son sütununda yazar.
 
 ## Uygulamalar
 
@@ -34,7 +26,7 @@ BelleCast, BelleCeviri ve BelleKitap internete doğrudan bağlanır (Qt'nin TLS 
 | **BelleWidgets** | `apps/BelleWidgets` | Ana ekran widget'ları: pil, hava durumu, RAM/CPU | kullanılmaz |
 | **BelleMiddleKey** | `apps/BelleMiddleKey` | İstediğin tuşa istediğin kısayol (orta tuş, ses tuşları, tek dokunuş tuşları…): bas-çek, peş peşe 2–3 kez ya da basılı tut → uygulama aç, sessiz ↔ önceki profil, açık uygulamaları kapat, ana menü, görev değiştirici. Test ekranı var; Qt'siz küçük bir arka plan servisi telefonla birlikte başlar. *Install Server yaması gerekir (SwEvent yetkisi), bkz. [INSTALLING](docs/INSTALLING.md)* | kullanılmaz |
 | **BelleCast** | `apps/BelleCast` | İnternet radyosu (ülkeye göre dünya çapında arama, favoriler, önceki/sonraki istasyon, kayıt), podcast ve okuma görünümlü RSS haberleri. Yayınlar (ICY, HTTPS, HLS) telefonun içinde aktarılır, sunucu yok | kullanılmaz |
-| **BelleCeviri** | `apps/BelleCeviri` | Tek uygulamada çeviri + sözlük: Google (resmi olmayan, anahtarsız), MyMemory, DeepL, Gemini, Groq, Mistral, OpenAI, Claude; her servis açılıp kapatılır, 85 dil, Vikisözlük/TDK sözlüğü, geçmiş. API anahtarlarınızı telefonda girersiniz, uygulamaya gömülmez | kullanılmaz |
+| **BelleCeviri** | `apps/BelleCeviri` | Tek uygulamada çeviri + sözlük: Google (resmi olmayan, anahtarsız), MyMemory, DeepL, Gemini, Groq, Mistral, OpenAI, Claude; her servis açılıp kapatılır, 80'den fazla dil, Vikisözlük/TDK sözlüğü, geçmiş. API anahtarlarınızı telefonda girersiniz, uygulamaya gömülmez | kullanılmaz |
 | **BelleMusic** | `apps/BelleMusic` | MIDPlay'in kullandığı s60tube müzik servisi için müzik çalar (YouTube Music, NhacCuaTui, Spotify, SoundCloud): keşfet, arama, listeler, favoriler, indirme, sıra, uyku zamanlayıcısı, kulaklık tuşları | kullanılmaz |
 | **BelleKitap** | `apps/BelleKitap` | EPUB ve TXT e-kitap okuyucu: temalar, yazı tipi, içindekiler, yer imleri, kaldığın yerden devam. Project Gutenberg (EPUB, birçok dil) ve Vikikaynak'tan ücretsiz kitap arama ve indirme | kullanılmaz |
 
@@ -51,11 +43,12 @@ Her uygulamanın ekran görüntüleri: `screenshots/<Uygulama>/`.
 
 ## Hızlı başlangıç
 
-1. **Sunucu** – herhangi bir küçük Ubuntu/Debian sunucuda `server/` klasörünü kopyalayıp `bash install.sh`
-   çalıştırın. Sonda sunucu adresi ve parola yazılır. Ayrıntı: [docs/SUNUCU_KURULUMU.md](docs/SUNUCU_KURULUMU.md).
-2. **Telefon** – Releases sayfasındaki `.sis` dosyalarını kurun (kendinden imzalı; bkz.
-   [docs/INSTALLING.md](docs/INSTALLING.md)). Uygulamayı açın → Ayarlar → sunucu adresini
-   (`http://sunucu-ip-adresi`) ve parolayı girin.
+1. **Telefon** – Releases sayfasındaki ya da https://msahincelen.xyz adresindeki `.sis` dosyalarını kurun
+   (kendinden imzalı; bkz. [docs/INSTALLING.md](docs/INSTALLING.md)). Tabloda *kullanılmaz* yazan uygulamalar
+   hemen çalışır.
+2. **Sunucu** (yalnızca *gerekli* / *isteğe bağlı* yazan uygulamalar için) – herhangi bir küçük Ubuntu/Debian
+   sunucuda `server/` klasörünü kopyalayıp `bash install.sh` çalıştırın; sonda sunucu adresi ve parola yazılır
+   ([docs/SUNUCU_KURULUMU.md](docs/SUNUCU_KURULUMU.md)). İkisini uygulamanın Ayarlar ekranına girin.
 3. **WhatsApp** – WhatsBelle'i açın, numaranızı yazın, çıkan QR kodu WhatsApp yüklü telefondan okutun
    (*Bağlı cihazlar → Cihaz bağla*).
 
@@ -88,10 +81,11 @@ sorunlu uygulamaları işaretleyin, her birinin yanına ne yaptığınızı ve n
 Kişisel proje; Belle Refresh (111.140.0058) yüklü Nokia E6-00'da geliştirilip denendi. Qt 4.7.4+ olan
 diğer Symbian^3/Anna/Belle telefonlarda da çalışması beklenir, ancak ekranlar 640×480 için tasarlandı.
 
-Bu uygulamaların WhatsApp, Google, YouTube, OpenAI, Anthropic, xAI ya da Nokia ile **resmi bir bağlantısı
+Bu uygulamaların WhatsApp, Telegram, Google, YouTube, OpenAI, Anthropic, xAI ya da Nokia ile **resmi bir bağlantısı
 yoktur**. Resmi olmayan istemci kullanmak servislerin kullanım koşullarına aykırı olabilir; sorumluluk kullanıcıdadır.
 
 ## Lisans
 
-GPL-3.0 — [LICENSE](LICENSE). WhatsBelle, GPL-3.0 lisanslı Pigler istemci kütüphanesini kullandığı için
-deponun tamamı GPL-3.0 ile yayınlanır.
+GPL-3.0 — [LICENSE](LICENSE). WhatsBelle, BelleMail ve BelleGram GPL-3.0 lisanslı Pigler istemci
+kütüphanesini kullandığı için deponun tamamı GPL-3.0 ile yayınlanır. BelleWidgets, Nokia'nın hazır
+`HSWidgetPlugin.dll` dosyasını içerir; bkz. [THIRD_PARTY.md](THIRD_PARTY.md).

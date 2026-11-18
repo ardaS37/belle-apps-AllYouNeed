@@ -8,10 +8,9 @@
 
 ### Recommended: TLS 1.2 patch
 
-Symbian^3 / Anna / Belle only speak TLS 1.0 out of the box. Installing the community TLS 1.2 patch is
-strongly recommended — the server-free apps (BelleMail, BelleGram, BelleCast, BelleCeviri, BelleKitap)
-connect to modern HTTPS/TLS services much more reliably with it, and the phone's own browser, mail and
-store start working again:
+Symbian^3 / Anna / Belle only speak TLS 1.0 out of the box. Apps that connect to HTTPS services directly
+(for example BelleMail, BelleCeviri, BelleKitap) need the Qt TLS 1.2 patch; the system patch makes the
+phone's own browser, mail and store work again:
 
 - **Symbian TLS 1.2 patch (system):** <https://github.com/shinovon/symbian-tls> (downloads: <https://nnproject.cc/tls/>)
 - **Qt TLS 1.2 patch (Qt apps):** <https://github.com/shinovon/qt-patches> (downloads: <https://nnproject.cc/qtls/>)
@@ -24,7 +23,8 @@ Step-by-step notes: [TLS_PATCH.md](TLS_PATCH.md).
 2. On the phone: *Settings → Application manager → Installation settings → Software installation:* **All**.
    The packages are self-signed, so the phone asks for confirmation; accept.
 3. Copy the files to the phone (USB mass storage, Bluetooth, or download in the browser) and open them.
-4. Open the app → *Settings* → enter your **server address** and **password** (see [SERVER_SETUP.md](SERVER_SETUP.md)).
+4. Apps that use the server (see the table in the README): open *Settings* and enter your **server address**
+   and **password** (see [SERVER_SETUP.md](SERVER_SETUP.md)). The other apps work right away.
 
 Upgrading: install the new `.sis` over the old one. Settings are kept, and most apps also mirror their settings
 to the memory card (`E:\...`), so they come back automatically after a phone reset or a ROM flash.
@@ -33,7 +33,7 @@ to the memory card (`E:\...`), so they come back automatically after a phone res
 
 | Package | Why | How |
 |---|---|---|
-| **WhatsBelle** (`WhatsBelle.sis`) | embeds the Pigler plugin (`All -Tcb`) | the app itself installs on any phone; the embedded Pigler part needs a hacked phone (Install Server patch). Skip Pigler if your phone is not hacked — WhatsBelle still works. Reboot after installing Pigler. |
+| **WhatsBelle**, **BelleMail**, **BelleGram** | embed the Pigler plugin (`All -Tcb`) for status-bar notifications | the apps install on any phone; the embedded Pigler part needs a hacked phone (Install Server patch). Skip Pigler if your phone is not hacked — the apps still work. Reboot after installing Pigler. |
 | **BelleMiddleKey** (`BelleMiddleKey.sis`) | `SwEvent`, `ReadDeviceData`, `WriteDeviceData`, `PowerMgmt` | a hacked phone (Install Server patch, see [TLS_PATCH.md](TLS_PATCH.md#0-prerequisites-both-patches)) or a developer certificate; the self-signed SIS is rejected on a stock phone |
 
 ## Language
@@ -45,5 +45,6 @@ file next to the `.exe` to override.
 
 ## Optional extras
 
-- [TLS patches](TLS_PATCH.md) – direct HTTPS for ApiLauncher, Belle Maps search, Belle Files Google mode.
-- [Pigler](PIGLER.md) – WhatsBelle notifications in the status-bar drawer.
+- [TLS patches](TLS_PATCH.md) – HTTPS for the apps that reach services directly, plus direct modes in ApiLauncher,
+  Belle Maps search and Belle Files (Google).
+- [Pigler](PIGLER.md) – WhatsBelle, BelleMail and BelleGram notifications in the status-bar drawer.

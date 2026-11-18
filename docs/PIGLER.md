@@ -8,6 +8,9 @@ gap: a small indicator plugin that runs inside the system UI and a client librar
 that chat. Without Pigler, WhatsBelle falls back to a corner pop-up and the system's generic
 "new chat message" note.
 
+**BelleMail** (new e-mail) and **BelleGram** (new Telegram messages) use it the same way (`bildirim.cpp` in
+each app) and embed the same `Pigler.sis`.
+
 ## What is in this repository
 
 | Path | What |

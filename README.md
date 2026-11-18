@@ -1,22 +1,13 @@
 # Belle Apps — modern apps for the Nokia E6 (Symbian Belle)
 
-A family of Qt Quick apps that bring WhatsApp, e-mail, Google Drive, YouTube, AI chat, a modern web
-browser, maps, remote desktop and more to the **Nokia E6** (Symbian Anna/Belle, 640×480 keyboard phone),
-plus the small **Node.js server** most of them talk to.
+A family of Qt Quick apps that bring WhatsApp, Telegram, e-mail, Google Drive, YouTube, music, radio,
+e-books, maps, a modern web browser, remote desktop and more to the **Nokia E6** (Symbian Anna/Belle,
+640×480 keyboard phone), plus a small **Node.js server** for the apps that need one.
 
 > 🇹🇷 Türkçe açıklama: [README.tr.md](README.tr.md)
 
 Every app speaks **English and Turkish** (follows the phone language; switch in each app's settings under
-*Dil / Language*). Nothing in this repository points to a particular server: you run your own.
-
-## Why a server?
-
-Symbian Belle ships with an old TLS stack and Qt 4.8, so most modern services (WhatsApp Web, Gmail,
-Google Drive, YouTube, AI APIs) cannot be reached directly. The server does the heavy lifting — it keeps a
-headless Chrome session for WhatsApp Web, talks IMAP/SMTP, converts video, shrinks web pages — and gives the
-phone a light HTTP API protected by a password. Apps that do not need it are marked below — BelleMail,
-BelleGram, BelleCast, BelleCeviri and BelleKitap talk to the internet directly (Qt's TLS 1.2 with an
-up-to-date root certificate bundle).
+*Dil / Language*). The last column below shows which apps need the server.
 
 ## Apps
 
@@ -35,7 +26,7 @@ up-to-date root certificate bundle).
 | **BelleWidgets** | `apps/BelleWidgets` | Home-screen widgets: battery, weather, RAM/CPU | not used |
 | **BelleMiddleKey** | `apps/BelleMiddleKey` | Assign any shortcut to any key (middle key, volume keys, one-touch keys…): press, press 2–3 times or press and hold → open an app, silent ↔ previous profile, close open apps, main menu, task switcher. Built-in test screen; a tiny Qt-free background service starts with the phone. *Needs the Install Server patch (SwEvent capability), see [INSTALLING](docs/INSTALLING.md)* | not used |
 | **BelleCast** | `apps/BelleCast` | Internet radio (worldwide search by country, favourites, prev/next station, recorder), podcasts and RSS news with a reader view. Streams (ICY, HTTPS, HLS) are relayed inside the phone, no server | not used |
-| **BelleCeviri** | `apps/BelleCeviri` | Translator + dictionary in one app: Google (unofficial, keyless), MyMemory, DeepL, Gemini, Groq, Mistral, OpenAI, Claude; turn each provider on/off, 85 languages, Wiktionary/TDK dictionary, history. Your own API keys are entered on the phone, never built in | not used |
+| **BelleCeviri** | `apps/BelleCeviri` | Translator + dictionary in one app: Google (unofficial, keyless), MyMemory, DeepL, Gemini, Groq, Mistral, OpenAI, Claude; turn each provider on/off, 80+ languages, Wiktionary/TDK dictionary, history. Your own API keys are entered on the phone, never built in | not used |
 | **BelleMusic** | `apps/BelleMusic` | Music player for the s60tube music service used by MIDPlay (YouTube Music, NhacCuaTui, Spotify, SoundCloud): discover, search, playlists, favourites, downloads, queue, sleep timer, headset keys | not used |
 | **BelleKitap** | `apps/BelleKitap` | E-book reader for EPUB and TXT: themes, fonts, table of contents, bookmarks, resume. Search and download free books from Project Gutenberg (EPUB, many languages) and Turkish Wikisource | not used |
 
@@ -52,11 +43,11 @@ Screenshots of each app: `screenshots/<App>/`.
 
 ## Quick start
 
-1. **Server** – on any small Ubuntu/Debian VPS: copy `server/` and run `bash install.sh`.
-   It prints your server address and password. Details: [docs/SERVER_SETUP.md](docs/SERVER_SETUP.md).
-2. **Phone** – install the `.sis` files from the Releases page (self-signed; see
-   [docs/INSTALLING.md](docs/INSTALLING.md)). Open an app → Settings → enter the server address
-   (`http://your-server-ip`) and the password.
+1. **Phone** – install the `.sis` files from the Releases page or https://msahincelen.xyz (self-signed; see
+   [docs/INSTALLING.md](docs/INSTALLING.md)). Apps marked *not used* in the table work right away.
+2. **Server** (only for the apps marked *required* / *optional*) – on any small Ubuntu/Debian VPS copy
+   `server/` and run `bash install.sh`; it prints your server address and password
+   ([docs/SERVER_SETUP.md](docs/SERVER_SETUP.md)). Enter both in the app's Settings.
 3. **WhatsApp** – open WhatsBelle, type your number, scan the QR code with the phone that has WhatsApp
    (*Linked devices → Link a device*).
 
@@ -95,10 +86,10 @@ the apps that have a problem, write what you did and what happened next to each 
 Personal project, developed and tested on a Nokia E6-00 with Belle Refresh (111.140.0058). Other
 Symbian^3/Anna/Belle phones with Qt 4.7.4+ should work, but the layouts target 640×480.
 
-These apps are **not affiliated** with WhatsApp, Google, YouTube, OpenAI, Anthropic, xAI or Nokia.
+These apps are **not affiliated** with WhatsApp, Telegram, Google, YouTube, OpenAI, Anthropic, xAI or Nokia.
 Using unofficial clients may violate a service's terms; use at your own risk.
 
 ## License
 
-GPL-3.0 — see [LICENSE](LICENSE) (WhatsBelle links the GPL-3.0 Pigler client library). BelleWidgets ships
-Nokia's prebuilt `HSWidgetPlugin.dll`, see [THIRD_PARTY.md](THIRD_PARTY.md).
+GPL-3.0 — see [LICENSE](LICENSE) (WhatsBelle, BelleMail and BelleGram link the GPL-3.0 Pigler client
+library). BelleWidgets includes Nokia's prebuilt `HSWidgetPlugin.dll`, see [THIRD_PARTY.md](THIRD_PARTY.md).

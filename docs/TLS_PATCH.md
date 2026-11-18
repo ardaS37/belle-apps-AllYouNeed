@@ -1,12 +1,13 @@
 # TLS 1.2 / 1.3 on Symbian Belle
 
 Out of the box Symbian Belle only speaks SSL 3.0 / TLS 1.0 with old cipher suites. Practically every modern
-HTTPS site and API refuses that. The apps in this repository are built so that **nothing requires TLS**:
-they talk plain HTTP to your own server, and the server makes the HTTPS calls. Installing the community TLS
-patches is optional, but it unlocks extra features:
+HTTPS site and API refuses that. Apps that work through your own server let the server make the HTTPS
+calls. Apps that talk to HTTPS services directly need the **Qt TLS 1.2 patch** below; for the others it
+unlocks extra features:
 
 | App | Without the patch | With the patch |
 |---|---|---|
+| BelleMail, BelleCeviri, BelleKitap, BelleCast (HTTPS streams) | mail providers, translation services, Project Gutenberg and HTTPS radio streams refuse the connection | work |
 | ApiLauncher | AI calls go through your server (keys stored there) | *Direct (HTTPS)* mode: phone → provider, keys stay on the phone |
 | Belle Maps | address search through your server (option in Settings) | direct Photon/Nominatim search; HTTPS tile servers |
 | Belle Files | Drive through your server | *Google direct* mode with your own OAuth client |

@@ -1,6 +1,6 @@
 # Server setup
 
-The server (`server/`) is a single Node.js process. It serves every phone app over plain HTTP and keeps
+The server (`server/`) is a single Node.js process. It serves the phone apps that need it (over HTTP, or HTTPS behind Caddy with a domain) and keeps
 the heavy sessions (WhatsApp Web in headless Chrome, IMAP, Google APIs, video conversion) on its side.
 
 > Türkçe: [SUNUCU_KURULUMU.md](SUNUCU_KURULUMU.md)

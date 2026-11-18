@@ -5,12 +5,13 @@ exposing a server to the internet.
 
 ## Transport
 
-- Phones talk to the server over **plain HTTP** because stock Symbian cannot do modern TLS. Anyone on the network
-  path (public Wi-Fi, mobile operator) can read traffic, including the server password, WhatsApp messages and
-  e-mails.
-- Mitigations: use a long random password (the installer creates one), avoid untrusted Wi-Fi, and if your phone
-  has the [TLS patches](docs/TLS_PATCH.md) put HTTPS in front of the server (Caddy can do it with a domain name).
-  Desktop browsers (web panel, setup pages) should always use HTTPS if you add a domain.
+- With a domain name in front of the server (Caddy obtains the certificate) and the [Qt TLS patch](docs/TLS_PATCH.md)
+  on the phone, the apps talk to the server over **HTTPS**. Without a domain, traffic is **plain HTTP** and anyone
+  on the network path (public Wi-Fi, mobile operator) can read it, including the server password and messages.
+- The phone's built-in media player and browser cannot do modern TLS, so the media links the apps hand to them
+  (video/audio streams) always use plain HTTP.
+- Mitigations: use a long random password (the installer creates one), use a domain with HTTPS, and avoid
+  untrusted Wi-Fi. Desktop browsers (web panel, setup pages) should always use HTTPS.
 
 ## Authentication
 

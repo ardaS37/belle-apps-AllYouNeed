@@ -50,7 +50,7 @@ install on any phone. Others need a developer certificate or a hacked phone:
 ### BelleWidgets home-screen plugin
 
 `apps/BelleWidgets` deploys Nokia's prebuilt **HSWidgetPlugin.dll** (from the *Symbian-HomeScreen-Widget-QML*
-template project). The DLL is not included here; put it at `apps/BelleWidgets/bin/HSWidgetPlugin.dll` before building.
+template project). The DLL is included at `apps/BelleWidgets/bin/HSWidgetPlugin.dll`.
 
 ## Translations
 
