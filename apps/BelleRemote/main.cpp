@@ -1,4 +1,5 @@
 #include "belleadres.h"
+#include "pano.h"
 #include <QtGui/QApplication>
 #include "dil.h"
 #include "ayna.h"
@@ -31,6 +32,7 @@ int main(int argc, char *argv[])
     view.viewport()->setAttribute(Qt::WA_NoSystemBackground);
     view.engine()->addImageProvider("ekran", new EkranSaglayici(&uzak));
     view.rootContext()->setContextProperty("uzak", &uzak);
+    static Pano belPano; view.rootContext()->setContextProperty("pano", &belPano);   // Ctrl+V (kutuphane/pano)
     QObject::connect(view.engine(), SIGNAL(quit()), &app, SLOT(quit()));
     view.rootContext()->setContextProperty("dil", dil);
     view.setSource(QUrl("qrc:/qml/main.qml"));

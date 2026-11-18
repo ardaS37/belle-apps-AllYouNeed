@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hata bildir · Belle Apps</title>
+<style>
+body{font-family:system-ui,Arial,sans-serif;max-width:860px;margin:0 auto;padding:24px 16px 40px;background:#15111b;color:#f2f4f5;line-height:1.45}
+a{color:#c9a7eb}h1{margin-bottom:4px}p.alt,.en{color:#a3adb6}p.alt{margin-top:0}
+.satir{display:flex;align-items:flex-start;gap:12px;padding:10px 12px;border-radius:10px;margin:6px 0;background:#1c1624}
+.satir.secili{background:#2a2036;box-shadow:inset 0 0 0 2px #8c5cc7}
+.satir label{flex:0 0 190px;display:flex;align-items:center;gap:10px;cursor:pointer;font-weight:600;padding-top:6px}
+.satir input[type=checkbox]{width:20px;height:20px;accent-color:#a77be0;margin:0}
+.satir textarea{flex:1;min-height:70px;resize:vertical;font:inherit;color:#f2f4f5;background:#120e17;border:1px solid #4a3d5a;border-radius:8px;padding:8px 10px;display:none}
+.satir.secili textarea{display:block}
+.alan{margin:16px 0 0}.alan label{display:block;font-weight:600;margin-bottom:4px}
+.alan input{width:100%;box-sizing:border-box;font:inherit;color:#f2f4f5;background:#120e17;border:1px solid #4a3d5a;border-radius:8px;padding:9px 10px}
+.alt-cubuk{position:sticky;bottom:0;margin-top:22px;padding:14px 0;background:linear-gradient(transparent,#15111b 30%)}
+button{font:inherit;font-weight:700;font-size:1.05em;border:0;border-radius:10px;padding:13px 22px;background:#8c5cc7;color:#fff;cursor:pointer;width:100%}
+button:disabled{opacity:.55;cursor:default}
+#durum{margin-top:10px;min-height:1.4em}.ok{color:#8fe3a0}.hata{color:#ff9a9a}
+@media (max-width:560px){.satir{flex-direction:column;gap:6px}.satir label{flex:none}.satir textarea{width:100%;box-sizing:border-box}}
+</style>
+</head>
+<body>
+<p><a href="/">‹ Belle Apps</a></p>
+<h1>Hata bildir</h1>
+<p class="alt">Report a bug</p>
+<p>Sorun yaşadığınız uygulamaları işaretleyin; her birinin yanında açılan kutuya ne yaptığınızı ve ne olduğunu yazın. Hepsini en alttaki düğmeyle birlikte gönderin.<br>
+<span class="en">Tick the apps that have a problem, describe what you did and what happened in the box next to each one, then send them all with the button at the bottom.</span></p>
+
+<form id="form" onsubmit="return gonder()">
+<div id="liste"></div>
+
+<div class="alan">
+  <label for="telefon">Telefon ve yazılım <span class="en">· Phone and firmware</span> (isteğe bağlı / optional)</label>
+  <input id="telefon" maxlength="120" placeholder="Nokia E6, Belle Refresh 111.140.0058">
+</div>
+<div class="alan">
+  <label for="iletisim">Size nasıl ulaşalım? <span class="en">· How can we reach you?</span> (isteğe bağlı / optional)</label>
+  <input id="iletisim" maxlength="200" placeholder="e-posta, Telegram…">
+</div>
+
+<div class="alt-cubuk">
+  <button id="gonderBtn" type="submit">Tümünü gönder · Send all</button>
+  <div id="durum"></div>
+</div>
+</form>
+
+<script>
+var UYGULAMALAR = ["WhatsBelle", "BelleMail", "BelleGram", "BelleTube", "BelleMusic", "Belle Files", "ApiLauncher", "Belle Browser",
+    "Belle Maps", "Belle Remote", "BelleCast", "BelleKitap", "BelleCeviri", "BelleVideo", "BelleWidgets", "BelleMiddleKey",
+    "BelleAppCenter", "Web sitesi", "Diğer"];
+var liste = document.getElementById("liste");
+for (var i = 0; i < UYGULAMALAR.length; i++) {
+    var ad = UYGULAMALAR[i];
+    var s = document.createElement("div");
+    s.className = "satir";
+    s.innerHTML = '<label><input type="checkbox"> <span></span></label><textarea maxlength="4000"></textarea>';
+    s.getElementsByTagName("span")[0].appendChild(document.createTextNode(ad));
+    var ta = s.getElementsByTagName("textarea")[0];
+    ta.placeholder = "Ne yaptınız, ne oldu? Uygulama sürümü? · What did you do, what happened? App version?";
+    s.setAttribute("data-uygulama", ad);
+    (function (satir) {
+        var kutu = satir.getElementsByTagName("input")[0];
+        kutu.onchange = function () {
+            satir.className = kutu.checked ? "satir secili" : "satir";
+            if (kutu.checked) satir.getElementsByTagName("textarea")[0].focus();
+        };
+    })(s);
+    liste.appendChild(s);
+}
+
+function durum(m, sinif) { var d = document.getElementById("durum"); d.className = sinif || ""; d.textContent = m; }
+
+function gonder() {
+    var satirlar = liste.getElementsByTagName("div"), raporlar = [], eksik = [];
+    for (var i = 0; i < satirlar.length; i++) {
+        var s = satirlar[i];
+        if (!s.getElementsByTagName("input")[0].checked) continue;
+        var m = s.getElementsByTagName("textarea")[0].value.replace(/^\s+|\s+$/g, "");
+        if (m === "") eksik.push(s.getAttribute("data-uygulama"));
+        else raporlar.push({ uygulama: s.getAttribute("data-uygulama"), mesaj: m });
+    }
+    if (eksik.length) { durum("Lütfen şu uygulamalar için ne olduğunu yazın: " + eksik.join(", ") + " · Please describe the problem for these apps.", "hata"); return false; }
+    if (!raporlar.length) { durum("En az bir uygulama seçin. · Select at least one app.", "hata"); return false; }
+    var btn = document.getElementById("gonderBtn");
+    btn.disabled = true;
+    durum("Gönderiliyor… · Sending…");
+    var x = new XMLHttpRequest();
+    x.onreadystatechange = function () {
+        if (x.readyState !== 4) return;
+        btn.disabled = false;
+        var j = {};
+        try { j = JSON.parse(x.responseText); } catch (e) { }
+        if (x.status === 200 && j.ok) {
+            durum("Teşekkürler! " + j.adet + " bildirim alındı. · Thank you! " + j.adet + " report(s) received.", "ok");
+            for (var i = 0; i < satirlar.length; i++) {
+                satirlar[i].getElementsByTagName("input")[0].checked = false;
+                satirlar[i].getElementsByTagName("textarea")[0].value = "";
+                satirlar[i].className = "satir";
+            }
+        } else {
+            durum((j.error || "Gönderilemedi") + " (" + x.status + ")", "hata");
+        }
+    };
+    x.open("POST", "/api/hata-bildir");
+    x.setRequestHeader("Content-Type", "application/json");
+    x.send(JSON.stringify({ raporlar: raporlar, telefon: document.getElementById("telefon").value, iletisim: document.getElementById("iletisim").value }));
+    return false;
+}
+</script>
+</body>
+</html>

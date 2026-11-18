@@ -1,4 +1,5 @@
 #include "pil.h"
+#include "pano.h"
 #include "dil.h"
 
 #include <QtCore/QDir>
@@ -1102,6 +1103,7 @@ void Ekran::show()
         m_view->viewport()->setAttribute(Qt::WA_OpaquePaintEvent);
         m_view->viewport()->setAttribute(Qt::WA_NoSystemBackground);
         m_view->rootContext()->setContextProperty("pil", m_pil);
+        static Pano belPano; m_view->rootContext()->setContextProperty("pano", &belPano);   // Ctrl+V (kutuphane/pano)
         m_view->rootContext()->setContextProperty("ui", this);
     m_view->rootContext()->setContextProperty("dil", Dil::tek());
         m_view->setSource(QUrl("qrc:/qml/main.qml"));

@@ -45,3 +45,6 @@ symbian {
 include($$PWD/../kutuphane/harita/harita.pri)
 # Dil destegi (Turkce / English): kutuphane/dil
 include($$PWD/../kutuphane/dil/dil.pri)
+
+# Ortak pano yardimcisi (Ctrl+V: QML paste() E6da calismiyor)
+include($$PWD/../kutuphane/pano/pano.pri)

@@ -560,7 +560,7 @@ Rectangle {
                 onAccepted: sonraki.clicked()
                 Keys.onPressed: {
                     // Ctrl+V yapistir / Ctrl+A tumunu sec (E6: Ctrl+V "7" ya da kod 22 gonderir)
-                    if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { bulAlan.paste(); event.accepted = true; return; }
+                    if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { pano.yapistir(bulAlan); event.accepted = true; return; }
                     if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_A || event.text === "a")) || event.text === "\u0001") { bulAlan.selectAll(); event.accepted = true; return; }
                     if (event.text === "\r" || event.key === Qt.Key_Select) { sonraki.clicked(); event.accepted = true; }
                     else if (event.key === Qt.Key_Escape) { kapatB.clicked(); event.accepted = true; }

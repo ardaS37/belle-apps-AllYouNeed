@@ -34,7 +34,7 @@ Rectangle {
         onAccepted: root.accepted()
         Keys.onPressed: {
             // Ctrl+V yapistir / Ctrl+A tumunu sec (E6: Ctrl+V "7" ya da kod 22 gonderir)
-            if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { input.paste(); event.accepted = true; return; }
+            if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { pano.yapistir(input); event.accepted = true; return; }
             if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_A || event.text === "a")) || event.text === "\u0001") { input.selectAll(); event.accepted = true; return; }
             if (event.key === Qt.Key_Escape || event.key === Qt.Key_Context2) { root.escaped(); event.accepted = true; }
             else if (event.key === Qt.Key_Down || event.key === Qt.Key_Up || event.key === Qt.Key_Tab) { root.tabbed(); event.accepted = true; }

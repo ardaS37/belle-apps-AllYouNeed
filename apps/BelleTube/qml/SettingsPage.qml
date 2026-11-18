@@ -80,7 +80,7 @@ Rectangle {
                         onClicked: {
                             keyField.text = "";
                             keyField.input.forceActiveFocus();
-                            keyField.input.paste();
+                            pano.yapistir(keyField.input);
                             keyField.text = keyField.text.replace(/\s+/g, "");
                             if (keyField.text === "") app.showToast(qsTr("Panoda metin yok"));
                         }

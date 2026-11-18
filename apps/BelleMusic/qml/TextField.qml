@@ -8,6 +8,7 @@ Rectangle {
     property string placeholder: ""
     property int fontSize: 20
     property string icon: ""
+    property bool yapistirDugmesi: true   // sagda "yapistir" simgesi (E6'da Ctrl+V her zaman ulasmiyor)
     signal accepted
     signal downPressed
 
@@ -30,10 +31,10 @@ Rectangle {
         id: input
         // Ctrl+V yapistir / Ctrl+A tumunu sec (E6: Ctrl+V "7" ya da kod 22 gonderir)
         Keys.onPressed: {
-            if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { input.paste(); event.accepted = true; }
+            if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { pano.yapistir(input); event.accepted = true; }
             else if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_A || event.text === "a")) || event.text === "\u0001") { input.selectAll(); event.accepted = true; }
         }
-        anchors { left: root.icon !== "" ? ic.right : parent.left; leftMargin: root.icon !== "" ? 10 : 20; right: parent.right; rightMargin: 20; verticalCenter: parent.verticalCenter }
+        anchors { left: root.icon !== "" ? ic.right : parent.left; leftMargin: root.icon !== "" ? 10 : 20; right: yapistirSimge.visible ? yapistirSimge.left : parent.right; rightMargin: yapistirSimge.visible ? 4 : 20; verticalCenter: parent.verticalCenter }
         font.pixelSize: root.fontSize
         color: app.textPrimary
         selectByMouse: true
@@ -44,6 +45,14 @@ Rectangle {
         Keys.onLeftPressed: event.accepted = input.text.length > 0 && input.cursorPosition === 0
         Keys.onRightPressed: event.accepted = input.text.length > 0 && input.cursorPosition >= input.text.length
         Keys.onDownPressed: { root.downPressed(); event.accepted = true; }
+    }
+    // Panodaki metni imlecin yerine yapistirir (C++ kutuphane/pano)
+    IconButton {
+        id: yapistirSimge
+        visible: root.yapistirDugmesi
+        anchors { right: parent.right; rightMargin: 6; verticalCenter: parent.verticalCenter }
+        width: 44; height: 44; iconSize: 24; icon: "paste"; tone: "g"
+        onClicked: { if (!pano.yapistir(input)) app.showToast(qsTr("Pano boş")); input.forceActiveFocus(); }
     }
     Text {
         anchors { left: input.left; right: input.right; verticalCenter: parent.verticalCenter }

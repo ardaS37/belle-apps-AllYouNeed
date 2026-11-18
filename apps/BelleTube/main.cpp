@@ -1,4 +1,5 @@
 #include "belleadres.h"
+#include "pano.h"
 #include <QtGui/QApplication>
 #include "dil.h"
 #include "ayna.h"
@@ -36,6 +37,7 @@ int main(int argc, char *argv[])
     view.viewport()->setAttribute(Qt::WA_OpaquePaintEvent);
     view.viewport()->setAttribute(Qt::WA_NoSystemBackground);
     view.rootContext()->setContextProperty("tube", &tube);
+    static Pano belPano; view.rootContext()->setContextProperty("pano", &belPano);   // Ctrl+V (kutuphane/pano)
     view.rootContext()->setContextProperty("volumeKeys", &volumeKeys);
     view.rootContext()->setContextProperty("sys", &sys);
     QObject::connect(view.engine(), SIGNAL(quit()), &app, SLOT(quit()));

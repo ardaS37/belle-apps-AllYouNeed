@@ -1,5 +1,6 @@
 // BelleKitap: EPUB ve TXT e-kitap okuyucu — Nokia E6 (Symbian Belle)
 #include <QtGui/QApplication>
+#include "pano.h"
 #include <QtDeclarative/QDeclarativeView>
 #include <QtDeclarative/QDeclarativeEngine>
 #include <QtDeclarative/QDeclarativeContext>
@@ -53,6 +54,7 @@ int main(int argc, char *argv[])
     view.viewport()->setAttribute(Qt::WA_OpaquePaintEvent);
     view.viewport()->setAttribute(Qt::WA_NoSystemBackground);
     view.rootContext()->setContextProperty(QString::fromLatin1("kt"), &kt);
+    static Pano belPano; view.rootContext()->setContextProperty("pano", &belPano);   // Ctrl+V (kutuphane/pano)
     view.rootContext()->setContextProperty(QString::fromLatin1("dil"), dil);
     QObject::connect(view.engine(), SIGNAL(quit()), &app, SLOT(quit()));
     view.setSource(QUrl(QString::fromLatin1("qrc:/qml/main.qml")));

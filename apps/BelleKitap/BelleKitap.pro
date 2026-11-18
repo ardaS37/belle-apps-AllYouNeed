@@ -24,3 +24,6 @@ symbian {
 }
 
 include($$PWD/../kutuphane/dil/dil.pri)
+
+# Ortak pano yardimcisi (Ctrl+V: QML paste() E6da calismiyor)
+include($$PWD/../kutuphane/pano/pano.pri)

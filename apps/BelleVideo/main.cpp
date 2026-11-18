@@ -1,4 +1,5 @@
 #include <QtGui/QApplication>
+#include "pano.h"
 #include "dil.h"
 #include "ayna.h"
 #include <QtDeclarative/QDeclarativeView>
@@ -34,6 +35,7 @@ int main(int argc, char *argv[])
     view.viewport()->setAttribute(Qt::WA_OpaquePaintEvent);
     view.viewport()->setAttribute(Qt::WA_NoSystemBackground);
     view.rootContext()->setContextProperty("lib", &lib);
+    static Pano belPano; view.rootContext()->setContextProperty("pano", &belPano);   // Ctrl+V (kutuphane/pano)
     view.rootContext()->setContextProperty("keys", &keys);
     view.rootContext()->setContextProperty("sys", &sys);
     QObject::connect(view.engine(), SIGNAL(quit()), &app, SLOT(quit()));

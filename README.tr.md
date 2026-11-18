@@ -73,9 +73,8 @@ kurar ve günceller).
 Belle Apps **sürekli geliştirilmektedir**: yeni uygulamalar, düzeltmeler ve özellikler gelmeye devam ediyor;
 güncellemeler Releases sayfasında, https://msahincelen.xyz adresinde ve telefondaki BelleAppCenter'da yayınlanır.
 
-**Bir hata mı buldunuz ya da öneriniz mi var?** Lütfen bildirin:
-<https://github.com/msahincelen/belle-apps-AllYouNeed/issues> — uygulamanın adını ve sürümünü, ne yaptığınızı ve
-ne olduğunu yazın (ekran görüntüsü ya da uygulamanın günlüğü çok yardımcı olur).
+**Bir hata mı buldunuz ya da öneriniz mi var?** Hata bildir sayfasından bildirin: **<https://msahincelen.xyz/hata/>** —
+sorunlu uygulamaları işaretleyin, her birinin yanına ne yaptığınızı ve ne olduğunu yazın, hepsini tek seferde gönderin.
 
 **Projeye destek olun** — bu uygulamalar işinize yarıyorsa bağışınız geliştirmenin sürmesine yardım eder:
 

@@ -495,11 +495,30 @@ router.get("/muzik/search", async (req, res) => {
     catch (e) { muzikHata(res, e, "Liste aranamadı"); }
 });
 
+// YouTube Music albumu (MPREb_...) -> albumun oynatma listesi (OLAK5uy_...)
+const albumOnbellek = {};
+async function albumListesi(browseId) {
+    if (albumOnbellek[browseId]) return albumOnbellek[browseId];
+    const r = await fetch("https://music.youtube.com/youtubei/v1/browse?prettyPrint=false", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "User-Agent": "Mozilla/5.0", "Origin": "https://music.youtube.com", "Referer": "https://music.youtube.com/" },
+        body: JSON.stringify({ context: { client: { clientName: "WEB_REMIX", clientVersion: "1.20261001.01.00", hl: "tr", gl: "TR" } }, browseId })
+    });
+    if (!r.ok) throw new Error(`YouTube Music HTTP ${r.status}`);
+    const m = JSON.stringify(await r.json()).match(/OLAK5uy_[A-Za-z0-9_-]+/);
+    if (!m) throw new Error("albüm listesi bulunamadı");
+    albumOnbellek[browseId] = m[0];
+    return m[0];
+}
+
 router.get("/muzik/tracks", async (req, res) => {
-    const m = /^yt:([A-Za-z0-9_-]{10,})$/.exec("" + (req.query.listkey || ""));
-    if (!m) return res.status(400).json({ error: "Geçersiz liste", Items: [] });
+    // Kabul edilen bicimler: yt:<id>, ytmusic:playlist:[VL]<id> (s60tube/eski kayitlar), ytmusic:album:MPREb_...
+    const anahtar = "" + (req.query.listkey || "");
+    const m = /^(?:yt|ytmusic:playlist):(?:VL)?([A-Za-z0-9_-]{10,})$/.exec(anahtar);
+    const a = /^(?:yt|ytmusic):album:(MPREb_[A-Za-z0-9_-]+)$/.exec(anahtar);
+    if (!m && !a) return res.status(400).json({ error: "Geçersiz liste", Items: [] });
     try {
-        const id = m[1];
+        const id = m ? m[1] : await albumListesi(a[1]);
         // RD (karisik) listeleri sayfa olarak acilmaz: "next" ile ilk sarkidan okunur
         const veri = id.indexOf("RD") === 0 ? await innertube("next", { playlistId: id }) : await innertube("browse", { browseId: "VL" + id });
         res.json({ Items: listeSarkilari(veri, 100) });

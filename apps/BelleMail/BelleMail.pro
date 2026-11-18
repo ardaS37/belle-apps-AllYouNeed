@@ -37,3 +37,6 @@ include($$PWD/../kutuphane/dil/dil.pri)
 
 # Kok sertifikalar (TLS dogrulamasi icin; sunucu adresi artik kullanilmiyor)
 include(../kutuphane/sunucu/sunucu.pri)
+
+# Ortak pano yardimcisi (Ctrl+V: QML paste() E6da calismiyor)
+include($$PWD/../kutuphane/pano/pano.pri)

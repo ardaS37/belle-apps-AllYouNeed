@@ -453,7 +453,7 @@ Rectangle {
             else if (k === "redo") root.redo();
             else if (k === "copy") { edit.copy(); app.showToast(qsTr("Kopyalandı")); }
             else if (k === "cut") edit.cut();
-            else if (k === "paste") edit.paste();
+            else if (k === "paste") pano.yapistir(edit);
             else if (k === "selall") edit.selectAll();
             else if (k === "copyall") root.copyAll();
             else if (k === "date") root.insertText(fs.now("dd.MM.yyyy HH:mm"));

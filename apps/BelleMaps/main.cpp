@@ -1,4 +1,5 @@
 #include "belleadres.h"
+#include "pano.h"
 #include <QtGui/QApplication>
 #include "dil.h"
 #include <QtDeclarative/QDeclarativeView>
@@ -50,6 +51,7 @@ int main(int argc, char *argv[])
     view.viewport()->setAttribute(Qt::WA_OpaquePaintEvent);
     view.viewport()->setAttribute(Qt::WA_NoSystemBackground);
     view.rootContext()->setContextProperty("arac", &arac);
+    static Pano belPano; view.rootContext()->setContextProperty("pano", &belPano);   // Ctrl+V (kutuphane/pano)
     view.rootContext()->setContextProperty("gps", &gps);
     view.rootContext()->setContextProperty("cevrimdisi", &cevrimdisi);
     view.rootContext()->setContextProperty("gunluk", &gunluk);

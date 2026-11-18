@@ -37,7 +37,7 @@ Rectangle {
             Row {
                 anchors.right: parent.right
                 spacing: 10
-                Btn { text: qsTr("Yapıştır"); icon: "plus"; onClicked: { field.focusInput(); field.input.paste(); } }
+                Btn { text: qsTr("Yapıştır"); icon: "plus"; onClicked: { field.focusInput(); pano.yapistir(field.input); } }
                 Btn { text: qsTr("İptal"); onClicked: { app.promptOpen = false; app.focusTop(); } }
                 Btn { text: root.okLabel; primary: true; onClicked: root.accept() }
             }

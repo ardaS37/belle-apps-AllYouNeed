@@ -16,6 +16,7 @@ Item {
     property int position: aud.position
     property int duration: aud.duration > 0 ? aud.duration : (current ? current.duration * 1000 : 0)
     property int lastPos: 0
+    property bool hazirlaniyor: false   // sunucu yeni sarkiyi hazirlarken eski sarki calmaya devam eder; konumu yeni sarkiya yazilmasin
     property int attempts: 0               // ayni sarkida art arda hata sayisi
     property bool directThisTrack: false   // aktarici sorun cikarirsa bu sarkida dogrudan dene
     property string status: ""
@@ -134,11 +135,13 @@ Item {
             if (!forceRefresh && app.api().isBelle(t.url)) {
                 // Kisisel: sunucu sesi ilk kez hazirlarken (30-60 sn) oynatici zaman asimina dusmesin diye once beklenir
                 status = qsTr("Sunucuda hazırlanıyor...");
+                hazirlaniyor = true;
                 app.api().prepare(t.url, function () {
                     if (!current || current.key !== key) return;
                     go(app.api().mediaUrl(t.url), false);
                 }, function (msg) {
                     if (!current || current.key !== key) return;
+                    hazirlaniyor = false;
                     failTrack(msg);
                 });
                 return;
@@ -177,6 +180,7 @@ Item {
         if (c && c.key === key) { var n = app.plain(c); n.url = url; current = n; }
     }
     function go(src, isLocal) {
+        hazirlaniyor = false;
         status = "";
         aud.stop();
         aud.source = "";
@@ -311,7 +315,7 @@ Item {
             }
             if (status === Audio.InvalidMedia) player.onPlaybackError(qsTr("geçersiz ortam"));
         }
-        onPositionChanged: if (position > 0) player.lastPos = position
+        onPositionChanged: if (position > 0 && !player.hazirlaniyor) player.lastPos = position
         onError: if (error !== Audio.NoError) player.onPlaybackError(errorString)
     }
     Connections { target: app; onVolumeChanged: aud.volume = app.volume / 100 }

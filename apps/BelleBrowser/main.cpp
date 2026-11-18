@@ -1,5 +1,6 @@
 // Belle Browser — Nokia E6 (Symbian Belle) icin modern tarayici. Qt 4.7.4 / QML 1.1 / QtWebKit.
 #include "belleadres.h"
+#include "pano.h"
 #include <QtGui/QApplication>
 #include "dil.h"
 #include "ayna.h"
@@ -93,6 +94,7 @@ int main(int argc, char *argv[])
     tb.setGunlukYolu(gGunluk);
     Indirici indir;
     view.rootContext()->setContextProperty("tb", &tb);
+    static Pano belPano; view.rootContext()->setContextProperty("pano", &belPano);   // Ctrl+V (kutuphane/pano)
     view.rootContext()->setContextProperty("indir", &indir);
     QObject::connect(view.engine(), SIGNAL(quit()), &app, SLOT(quit()));
     gunluk("qml yukleniyor");

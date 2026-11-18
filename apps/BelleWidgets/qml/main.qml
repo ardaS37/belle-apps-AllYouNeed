@@ -582,7 +582,7 @@ Rectangle {
                     onAccepted: app.acceptCity()
                     Keys.onPressed: {
                         // Ctrl+V yapistir / Ctrl+A tumunu sec (E6: Ctrl+V "7" ya da kod 22 gonderir)
-                        if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { cityInput.paste(); event.accepted = true; return; }
+                        if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { pano.yapistir(cityInput); event.accepted = true; return; }
                         if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_A || event.text === "a")) || event.text === "\u0001") { cityInput.selectAll(); event.accepted = true; return; }
                         if (event.key === Qt.Key_Escape || event.key === Qt.Key_Context2) { cityBox.visible = false; keys.forceActiveFocus(); event.accepted = true; }
                         else if (event.key === Qt.Key_Select) { app.acceptCity(); event.accepted = true; }

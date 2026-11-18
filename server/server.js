@@ -75,6 +75,7 @@ app.get(/^\/(favicon\.ico|apple-touch-icon[\w-]*\.png)$/, (req, res) => res.set(
 app.get("/", (req, res) => res.redirect("/panel"));
 // Dil: JSON hata mesajlari ve HTML sayfalar istegin diline cevrilir (dil.js; BELLE_LANG / X-Lang)
 app.use(require("./dil.js").araKatman);
+app.use(require("./hata_bildir.js"));   // msahincelen.xyz/hata: web hata bildirimi (parolasiz, sinirli)
 app.use(auth);
 app.use(fileUpload({ limits: { fileSize: 16 * 1024 * 1024 } }));
 app.use(express.json({ limit: "6mb" }));   // ApiLauncher fotografli sohbet gecmisi icin

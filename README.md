@@ -80,9 +80,8 @@ the apps from there).
 Belle Apps is **actively and continuously developed**: new apps, fixes and features keep coming, and
 updates appear on the Releases page, on https://msahincelen.xyz and in BelleAppCenter on the phone.
 
-**Found a bug or have an idea?** Please open an issue:
-<https://github.com/msahincelen/belle-apps-AllYouNeed/issues> — write the app name and version, what you did
-and what happened (a screenshot or the app's log helps).
+**Found a bug or have an idea?** Report it on the bug report page: **<https://msahincelen.xyz/hata/>** — tick
+the apps that have a problem, write what you did and what happened next to each one, and send them all at once.
 
 **Support the project** — if these apps are useful to you, a donation helps keep them going:
 

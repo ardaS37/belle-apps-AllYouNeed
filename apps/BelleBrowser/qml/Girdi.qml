@@ -58,7 +58,7 @@ Rectangle {
                     onAccepted: root.tamam()
                     Keys.onPressed: {
                         // Ctrl+V yapistir / Ctrl+A tumunu sec (E6: Ctrl+V "7" ya da kod 22 gonderir)
-                        if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { alan.paste(); event.accepted = true; return; }
+                        if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { pano.yapistir(alan); event.accepted = true; return; }
                         if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_A || event.text === "a")) || event.text === "\u0001") { alan.selectAll(); event.accepted = true; return; }
                         if (event.text === "\r" || event.text === "\n" || event.key === Qt.Key_Select) { root.tamam(); event.accepted = true; }
                         else if (event.key === Qt.Key_Escape) { root.kapat(); event.accepted = true; }

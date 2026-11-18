@@ -370,7 +370,7 @@ Rectangle {
             id: alan
             // Ctrl+V yapistir / Ctrl+A tumunu sec (E6: Ctrl+V "7" ya da kod 22 gonderir)
             Keys.onPressed: {
-                if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { alan.paste(); event.accepted = true; }
+                if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { pano.yapistir(alan); event.accepted = true; }
                 else if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_A || event.text === "a")) || event.text === "\u0001") { alan.selectAll(); event.accepted = true; }
             }
             anchors { left: menuDugme.right; leftMargin: 8; right: araD.left; rightMargin: 4; verticalCenter: parent.verticalCenter }
@@ -643,7 +643,7 @@ Rectangle {
                         id: adAlan
                         // Ctrl+V yapistir / Ctrl+A tumunu sec (E6: Ctrl+V "7" ya da kod 22 gonderir)
                         Keys.onPressed: {
-                            if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { adAlan.paste(); event.accepted = true; }
+                            if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { pano.yapistir(adAlan); event.accepted = true; }
                             else if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_A || event.text === "a")) || event.text === "\u0001") { adAlan.selectAll(); event.accepted = true; }
                         }
                         anchors { left: parent.left; right: parent.right; leftMargin: 12; rightMargin: 12; verticalCenter: parent.verticalCenter }
@@ -724,7 +724,7 @@ Rectangle {
                     TextInput { id: sunucuAlan
                         // Ctrl+V yapistir / Ctrl+A tumunu sec (E6: Ctrl+V "7" ya da kod 22 gonderir)
                         Keys.onPressed: {
-                            if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { sunucuAlan.paste(); event.accepted = true; }
+                            if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { pano.yapistir(sunucuAlan); event.accepted = true; }
                             else if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_A || event.text === "a")) || event.text === "\u0001") { sunucuAlan.selectAll(); event.accepted = true; }
                         }
                         anchors { fill: parent; leftMargin: 12; rightMargin: 12; topMargin: 11 } font.pixelSize: 19; color: app.cYazi } }
@@ -733,7 +733,7 @@ Rectangle {
                     TextInput { id: anahtarAlan
                         // Ctrl+V yapistir / Ctrl+A tumunu sec (E6: Ctrl+V "7" ya da kod 22 gonderir)
                         Keys.onPressed: {
-                            if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { anahtarAlan.paste(); event.accepted = true; }
+                            if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { pano.yapistir(anahtarAlan); event.accepted = true; }
                             else if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_A || event.text === "a")) || event.text === "\u0001") { anahtarAlan.selectAll(); event.accepted = true; }
                         }
                         anchors { fill: parent; leftMargin: 12; rightMargin: 12; topMargin: 11 } font.pixelSize: 19; color: app.cYazi; echoMode: TextInput.Password } }

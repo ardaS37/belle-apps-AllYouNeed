@@ -1,4 +1,5 @@
 #include "belleadres.h"
+#include "pano.h"
 #include <QtGui/QApplication>
 #include "dil.h"
 #include <QtDeclarative/QDeclarativeView>
@@ -56,6 +57,7 @@ int main(int argc, char *argv[])
     view.viewport()->setAttribute(Qt::WA_NoSystemBackground);
     view.engine()->setNetworkAccessManagerFactory(&namFactory);
     view.rootContext()->setContextProperty("fs", &fs);
+    static Pano belPano; view.rootContext()->setContextProperty("pano", &belPano);   // Ctrl+V (kutuphane/pano)
     view.rootContext()->setContextProperty("drive", &drive);
     view.rootContext()->setContextProperty("isci", &isci);
     view.rootContext()->setContextProperty("yedek", &yedek);

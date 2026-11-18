@@ -864,7 +864,7 @@ Rectangle {
                         onCursorRectangleChanged: yaziFlick.goster(cursorRectangle)
                         Keys.onPressed: {
                             // Ctrl+V yapistir / Ctrl+A tumunu sec (E6: Ctrl+V "7" ya da kod 22 gonderir)
-                            if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { yaziInput.paste(); event.accepted = true; return; }
+                            if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { pano.yapistir(yaziInput); event.accepted = true; return; }
                             if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_A || event.text === "a")) || event.text === "\u0001") { yaziInput.selectAll(); event.accepted = true; return; }
                             var k = event.key, ctrl = (event.modifiers & Qt.ControlModifier) !== 0, shift = (event.modifiers & Qt.ShiftModifier) !== 0;
                             if (k === Qt.Key_Return || k === Qt.Key_Enter || k === Qt.Key_Select || event.text === "\r" || event.text === "\n") {
@@ -1035,7 +1035,7 @@ Rectangle {
                     inputMethodHints: Qt.ImhNoPredictiveText | Qt.ImhNoAutoUppercase
                     Keys.onPressed: {
                         // Ctrl+V yapistir / Ctrl+A tumunu sec (E6: Ctrl+V "7" ya da kod 22 gonderir)
-                        if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { askInput.paste(); event.accepted = true; return; }
+                        if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { pano.yapistir(askInput); event.accepted = true; return; }
                         if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_A || event.text === "a")) || event.text === "\u0001") { askInput.selectAll(); event.accepted = true; return; }
                         var k = event.key, ctrl = (event.modifiers & Qt.ControlModifier) !== 0;
                         if (k === Qt.Key_Return || k === Qt.Key_Enter || k === Qt.Key_Select || event.text === "\r" || event.text === "\n") { app.askAccept(); event.accepted = true; }

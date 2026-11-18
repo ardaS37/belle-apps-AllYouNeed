@@ -12,10 +12,16 @@ e6.msahincelen.xyz {
 # Web sitesi + SIS dagitimi (BelleAppCenter /sis/paketler.json okur)
 msahincelen.xyz {
 	encode gzip
-	root * /var/www/msahincelen
-	file_server
-	@sis path /sis/*.sis
-	header @sis Content-Type application/vnd.symbian.install
+	# Hata bildir sayfasi (/hata/) bu uca gonderir: uygulama sunucusundaki parolasiz, sinirli uc
+	handle /api/hata-bildir* {
+		reverse_proxy 127.0.0.1:3000
+	}
+	handle {
+		root * /var/www/msahincelen
+		file_server
+		@sis path /sis/*.sis
+		header @sis Content-Type application/vnd.symbian.install
+	}
 }
 
 # Duz HTTP (yonlendirmesiz): telefonun yerlesik oynaticisi/tarayicisi TLS 1.2 bilmez,
@@ -34,3 +40,4 @@ www.msahincelen.xyz {
 	encode gzip
 	reverse_proxy 127.0.0.1:3000
 }
+

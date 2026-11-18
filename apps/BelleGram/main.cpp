@@ -1,5 +1,6 @@
 // BelleGram: Nokia E6 (Symbian Belle) icin dogrudan Telegram istemcisi. Sunucu yok: MTProto 2.0 (tg/).
 #include <QtGui/QApplication>
+#include "pano.h"
 #include <QtGui/QDesktopServices>
 #include <QtDeclarative/QDeclarativeView>
 #include <QtDeclarative/QDeclarativeEngine>
@@ -58,6 +59,7 @@ int main(int argc, char *argv[])
     view.viewport()->setAttribute(Qt::WA_OpaquePaintEvent);
     view.viewport()->setAttribute(Qt::WA_NoSystemBackground);
     view.rootContext()->setContextProperty(QString::fromLatin1("tg"), &tg);
+    static Pano belPano; view.rootContext()->setContextProperty("pano", &belPano);   // Ctrl+V (kutuphane/pano)
     view.rootContext()->setContextProperty(QString::fromLatin1("dil"), dil);
     view.rootContext()->setContextProperty(QString::fromLatin1("cihaz"), &cihaz);
     view.rootContext()->setContextProperty(QString::fromLatin1("gps"), &gps);

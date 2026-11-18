@@ -3,6 +3,7 @@
 // Arka planda acik kalirsa yeni postalari belirli araliklarla denetler ve bildirir (Pigler + kose kutusu).
 
 #include "belleadres.h"
+#include "pano.h"
 #include <QtGui/QApplication>
 #include <QtGui/QDesktopServices>
 #include <QtCore/QDir>
@@ -54,6 +55,7 @@ int main(int argc, char *argv[])
 
     QDeclarativeView view;
     view.rootContext()->setContextProperty("mail", &posta);
+    static Pano belPano; view.rootContext()->setContextProperty("pano", &belPano);   // Ctrl+V (kutuphane/pano)
     view.rootContext()->setContextProperty("bildirim", &bildirim);
     view.rootContext()->setContextProperty("dil", dil);
     view.setResizeMode(QDeclarativeView::SizeRootObjectToView);
