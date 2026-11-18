@@ -916,6 +916,11 @@ Rectangle {
                     }
                     TextEdit {
                         id: composer
+                        // Ctrl+V yapistir / Ctrl+A tumunu sec (E6: Ctrl+V "7" ya da kod 22 gonderir)
+                        Keys.onPressed: {
+                            if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { composer.paste(); event.accepted = true; }
+                            else if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_A || event.text === "a")) || event.text === "\u0001") { composer.selectAll(); event.accepted = true; }
+                        }
                         width: flick.width
                         wrapMode: TextEdit.Wrap
                         textFormat: TextEdit.PlainText

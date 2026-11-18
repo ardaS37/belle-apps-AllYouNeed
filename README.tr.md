@@ -68,6 +68,22 @@ kurar ve günceller).
 [TLS yaması](docs/TLS_PATCH.md) · [Pigler](docs/PIGLER.md) · [Çeviri](docs/TRANSLATING.md) ·
 [Güvenlik](SECURITY.md) · [Üçüncü taraf bileşenler](THIRD_PARTY.md)
 
+## Geliştirme, hata bildirimi ve destek
+
+Belle Apps **sürekli geliştirilmektedir**: yeni uygulamalar, düzeltmeler ve özellikler gelmeye devam ediyor;
+güncellemeler Releases sayfasında, https://msahincelen.xyz adresinde ve telefondaki BelleAppCenter'da yayınlanır.
+
+**Bir hata mı buldunuz ya da öneriniz mi var?** Lütfen bildirin:
+<https://github.com/msahincelen/belle-apps-AllYouNeed/issues> — uygulamanın adını ve sürümünü, ne yaptığınızı ve
+ne olduğunu yazın (ekran görüntüsü ya da uygulamanın günlüğü çok yardımcı olur).
+
+**Projeye destek olun** — bu uygulamalar işinize yarıyorsa bağışınız geliştirmenin sürmesine yardım eder:
+
+| | |
+|---|---|
+| Ad Soyad | Mevlüd Şahin Çelen |
+| IBAN | `TR74 0010 3000 0000 0057 9149 79` |
+
 ## Durum
 
 Kişisel proje; Belle Refresh (111.140.0058) yüklü Nokia E6-00'da geliştirilip denendi. Qt 4.7.4+ olan

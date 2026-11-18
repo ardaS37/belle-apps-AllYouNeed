@@ -368,6 +368,11 @@ Rectangle {
         }
         TextInput {
             id: alan
+            // Ctrl+V yapistir / Ctrl+A tumunu sec (E6: Ctrl+V "7" ya da kod 22 gonderir)
+            Keys.onPressed: {
+                if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { alan.paste(); event.accepted = true; }
+                else if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_A || event.text === "a")) || event.text === "\u0001") { alan.selectAll(); event.accepted = true; }
+            }
             anchors { left: menuDugme.right; leftMargin: 8; right: araD.left; rightMargin: 4; verticalCenter: parent.verticalCenter }
             font.pixelSize: 21
             color: app.cYazi
@@ -636,6 +641,11 @@ Rectangle {
                     color: app.cYuzey; border.color: adAlan.activeFocus ? "#1a73e8" : app.cCizgi; border.width: 2
                     TextInput {
                         id: adAlan
+                        // Ctrl+V yapistir / Ctrl+A tumunu sec (E6: Ctrl+V "7" ya da kod 22 gonderir)
+                        Keys.onPressed: {
+                            if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { adAlan.paste(); event.accepted = true; }
+                            else if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_A || event.text === "a")) || event.text === "\u0001") { adAlan.selectAll(); event.accepted = true; }
+                        }
                         anchors { left: parent.left; right: parent.right; leftMargin: 12; rightMargin: 12; verticalCenter: parent.verticalCenter }
                         font.pixelSize: 20; color: app.cYazi; selectByMouse: true; maximumLength: 60
                         Keys.onReturnPressed: { app.adKaydet(text); adSayfa.kapat(); }
@@ -711,10 +721,22 @@ Rectangle {
                        text: qsTr("Harita, rota ve GPS sunucusuz çalışır. Adres arama servisi (Photon) yalnızca güvenli bağlantı (TLS 1.2) kabul ediyor; telefon bunu kuramazsa arama sonuç vermez. Bu seçenek açılırsa arama, WhatsBelle'in de kullandığı kendi sunucunuz üzerinden yapılır (yalnızca aranan metin gider).") }
                 Text { text: qsTr("Sunucu adresi"); font.pixelSize: 16; color: app.cIkinci }
                 Rectangle { width: parent.width; height: 46; radius: 8; color: app.cYuzey
-                    TextInput { id: sunucuAlan; anchors { fill: parent; leftMargin: 12; rightMargin: 12; topMargin: 11 } font.pixelSize: 19; color: app.cYazi } }
+                    TextInput { id: sunucuAlan
+                        // Ctrl+V yapistir / Ctrl+A tumunu sec (E6: Ctrl+V "7" ya da kod 22 gonderir)
+                        Keys.onPressed: {
+                            if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { sunucuAlan.paste(); event.accepted = true; }
+                            else if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_A || event.text === "a")) || event.text === "\u0001") { sunucuAlan.selectAll(); event.accepted = true; }
+                        }
+                        anchors { fill: parent; leftMargin: 12; rightMargin: 12; topMargin: 11 } font.pixelSize: 19; color: app.cYazi } }
                 Text { text: qsTr("Sunucu parolası"); font.pixelSize: 16; color: app.cIkinci }
                 Rectangle { width: parent.width; height: 46; radius: 8; color: app.cYuzey
-                    TextInput { id: anahtarAlan; anchors { fill: parent; leftMargin: 12; rightMargin: 12; topMargin: 11 } font.pixelSize: 19; color: app.cYazi; echoMode: TextInput.Password } }
+                    TextInput { id: anahtarAlan
+                        // Ctrl+V yapistir / Ctrl+A tumunu sec (E6: Ctrl+V "7" ya da kod 22 gonderir)
+                        Keys.onPressed: {
+                            if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { anahtarAlan.paste(); event.accepted = true; }
+                            else if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_A || event.text === "a")) || event.text === "\u0001") { anahtarAlan.selectAll(); event.accepted = true; }
+                        }
+                        anchors { fill: parent; leftMargin: 12; rightMargin: 12; topMargin: 11 } font.pixelSize: 19; color: app.cYazi; echoMode: TextInput.Password } }
                 Rectangle { width: parent.width; height: 1; color: app.cCizgi }
                 Text { width: parent.width; wrapMode: Text.Wrap; font.pixelSize: 15; color: app.cIkinci
                        text: "Belle Maps 1.3.1 • Harita verisi © OpenStreetMap katkıcıları • Karolar OpenStreetMap, Esri, OpenTopoMap • Arama Photon (komoot) • Rota OSRM. Klavye: oklar kaydır, + - yakınlaş, S ara, G konumum, K katman, Y kayıtlı yerler, M menü, Enter ortadaki noktayı işaretle." }

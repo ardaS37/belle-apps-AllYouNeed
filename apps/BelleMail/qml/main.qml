@@ -266,6 +266,11 @@ Rectangle {
                 border.width: 2; border.color: searchField.activeFocus ? app.brand : "#c4c7c5"
                 TextInput {
                     id: searchField
+                    // Ctrl+V yapistir / Ctrl+A tumunu sec (E6: Ctrl+V "7" ya da kod 22 gonderir)
+                    Keys.onPressed: {
+                        if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { searchField.paste(); event.accepted = true; }
+                        else if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_A || event.text === "a")) || event.text === "\u0001") { searchField.selectAll(); event.accepted = true; }
+                    }
                     anchors { left: parent.left; right: parent.right; leftMargin: 16; rightMargin: 16; verticalCenter: parent.verticalCenter }
                     font.pixelSize: 20
                     color: app.textPrimary

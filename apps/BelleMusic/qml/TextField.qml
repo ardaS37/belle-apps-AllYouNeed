@@ -28,6 +28,11 @@ Rectangle {
     }
     TextInput {
         id: input
+        // Ctrl+V yapistir / Ctrl+A tumunu sec (E6: Ctrl+V "7" ya da kod 22 gonderir)
+        Keys.onPressed: {
+            if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { input.paste(); event.accepted = true; }
+            else if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_A || event.text === "a")) || event.text === "\u0001") { input.selectAll(); event.accepted = true; }
+        }
         anchors { left: root.icon !== "" ? ic.right : parent.left; leftMargin: root.icon !== "" ? 10 : 20; right: parent.right; rightMargin: 20; verticalCenter: parent.verticalCenter }
         font.pixelSize: root.fontSize
         color: app.textPrimary

@@ -104,6 +104,11 @@ Rectangle {
             Text { id: toL; anchors { left: parent.left; leftMargin: 16; verticalCenter: parent.verticalCenter } text: qsTr("Kime"); font.pixelSize: 17; color: app.textSecondary; width: 64 }
             TextInput {
                 id: toField
+                // Ctrl+V yapistir / Ctrl+A tumunu sec (E6: Ctrl+V "7" ya da kod 22 gonderir)
+                Keys.onPressed: {
+                    if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { toField.paste(); event.accepted = true; }
+                    else if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_A || event.text === "a")) || event.text === "\u0001") { toField.selectAll(); event.accepted = true; }
+                }
                 anchors { left: toL.right; right: parent.right; rightMargin: 16; verticalCenter: parent.verticalCenter }
                 font.pixelSize: 19; color: app.textPrimary
                 inputMethodHints: Qt.ImhEmailCharactersOnly | Qt.ImhNoAutoUppercase | Qt.ImhNoPredictiveText
@@ -119,6 +124,11 @@ Rectangle {
             Text { id: sbL; anchors { left: parent.left; leftMargin: 16; verticalCenter: parent.verticalCenter } text: qsTr("Konu"); font.pixelSize: 17; color: app.textSecondary; width: 64 }
             TextInput {
                 id: subjField
+                // Ctrl+V yapistir / Ctrl+A tumunu sec (E6: Ctrl+V "7" ya da kod 22 gonderir)
+                Keys.onPressed: {
+                    if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { subjField.paste(); event.accepted = true; }
+                    else if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_A || event.text === "a")) || event.text === "\u0001") { subjField.selectAll(); event.accepted = true; }
+                }
                 anchors { left: sbL.right; right: parent.right; rightMargin: 16; verticalCenter: parent.verticalCenter }
                 font.pixelSize: 19; color: app.textPrimary
                 KeyNavigation.up: toField
@@ -153,6 +163,9 @@ Rectangle {
             onCursorRectangleChanged: bodyFlick.ensureVisible(cursorRectangle)
             Keys.onEscapePressed: page.tryClose()
             Keys.onPressed: {
+                // Ctrl+V yapistir / Ctrl+A tumunu sec (E6: Ctrl+V "7" ya da kod 22 gonderir)
+                if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { bodyEdit.paste(); event.accepted = true; return; }
+                if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_A || event.text === "a")) || event.text === "\u0001") { bodyEdit.selectAll(); event.accepted = true; return; }
                 // Ust satirdayken yukari ok: konu alanina gec
                 if (event.key === Qt.Key_Up && cursorRectangle.y < 4) { subjField.forceActiveFocus(); event.accepted = true; }
             }

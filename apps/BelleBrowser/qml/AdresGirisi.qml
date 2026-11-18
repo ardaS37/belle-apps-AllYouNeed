@@ -58,6 +58,9 @@ Rectangle {
                 onTextChanged: if (root.visible) aramaZamani.restart()
                 onAccepted: root.git(text)
                 Keys.onPressed: {
+                    // Ctrl+V yapistir / Ctrl+A tumunu sec (E6: Ctrl+V "7" ya da kod 22 gonderir)
+                    if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { alan.paste(); event.accepted = true; return; }
+                    if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_A || event.text === "a")) || event.text === "\u0001") { alan.selectAll(); event.accepted = true; return; }
                     if (event.text === "\r" || event.text === "\n" || event.key === Qt.Key_Select) {
                         alan.focus = false; ust.forceActiveFocus();
                         if (liste.currentIndex >= 0) liste.sec(liste.currentIndex); else root.git(alan.text);

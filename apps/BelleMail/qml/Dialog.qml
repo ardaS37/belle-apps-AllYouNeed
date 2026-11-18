@@ -59,6 +59,11 @@ Rectangle {
                 border.width: 2; border.color: field.activeFocus ? app.brand : "#c4c7c5"
                 TextInput {
                     id: field
+                    // Ctrl+V yapistir / Ctrl+A tumunu sec (E6: Ctrl+V "7" ya da kod 22 gonderir)
+                    Keys.onPressed: {
+                        if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_V || event.text === "7" || event.text === "v")) || event.text === "\u0016") { field.paste(); event.accepted = true; }
+                        else if (((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_A || event.text === "a")) || event.text === "\u0001") { field.selectAll(); event.accepted = true; }
+                    }
                     anchors { left: parent.left; right: parent.right; leftMargin: 10; rightMargin: 10; verticalCenter: parent.verticalCenter }
                     font.pixelSize: 21
                     color: app.textPrimary

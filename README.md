@@ -75,6 +75,22 @@ the apps from there).
 - [Security notes](SECURITY.md)
 - [Third-party components](THIRD_PARTY.md)
 
+## Development, bug reports and support
+
+Belle Apps is **actively and continuously developed**: new apps, fixes and features keep coming, and
+updates appear on the Releases page, on https://msahincelen.xyz and in BelleAppCenter on the phone.
+
+**Found a bug or have an idea?** Please open an issue:
+<https://github.com/msahincelen/belle-apps-AllYouNeed/issues> — write the app name and version, what you did
+and what happened (a screenshot or the app's log helps).
+
+**Support the project** — if these apps are useful to you, a donation helps keep them going:
+
+| | |
+|---|---|
+| Name | Mevlüd Şahin Çelen |
+| IBAN | `TR74 0010 3000 0000 0057 9149 79` |
+
 ## Status
 
 Personal project, developed and tested on a Nokia E6-00 with Belle Refresh (111.140.0058). Other
