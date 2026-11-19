@@ -1,6 +1,7 @@
 # BelleMusic - English (araclar/dil_cikar.ps1 ile uretilir, elle duzenlemeyin)
   •  karışık	  •  shuffle
   •  telefonda	  •  on phone
+ → yeniden açınca: 	 → after restart: 
  dakika sonra duracak	 min until stop
  dk	 min
  dosya silindi	 files deleted
@@ -62,12 +63,15 @@ Bugün 	Today
 Çalıyor	Playing
 Çalma kuyruğu	Play queue
 Çıkar	Remove
+Dahili hafıza	Internal memory
+Depolama yeri	Storage location
 Doğrudan	Direct
 Dosya yazılamadı	Could not write file
 Dün 	Yesterday
 E6Muzik kitapligi	E6Muzik library
 E6Müzik 1.1	E6Music 1.1
 En son dinlediğiniz 150 şarkı	Your last 150 songs
+Ev klasörü	Home folder
 Evet, sil	Yes, delete
 Evet, temizle	Yes, clear
 Favori	Favourite
@@ -85,6 +89,7 @@ Gizle	Hide
 Göster	Show
 Günlük (son 30 kayıt)	Log (last 30 entries)
 Günlük kopyalandı	Log copied
+Harici kart	External card
 Henüz favori şarkı yok.\nŞarkıdaki ••• menüsünden ya da çoklu seçimle ekleyebilirsiniz.	No favourite songs yet.\nAdd them from a song's ••• menu or with multi-select.
 Henüz listeniz yok.	You have no lists yet.
 Henüz şarkı çalınmadı.	No songs played yet.
@@ -149,7 +154,9 @@ Listeyi sil	Delete list
 Listeyi tekrarla	Repeat list
 Müzik 	Music
 Oluştur	Create
+Otomatik	Automatic
 Oynatma	Playback
+Önbellek ve indirmeler: 	Cache and downloads: 
 Önce şarkı seçin	Select songs first
 Pano boş	Clipboard empty
 Parola kayıtlı (değiştirmek için yazın)	Password saved (type to change)
@@ -162,6 +169,7 @@ Sıradaki olarak çal	Play next
 Sıradaki şarkı: 	Next song:
 Sıradaki şarkılar temizlensin mi?	Clear upcoming songs?
 Sıradaki yap	Play next
+Sistem belleği (C:)	System memory (C:)
 Sol/sağ: sekmeler (ayrıntı sayfasında sol: geri)\nYukarı/aşağı: listede gezinme, Enter/orta tuş: aç/çal\nBoşluk: şarkı seç (çoklu seçim)\nÇalar ekranında: Boşluk/Enter çal-duraklat, sol/sağ 10 sn sar, yukarı/aşağı önceki/sonraki\nSes tuşları ve kulaklık tuşları desteklenir.	Left/right: tabs (on detail pages left: back)\nUp/down: move in lists, Enter/center key: open/play\nSpace: select song (multi-select)\nOn the player: Space/Enter play-pause, left/right seek 10 s, up/down previous/next\nVolume and headset keys are supported.
 Son aramalar	Recent searches
 Son çalınanlar	Recently played

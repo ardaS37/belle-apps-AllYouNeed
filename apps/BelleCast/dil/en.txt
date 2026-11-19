@@ -4,6 +4,8 @@
  (akış)	 (stream)
  (indirilen)	 (downloaded)
  (varsayılan)	 (default)
+ (yeniden açınca geçerli olur)	 (takes effect after restart)
+ → yeniden açınca: 	 → after restart: 
  • kaldığı yerden 	 • resume from 
  • popüler	 • popular
  bölüm	 episodes
@@ -80,6 +82,9 @@ CRLF (Windows)	CRLF (Windows)
 Çalma listesi okunuyor…	Reading playlist…
 çÇğĞıIİöÖşŞüÜâÂîÎûÛ	çÇğĞıIİöÖşŞüÜâÂîÎûÛ
 Çıkış	Exit
+Dahili hafıza	Internal memory
+Depolama yeri	Storage location
+Depolama yeri: 	Storage location: 
 Dinle	Listen
 Dinle (kaldığı yerden)	Listen (resume)
 Dinlendi olarak işaretle	Mark as played
@@ -90,6 +95,7 @@ dün 	Yesterday
 Dünyada popüler	Popular worldwide
 Ekle	Add
 Enter	Enter
+Ev klasörü	Home folder
 Favori istasyon yok.\nAra (S), ülkelere göz at ya da adres ekle (N); istasyonun … menüsünden Favorilere ekle.	No favourite stations.\nSearch (S), browse countries or add an address (N); use the station's … menu to add favourites.
 Favoriler	Favourites
 Favorilerden çıkar	Remove from favourites
@@ -109,6 +115,7 @@ Haberler	News
 Haberler yükleniyor…	Loading news…
 Haberler: RSS/Atom kaynakları, birleşik akış, okunmamış işareti, tam metin.\n\n	News: RSS/Atom sources, combined feed, unread marks, full text.\n\n
 Hakkında	About
+Harici kart	External card
 Henüz kayıt yok. Bir radyo çalarken çubuktaki kırmızı düğmeye basın.	No recordings yet. While a station plays, press the red button on the bar.
 İlk haber	First story
 İndir (çevrimdışı dinle, kaldığı yerden devam)	Download (listen offline, resume later)
@@ -151,6 +158,7 @@ Oku	Read
 Okundu say	Mark as read
 Okunmadı say	Mark as unread
 Otomatik	Automatic
+Önbellek ve indirmeler: 	Cache and downloads: 
 Önceki kanal	Previous station
 özet	summary
 Podcast	Podcasts
@@ -168,6 +176,7 @@ RSS adresiyle podcast ekle	Add podcast by RSS address
 Ses %	Volume %
 Sıraya eklendi (	Queued (
 Sil	Delete
+Sistem belleği (C:)	System memory (C:)
 Son haber	Last story
 Sonraki haber ›	Next story ›
 Sonraki kanal	Next station

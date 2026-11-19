@@ -1,4 +1,5 @@
 #include "music.h"
+#include "depo.h"
 #include "dil.h"
 #include "relayconn.h"
 
@@ -35,7 +36,7 @@ Music::Music(QObject *parent)
       m_redirects(0), m_cancelled(false), m_logLoaded(false)
 {
 #if defined(Q_OS_SYMBIAN)
-    m_dir = QDir("E:/").exists() ? "E:/Muzik" : "C:/Data/Muzik";
+    m_dir = Depo::yol("Muzik");
 #else
     m_dir = QDesktopServices::storageLocation(QDesktopServices::MusicLocation) + "/E6Muzik";
 #endif

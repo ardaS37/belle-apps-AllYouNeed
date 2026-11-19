@@ -26,6 +26,7 @@ const clients = {};
 const authenticatedClients = {};
 const qrcodes = {};
 const takilma = {};     // hazir olmadan takilan istemciler icin yeniden kurma sayaci
+const baslatmaDenemesi = {};  // initialize() hata verince tekrar deneme sayaci
 
 function clean(id) {
     return ("" + (id || "")).replace(/;interface=wifi/i, "").replace(/@c\.us$/, "").trim();
@@ -90,6 +91,7 @@ function startClient(id) {
         authenticatedClients[id] = id;
         delete qrcodes[id];
         delete takilma[id];
+        delete baslatmaDenemesi[id];
         console.log(`[${id}] oturum hazir`);
         // Kisi listesi buyuk olabilir; telefon beklemesin diye onceden hazirla
         setTimeout(() => { loadContacts(id).catch(() => { }); }, 30000);
@@ -110,7 +112,16 @@ function startClient(id) {
 
     client.initialize().catch((err) => {
         console.log(`[${id}] baslatilamadi: ${err.message}`);
-        delete clients[id];
+        if (clients[id] === client) delete clients[id];
+        // Acilista Chrome/sayfa bazen kopuyor ("frame got detached"); oturum dosyalari saglam,
+        // telefonda cihaz bagli gorunur. Birakmak yerine Chrome'u kapatip artan aralikla tekrar dene.
+        client.destroy().catch(() => { });
+        try { require("child_process").execSync("pkill -9 -f 'session-" + id + "' || true"); } catch (e) { }
+        const n = (baslatmaDenemesi[id] = (baslatmaDenemesi[id] || 0) + 1);
+        if (n > 6) { console.log(`[${id}] 6 kez baslatilamadi, birakildi`); delete baslatmaDenemesi[id]; return; }
+        const bekle = Math.min(300, 20 * n);
+        console.log(`[${id}] ${bekle} sn sonra tekrar denenecek (${n}/6)`);
+        setTimeout(() => { if (!clients[id]) startClient(id); }, bekle * 1000);
     });
 }
 

@@ -2,6 +2,7 @@
 #include "pano.h"
 #include <QtGui/QApplication>
 #include "dil.h"
+#include "depo.h"
 #include <QtDeclarative/QDeclarativeView>
 #include <QtDeclarative/QDeclarativeEngine>
 #include <QtDeclarative/QDeclarativeContext>
@@ -39,6 +40,7 @@ int main(int argc, char *argv[])
     QDir().mkpath(QString::fromLatin1("C:/Data/BelleFiles"));
     qInstallMsgHandler(qmlUyari);
     Dil *dil = Dil::kur(&app);   // Turkce / English (QML'den once)
+    Depo *depo = Depo::kur(QString::fromLatin1("BelleFiles"));   // onbellek/indirme surucusu (kutuphane/depo)
     app.setApplicationName("BelleFiles");
     QTextCodec::setCodecForCStrings(QTextCodec::codecForName("UTF-8"));
     Ayna::baslat("BelleFiles", QStringList() << "C:/Data/BelleFiles");   // ayarlar karta aynalanir
@@ -58,6 +60,7 @@ int main(int argc, char *argv[])
     view.engine()->setNetworkAccessManagerFactory(&namFactory);
     view.rootContext()->setContextProperty("fs", &fs);
     static Pano belPano; view.rootContext()->setContextProperty("pano", &belPano);   // Ctrl+V (kutuphane/pano)
+    view.rootContext()->setContextProperty("depo", depo);
     view.rootContext()->setContextProperty("drive", &drive);
     view.rootContext()->setContextProperty("isci", &isci);
     view.rootContext()->setContextProperty("yedek", &yedek);

@@ -27,7 +27,7 @@ Step-by-step notes: [TLS_PATCH.md](TLS_PATCH.md).
    and **password** (see [SERVER_SETUP.md](SERVER_SETUP.md)). The other apps work right away.
 
 Upgrading: install the new `.sis` over the old one. Settings are kept, and most apps also mirror their settings
-to the memory card (`E:\...`), so they come back automatically after a phone reset or a ROM flash.
+to a memory drive (`<drive>:\BelleYedek\Uygulamalar`, see below), so they come back automatically after a phone reset or a ROM flash.
 
 ## Packages that need more than self-signing
 
@@ -42,6 +42,25 @@ All apps follow the phone language (Turkish → Turkish, anything else → Engli
 app's settings and tap **Dil / Language**; the choice is shared by all apps (`C:\Data\E6\dil.ini`) and applies
 the next time each app starts. PC apps follow the Windows display language; put `en` or `tr` in a `dil.txt`
 file next to the `.exe` to override.
+
+## Storage location
+
+Caches, downloads and other large files go to one drive per app, chosen at start-up in this order:
+
+1. the drive the app is installed on, if it is not `C:`;
+2. the memory card (removable drive, e.g. `F:` on the E6);
+3. the internal mass memory (e.g. `E:` on the E6);
+4. `C:` (phone memory, small, so last).
+
+A drive is skipped if it is missing, read-only, has less than 2 MB free, or a test file cannot be written and read
+back (failing cards often stay visible but stop writing). To pick a drive yourself, open the app's settings and tap
+**Storage location**: Automatic → each working drive → `C:`. The choice is stored per app in `C:\Data\E6\depo.ini`
+and applies the next time the app starts. Files that are already on another drive are not moved.
+
+Available in ApiLauncher, BelleBrowser, BelleCast, BelleFiles, BelleGram, BelleKitap, BelleMail, BelleMaps,
+BelleMusic, BelleRemote, BelleTube and BelleVideo. The settings mirror uses its own fixed order: a working drive that
+already holds `BelleYedek`, otherwise memory card → mass memory → `C:`. Your own notes in Belle Files stay where they
+are.
 
 ## Optional extras
 

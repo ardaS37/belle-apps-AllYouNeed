@@ -3,6 +3,7 @@
    (V: videoya dön)	   (V: back to video)
   •  dosya bulunamadı	  •  file not found
   •  izlendi	  •  watched
+ → yeniden açınca: 	 → after restart: 
  • karışık	 • shuffle
  • tek tekrar	 • repeat one
  • tümünü tekrarla	 • repeat all
@@ -41,7 +42,9 @@ Bu dosyayı tekrarla	Repeat this file
 Bu klasörde video ya da ses dosyası yok	No video or audio files in this folder
 Buradan oynat	Play from here
 Buradan sadece ses ile çal	Play audio only from here
+Dahili hafıza	Internal memory
 'de kaldı	 — left off
+Depolama yeri	Storage location
 Dış oynatıcıda aç	Open in external player
 Doğrudan dosyadan oynat	Play directly from file
 Dosya açılamadı	Could not open file
@@ -51,6 +54,7 @@ Duraklatıldı	Paused
 Duraklatıldı: kilitte bu videonun sesi çalınamadı	Paused: this video's audio cannot play while locked
 Enter / Boşluk: oynat-duraklat   •   Sol / Sağ: geri / ileri sar (basılı tut: hızlı)\n	Enter / Space: play-pause   •   Left / Right: rewind / forward (hold: fast)\n
 Eşleşen video yok	No matching videos
+Ev klasörü	Home folder
 Evet, dosyayı sil	Yes, delete file
 Evet, temizle	Yes, clear
 Favori	Favourite
@@ -62,6 +66,7 @@ Günlüğü gizle	Hide log
 Günlüğü göster	Show log
 Hafıza kartı ve telefon belleği	Memory card and phone memory
 Hakkında	About
+Harici kart	External card
 Her dosyanın kaldığı saniyeyi hatırlar	Remembers where you left off in each file
 İndir	Download
 İndirildi: 	Downloaded:
@@ -96,9 +101,12 @@ Listeye ekle	Add to list
 Listeye eklendi (	Added to list (
 MP4 değil ya da parçalı MP4	Not MP4 or fragmented MP4
 Okuma hatası	Read error
+Oto	Auto
+Otomatik	Automatic
 Oynat	Play
 Oynatıcı tuşları	Player keys
 Oynatma sorunlarında bakmak için	For checking playback problems
+Önbellek ve indirmeler: 	Cache and downloads: 
 Sadece ses	Audio only
 Sadece ses (arka planda)	Audio only (background)
 Sadece ses çalıyor	Playing audio only
@@ -119,6 +127,7 @@ Ses: %	Volume: %
 Silindi	Deleted
 Silinemedi	Could not delete
 Silinsin mi? 	Delete?
+Sistem belleği (C:)	System memory (C:)
 Sol/sağ tuşu ve 10 sn düğmeleri	Left/right keys and the 10 s buttons
 Sonuncu dosya	Last file
 Sorun giderme: yerel sunucuyu atlar (E6'da genelde yalnızca ses gelir)	Troubleshooting: skips the local server (on the E6 usually only audio plays)

@@ -73,15 +73,73 @@ static class Ayarlar
 
     // Windows açılışında başlatma: yalnızca kullanıcı bu kutuyu işaretleyince (HKCU\...\Run)
     const string RunYol = @"Software\Microsoft\Windows\CurrentVersion\Run";
+    // Yönetici olarak çalışan bir pencere (VirtualBox, yönetici komut istemi...) öndeyken Windows (UIPI),
+    // normal yetkili programın fare/klavye girdisini sessizce yok sayar. Bu yüzden yönetici yetkisi önerilir.
+    public static bool Yonetici
+    {
+        get { try { return new System.Security.Principal.WindowsPrincipal(System.Security.Principal.WindowsIdentity.GetCurrent()).IsInRole(System.Security.Principal.WindowsBuiltInRole.Administrator); } catch { return false; } }
+    }
+
+    const string GorevAdi = "BelleRemote";
+    static bool GorevVar()
+    {
+        try
+        {
+            var psi = new System.Diagnostics.ProcessStartInfo("schtasks.exe", "/Query /TN \"" + GorevAdi + "\"") { UseShellExecute = false, CreateNoWindow = true, RedirectStandardOutput = true, RedirectStandardError = true };
+            using (var p = System.Diagnostics.Process.Start(psi)) { p.WaitForExit(5000); return p.ExitCode == 0; }
+        }
+        catch { return false; }
+    }
+    // Yönetici onayıyla (UAC) schtasks çalıştırır; onay verilmezse false
+    static bool YoneticiyleSchtasks(string arg)
+    {
+        try
+        {
+            var psi = new System.Diagnostics.ProcessStartInfo("schtasks.exe", arg) { Verb = "runas", UseShellExecute = true, WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden };
+            using (var p = System.Diagnostics.Process.Start(psi)) { p.WaitForExit(15000); return p.ExitCode == 0; }
+        }
+        catch { return false; }
+    }
+
+    // Açılışta başlatma: tercihen "en yüksek yetkiyle" zamanlanmış görev (her açılışta UAC sormaz);
+    // kullanıcı yönetici onayı vermezse eskisi gibi HKCU\...\Run (normal yetki).
     public static bool Acilista
     {
-        get { using (var k = Registry.CurrentUser.OpenSubKey(RunYol)) return k != null && k.GetValue("BelleRemote") != null; }
+        get
+        {
+            using (var k = Registry.CurrentUser.OpenSubKey(RunYol)) if (k != null && k.GetValue("BelleRemote") != null) return true;
+            return GorevVar();
+        }
         set
         {
-            using (var k = Registry.CurrentUser.CreateSubKey(RunYol))
+            if (value)
             {
-                if (value) k.SetValue("BelleRemote", "\"" + Application.ExecutablePath + "\" /tepsi");
-                else k.DeleteValue("BelleRemote", false);
+                bool gorev = GorevVar();
+                if (!gorev)
+                {
+                    string xml = Path.Combine(Path.GetTempPath(), "e6uzak_gorev.xml");
+                    string kullanici = Environment.UserDomainName + "\\" + Environment.UserName;
+                    File.WriteAllText(xml,
+                        "<?xml version=\"1.0\" encoding=\"UTF-16\"?>\r\n<Task version=\"1.2\" xmlns=\"http://schemas.microsoft.com/windows/2004/02/mit/task\">" +
+                        "<Triggers><LogonTrigger><Enabled>true</Enabled><UserId>" + System.Security.SecurityElement.Escape(kullanici) + "</UserId><Delay>PT15S</Delay></LogonTrigger></Triggers>" +
+                        "<Principals><Principal id=\"Author\"><UserId>" + System.Security.SecurityElement.Escape(kullanici) + "</UserId><LogonType>InteractiveToken</LogonType><RunLevel>HighestAvailable</RunLevel></Principal></Principals>" +
+                        "<Settings><MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy><DisallowStartIfOnBatteries>false</DisallowStartIfOnBatteries><StopIfGoingOnBatteries>false</StopIfGoingOnBatteries>" +
+                        "<ExecutionTimeLimit>PT0S</ExecutionTimeLimit><Priority>7</Priority></Settings>" +
+                        "<Actions Context=\"Author\"><Exec><Command>" + System.Security.SecurityElement.Escape(Application.ExecutablePath) + "</Command><Arguments>/tepsi</Arguments></Exec></Actions></Task>",
+                        Encoding.Unicode);
+                    gorev = YoneticiyleSchtasks("/Create /F /TN \"" + GorevAdi + "\" /XML \"" + xml + "\"");
+                    try { File.Delete(xml); } catch { }
+                }
+                using (var k = Registry.CurrentUser.CreateSubKey(RunYol))
+                {
+                    if (gorev) k.DeleteValue("BelleRemote", false);
+                    else k.SetValue("BelleRemote", "\"" + Application.ExecutablePath + "\" /tepsi");
+                }
+            }
+            else
+            {
+                using (var k = Registry.CurrentUser.CreateSubKey(RunYol)) k.DeleteValue("BelleRemote", false);
+                if (GorevVar()) YoneticiyleSchtasks("/Delete /F /TN \"" + GorevAdi + "\"");
             }
         }
     }
@@ -120,9 +178,12 @@ static class Program
             if (bf.Acilan != null && !bf.Acilan.IsDisposed) Application.Run(bf.Acilan);
             return;
         }
-        bool yeni;
-        using (var m = new Mutex(true, "BelleRemotePC_tek", out yeni))
+        // /bekle: "Yönetici olarak başlat" ile açılan kopya, eski kopya kapanana kadar bekler
+        bool bekle = Array.Exists(args, a => a == "/bekle");
+        using (var m = new Mutex(false, "BelleRemotePC_tek"))
         {
+            bool yeni;
+            try { yeni = m.WaitOne(bekle ? 15000 : 0); } catch (AbandonedMutexException) { yeni = true; }
             if (!yeni) { MessageBox.Show(L.T("BelleRemote PC zaten çalışıyor (bildirim alanında)."), L.T("BelleRemote PC")); return; }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
@@ -174,6 +235,16 @@ class AnaForm : Form
         catch (Exception ex) { Gunluk(L.T("Güvenlik duvarı izni verilmedi: ") + ex.Message); }
         DuvarDurumu();
     }
+    void YoneticiOlarakBaslat()
+    {
+        try
+        {
+            var psi = new System.Diagnostics.ProcessStartInfo(Application.ExecutablePath, "/bekle" + (Visible ? "" : " /tepsi")) { Verb = "runas", UseShellExecute = true };
+            System.Diagnostics.Process.Start(psi);
+        }
+        catch (Exception ex) { Gunluk(L.T("Yönetici izni verilmedi: ") + ex.Message); return; }
+        gercektenCik = true; Close();
+    }
     NotifyIcon tepsi;
     System.Windows.Forms.Timer durumTimer;
     readonly bool basiTepside;
@@ -197,6 +268,8 @@ class AnaForm : Form
         Icon = SimgeYap(Color.FromArgb(91, 192, 235));
         Kur();
         DuvarDurumu();
+        if (!Ayarlar.Yonetici)
+            Gunluk(L.T("Uyarı: Yönetici olarak çalışmıyor. Yönetici yetkili bir pencere (ör. VirtualBox) öndeyken Windows fare tıklamalarını ve tuşları engeller. 'Yönetici olarak başlat'a basın."));
         tepsi = new NotifyIcon { Icon = Icon, Text = L.T("BelleRemote PC"), Visible = true };
         var menu = new ContextMenu();
         menu.MenuItems.Add(L.T("Göster"), (s, e) => Goster());
@@ -275,7 +348,12 @@ class AnaForm : Form
         y += 34;
 
         Etiket(L.T("Telefona verilecek adres:"), 12, y, 150);
-        adresBox = new TextBox { Left = 165, Top = y, Width = 445, ReadOnly = true }; Controls.Add(adresBox);
+        adresBox = new TextBox { Left = 165, Top = y, Width = Ayarlar.Yonetici ? 445 : 318, ReadOnly = true }; Controls.Add(adresBox);
+        if (!Ayarlar.Yonetici)
+        {
+            var yonBtn = new Button { Left = 492, Top = y - 2, Width = 118, Height = 26, Text = L.T("Yönetici olarak başlat") };
+            yonBtn.Click += (s, e) => YoneticiOlarakBaslat(); Controls.Add(yonBtn);
+        }
         y += 26;
         lanDurum = Etiket(L.T("LAN: -"), 12, y, 470);
         duvarBtn = new Button { Left = 492, Top = y - 2, Width = 118, Height = 26, Text = L.T("Güvenlik duvarı izni") };

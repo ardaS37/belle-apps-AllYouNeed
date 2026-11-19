@@ -10,6 +10,7 @@
 #include <QtCore/QFile>
 #include <QtCore/QDateTime>
 #include "dil.h"
+#include "depo.h"
 #include "telegram.h"
 #include "cihaz.h"
 #include "bildirim.h"
@@ -33,6 +34,7 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
     app.setApplicationName(QString::fromLatin1("BelleGram"));
     Dil *dil = Dil::kur(&app);
+    Depo *depo = Depo::kur(QString::fromLatin1("BelleGram"));   // onbellek/indirme surucusu (kutuphane/depo)
 
 #if defined(Q_OS_SYMBIAN)
     const QString acik = QString::fromLatin1("C:/Data/BelleGram");             // gunluk (CODA ile okunabilir)
@@ -60,6 +62,7 @@ int main(int argc, char *argv[])
     view.viewport()->setAttribute(Qt::WA_NoSystemBackground);
     view.rootContext()->setContextProperty(QString::fromLatin1("tg"), &tg);
     static Pano belPano; view.rootContext()->setContextProperty("pano", &belPano);   // Ctrl+V (kutuphane/pano)
+    view.rootContext()->setContextProperty("depo", depo);
     view.rootContext()->setContextProperty(QString::fromLatin1("dil"), dil);
     view.rootContext()->setContextProperty(QString::fromLatin1("cihaz"), &cihaz);
     view.rootContext()->setContextProperty(QString::fromLatin1("gps"), &gps);

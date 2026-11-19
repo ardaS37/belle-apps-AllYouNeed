@@ -19,6 +19,7 @@ Rectangle {
             { key: "seekStep", kind: "cycle", title: qsTr("Sarma adımı"), sub: qsTr("Sol/sağ tuşu ve 10 sn düğmeleri"), value: app.seekStep + qsTr(" sn") },
             { key: "directFile", kind: "toggle", title: qsTr("Doğrudan dosyadan oynat"), sub: qsTr("Sorun giderme: yerel sunucuyu atlar (E6'da genelde yalnızca ses gelir)"), isOn: app.directFile },
             { key: "lang", kind: "cycle", title: "Dil / Language", sub: dil.yenidenBaslat ? "Yeniden açınca geçerli olur / Restart to apply" : "Türkçe / English", value: (dil.secim === "auto" ? dil.kod : dil.secim) === "en" ? "EN" : "TR" },
+            { key: "depo", kind: "cycle", title: qsTr("Depolama yeri"), sub: qsTr("Önbellek ve indirmeler: ") + depo.etkinAd + (depo.yenidenBaslat ? qsTr(" → yeniden açınca: ") + depo.hedefAd : ""), value: depo.secim === "auto" ? qsTr("Oto") : depo.secim + ":" },
             { key: "rescan", kind: "action", title: qsTr("Videoları yeniden tara"), sub: lib.scanning ? qsTr("Taranıyor... ") + lib.scanFound : qsTr("Hafıza kartı ve telefon belleği") },
             { key: "log", kind: "action", title: root.showLog ? qsTr("Günlüğü gizle") : qsTr("Günlüğü göster"), sub: qsTr("Oynatma sorunlarında bakmak için") }
         ];
@@ -39,6 +40,7 @@ Rectangle {
         else if (r.key === "directFile") { app.directFile = !app.directFile; app.setSetting("directFile", app.directFile ? 1 : 0); }
         else if (r.key === "seekStep") { var s = [5, 10, 15, 30]; var k = s.indexOf(app.seekStep); app.seekStep = s[(k + 1) % s.length]; app.setSetting("seekStep", app.seekStep); }
         else if (r.key === "lang") { var dk = dil.secim === "auto" ? dil.kod : dil.secim; dil.sec(dk === "en" ? "tr" : "en"); }
+        else if (r.key === "depo") depo.sec(depo.sonraki());
         else if (r.key === "rescan") { lib.rescan(); app.showToast(qsTr("Tarama başladı")); }
         else if (r.key === "log") { showLog = !showLog; if (showLog) logText.text = lib.logText(); }
         refresh();

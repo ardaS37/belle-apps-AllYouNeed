@@ -1,6 +1,8 @@
 # BelleBrowser - English (araclar/dil_cikar.ps1 ile uretilir, elle duzenlemeyin)
   (Menü > İndirilenler)	  (Menu > Downloads)
  (bağlantı yok)	 (no connection)
+ (yeniden açınca geçerli olur)	 (takes effect after restart)
+ → yeniden açınca: 	 → after restart: 
  • ekran: 	 • screen:
  • iniyor	 • downloading
  • kimlik: 	 • identity:
@@ -58,8 +60,10 @@ Bulunamadı	Not found
 Çerezler silindi	Cookies deleted
 Çerezleri sil	Delete cookies
 Çıkış	Exit
+Dahili hafıza	Internal memory
 Dahili oynatıcı açılamadı; dosyayı indirip açabilirsiniz	Could not open the built-in player; you can download and open the file
 Dahili oynatıcıda aç	Open in built-in player
+Depolama yeri	Storage location
 Diğer sekmeleri kapat (sabitler kalır)	Close other tabs (pinned stay)
 Doğrudan	Direct
 Doğrudan (sunucu kullanılmaz)	Direct (no server)
@@ -71,6 +75,7 @@ Durdur	Stop
 Düşük (480 px, en hızlı)	Low (480 px, fastest)
 En fazla 6 sekme açılabilir	At most 6 tabs can be open
 En fazla 6 sekme: bu sekmede açılıyor	Max 6 tabs: opening in this tab
+Ev klasörü	Home folder
 Evet, sil	Yes, delete
 Floodgap (gopher ağ geçidi)	Floodgap (gopher gateway)
 FrogFind (arama + sade web)	FrogFind (search + simple web)
@@ -86,6 +91,7 @@ Gutenberg kitaplar	Gutenberg books
 Hafıza kartı: E:/BelleBrowser/Indirilen	Memory card: E:/BelleBrowser/Indirilen
 Hafıza kartı: E:/Downloads	Memory card: E:/Downloads
 Hakkında	About
+Harici kart	External card
 Hata	Error
 Hata bildir	Report a bug
 Hava	Weather
@@ -125,9 +131,11 @@ NPR metin haber	NPR text news
 Okuma modu	Reading mode
 Okuma modunda aç	Open in reading mode
 Orta (640 px)	Medium (640 px)
+Otomatik	Automatic
 Oynat	Play
 Önbelleği temizle	Clear cache
 Önbellek temizlendi	Cache cleared
+Önbellek ve indirmeler: 	Cache and downloads: 
 Önce Ayarlar'dan sunucu parolasını girin	Enter the server password in Settings first
 Örnek: 203.0.113.10 (diğer Belle uygulamalarıyla ortak)	Example: 203.0.113.10 (shared with the other Belle apps)
 Parola doğrulandı • sunucu katmanı hazır	Password verified • server layer ready
@@ -164,6 +172,7 @@ Sıkıştırılmış mod açık • adres çubuğundaki şimşek ve tasarruf bil
 Sıkıştırılmış mod: tüm sayfalar sunucudan	Compressed mode: all pages via server
 Sıkıştırılmış: her şey sunucudan, resimler küçük	Compressed: everything via server, small images
 Sil	Delete
+Sistem belleği (C:)	System memory (C:)
 Sorunu yazın; günlük sunucuya gönderilir	Describe the problem; the log is sent to the server
 Sunucu adresi	Server address
 Sunucu katmanı kapalı • Menü > Ayarlar	Server layer off • Menu > Settings

@@ -706,6 +706,11 @@ Rectangle {
                         app.bildir(dil.yenidenBaslat ? "Dil değişti; uygulamayı yeniden açın. / Language changed; restart the app." : "Dil / Language: " + (k === "en" ? "Türkçe" : "English"));
                     }
                 }
+                // Depolama yeri (karo onbellegi; kutuphane/depo)
+                Dugme2 {
+                    metin: qsTr("Depolama yeri: ") + depo.ad(depo.secim)
+                    onTik: { depo.sec(depo.sonraki()); app.bildir(qsTr("Depolama yeri: ") + depo.ad(depo.secim) + (depo.yenidenBaslat ? qsTr(" (yeniden açınca geçerli olur)") : "")); }
+                }
                 Rectangle { width: parent.width; height: 1; color: app.cCizgi }
                 Row {
                     spacing: 12

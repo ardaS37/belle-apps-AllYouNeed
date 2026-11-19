@@ -10,3 +10,4 @@ CONFIG += mobility
 MOBILITY += location
 DEFINES += BELLE_GPS
 symbian: TARGET.CAPABILITY += Location
+include($$PWD/../depo/depo.pri)   # karo onbellegi surucusu

@@ -1,4 +1,5 @@
 #include "kitap.h"
+#include "depo.h"
 #include "zip.h"
 
 #include <QtCore/QDir>
@@ -26,7 +27,7 @@ Kitap::Kitap(const QString &veri, QObject *parent)
 {
     QDir().mkpath(m_veri);
 #if defined(Q_OS_SYMBIAN)
-    m_onbellek = QDir(L1("E:/")).exists() ? L1("E:/BelleKitap/.onbellek") : m_veri + L1("/onbellek");
+    m_onbellek = Depo::yol(L1("BelleKitap/.onbellek"), m_veri + L1("/onbellek"));
 #else
     m_onbellek = m_veri + L1("/onbellek");
 #endif
@@ -74,7 +75,8 @@ void Kitap::tara()
     m_bulunan.clear();
     m_ustVeriSira = -1;
 #if defined(Q_OS_SYMBIAN)
-    if (QDir(L1("E:/Kitaplar")).exists()) m_kuyruk << L1("E:/Kitaplar");     // once kitap klasoru
+    if (QDir(Depo::yol(L1("Kitaplar"))).exists()) m_kuyruk << Depo::yol(L1("Kitaplar"));   // indirilen kitaplar (secili surucu)
+    if (QDir(L1("E:/Kitaplar")).exists() && !m_kuyruk.contains(L1("E:/Kitaplar"))) m_kuyruk << L1("E:/Kitaplar");     // once kitap klasoru
     if (QDir(L1("E:/")).exists()) m_kuyruk << L1("E:/");
     if (QDir(L1("F:/")).exists()) m_kuyruk << L1("F:/");
     m_kuyruk << L1("C:/Data");
@@ -107,7 +109,7 @@ void Kitap::taramaAdimi()
             foreach (const QFileInfo &fi, dir.entryInfoList(QDir::Dirs | QDir::Files | QDir::NoDotAndDotDot)) {
                 if (fi.isDir()) {
                     const QString alt = temiz(fi.absoluteFilePath());
-                    if (!atla(fi.fileName()) && d.count('/') < 7 && alt.compare(L1("E:/Kitaplar"), Qt::CaseInsensitive) != 0) m_kuyruk << alt;
+                    if (!atla(fi.fileName()) && d.count('/') < 7 && alt.compare(L1("E:/Kitaplar"), Qt::CaseInsensitive) != 0 && alt.compare(Depo::yol(L1("Kitaplar")), Qt::CaseInsensitive) != 0) m_kuyruk << alt;
                     continue;
                 }
                 const QString uz = fi.suffix().toLower();
@@ -485,7 +487,7 @@ static const char *KAjan = "Mozilla/5.0 (Symbian/3; NokiaE6-00) BelleKitap/0.2";
 QString Kitap::kitapKlasoru() const
 {
 #if defined(Q_OS_SYMBIAN)
-    return QDir(L1("E:/")).exists() ? L1("E:/Kitaplar") : L1("C:/Data/Kitaplar");
+    return Depo::yol(L1("Kitaplar"));
 #else
     return m_veri + L1("/Kitaplar");
 #endif

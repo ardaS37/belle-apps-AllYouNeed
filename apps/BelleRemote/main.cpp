@@ -2,6 +2,7 @@
 #include "pano.h"
 #include <QtGui/QApplication>
 #include "dil.h"
+#include "depo.h"
 #include "ayna.h"
 #include <QtDeclarative/QDeclarativeView>
 #include <QtDeclarative/QDeclarativeEngine>
@@ -17,6 +18,7 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
     belleKokSertifikalariYukle();   // HTTPS (e6.msahincelen.xyz): guncel kok sertifikalar, dogrulama acik
     Dil *dil = Dil::kur(&app);   // Turkce / English (QML'den once)
+    Depo *depo = Depo::kur(QString::fromLatin1("BelleRemote"));   // onbellek/indirme surucusu (kutuphane/depo)
     // Ayarlar hafiza kartina aynalanir; telefon sifirlaninca / ROM sonrasi otomatik geri gelir (kutuphane/ayna)
     Ayna::baslat("BelleRemote", QStringList() << "C:/Data/BelleRemote");
     app.setApplicationName("BelleRemote");
@@ -33,6 +35,7 @@ int main(int argc, char *argv[])
     view.engine()->addImageProvider("ekran", new EkranSaglayici(&uzak));
     view.rootContext()->setContextProperty("uzak", &uzak);
     static Pano belPano; view.rootContext()->setContextProperty("pano", &belPano);   // Ctrl+V (kutuphane/pano)
+    view.rootContext()->setContextProperty("depo", depo);
     QObject::connect(view.engine(), SIGNAL(quit()), &app, SLOT(quit()));
     view.rootContext()->setContextProperty("dil", dil);
     view.setSource(QUrl("qrc:/qml/main.qml"));

@@ -28,6 +28,7 @@ Rectangle {
                 Text { text: "+" + tg.telefon; color: app.textSecondary; font.pixelSize: 19 }
                 Dugme { width: parent.width; birincil: false; text: app.dark ? qsTr("Açık tema") : qsTr("Koyu tema"); onClicked: app.dark = !app.dark }
                 DilSatiri { width: parent.width }
+                DepoSatiri { width: parent.width }
                 Dugme { width: parent.width; birincil: false; text: root.gunlukAcik ? qsTr("Günlüğü gizle") : qsTr("Günlüğü göster"); onClicked: root.gunlukAcik = !root.gunlukAcik }
                 Text {
                     visible: root.gunlukAcik

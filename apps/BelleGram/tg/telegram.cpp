@@ -1,4 +1,5 @@
 #include "telegram.h"
+#include "depo.h"
 #include "mtproto.h"
 #include "tl.h"
 #include "sifre.h"
@@ -1540,12 +1541,13 @@ void Telegram::yuklemeBitti(const QString &hata)
 }
 
 // ======================================================================= indirme (medya)
-QString Telegram::medyaKlasoru() const { return m_klasor + L1("/medya"); }
+// Medya onbellegi (fotograf, sesli mesaj, kucuk resim): kart/E varsa orada, yoksa ozel klasorde (kutuphane/depo)
+QString Telegram::medyaKlasoru() const { return Depo::yol(L1("BelleGram/.medya"), m_klasor + L1("/medya")); }
 
 QString Telegram::indirmeKlasoru() const
 {
 #ifdef Q_OS_SYMBIAN
-    const QString k = QDir(L1("E:/")).exists() ? L1("E:/BelleGram") : L1("C:/Data/BelleGram/Dosyalar");
+    const QString k = Depo::yol(L1("BelleGram"), L1("C:/Data/BelleGram/Dosyalar"));
 #else
     const QString k = m_klasor + L1("/Dosyalar");
 #endif
@@ -1572,7 +1574,7 @@ QString Telegram::medyaKaydet(const QString &anahtar)
     const QString kaynak = medyaYolu(anahtar);
     if (kaynak.isEmpty()) return QString();
 #ifdef Q_OS_SYMBIAN
-    const QString k = QDir(L1("E:/")).exists() ? L1("E:/Images/BelleGram") : L1("C:/Data/Images/BelleGram");
+    const QString k = Depo::yol(L1("Images/BelleGram"));
 #else
     const QString k = m_klasor + L1("/Resimler");
 #endif

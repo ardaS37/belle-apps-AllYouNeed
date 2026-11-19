@@ -1,4 +1,6 @@
 # BelleMail - English (araclar/dil_cikar.ps1 ile uretilir, elle duzenlemeyin)
+ (yeniden açınca geçerli olur)	 (takes effect after restart)
+ → yeniden açınca: 	 → after restart: 
 ---------- İletilen posta ----------	---------- Forwarded message ----------
  KB	 KB
  MB	 MB
@@ -35,6 +37,9 @@ Cum	Fri
 Çöp kutusu	Trash
 Çöp kutusuna taşındı	Moved to trash
 Daha eski postalar	Older messages
+Dahili hafıza	Internal memory
+Depolama yeri	Storage location
+Depolama yeri: 	Storage location: 
 Diğer	Other
 Dün	Yesterday
 Ek	Att
@@ -42,6 +47,7 @@ Ek: 	Attachment:
 Ekler: 	Attachments:
 E-posta adresi	Email address
 E-posta adresi, şifre ve sunucu gerekli.	Email address, password and server are required.
+Ev klasörü	Home folder
 Geçersiz işlem	Invalid action
 Gelen	Inbox
 Gelen kutusu	Inbox
@@ -56,6 +62,7 @@ Gönderilen	Sent
 Gönderiliyor…	Sending…
 Görünen ad (giden postalarda)	Display name (on sent emails)
 Göster	Show
+Harici kart	External card
 Hata	Error
 Hazırlanıyor…	Preparing…
 Hesabı sil	Delete account
@@ -88,6 +95,8 @@ Konu: 	Subject:
 Menü	Menu
 Okunmadı	Unread
 Okunmadı olarak işaretlendi	Marked as unread
+Otomatik	Automatic
+Önbellek ve indirmeler: 	Cache and downloads: 
 Önce süren indirme bitsin	Wait for the current download to finish
 Önceki gönderim sürüyor.	The previous email is still being sent.
 Paz	Sun
@@ -103,6 +112,7 @@ Resimler gizlendi (veri tasarrufu)	Images hidden (data saver)
 Sağlayıcı önce tarayıcıdan giriş yapmanızı istiyor (güvenlik uyarısı).	Your provider wants you to sign in from a browser first (security alert).
 Sal	Tue
 Sil	Delete
+Sistem belleği (C:)	System memory (C:)
 SMTP sunucusu	SMTP server
 Sonuç yok.	No results.
 Spam	Spam

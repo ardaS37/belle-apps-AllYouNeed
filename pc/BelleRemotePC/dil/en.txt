@@ -131,3 +131,6 @@ Yol:	Path:
 Yükleniyor…	Loading…
 zaman aşımı	Timeout
 zaman aşımı/kopma: 	timeout/disconnect:
+Yönetici olarak başlat	Run as administrator
+Yönetici izni verilmedi: 	Administrator permission not granted: 
+Uyarı: Yönetici olarak çalışmıyor. Yönetici yetkili bir pencere (ör. VirtualBox) öndeyken Windows fare tıklamalarını ve tuşları engeller. 'Yönetici olarak başlat'a basın.	Warning: not running as administrator. While an elevated window (e.g. VirtualBox) is in front, Windows blocks mouse clicks and keys. Press 'Run as administrator'.

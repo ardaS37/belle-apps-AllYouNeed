@@ -493,7 +493,7 @@ Rectangle {
             width: parent.width
             Repeater {
                 model: [qsTr("Yenile"), qsTr("Hesap: ") + (mail.kullanici !== "" ? mail.kullanici : qsTr("yok")), qsTr("Yeni posta denetimi: ") + app.aralikMetni(mail.kontrolDakika),
-                        qsTr("Ekler: ") + mail.downloadDir, qsTr("Arka plana al"), "Dil / Language: " + ((dil.secim === "auto" ? dil.kod : dil.secim) === "en" ? "English" : "Türkçe"), qsTr("Çık")]
+                        qsTr("Ekler: ") + mail.downloadDir, qsTr("Arka plana al"), "Dil / Language: " + ((dil.secim === "auto" ? dil.kod : dil.secim) === "en" ? "English" : "Türkçe"), qsTr("Depolama yeri: ") + depo.ad(depo.secim), qsTr("Çık")]
                 delegate: Rectangle {
                     width: menuCol.width
                     height: 54
@@ -511,7 +511,8 @@ Rectangle {
                             else if (index === 3) mail.openFile(mail.downloadDir);
                             else if (index === 4) app.arkaPlan();
                             else if (index === 5) app.dilDegistir();
-                            else if (index === 6) Qt.quit();
+                            else if (index === 6) app.depoDegistir();
+                            else if (index === 7) Qt.quit();
                         }
                     }
                 }
@@ -524,6 +525,12 @@ Rectangle {
         var k = dil.secim === "auto" ? dil.kod : dil.secim;
         dil.sec(k === "en" ? "tr" : "en");
         app.toast(dil.yenidenBaslat ? "Dil değişti; uygulamayı yeniden açın. / Language changed; restart the app." : "Dil / Language: " + (k === "en" ? "Türkçe" : "English"));
+    }
+
+    // Depolama yeri: Otomatik -> saglam suruculer -> Telefon (C:) (kutuphane/depo; yeniden acinca gecerli)
+    function depoDegistir() {
+        depo.sec(depo.sonraki());
+        app.toast(qsTr("Depolama yeri: ") + depo.ad(depo.secim) + (depo.yenidenBaslat ? qsTr(" (yeniden açınca geçerli olur)") : ""));
     }
 
     Toast { id: toastBox }

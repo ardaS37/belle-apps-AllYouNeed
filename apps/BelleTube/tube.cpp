@@ -1,4 +1,5 @@
 #include "tube.h"
+#include "depo.h"
 #include "belleadres.h"
 #include "dil.h"
 #include "proxyconn.h"
@@ -28,7 +29,7 @@ Tube::Tube(QObject *parent)
 {
 #if defined(Q_OS_SYMBIAN)
     // Yigin bellek (E:) varsa oraya, yoksa telefon bellegine
-    m_dir = QDir("E:/").exists() ? "E:/Videos/E6Tube" : "C:/Data/Videos/E6Tube";
+    m_dir = Depo::yol("Videos/E6Tube");
 #else
     m_dir = QDesktopServices::storageLocation(QDesktopServices::TempLocation) + "/E6Tube";
 #endif

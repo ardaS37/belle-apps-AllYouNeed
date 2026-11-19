@@ -17,7 +17,7 @@ Every app's `.pro` file includes shared code with `$$PWD/../kutuphane/...`, so k
 
 ```
 apps/
-  kutuphane/      shared library: ayna (settings mirror), harita (maps), pigler, dil (i18n)
+  kutuphane/      shared library: ayna (settings mirror), depo (storage drive), harita (maps), pigler, dil (i18n)
   WhatsBelle/
   BelleFiles/
   ...

@@ -172,6 +172,7 @@ Rectangle {
 
             Rectangle { width: parent.width; height: 1; color: app.divider }
             DilSatiri { width: parent.width; yazi: app.textPrimary; ikinci: app.textSecondary; vurgu: app.brand }
+            DepoSatiri { width: parent.width; yazi: app.textPrimary; ikinci: app.textSecondary; vurgu: app.brand }
             // ================= Gunluk =================
             Rectangle { width: parent.width; height: 1; color: app.divider }
             Item {

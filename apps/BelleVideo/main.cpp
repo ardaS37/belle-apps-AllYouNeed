@@ -1,6 +1,7 @@
 #include <QtGui/QApplication>
 #include "pano.h"
 #include "dil.h"
+#include "depo.h"
 #include "ayna.h"
 #include <QtDeclarative/QDeclarativeView>
 #include <QtDeclarative/QDeclarativeEngine>
@@ -17,6 +18,7 @@ int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
     Dil *dil = Dil::kur(&app);   // Turkce / English (QML'den once)
+    Depo *depo = Depo::kur(QString::fromLatin1("BelleVideo"));   // onbellek/indirme surucusu (kutuphane/depo)
     // Ayarlar hafiza kartina aynalanir; telefon sifirlaninca / ROM sonrasi otomatik geri gelir (kutuphane/ayna)
     Ayna::baslat("E6Video", QStringList() << "C:/Data/E6Video");
     app.setApplicationName("E6Video");
@@ -36,6 +38,7 @@ int main(int argc, char *argv[])
     view.viewport()->setAttribute(Qt::WA_NoSystemBackground);
     view.rootContext()->setContextProperty("lib", &lib);
     static Pano belPano; view.rootContext()->setContextProperty("pano", &belPano);   // Ctrl+V (kutuphane/pano)
+    view.rootContext()->setContextProperty("depo", depo);
     view.rootContext()->setContextProperty("keys", &keys);
     view.rootContext()->setContextProperty("sys", &sys);
     QObject::connect(view.engine(), SIGNAL(quit()), &app, SLOT(quit()));

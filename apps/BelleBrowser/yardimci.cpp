@@ -1,4 +1,5 @@
 #include "yardimci.h"
+#include "depo.h"
 #include "dil.h"
 #include "katman.h"
 #include "belleserver.h"
@@ -196,7 +197,7 @@ void Yardimci::onbellekSil()
 {
     QWebSettings::clearMemoryCaches();
 #if defined(Q_OS_SYMBIAN)
-    const QString d = QDir("E:/").exists() ? QString("E:/BelleBrowser/onbellek") : QString("C:/Data/BelleBrowser/onbellek");
+    const QString d = Depo::yol("BelleBrowser/onbellek");
 #else
     const QString d = QDir::homePath() + "/BelleBrowser/onbellek";
 #endif

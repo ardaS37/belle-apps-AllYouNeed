@@ -236,6 +236,7 @@ Rectangle {
         ayarModel.append({ k: "genislik", t: qsTr("Görüntü genişliği"), v: uzak.genislik + qsTr(" piksel") });
         ayarModel.append({ k: "oto", t: qsTr("PC'de yazı alanı açılınca yazı penceresi"), v: uzak.otoYazi ? qsTr("Açık") : qsTr("Kapalı") });
         ayarModel.append({ k: "lang", t: "Dil / Language", v: (dil.secim === "auto" ? dil.kod : dil.secim) === "en" ? "English" : "Türkçe" });
+        ayarModel.append({ k: "depo", t: qsTr("Depolama yeri (indirmeler)"), v: depo.ad(depo.secim) + (depo.yenidenBaslat ? qsTr(" (yeniden açınca geçerli olur)") : "") });
         ayarModel.append({ k: "ip", t: qsTr("Telefonun IP adresi"), v: uzak.telefonIp() });
         ayarModel.append({ k: "log", t: qsTr("Günlük"), v: "C:/Data/E6Uzak/gunluk.txt" });
         ayarModel.append({ k: "rapor", t: qsTr("Sorun bildir (günlüğü sunucuya gönder)"), v: qsTr("Parola kayıtlı olmalı") });
@@ -252,6 +253,7 @@ Rectangle {
         else if (k === "genislik") menu.open(qsTr("Görüntü genişliği"), [{ k: 480, t: qsTr("480 px (en hızlı)") }, { k: 640, t: qsTr("640 px (ekran, önerilen)") }, { k: 800, t: qsTr("800 px (yakınlaştırmada net)") }, { k: 1024, t: qsTr("1024 px") }], function (c) { uzak.setGenislik(c); buildAyar(); });
         else if (k === "oto") { uzak.setOtoYazi(!uzak.otoYazi); buildAyar(); }
         else if (k === "lang") { app.dilDegistir(); buildAyar(); }
+        else if (k === "depo") { depo.sec(depo.sonraki()); buildAyar(); }
         else if (k === "ip") bilgi(qsTr("Telefonun adresi"), uzak.telefonIp());
         else if (k === "log") bilgi(qsTr("Günlük"), uzak.gunlukMetni());
         else if (k === "rapor") { uzak.raporGonder(); toast(qsTr("Rapor gönderiliyor…")); }

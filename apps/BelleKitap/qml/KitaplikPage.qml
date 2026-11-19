@@ -49,6 +49,7 @@ Rectangle {
             { label: qsTr("Ara"), icon: "search", key: "ara", hint: "S" },
             { label: qsTr("Sırala: ") + (root.sirala === "son" ? qsTr("son okunan") : (root.sirala === "ad" ? qsTr("ada göre") : qsTr("yazara göre"))), icon: "sort", key: "sira" },
             { label: "Dil / Language: " + (app.ing ? "English" : "Türkçe"), icon: "font", key: "dil" },
+            { label: qsTr("Depolama yeri: ") + depo.ad(depo.secim), icon: "folder", key: "depo" },
             { label: qsTr("Liste yazı boyutu: ") + app.fontSize, icon: "font", key: "yazi" },
             { label: qsTr("Günlüğü göster"), icon: "lines", key: "gunluk" },
             { label: qsTr("Hakkında"), icon: "info", key: "hakkinda" },
@@ -59,6 +60,7 @@ Rectangle {
             else if (k === "ara") root.ara();
             else if (k === "sira") { root.sirala = root.sirala === "son" ? "ad" : (root.sirala === "ad" ? "yazar" : "son"); root.yenile(); }
             else if (k === "dil") { dil.sec(app.ing ? "tr" : "en"); app.showToast("Dil değişti; uygulamayı yeniden açın. / Language changed; please restart the app."); }
+            else if (k === "depo") { depo.sec(depo.sonraki()); app.showToast(qsTr("Depolama yeri: ") + depo.ad(depo.secim) + (depo.yenidenBaslat ? qsTr(" (yeniden açınca geçerli olur)") : "")); }
             else if (k === "yazi") {
                 var l = [16, 18, 19, 21, 24, 28], it = [];
                 for (var j = 0; j < l.length; j++) it.push({ label: (l[j] === app.fontSize ? "\u25CF " : "") + l[j], icon: "font", key: "" + l[j] });

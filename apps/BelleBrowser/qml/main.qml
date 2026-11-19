@@ -330,6 +330,7 @@ Rectangle {
             { baslik: qsTr("Geçmişi temizle"), alt: "", ikon: "gecmis", anahtar: "gecmissil" },
             { baslik: qsTr("Hata bildir"), alt: qsTr("Sorunu yazın; günlük sunucuya gönderilir"), ikon: "paylas", anahtar: "rapor" },
             { baslik: "Dil / Language", alt: ((dil.secim === "auto" ? dil.kod : dil.secim) === "en" ? "English" : "Türkçe") + (dil.yenidenBaslat ? " • yeniden açınca / restart to apply" : ""), ikon: "dunya", anahtar: "dil" },
+            { baslik: qsTr("Depolama yeri"), alt: depo.ad(depo.secim) + (depo.yenidenBaslat ? qsTr(" (yeniden açınca geçerli olur)") : ""), ikon: "indir", anahtar: "depo" },
             { baslik: qsTr("Hakkında"), alt: qsTr("Belle Browser ") + tb.surum() + (tb.tasarruf ? " • " + tb.tasarruf : ""), ikon: "ayar", anahtar: "hakkinda" }
         ];
     }
@@ -337,6 +338,7 @@ Rectangle {
     function ayarSec(k) {
         var yenile = function () { liste.doldur(ayarOgeleri()); };
         if (k === "dil") { var dk = dil.secim === "auto" ? dil.kod : dil.secim; dil.sec(dk === "en" ? "tr" : "en"); yenile(); return; }
+        if (k === "depo") { depo.sec(depo.sonraki()); yenile(); return; }
         if (k === "sadehep") { tb.setAyar("sadeHep", tb.ayar("sadeHep", "0") === "1" ? "0" : "1"); yenile(); return; }
         if (k === "parola") girdi.ac(qsTr("Sunucu parolası"), qsTr("Telefondaki diğer Belle uygulamalarında kullandığınız sunucu parolası. HTTPS siteler, resim küçültme, okuma modu ve YouTube için gerekir."), "", true, function (p) {
             if (p === "") { tb.parolaSil(); yenile(); return; }

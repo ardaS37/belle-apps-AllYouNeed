@@ -1,4 +1,5 @@
 #include "ayna.h"
+#include "depo.h"
 
 #include <QtCore/QCoreApplication>
 #include <QtCore/QDir>
@@ -76,12 +77,8 @@ static int dosyaSayisi(const QString &yol)
 
 QString Ayna::kok()
 {
-#ifdef Q_OS_SYMBIAN
-    if (QDir("E:/").exists()) return "E:/BelleYedek/Uygulamalar";
-    return "C:/Data/BelleYedek/Uygulamalar";
-#else
-    return QDir::homePath() + "/BelleYedek/Uygulamalar";
-#endif
+    // Saglam surucu: once daha once yedek alinmis olan, sonra hafiza karti, E:, en son C: (kutuphane/depo)
+    return Depo::yedekKoku();
 }
 
 QString Ayna::ozelKlasor()

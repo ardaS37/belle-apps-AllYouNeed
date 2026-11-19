@@ -1,4 +1,5 @@
 #include "belleadres.h"
+#include "depo.h"
 #include "uzak.h"
 #include "dil.h"
 
@@ -1070,7 +1071,7 @@ void Uzak::telefonaIndir(const QString &id, const QString &ad)
 {
     if (m_dl) { emit mesaj(Dil::t("Başka bir indirme sürüyor")); return; }
 #if defined(Q_OS_SYMBIAN)
-    const QString klasor = QDir("E:/").exists() ? "E:/Downloads" : "C:/Data/Downloads";
+    const QString klasor = Depo::yol("Downloads");
 #else
     const QString klasor = QDir::homePath() + "/BelleRemote/indirilen";
 #endif

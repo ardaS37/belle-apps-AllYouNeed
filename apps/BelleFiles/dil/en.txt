@@ -13,8 +13,10 @@
  (seçime)	 (selection)
  (tüm metne)	 (whole text)
  (varsayılan)	 (default)
+ (yeniden açınca geçerli olur)	 (takes effect after restart)
  + Nokia yedeği (	 + Nokia backup (
  → tek sıkıştırmasız zip → Drive: 	 → one uncompressed zip → Drive:
+ → yeniden açınca: 	 → after restart: 
  • dokunun: aç / yerlerine koy / sil	 • tap: open / restore / delete
  • hedef klasörde V	 • V in the target folder
  • seçime uygulanır	 • applies to selection
@@ -286,9 +288,12 @@ Ctrl+Q	Ctrl+Q
 Çöpe atılsın mı?	Move to trash?
 Daha fazla	More
 Dahili çalar açılamadı, harici oynatıcıya gönderiliyor	Could not open the built-in player, sending to the external player
+Dahili hafıza	Internal memory
 Değişiklik: 	Change:
 Değişiklikler kaydedilsin mi? 	Save changes?
 Değiştir	Change
+Depolama yeri	Storage location
+Depolama yeri: 	Storage location: 
 Desteklenmeyen AES şifresi: 	Unsupported AES encryption: 
 Desteklenmeyen sıkıştırma (	Unsupported compression (
 Devam	Continue
@@ -416,6 +421,7 @@ Hafıza kartı: E:/BelleFiles/Notlar	Memory card: E:/BelleFiles/Notlar
 Hafıza kartı: E:/Downloads	Memory card: E:/Downloads
 Hafıza kartı: E:/Drive	Memory card: E:/Drive
 Hakkında	About
+Harici kart	External card
 Harici oynatıcıda aç	Open in external player
 Hata 	Error
 Hayır, sürsün	No, continue
@@ -587,6 +593,7 @@ Otomatik Drive eşitlemesine eklendi: 	Added to automatic Drive sync:
 Otomatik eşitlemeden çıkarıldı: 	Removed from automatic sync:
 Otomatik eşitlenen klasörler	Automatically synced folders
 Otomatik kaydet (30 sn)	Autosave (30 s)
+Önbellek ve indirmeler: 	Cache and downloads: 
 Önce bir klasöre girin	Enter a folder first
 Önce Client secret girin	Enter the Client secret first
 Önce dosyayı kaydedin	Save the file first
@@ -672,6 +679,7 @@ Silinemedi: 	Could not delete:
 Siliniyor: 	Deleting:
 Silinsin mi? 	Delete?
 Silme durduruldu	Deletion stopped
+Sistem belleği (C:)	System memory (C:)
 Sistemde aç	Open in system
 Sistemde aç (	Open in system (
 Sistemde aç / önizle	Open in system / preview

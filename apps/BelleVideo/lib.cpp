@@ -1,4 +1,5 @@
 #include "lib.h"
+#include "depo.h"
 #include "dil.h"
 #include "serveconn.h"
 #include "audioextract.h"
@@ -61,14 +62,14 @@ Lib::Lib(QObject *parent)
 {
 #if defined(Q_OS_SYMBIAN)
     m_dataDir = "C:/Data/E6Video";
-    m_dlDir = QDir("E:/").exists() ? "E:/Videos/E6Video" : "C:/Data/Videos/E6Video";
+    m_dlDir = Depo::yol("Videos/E6Video");
 #else
     m_dataDir = QDesktopServices::storageLocation(QDesktopServices::TempLocation) + "/E6Video";
     m_dlDir = m_dataDir + "/indirilen";
 #endif
     QDir().mkpath(m_dataDir);
     // Cikarilan ses izleri: kartta yer varsa oraya (nokta ile baslayan klasor taramaya girmez)
-    m_audioDir = QDir("E:/").exists() ? "E:/Videos/E6Video/.ses" : m_dataDir + "/ses";
+    m_audioDir = Depo::yol("Videos/E6Video/.ses", m_dataDir + "/ses");
 #if !defined(Q_OS_SYMBIAN)
     m_audioDir = m_dataDir + "/ses";
 #endif

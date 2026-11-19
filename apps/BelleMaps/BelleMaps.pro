@@ -36,6 +36,7 @@ include($$PWD/../kutuphane/ayna/ayna.pri)
 
 # Dil destegi (Turkce / English): kutuphane/dil
 include($$PWD/../kutuphane/dil/dil.pri)
+include($$PWD/../kutuphane/depo/depo.pri)   # depolama yeri (kurulum surucusu / kart / E / C)
 
 # Ortak sunucu adresi + HTTPS kok sertifikalari
 include(../kutuphane/sunucu/sunucu.pri)

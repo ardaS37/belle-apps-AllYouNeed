@@ -1,4 +1,5 @@
 #include "katman.h"
+#include "depo.h"
 #include "dil.h"
 #include "belleserver.h"
 
@@ -18,7 +19,7 @@ static QSettings &ayarDosya() { static QSettings s("BelleBrowser", "Ayar"); retu
 static QString veriKlasoru()
 {
 #if defined(Q_OS_SYMBIAN)
-    const QString d = QDir("E:/").exists() ? QString("E:/BelleBrowser") : QString("C:/Data/BelleBrowser");
+    const QString d = Depo::yol("BelleBrowser");
 #else
     const QString d = QDir::homePath() + "/BelleBrowser";
 #endif

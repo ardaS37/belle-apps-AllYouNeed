@@ -405,6 +405,7 @@ Rectangle {
                 MouseArea { anchors.fill: parent; onClicked: { app.dark = !app.dark; app.setSetting("dark", app.dark ? "1" : "0"); } }
             }            Rectangle { width: parent.width; height: 1; color: app.divider }
             DilSatiri { width: parent.width; yazi: app.textPrimary; ikinci: app.textSecondary; vurgu: app.brand }
+            DepoSatiri { width: parent.width; yazi: app.textPrimary; ikinci: app.textSecondary; vurgu: app.brand }
 
             Text {
                 width: parent.width

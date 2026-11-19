@@ -12,6 +12,7 @@
 #include <QtCore/QDateTime>
 #include <QtCore/QTextCodec>
 #include "dil.h"
+#include "depo.h"
 #include "yayin.h"
 #include "mediakeys.h"
 
@@ -33,6 +34,7 @@ int main(int argc, char *argv[])
     app.setApplicationName(QString::fromLatin1("BelleCast"));
     QTextCodec::setCodecForCStrings(QTextCodec::codecForName("UTF-8"));
     Dil *dil = Dil::kur(&app);
+    Depo *depo = Depo::kur(QString::fromLatin1("BelleCast"));   // onbellek/indirme surucusu (kutuphane/depo)
 #if defined(Q_OS_SYMBIAN)
     const QString veri = QString::fromLatin1("C:/Data/BelleCast");
 #else
@@ -61,6 +63,7 @@ int main(int argc, char *argv[])
     view.viewport()->setAttribute(Qt::WA_NoSystemBackground);
     view.rootContext()->setContextProperty(QString::fromLatin1("yayin"), &yayin);
     static Pano belPano; view.rootContext()->setContextProperty("pano", &belPano);   // Ctrl+V (kutuphane/pano)
+    view.rootContext()->setContextProperty("depo", depo);
     view.rootContext()->setContextProperty(QString::fromLatin1("dil"), dil);
     view.rootContext()->setContextProperty(QString::fromLatin1("tuslar"), &tuslar);
     QObject::connect(view.engine(), SIGNAL(quit()), &app, SLOT(quit()));

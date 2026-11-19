@@ -1,5 +1,6 @@
 # BelleGram - English (araclar/dil_cikar.ps1 ile uretilir, elle duzenlemeyin)
  (kaba: ağ / baz istasyonu), GPS hassaslaşıyor…	 (rough: network / cell tower), GPS refining…
+ → yeniden açınca: 	 → after restart: 
  • %1/%2 uydu	 • %1/%2 satellites
  dk	 min
  km	 km
@@ -69,7 +70,9 @@ bugün %1	today %1
 çıkartma seçiyor…	choosing a sticker…
 Çıkış yap	Sign out
 Çok fazla deneme. %1 dakika sonra tekrar deneyin.	Too many attempts. Try again in %1 minutes.
+Dahili hafıza	Internal memory
 Daralt	Collapse
+Depolama yeri	Storage location
 Desteklenmeyen mesaj	Unsupported message
 Devamını oku	Read more
 Dosya	File
@@ -91,6 +94,7 @@ düzenlendi 	edited
 Düzenleniyor	Editing
 Ekim	October
 Emin misiniz? 	Are you sure?
+Ev klasörü	Home folder
 Evet, sil / ayrıl	Yes, delete / leave
 Eylül	September
 Fotoğraf	Photo
@@ -120,6 +124,7 @@ grup, %1 üye	group, %1 members
 Gruptan ayrıl	Leave group
 Günlüğü gizle	Hide log
 Günlüğü göster	Show log
+Harici kart	External card
 Haritada açmak için dokunun	Tap to open on the map
 Haritayı kaydırın: iğnenin olduğu yer gönderilir	Pan the map: the pin position is sent
 Haziran	June
@@ -184,7 +189,9 @@ Numarayı değiştir	Change number
 Ocak	January
 Okundu olarak işaretle	Mark as read
 Ortala	Center
+Otomatik	Automatic
 Oturum kapandı. Yeniden giriş yapın.	Session ended. Sign in again.
+Önbellek ve indirmeler: 	Cache and downloads: 
 Örn. 905321234567	e.g. 905321234567
 Sabitlemeyi kaldır	Unpin
 Ses	Audio
@@ -201,6 +208,7 @@ Sesli mesaj çalınamadı: 	Could not play voice message:
 sesli mesaj gönderiyor…	sending a voice message…
 Sessize al	Mute
 Silinmiş hesap	Deleted account
+Sistem belleği (C:)	System memory (C:)
 Siz	You
 Siz: 	You:
 Sohbet ara	Search chats

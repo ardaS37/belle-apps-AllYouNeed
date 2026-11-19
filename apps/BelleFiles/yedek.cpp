@@ -1,4 +1,5 @@
 #include "yedek.h"
+#include "depo.h"
 #include "dil.h"
 #include "sms.h"
 
@@ -54,7 +55,7 @@ static qint64 klasorBoyutu(const QString &yol, int *adet, QDateTime *son)
 Yedek::Yedek(QObject *parent) : QObject(parent), m_calisiyor(false), m_hepsiOk(true)
 {
 #ifdef Q_OS_SYMBIAN
-    m_kok = QDir("E:/").exists() ? "E:/BelleYedek" : "C:/Data/BelleYedek";
+    m_kok = QFileInfo(Depo::yedekKoku()).path();   // .../BelleYedek (ayar aynasiyla ayni surucu)
 #else
     m_kok = QDir::homePath() + "/BelleYedek";
 #endif

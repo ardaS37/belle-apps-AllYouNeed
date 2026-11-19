@@ -3,6 +3,7 @@
 #include "pano.h"
 #include <QtGui/QApplication>
 #include "dil.h"
+#include "depo.h"
 #include "ayna.h"
 #include <QtDeclarative/QDeclarativeView>
 #include <QtDeclarative/QDeclarativeEngine>
@@ -42,6 +43,7 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
     belleKokSertifikalariYukle();   // HTTPS (e6.msahincelen.xyz): guncel kok sertifikalar, dogrulama acik
     Dil *dil = Dil::kur(&app);   // Turkce / English (QML'den once)
+    Depo *depo = Depo::kur(QString::fromLatin1("BelleBrowser"));   // onbellek/indirme surucusu (kutuphane/depo)
     // Ayarlar hafiza kartina aynalanir; telefon sifirlaninca / ROM sonrasi otomatik geri gelir (kutuphane/ayna)
     Ayna::baslat("BelleBrowser", QStringList() << "C:/Data/BelleBrowser");
     app.setApplicationName("BelleBrowser");
@@ -49,7 +51,7 @@ int main(int argc, char *argv[])
     QTextCodec::setCodecForCStrings(QTextCodec::codecForName("UTF-8"));
 
 #if defined(Q_OS_SYMBIAN)
-    const QString veri = QDir("E:/").exists() ? QString("E:/BelleBrowser") : QString("C:/Data/BelleBrowser");
+    const QString veri = Depo::yol("BelleBrowser");
 #else
     const QString veri = QDir::homePath() + "/BelleBrowser";
 #endif
@@ -95,6 +97,7 @@ int main(int argc, char *argv[])
     Indirici indir;
     view.rootContext()->setContextProperty("tb", &tb);
     static Pano belPano; view.rootContext()->setContextProperty("pano", &belPano);   // Ctrl+V (kutuphane/pano)
+    view.rootContext()->setContextProperty("depo", depo);
     view.rootContext()->setContextProperty("indir", &indir);
     QObject::connect(view.engine(), SIGNAL(quit()), &app, SLOT(quit()));
     gunluk("qml yukleniyor");

@@ -12,6 +12,7 @@
 #include <QtCore/QDateTime>
 #include <QtCore/QTextCodec>
 #include "dil.h"
+#include "depo.h"
 #include "kitap.h"
 
 static QString sUyari;
@@ -31,6 +32,7 @@ int main(int argc, char *argv[])
     app.setApplicationName(QString::fromLatin1("BelleKitap"));
     QTextCodec::setCodecForCStrings(QTextCodec::codecForName("UTF-8"));
     Dil *dil = Dil::kur(&app);
+    Depo *depo = Depo::kur(QString::fromLatin1("BelleKitap"));   // onbellek/indirme surucusu (kutuphane/depo)
 #if defined(Q_OS_SYMBIAN)
     const QString veri = QString::fromLatin1("C:/Data/BelleKitap");
 #else
@@ -55,6 +57,7 @@ int main(int argc, char *argv[])
     view.viewport()->setAttribute(Qt::WA_NoSystemBackground);
     view.rootContext()->setContextProperty(QString::fromLatin1("kt"), &kt);
     static Pano belPano; view.rootContext()->setContextProperty("pano", &belPano);   // Ctrl+V (kutuphane/pano)
+    view.rootContext()->setContextProperty("depo", depo);
     view.rootContext()->setContextProperty(QString::fromLatin1("dil"), dil);
     QObject::connect(view.engine(), SIGNAL(quit()), &app, SLOT(quit()));
     view.setSource(QUrl(QString::fromLatin1("qrc:/qml/main.qml")));

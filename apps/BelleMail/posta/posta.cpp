@@ -1,4 +1,5 @@
 #include "posta.h"
+#include "depo.h"
 #include "imap.h"
 #include "smtp.h"
 #include "mime.h"
@@ -228,7 +229,7 @@ QString Posta::hataMetni(const QString &s) const
 QString Posta::downloadDir() const
 {
 #if defined(Q_OS_SYMBIAN)
-    const QString d = QDir(L1("E:/")).exists() ? L1("E:/Mail") : L1("C:/Data/Mail");
+    const QString d = Depo::yol(L1("Mail"));
 #else
     const QString d = QDir::homePath() + L1("/E6Mail");
 #endif

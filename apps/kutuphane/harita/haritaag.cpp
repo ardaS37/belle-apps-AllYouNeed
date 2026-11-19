@@ -1,4 +1,5 @@
 #include "rotacizgi.h"
+#include "depo.h"
 #include "haritaag.h"
 #include "cevrimdisi.h"
 #include "karoyukleyici.h"
@@ -19,7 +20,7 @@ static const qint64 KOnbellekEnCok = 120LL * 1024 * 1024;   // asilirsa (acilist
 static QString veriKoku()
 {
 #if defined(Q_OS_SYMBIAN)
-    return QDir("E:/").exists() ? QString("E:/BelleHarita") : QString("C:/Data/BelleHarita");
+    return Depo::yol("BelleHarita");
 #else
     return QDir::homePath() + "/BelleHarita";
 #endif

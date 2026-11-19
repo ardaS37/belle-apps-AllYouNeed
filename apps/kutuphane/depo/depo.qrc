@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/qml">
+        <file>DepoSatiri.qml</file>
+    </qresource>
+</RCC>

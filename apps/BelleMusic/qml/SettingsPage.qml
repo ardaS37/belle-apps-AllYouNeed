@@ -89,6 +89,7 @@ Rectangle {
 
             Rectangle { width: parent.width; height: 1; color: app.divider }
             DilSatiri { width: parent.width; yazi: app.textPrimary; ikinci: app.textSecondary; vurgu: app.accent; boyut: 19 }
+            DepoSatiri { width: parent.width; yazi: app.textPrimary; ikinci: app.textSecondary; vurgu: app.accent; boyut: 19 }
             Rectangle { width: parent.width; height: 1; color: app.divider }
             Text { text: qsTr("Oynatma"); color: app.accent; font.pixelSize: 18; font.bold: true }
             Flow {

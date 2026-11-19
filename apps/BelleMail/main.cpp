@@ -14,6 +14,7 @@
 #include <QtDeclarative/QDeclarativeEngine>
 #include <QtDeclarative/QDeclarativeContext>
 #include "dil.h"
+#include "depo.h"
 #include "ayna.h"
 #include "posta.h"
 #include "bildirim.h"
@@ -34,6 +35,7 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
     belleKokSertifikalariYukle();   // TLS: guncel kok sertifikalar (Gmail GTS, DigiCert, GlobalSign...), dogrulama acik
     Dil *dil = Dil::kur(&app);
+    Depo *depo = Depo::kur(QString::fromLatin1("BelleMail"));   // onbellek/indirme surucusu (kutuphane/depo)
     // Ayarlar hafiza kartina aynalanir (hesap parolasi DEGIL: o ozel klasorde)
     Ayna::baslat("Mail", QStringList() << "C:/Data/Mail");
     app.setApplicationName("Mail");
@@ -56,6 +58,7 @@ int main(int argc, char *argv[])
     QDeclarativeView view;
     view.rootContext()->setContextProperty("mail", &posta);
     static Pano belPano; view.rootContext()->setContextProperty("pano", &belPano);   // Ctrl+V (kutuphane/pano)
+    view.rootContext()->setContextProperty("depo", depo);
     view.rootContext()->setContextProperty("bildirim", &bildirim);
     view.rootContext()->setContextProperty("dil", dil);
     view.setResizeMode(QDeclarativeView::SizeRootObjectToView);

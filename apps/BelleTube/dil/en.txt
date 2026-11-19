@@ -3,6 +3,7 @@
   •  ses	  •  audio
   •  sırada 	  •  queued
  (sırada)	 (queued)
+ → yeniden açınca: 	 → after restart: 
  abonelik	 subscriptions
  beğeni	 likes
  GB	 GB
@@ -35,6 +36,8 @@ BUGÜN	Today
 Çıkartma	Sticker
 Daha fazla	More
 Daha fazla yorum	More comments
+Dahili hafıza	Internal memory
+Depolama yeri	Storage location
 Dış oynatıcı	External player
 Dosya yazılamadı: 	Could not write file:
 Duraklatıldı	Paused
@@ -43,6 +46,7 @@ Dün	Yesterday
 Ekim	October
 Ekran kapalıyken de çalar	Plays with the screen off too
 Eşleşen kanal yok.	No matching channels.
+Ev klasörü	Home folder
 Eylül	September
 Fotoğraf	Photo
 Geçersiz yanıt	Invalid response
@@ -51,6 +55,7 @@ Göster	Show
 Günlük (son 20)	Log (last 20)
 Günlük panoya kopyalandı	Log copied to clipboard
 Günlük temizlendi	Log cleared
+Harici kart	External card
 Haziran	June
 Henüz abone olduğunuz kanal yok.\nAra sekmesinde bir kanal bulun ya da bir videodaki \"Kanal\" düğmesine basın, sonra \"Abone ol\"a dokunun. Kanalların yeni videoları burada görünür.	No subscriptions yet.\nFind a channel in the Search tab or press \"Channel\" on a video, then tap \"Subscribe\". New videos from your channels appear here.
 Henüz inen video yok. İzlediğiniz videolar burada saklanır; internetsiz izlenebilir.	No downloaded videos yet. Videos you watch are kept here and can be watched offline.
@@ -80,7 +85,9 @@ Mayıs	May
 mp3, telefona kaydet	mp3, save to phone
 Nisan	April
 Ocak	January
+Otomatik	Automatic
 Oynatma listesi	Playlist
+Önbellek ve indirmeler: 	Cache and downloads: 
 p, telefona kaydet	p, save to phone
 Panoda metin yok	No text on clipboard
 Parola	Password
@@ -96,6 +103,7 @@ Sesli mesaj	Voice message
 Sınır aşılınca en eski videolar otomatik silinir. Klasör: 	When the limit is exceeded the oldest videos are deleted automatically. Folder:
 Sırada	Queued
 Silindi	Deleted
+Sistem belleği (C:)	System memory (C:)
 Sunucu adresi	Server address
 Sunucu hatası (	Server error (
 Sunucu hazırlıyor...	Server is preparing...

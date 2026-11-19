@@ -14,6 +14,7 @@ Rectangle {
         var keep = liste.currentIndex;
         smodel.clear();
         ekle("dil", "Dil / Language", dilAdi() + (dil.yenidenBaslat ? " ↻" : ""), "font");
+        ekle("depo", qsTr("Depolama yeri"), depo.ad(depo.secim) + (depo.yenidenBaslat ? " ↻" : ""), "folder");
         ekle("yazi", qsTr("Yazı boyutu"), app.fontSize + qsTr(" piksel"), "font");
         ekle("ulke", qsTr("Ülkem (popüler radyo ve podcast)"), app.evUlkeAd, "globe");
         ekle("aktarma", qsTr("Radyo: telefon içi aktarma"), acikKapali(app.aktarmaAcik), "muzik");
@@ -33,6 +34,10 @@ Rectangle {
             var dk = dil.secim === "auto" ? dil.kod : dil.secim;
             dil.sec(dk === "en" ? "tr" : "en");
             app.showToast(dil.yenidenBaslat ? "Dil değişti; uygulamayı yeniden açın. / Language changed; please restart the app." : "Dil / Language: " + dilAdi());
+            kur();
+        } else if (k === "depo") {
+            depo.sec(depo.sonraki());
+            app.showToast(qsTr("Depolama yeri: ") + depo.ad(depo.secim) + (depo.yenidenBaslat ? qsTr(" (yeniden açınca geçerli olur)") : ""));
             kur();
         } else if (k === "yazi") {
             var l = [14, 16, 18, 19, 21, 24, 28, 32], it = [];

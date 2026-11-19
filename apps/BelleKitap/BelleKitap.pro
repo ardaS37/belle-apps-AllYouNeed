@@ -24,6 +24,7 @@ symbian {
 }
 
 include($$PWD/../kutuphane/dil/dil.pri)
+include($$PWD/../kutuphane/depo/depo.pri)   # depolama yeri (kurulum surucusu / kart / E / C)
 
 # Ortak pano yardimcisi (Ctrl+V: QML paste() E6da calismiyor)
 include($$PWD/../kutuphane/pano/pano.pri)

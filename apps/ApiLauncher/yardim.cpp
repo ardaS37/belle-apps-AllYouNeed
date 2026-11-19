@@ -1,4 +1,5 @@
 #include "belleadres.h"
+#include "depo.h"
 #include "yardim.h"
 #include "dil.h"
 
@@ -236,7 +237,7 @@ QString Yardim::resimBase64(const QString &yol, int enBuyuk, int kalite) const
 QString Yardim::resimKaydet(const QString &base64, const QString &uzanti)
 {
 #if defined(Q_OS_SYMBIAN)
-    QString klasor = QDir("E:/").exists() ? "E:/Images/ApiLauncher" : "C:/Data/Images/ApiLauncher";
+    QString klasor = Depo::yol("Images/ApiLauncher");
 #else
     QString klasor = QDir::homePath() + "/ApiLauncher/resimler";
 #endif

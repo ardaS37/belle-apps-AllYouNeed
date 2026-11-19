@@ -1,4 +1,5 @@
 #include "yayin.h"
+#include "depo.h"
 
 #include <QtCore/QDir>
 #include <QtCore/QFileInfo>
@@ -489,8 +490,8 @@ Yayin::Yayin(const QString &veriKlasoru, QObject *parent)
 {
     QDir().mkpath(m_veri);
 #if defined(Q_OS_SYMBIAN)
-    m_indirKlasor = QDir("E:/").exists() ? QString::fromLatin1("E:/Podcasts") : QString::fromLatin1("C:/Data/Podcasts");
-    m_kayitKlasor = QDir("E:/").exists() ? QString::fromLatin1("E:/Radyo Kayitlari") : QString::fromLatin1("C:/Data/Radyo Kayitlari");
+    m_indirKlasor = Depo::yol(QString::fromLatin1("Podcasts"));
+    m_kayitKlasor = Depo::yol(QString::fromLatin1("Radyo Kayitlari"));
 #else
     m_indirKlasor = m_veri + "/Podcasts";
     m_kayitKlasor = m_veri + "/Radyo Kayitlari";

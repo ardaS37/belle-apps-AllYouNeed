@@ -1,0 +1,15 @@
+# kutuphane/depo
+Depolama yeri ¦ Storage location
+Yeniden açınca geçerli olur ¦ Takes effect after restart
+Önbellek ve indirmeler:  ¦ Cache and downloads: 
+Otomatik ¦ Automatic
+Ev klasörü ¦ Home folder
+Depolama yeri:  ¦ Storage location: 
+ (yeniden açınca geçerli olur) ¦  (takes effect after restart)
+Oto ¦ Auto
+Depolama yeri (indirmeler) ¦ Storage location (downloads)
+Sistem belleği (C:) ¦ System memory (C:)
+Harici kart ¦ External card
+Dahili hafıza ¦ Internal memory
+
+ → yeniden açınca:  ¦  → after restart: 

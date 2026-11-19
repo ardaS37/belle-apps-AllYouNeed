@@ -2,6 +2,7 @@
 #include "pano.h"
 #include <QtGui/QApplication>
 #include "dil.h"
+#include "depo.h"
 #include <QtDeclarative/QDeclarativeView>
 #include <QtDeclarative/QDeclarativeEngine>
 #include <QtDeclarative/QDeclarativeContext>
@@ -24,8 +25,9 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
     belleKokSertifikalariYukle();   // HTTPS (e6.msahincelen.xyz): guncel kok sertifikalar, dogrulama acik
     Dil *dil = Dil::kur(&app);   // Turkce / English (QML'den once)
+    Depo *depo = Depo::kur(QString::fromLatin1("BelleMaps"));   // onbellek/indirme surucusu (kutuphane/depo)
 #if defined(Q_OS_SYMBIAN)
-    const QString veri = QDir("E:/").exists() ? QString("E:/BelleHarita") : QString("C:/Data/BelleHarita");
+    const QString veri = Depo::yol("BelleHarita");
 #else
     const QString veri = QDir::homePath() + "/BelleHarita";
 #endif
@@ -52,6 +54,7 @@ int main(int argc, char *argv[])
     view.viewport()->setAttribute(Qt::WA_NoSystemBackground);
     view.rootContext()->setContextProperty("arac", &arac);
     static Pano belPano; view.rootContext()->setContextProperty("pano", &belPano);   // Ctrl+V (kutuphane/pano)
+    view.rootContext()->setContextProperty("depo", depo);
     view.rootContext()->setContextProperty("gps", &gps);
     view.rootContext()->setContextProperty("cevrimdisi", &cevrimdisi);
     view.rootContext()->setContextProperty("gunluk", &gunluk);

@@ -1,5 +1,7 @@
 # BelleRemote - English (araclar/dil_cikar.ps1 ile uretilir, elle duzenlemeyin)
+ (yeniden açınca geçerli olur)	 (takes effect after restart)
  / bu sayfayı ekle	 / add this page
+ → yeniden açınca: 	 → after restart: 
  dk'dır bekliyor	 min waiting
  girdi • bırakınca 1 sn sonra gider	 inputs • sent 1 s after release
  girdiyi şimdi gönder	 inputs — send now
@@ -94,8 +96,11 @@ Bul  (Ctrl+F)	Find  (Ctrl+F)
 Çevrimiçi PC'leri yenile	Refresh online PCs
 Çıkış	Exit
 Çift tık	Double click
+Dahili hafıza	Internal memory
 Değiştir	Change
 Delete	Delete
+Depolama yeri	Storage location
+Depolama yeri (indirmeler)	Storage location (downloads)
 DOKUNMATİK\n	TOUCH\n
 Dokunun ya da sürükleyin: görünüm oraya gider • C: kapat	Tap or drag: the view moves there • C: close
 Dosya gezgini  (Win+E)	File Explorer  (Win+E)
@@ -112,6 +117,7 @@ Ekranı yenile	Refresh screen
 Enter	Enter
 Enter gönder • Ctrl+Enter gönder+Enter • Shift+Enter yeni satır • Ctrl+V yapıştır	Enter send • Ctrl+Enter send+Enter • Shift+Enter new line • Ctrl+V paste
 Enter tamam • Ctrl+V yapıştır • Ctrl+G göster • Esc	Enter OK • Ctrl+V paste • Ctrl+G show • Esc
+Ev klasörü	Home folder
 Fare	Mouse
 Fare ›	Mouse ›
 Genel bakış: tüm ekrandan bölge seç (C)	Overview: pick a region of the whole screen (C)
@@ -137,6 +143,7 @@ Görüntü genişliği	Picture width
 Görüntü kalitesi	Picture quality
 Göster/Gizle	Show/Hide
 Günlük	Log
+Harici kart	External card
 Hazır	Ready
 Hız	Speed
 Hız ve kalite ›	Speed and quality ›
@@ -174,7 +181,9 @@ Normal — 1100 px masaüstü düzeni	Normal — 1100 px desktop layout
 Normal (1100 px)	Normal (1100 px)
 Orta (%35, önerilen)	Medium (35%, recommended)
 Orta tık	Middle click
+Otomatik	Automatic
 Oynat / duraklat	Play / pause
+Önbellek ve indirmeler: 	Cache and downloads: 
 Önce Ayarlar'dan sunucu parolasını girin	Enter the server password in Settings first
 Önce sunucu parolasını girin	Enter the server password first
 Önceki parça	Previous track
@@ -223,6 +232,7 @@ Sık kullanılanlar	Favourites
 Sil: 	Delete:
 Silindi	Deleted
 Silinecek sık kullanılan	Favourite to delete
+Sistem belleği (C:)	System memory (C:)
 Sol ok	Left arrow
 Sol tık	Left click
 son: 	last:

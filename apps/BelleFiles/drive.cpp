@@ -1,4 +1,5 @@
 #include "drive.h"
+#include "depo.h"
 #include "dil.h"
 #include "belleserver.h"
 #include "gdrive.h"
@@ -101,7 +102,7 @@ QString Drive::downloadDir() const
     const QString secilen = ayar().value("indirme").toString();
     if (!secilen.isEmpty() && QDir().mkpath(secilen)) return secilen;
 #if defined(Q_OS_SYMBIAN)
-    const QString d = QDir("E:/").exists() ? QString("E:/Drive") : QString("C:/Data/Drive");
+    const QString d = Depo::yol("Drive");
 #else
     const QString d = QDir::homePath() + "/BelleFiles/Drive";
 #endif

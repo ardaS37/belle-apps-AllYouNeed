@@ -38,6 +38,7 @@ Rectangle {
             ekle("dyedek", qsTr("Drive'da yedek klasörü"), app.driveYedekKlasoru, "drive");
             ekle("indir", qsTr("Drive'dan indirilenler"), drive.downloadDir, "sdkart");
             ekle("lang", "Dil / Language", ((dil.secim === "auto" ? dil.kod : dil.secim) === "en" ? "English" : "Türkçe") + (dil.yenidenBaslat ? " ↻" : ""), "font");
+            ekle("depo", qsTr("Depolama yeri"), depo.ad(depo.secim) + (depo.yenidenBaslat ? " ↻" : ""), "sdkart");
             ekle("help", qsTr("Klavye kısayolları"), "H", "key");
             ekle("log", qsTr("Günlüğü göster"), "", "lines");
             ekle("about", qsTr("Hakkında"), qsTr("Belle Files ") + app.version, "info");
@@ -75,6 +76,7 @@ Rectangle {
             });
         }
         else if (k === "lang") { var dk = dil.secim === "auto" ? dil.kod : dil.secim; dil.sec(dk === "en" ? "tr" : "en"); app.showToast(dil.yenidenBaslat ? "Dil değişti; uygulamayı yeniden açın. / Language changed; restart the app." : "Dil / Language: " + (dk === "en" ? "Türkçe" : "English")); build(); }
+        else if (k === "depo") { depo.sec(depo.sonraki()); app.showToast(qsTr("Depolama yeri: ") + depo.ad(depo.secim) + (depo.yenidenBaslat ? qsTr(" (yeniden açınca geçerli olur)") : "")); build(); }
         else if (k === "wrap") setBool("wrap", "wrap");
         else if (k === "enc") {
             var encs = ["", "UTF-8", "windows-1254", "ISO-8859-9", "ISO-8859-1", "UTF-16LE"], it2 = [];

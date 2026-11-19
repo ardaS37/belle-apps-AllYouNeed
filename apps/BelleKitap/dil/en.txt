@@ -1,4 +1,6 @@
 # BelleKitap - English (araclar/dil_cikar.ps1 ile uretilir, elle duzenlemeyin)
+ (yeniden açınca geçerli olur)	 (takes effect after restart)
+ → yeniden açınca: 	 → after restart: 
  GB	 GB
  KB	 KB
  kitap	 books
@@ -28,12 +30,16 @@ Ctrl+Q	Ctrl+Q
 çÇğĞıIİöÖşŞüÜâÂîÎûÛ	çÇğĞıIİöÖşŞüÜâÂîÎûÛ
 Çıkış	Exit
 Daha fazla…	More…
+Dahili hafıza	Internal memory
+Depolama yeri	Storage location
+Depolama yeri: 	Storage location: 
 Desteklenmeyen AES şifresi: 	Unsupported AES encryption: 
 Desteklenmeyen sıkıştırma (	Unsupported compression (
 Dil: 	Language: 
 Enter	Enter
 Eser ya da yazar (ör. Ömer Seyfettin)	Work or author (e.g. Ömer Seyfettin)
 Eserde metin bulunamadı	No text found in the work
+Ev klasörü	Home folder
 Gece	Night
 Gece mavisi	Night blue
 Geçerli bir zip değil	Not a valid zip
@@ -46,6 +52,7 @@ Gündüz	Day
 Günlüğü göster	Show log
 Günlük	Log
 Hakkında	About
+Harici kart	External card
 İçindekiler	Contents
 İndir ve aç	Download and open
 İndirildi: 	Downloaded:
@@ -74,12 +81,14 @@ Oku	Read
 Okunamadı: 	Could not read:
 okunmadı	Unread
 Otomatik	Automatic
+Önbellek ve indirmeler: 	Cache and downloads: 
 Parola gerekli: 	Password required: 
 Parola yanlış ya da veri bozuk: 	Wrong password or corrupt data: 
 Parola yanlış: 	Wrong password: 
 Sepya	Sepia
 Sırala: 	Sort: 
 Sil	Delete
+Sistem belleği (C:)	System memory (C:)
 son okunan	recently read
 Sonuç yok	No results
 Şifreli veri bozuk: 	Encrypted data corrupt: 

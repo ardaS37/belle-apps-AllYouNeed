@@ -1,4 +1,5 @@
 #include "indirici.h"
+#include "depo.h"
 #include "katman.h"
 
 #include <QtCore/QDir>
@@ -18,7 +19,7 @@ QString Indirici::klasor() const
     QString d = ayar().value("indirmeKlasoru").toString();
     if (d.isEmpty()) {
 #if defined(Q_OS_SYMBIAN)
-        d = QDir("E:/").exists() ? QString("E:/Downloads") : QString("C:/Data/Downloads");
+        d = Depo::yol("Downloads");
 #else
         d = QDir::homePath() + "/Downloads";
 #endif

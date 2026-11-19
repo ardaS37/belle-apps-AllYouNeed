@@ -3,6 +3,7 @@
  (doğrudan bağlantı da kurulamadı)	 (direct connection also failed)
  (sorun bildirmek için)	 (to report problems)
  (yalnızca bağlantı döndü)	 (only a link was returned)
+ → yeniden açınca: 	 → after restart: 
  API anahtarını girin.	 API key.
  geçmişi	 history
  ile yeni sohbet.\nYazmak için bir harfe basın; Enter gönderir.\n+ : fotoğraf ekle	: new chat.\nPress a letter to type; Enter sends.\n+ : add photo
@@ -47,12 +48,15 @@ Claude bu isteği yanıtlamadı	Claude did not answer this request
 Çalışıyor  •  	Running  •
 Çıkartma	Sticker
 Çiz: 	Draw:
+Dahili hafıza	Internal memory
 Deneniyor...	Trying...
+Depolama yeri	Storage location
 Doğrudan (HTTPS)	Direct (HTTPS)
 Dün	Yesterday
 DÜN	Yesterday
 Ekim	October
 Eklenen fotoğrafı kaldır	Remove attached photo
+Ev klasörü	Home folder
 Eylül	September
 Fotoğraf	Photo
 fotoğraf	Photo
@@ -67,6 +71,7 @@ Gönderilemedi: 	Could not send:
 Gönderiliyor...	Sending...
 Günlüğü gizle	Hide log
 Günlüğü göster	Show log
+Harici kart	External card
 Hata: 	Error:
 Haziran	June
 Henüz sohbet yok.	No chats yet.
@@ -88,7 +93,9 @@ Modeller	Models
 Modeller getiriliyor...	Fetching models...
 Nisan	April
 Ocak	January
+Otomatik	Automatic
 Ödeme gerekli: bu API anahtarının projesinde kredi/bakiye bitmiş. Ücretsiz kullanım için faturalandırması kapalı bir projeden anahtar alın.	Payment required: this API key's project has run out of credit. For free use, get a key from a project with billing turned off.
+Önbellek ve indirmeler: 	Cache and downloads: 
 Önce API anahtarını girin.	Enter the API key first.
 Önce Ayarlar > Bağlantı'ya sunucu parolasını girin	Enter the server password in Settings > Connection first
 Önce ne çizileceğini yazın, sonra + > Resim çiz	Type what to draw first, then + > Draw image
@@ -106,6 +113,7 @@ Resim: 	Image:
 Seç	Select
 Sesli mesaj	Voice message
 Sil	Delete
+Sistem belleği (C:)	System memory (C:)
 Sistem istemi (üç modele de gider)	System prompt (sent to all three models)
 Sohbet modeli	Chat model
 Sorun bildir	Report a problem
