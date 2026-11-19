@@ -79,7 +79,7 @@ Dosya	File
 Dosya açılamadı.	Could not open the file.
 Dosya bilgisi yok	No file information
 Dosya boş	File is empty
-Dosya çok büyük (en fazla 40 MB).	File is too large (40 MB max).
+Dosya çok büyük (en fazla 2000 MB).	File is too large (2000 MB max).
 dosya gönderiyor…	sending a file…
 Dosya seç	Choose file
 Dosya yazılamadı	Could not write file

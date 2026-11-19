@@ -24,9 +24,13 @@
 #define L1(s) QString::fromLatin1(s)
 #define K(s) QString::fromLatin1(s)
 
-static const int PARCA_IND = 131072;    // indirme parcasi (1 MB'yi boler, 4 KB'nin kati)
-static const int PARCA_YUK = 131072;    // yukleme parcasi (en fazla 512 KB)
-static const qint64 EN_BUYUK_DOSYA = 40 * 1024 * 1024;
+static const int PARCA_IND = 131072;        // indirme parcasi (1 MB'yi boler, 4 KB'nin kati)
+static const int PARCA_IND_BUYUK = 524288;  // 10 MB'den buyuk indirmelerde (daha az istek)
+static const int PARCA_YUK = 131072;        // yukleme parcasi (en fazla 512 KB)
+static const int PARCA_YUK_BUYUK = 524288;  // saveBigFilePart: en fazla 4000 parca x 512 KB
+// Telegram'in Premium olmayan hesap siniri: 4000 parca x 512 KB = 2000 MB. Dosyalar bellege alinmaz,
+// parca parca diskten okunur / diske yazilir (uygulama yigini 64 MB oldugu icin eskiden 40 MB'di).
+static const qint64 EN_BUYUK_DOSYA = qint64(4000) * PARCA_YUK_BUYUK;
 
 // Uretim veri merkezleri (help.getConfig ile dogrulandi, 15.11.2026)
 static QString dcAdres(int dc)
@@ -684,7 +688,7 @@ void Telegram::hata(int istek, int kod, const QString &mesaj)
     if (is.tur == IsDosya) {
         if (mesaj.startsWith(L1("FILE_MIGRATE_")) && m_indAktif) {
             m_ind.dc = mesaj.section(QLatin1Char('_'), -1).toInt();
-            m_ind.veri.clear();
+            m_ind.alinan = 0;
             m_indKuyruk.prepend(m_ind);
             m_indAktif = false;
             indirmeBaslat();
@@ -1453,18 +1457,21 @@ void Telegram::dosyaGonder(const QString &sohbet, const QString &yol, const QStr
 {
     QFile f(yol);
     if (!f.open(QIODevice::ReadOnly)) { emit hataOldu(Dil::t("Dosya açılamadı.")); return; }
-    if (f.size() > EN_BUYUK_DOSYA) { emit hataOldu(Dil::t("Dosya çok büyük (en fazla 40 MB).")); return; }
+    if (f.size() > EN_BUYUK_DOSYA) { emit hataOldu(Dil::t("Dosya çok büyük (en fazla 2000 MB).")); return; }
+    if (f.size() <= 0) { emit hataOldu(Dil::t("Dosya boş")); return; }
     Yukleme y;
     y.sohbet = sohbet;
     y.tur = L1("dosya");
     y.ad = QFileInfo(yol).fileName();
     y.mime = uzantiMime(yol);
-    y.veri = f.readAll();
+    y.yol = yol;            // icerik parca parca okunur
+    y.boyut = f.size();
+    f.close();
     y.yanit = yanitId;
     y.gecici = yuklemeEkle(y);
     QVariantMap h = geciciMesaj(sohbet, y.gecici, L1("dosya"), yanitId);
     h.insert(K("dosyaAdi"), y.ad);
-    h.insert(K("boyut"), double(y.veri.size()));
+    h.insert(K("boyut"), double(y.boyut));
     emit yeniMesaj(sohbet, h);
 }
 
@@ -1513,19 +1520,30 @@ void Telegram::yuklemeBaslat()
     m_yukAktif = true;
     m_yuk.dosyaId = rastgeleId();
     m_yuk.parca = 0;
-    m_yuk.toplam = (m_yuk.veri.size() + PARCA_YUK - 1) / PARCA_YUK;
-    m_yuk.buyuk = m_yuk.veri.size() > 10 * 1024 * 1024;
-    kayit(L1("yukleme: %1 bayt, %2 parca").arg(m_yuk.veri.size()).arg(m_yuk.toplam));
+    const qint64 n = m_yuk.yol.isEmpty() ? qint64(m_yuk.veri.size()) : m_yuk.boyut;
+    m_yuk.buyuk = n > 10 * 1024 * 1024;
+    m_yuk.parcaBoy = m_yuk.buyuk ? PARCA_YUK_BUYUK : PARCA_YUK;
+    m_yuk.toplam = int((n + m_yuk.parcaBoy - 1) / m_yuk.parcaBoy);
+    kayit(L1("yukleme: %1 bayt, %2 parca").arg(n).arg(m_yuk.toplam));
     parcaGonder();
 }
 
 void Telegram::parcaGonder()
 {
+    QByteArray parca;
+    if (m_yuk.yol.isEmpty()) {
+        parca = m_yuk.veri.mid(m_yuk.parca * m_yuk.parcaBoy, m_yuk.parcaBoy);
+    } else {
+        QFile f(m_yuk.yol);
+        if (!f.open(QIODevice::ReadOnly) || !f.seek(qint64(m_yuk.parca) * m_yuk.parcaBoy)) { yuklemeBitti(Dil::t("Dosya açılamadı.")); return; }
+        parca = f.read(m_yuk.parcaBoy);
+        if (parca.isEmpty()) { yuklemeBitti(Dil::t("Dosya açılamadı.")); return; }
+    }
     QVariantMap p;
     p.insert(K("file_id"), m_yuk.dosyaId);
     p.insert(K("file_part"), m_yuk.parca);
     if (m_yuk.buyuk) p.insert(K("file_total_parts"), m_yuk.toplam);
-    p.insert(K("bytes"), m_yuk.veri.mid(m_yuk.parca * PARCA_YUK, PARCA_YUK));
+    p.insert(K("bytes"), parca);
     cagir(m_yuk.buyuk ? L1("upload.saveBigFilePart") : L1("upload.saveFilePart"), p, IsParca, m_yuk.sohbet, m_yuk.rastgele);
 }
 
@@ -1604,7 +1622,7 @@ void Telegram::medyaIndir(const QString &anahtar)
     d.boyut = k.value(K("boyut")).toLongLong();
     d.hedef = k.value(K("hedef")).toString();
     d.ses = k.value(K("ses")).toBool();
-    if (d.boyut > EN_BUYUK_DOSYA) { emit medyaHata(anahtar, Dil::t("Dosya çok büyük (en fazla 40 MB).")); return; }
+    if (d.boyut > EN_BUYUK_DOSYA) { emit medyaHata(anahtar, Dil::t("Dosya çok büyük (en fazla 2000 MB).")); return; }
     m_indKuyruk.prepend(d);
     while (m_indKuyruk.size() > 60) m_indKuyruk.removeLast();
     indirmeBaslat();
@@ -1615,7 +1633,8 @@ void Telegram::indirmeBaslat()
     if (m_indAktif || m_indKuyruk.isEmpty() || !m_bagli) return;
     m_ind = m_indKuyruk.takeFirst();
     m_indAktif = true;
-    m_ind.veri.clear();
+    m_ind.alinan = 0;
+    m_ind.parcaBoy = m_ind.boyut > 10 * 1024 * 1024 ? PARCA_IND_BUYUK : PARCA_IND;
     if (m_ind.dc <= 0 || m_ind.dc == m_anaDc) { parcaIste(); return; }
     dcBaglanti(m_ind.dc);
     if (dcYetkili(m_ind.dc)) { parcaIste(); return; }
@@ -1630,13 +1649,13 @@ void Telegram::parcaIste()
 {
     QVariantMap p;
     p.insert(K("location"), m_ind.konum);
-    p.insert(K("offset"), qlonglong(m_ind.veri.size()));
-    p.insert(K("limit"), PARCA_IND);
+    p.insert(K("offset"), qlonglong(m_ind.alinan));
+    p.insert(K("limit"), m_ind.parcaBoy);
     if (m_ind.dc <= 0 || m_ind.dc == m_anaDc) {
-        const int id = cagir(L1("upload.getFile"), p, IsDosya, QString(), m_ind.veri.size());
+        const int id = cagir(L1("upload.getFile"), p, IsDosya, QString(), m_ind.alinan);
         if (m_isler.contains(id)) m_isler[id].metin = m_ind.anahtar;
     } else {
-        const int id = dcCagir(m_ind.dc, L1("upload.getFile"), p, IsDosya, m_ind.veri.size());
+        const int id = dcCagir(m_ind.dc, L1("upload.getFile"), p, IsDosya, m_ind.alinan);
         const qint64 a = dcIsAnahtari(m_ind.dc, id);
         if (m_dcIsler.contains(a)) m_dcIsler[a].metin = m_ind.anahtar;
     }
@@ -1645,23 +1664,34 @@ void Telegram::parcaIste()
 
 void Telegram::dosyaParcasi(const Is &is, const QVariantMap &m)
 {
-    if (!m_indAktif || is.metin != m_ind.anahtar || is.ek != m_ind.veri.size()) return;
+    if (!m_indAktif || is.metin != m_ind.anahtar || is.ek != m_ind.alinan) return;
     m_indZaman.stop();
     const QByteArray b = m.value(K("bytes")).toByteArray();
-    m_ind.veri.append(b);
-    if (m_ind.boyut > 0) emit medyaIlerleme(m_ind.anahtar, int(qMin<qint64>(100, qint64(m_ind.veri.size()) * 100 / m_ind.boyut)));
-    if (b.size() == PARCA_IND && !(m_ind.boyut > 0 && m_ind.veri.size() >= m_ind.boyut) && m_ind.veri.size() < EN_BUYUK_DOSYA) {
+    // Parca dogrudan <hedef>.part dosyasina eklenir; ilk parcada dosya sifirlanir
+    const QString parcaDosya = m_ind.hedef + L1(".part");
+    if (!b.isEmpty()) {
+        if (m_ind.alinan == 0) QDir().mkpath(QFileInfo(m_ind.hedef).absolutePath());
+        QFile pf(parcaDosya);
+        if (!pf.open(m_ind.alinan == 0 ? QIODevice::WriteOnly : (QIODevice::WriteOnly | QIODevice::Append)) || pf.write(b) != b.size()) {
+            pf.close(); QFile::remove(parcaDosya);
+            indirmeBitti(Dil::t("Dosya yazılamadı")); return;
+        }
+        pf.close();
+        m_ind.alinan += b.size();
+    }
+    if (m_ind.boyut > 0) emit medyaIlerleme(m_ind.anahtar, int(qMin<qint64>(100, m_ind.alinan * 100 / m_ind.boyut)));
+    if (b.size() == m_ind.parcaBoy && !(m_ind.boyut > 0 && m_ind.alinan >= m_ind.boyut) && m_ind.alinan < EN_BUYUK_DOSYA) {
         parcaIste();
         return;
     }
-    if (m_ind.veri.isEmpty()) { indirmeBitti(Dil::t("Dosya boş")); return; }
-    QDir().mkpath(QFileInfo(m_ind.hedef).absolutePath());
-    QFile f(m_ind.hedef);
-    if (!f.open(QIODevice::WriteOnly) || f.write(m_ind.veri) != m_ind.veri.size()) { indirmeBitti(Dil::t("Dosya yazılamadı")); return; }
-    f.close();
+    if (m_ind.alinan == 0) { indirmeBitti(Dil::t("Dosya boş")); return; }
+    QFile::remove(m_ind.hedef);
+    if (!QFile::rename(parcaDosya, m_ind.hedef)) { QFile::remove(parcaDosya); indirmeBitti(Dil::t("Dosya yazılamadı")); return; }
     if (m_ind.ses) {
         QString h;
-        const QByteArray pcm = OpusSes::coz(m_ind.veri, 16000, &h);
+        QByteArray sesVeri;
+        { QFile sf(m_ind.hedef); if (sf.open(QIODevice::ReadOnly)) sesVeri = sf.readAll(); }
+        const QByteArray pcm = OpusSes::coz(sesVeri, 16000, &h);
         if (pcm.isEmpty()) { kayit(L1("ses cozulemedi: ") + h); indirmeBitti(Dil::t("Ses çözülemedi")); return; }
         QFile w(sonDosya(m_ind.anahtar));
         if (!w.open(QIODevice::WriteOnly)) { indirmeBitti(Dil::t("Dosya yazılamadı")); return; }
@@ -1795,7 +1825,7 @@ void Telegram::dcHata(int istek, int kod, const QString &mesaj)
         QSettings s(m_klasor + L1("/oturum.ini"), QSettings::IniFormat);
         s.remove(L1("dc%1/yetki").arg(dc));
         Indirme d = m_ind;
-        d.veri.clear();
+        d.alinan = 0;
         m_indAktif = false;
         m_indKuyruk.prepend(d);
         indirmeBaslat();

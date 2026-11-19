@@ -129,12 +129,14 @@ private:
     enum IsTuru { IsKod, IsImza, IsSifreBilgi, IsSifre, IsDurum, IsSohbet, IsGecmis, IsGonder, IsOkundu, IsCikis,
                   IsBos, IsGuncelleme, IsKisiler, IsAra, IsDosya, IsDisaAktar, IsIceAktar, IsParca };
     struct Is { Is() : tur(IsBos), ek(0), daha(false) {} int tur; QString sohbet; qint64 ek; bool daha; QString metin; };
-    struct Indirme { Indirme() : dc(0), boyut(0), ses(false), deneme(0) {} QString anahtar; int dc; QVariantMap konum; qint64 boyut; QString hedef; bool ses; QByteArray veri; int deneme; };
+    // Indirme parcalari dogrudan <hedef>.part dosyasina yazilir (bellekte tutulmaz)
+    struct Indirme { Indirme() : dc(0), boyut(0), ses(false), deneme(0), alinan(0), parcaBoy(131072) {} QString anahtar; int dc; QVariantMap konum; qint64 boyut; QString hedef; bool ses; int deneme; qint64 alinan; int parcaBoy; };
+    // Dosya gonderiminde veri bos, yol dolu: her parca dosyadan okunur
     struct Yukleme {
-        Yukleme() : dosyaId(0), parca(0), toplam(0), buyuk(false), sure(0), rastgele(0) {}
-        QString sohbet, gecici, ad, mime, aciklama, yanit, tur;
+        Yukleme() : dosyaId(0), parca(0), toplam(0), buyuk(false), sure(0), rastgele(0), boyut(0), parcaBoy(131072) {}
+        QString sohbet, gecici, ad, mime, aciklama, yanit, tur, yol;
         QByteArray veri, dalga;
-        qint64 dosyaId; int parca, toplam; bool buyuk; int sure; qint64 rastgele;
+        qint64 dosyaId; int parca, toplam; bool buyuk; int sure; qint64 rastgele; qint64 boyut; int parcaBoy;
     };
 
     void durumYap(const QString &d);
