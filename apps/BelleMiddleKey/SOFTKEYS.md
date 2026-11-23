@@ -55,6 +55,11 @@ makesis BelleMiddleKey_elle.pkg BelleMiddleKey-unsigned.sis
 signsis -s BelleMiddleKey-unsigned.sis ..\..\dist\BelleMiddleKey-Softkeys.sis "C:\QtSDK\Symbian\SDKs\Symbian3Qt474\src\s60installs\selfsigned.cer" "C:\QtSDK\Symbian\SDKs\Symbian3Qt474\src\s60installs\selfsigned.key"
 ```
 
+SDK ile gelen örnek sertifikanın süresi dolmuşsa, `signsis` komutunda
+geçerli bir geliştirme sertifikası ve ona ait anahtarı kullanın. Belle SDK,
+GCCE 4.6.3 ve Qt 4.7.4 ile doğrulanan Linux derlemesinde paket ayrı bir
+kendinden imzalı geliştirme sertifikasıyla imzalandı.
+
 Mevcut kendinden imzalı kurulum, `SwEvent` nedeniyle telefonda projenin
 belgelediği Install Server yamasını gerektirir. [Derleme](../../docs/BUILDING.md)
 [Kurulum](../../docs/INSTALLING.md)

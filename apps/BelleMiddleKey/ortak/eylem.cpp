@@ -4,8 +4,8 @@
 #include <apgwgnam.h>
 #include <apgcli.h>
 #include <apacmdln.h>
-#include <ProEngFactory.h>
-#include <MProEngEngine.h>
+#include <proengfactory.h>
+#include <mproengengine.h>
 #include <hwrmvibra.h>
 
 static const TInt KSessizId = 1;   // Symbian profil kimlikleri: 0 Genel, 1 Sessiz
